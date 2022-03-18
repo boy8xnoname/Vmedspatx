@@ -1,0 +1,13 @@
+.eslintcache
+.stylelintcache
+.DS_Store
+.idea/
+.vsicode/
+config.js
+twentynineteen/
+node_modules/
+twentytwenty/
+twentytwentyone/
+twentytwentytwo/
+**/sourcemap
+dist/
