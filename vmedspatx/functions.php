@@ -49,7 +49,8 @@ function vmedspatx_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
 		array(
-			'menu-1' => esc_html__( 'Primary', 'vmedspatx' ),
+			'primary-menu' => esc_html__( 'Primary Menu', 'vmedspatx' ),
+			'footer-menu' => esc_html__( 'Footer Menu', 'vmedspatx' ),
 		)
 	);
 
@@ -114,6 +115,34 @@ function vmedspatx_content_width() {
 }
 add_action( 'after_setup_theme', 'vmedspatx_content_width', 0 );
 
+
+/**
+ * Enqueue scripts and styles.
+ */
+function vmedspatx_scripts() {
+
+	wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/assets/css/all.fontawesome.css', array(), _S_VERSION);
+	wp_enqueue_style( 'style-jarallax', get_template_directory_uri() . '/assets/css/jarallax.css', array(), _S_VERSION);
+	wp_enqueue_style( 'style-swiper', get_template_directory_uri() . '/assets/css/swiper.min.css', array(), _S_VERSION);
+	wp_enqueue_style( 'style-magnific-popup', get_template_directory_uri() . '/assets/css/magnific-popup.css', array(), _S_VERSION);
+	wp_enqueue_style( 'vmedspatx-style', get_stylesheet_uri(), array(), _S_VERSION );
+	wp_style_add_data( 'vmedspatx-style', 'rtl', 'replace' );
+
+
+	wp_enqueue_script( 'jquery');
+	wp_enqueue_script( 'swiper', get_template_directory_uri() . '/assets/js/swiper.min.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'magnific-popup', get_template_directory_uri() . '/assets/js/jquery.magnific-popup.min.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'vmedspatx-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'vmedspatx-scripts', get_template_directory_uri() . '/assets/js/vmedspatx-scripts.js', array(), _S_VERSION, true );
+
+
+	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+		wp_enqueue_script( 'comment-reply' );
+	}
+}
+add_action( 'wp_enqueue_scripts', 'vmedspatx_scripts' );
+
+
 /**
  * Register widget area.
  *
@@ -134,25 +163,6 @@ function vmedspatx_widgets_init() {
 }
 add_action( 'widgets_init', 'vmedspatx_widgets_init' );
 
-/**
- * Enqueue scripts and styles.
- */
-function vmedspatx_scripts() {
-	wp_enqueue_style( 'vmedspatx-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_style_add_data( 'vmedspatx-style', 'rtl', 'replace' );
-
-
-	wp_enqueue_script( 'jquery');
-	wp_enqueue_script( 'swiper', get_template_directory_uri() . '/assets/js/swiper.js', array(), _S_VERSION, true );
-	wp_enqueue_script( 'vmedspatx-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), _S_VERSION, true );
-	wp_enqueue_script( 'vmedspatx-scripts', get_template_directory_uri() . '/assets/js/vmedspatx-scripts.js', array(), _S_VERSION, true );
-
-
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
-	}
-}
-add_action( 'wp_enqueue_scripts', 'vmedspatx_scripts' );
 
 /**
  * Implement the Custom Header feature.

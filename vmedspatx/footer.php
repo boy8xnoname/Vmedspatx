@@ -12,18 +12,29 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
+		<?php 
+			get_template_part( 'template-parts/footer/footer', 'desktop' );
+		?>
+		<?php 
+			get_template_part( 'template-parts/footer/footer', 'mobile' );
+		?>
+		
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'vmedspatx' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'vmedspatx' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'vmedspatx' ), 'vmedspatx', '<a href="https://vmedspatx.com/">vmedspatx</a>' );
-				?>
+			<div class="container-fluid">
+				<div class="row ">
+					<div class="col col-12 col-md-6">
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+							<?php
+							/* translators: %s: CMS name, i.e. WordPress. */
+							printf( esc_html__( '2022 – Vitalyc Medspa. All Rights Reserved. ', 'vmedspatx' ));
+							?>
+						</a>
+					</div>
+					<div class="col col-12 col-md-6">
+						<a href="#">Privacy Policy</a>
+					</div>
+				</div>
+			</div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

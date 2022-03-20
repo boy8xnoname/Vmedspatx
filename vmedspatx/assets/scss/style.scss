@@ -76,9 +76,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import 'layout/header',
 'layout/footer';
 // 5. Components
-@import 'components/button';
+@import 'components/*';
 // 6. Page-specific styles
-@import 'pages/home';
+@import 'pages/*';
 // 7. Themes
 @import 'themes/default';
 @import 'vendors/swiper';

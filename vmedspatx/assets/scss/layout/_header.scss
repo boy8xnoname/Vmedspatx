@@ -1,3 +1,73 @@
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the header of the site/application.
-// -----------------------------------------------------------------------------
+.site-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #0000005C;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 10px 0px 10px 0px;
+    width: 100%;
+    z-index: 999;
+    &.fixed {
+        position: fixed;
+    }
+    .col {
+        display: flex;
+        align-items: center;
+    }
+    .site-branding {
+        img {
+            max-width: 175px;
+            height: auto;
+        }
+        p {
+            margin: 0;
+        }
+    }
+    ul.social-list a {
+        font-size: 25px;
+    }
+    // Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) {
+        .site-branding {
+            img {
+                max-width: 235px;
+                height: auto;
+            }
+            p {
+                margin: 0;
+            }
+        }
+        &__right {
+            text-align: right;
+        }
+    }
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) {}
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) {
+        .site-branding {
+            img {
+                max-width: 135px;
+                height: auto;
+            }
+            p {
+                margin: 0;
+            }
+        }
+        &__left {}
+        &__center {}
+        &__right {}
+    }
+    // X-Large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) {
+        .site-header__center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    // XX-Large devices (larger desktops, 1400px and up)
+    @media (min-width: 1400px) {}
+}
