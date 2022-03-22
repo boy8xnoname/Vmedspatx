@@ -49,6 +49,11 @@ var vmedspatx = {};
             });
         });
 
+
+        $('.header-jarallax').jarallax({
+            speed: 0.2,
+        });
+
     }
 
 

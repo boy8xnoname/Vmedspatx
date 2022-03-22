@@ -115,6 +115,25 @@
             "endpoint": 0
         },
         {
+            "key": "field_623a011eafcad",
+            "label": "Treaments Featured in title",
+            "name": "treaments_featured_in_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_623548e319d92",
             "label": "Treaments Featured in items",
             "name": "treaments_featured_in_items",
@@ -667,9 +686,28 @@
             "maxlength": ""
         },
         {
+            "key": "field_6239e594e3e05",
+            "label": "Book appointment button title",
+            "name": "book_appointment_button_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_6237708e9c789",
-            "label": "Book your next appointment link",
-            "name": "book_your_next_appointment_link",
+            "label": "Book appointment button link",
+            "name": "book_appointment_button_link",
             "type": "url",
             "instructions": "",
             "required": 0,
@@ -716,7 +754,7 @@
             ],
             "taxonomy": "",
             "allow_null": 0,
-            "multiple": 0,
+            "multiple": 1,
             "return_format": "object",
             "ui": 1
         },
@@ -883,6 +921,25 @@
                     "maxlength": ""
                 },
                 {
+                    "key": "field_6239f4aad712b",
+                    "label": "Our location phone number",
+                    "name": "our_location_phone_number",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
                     "key": "field_623771799c791",
                     "label": "Our location address",
                     "name": "our_location_address",
@@ -900,6 +957,22 @@
                     "prepend": "",
                     "append": "",
                     "maxlength": ""
+                },
+                {
+                    "key": "field_6239f47cd712a",
+                    "label": "Our location address map URL",
+                    "name": "our_location_address_map_url",
+                    "type": "url",
+                    "instructions": "This field should add map url for client click and view map",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
                 }
             ]
         },
@@ -1076,5 +1149,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1647801310
+    "modified": 1647969592
 }

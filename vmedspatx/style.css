@@ -7163,6 +7163,16 @@ ul.social-list a:hover {
   color: #8D6C31;
 }
 
+.header-jarallax {
+  margin: 14% 0% 0% 0%;
+  padding: 0px 0px 0px 0px;
+}
+
+.page-contact-wrap .entry-title {
+  margin: 14% 0% 0% 0%;
+  padding: 0px 0px 0px 0px;
+}
+
 .our_services .our-services__item {
   box-sizing: border-box;
 }
