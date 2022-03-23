@@ -7,7 +7,6 @@ var vmedspatx = {};
     }
 
     vmedspatx.vmedspatxHeaderScript = function() {
-
         let timeout = 0
         let previousScrollY = 0
 
@@ -71,7 +70,7 @@ var vmedspatx = {};
                 clickable: true
             },
             autoplay: {
-                delay: 4000,
+                delay: 9000,
                 disableOnInteraction: false
             },
             navigation: {
@@ -87,6 +86,10 @@ var vmedspatx = {};
             slidesPerView: 6,
             paginationClickable: true,
             spaceBetween: 20,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false
+            },
             breakpoints: {
                 1920: {
                     slidesPerView: 6,
@@ -109,6 +112,51 @@ var vmedspatx = {};
                     spaceBetween: 10
                 }
             }
+        });
+
+
+        // TREATMENTS FEATURED IN
+        let inThePressSwiper = new Swiper(".in_the_press_slider", {
+            loop: true,
+            slidesPerView: 5,
+            paginationClickable: true,
+            spaceBetween: 20,
+            // pagination: {
+            //     el: ".swiper-pagination",
+            //     clickable: true
+            // },
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false
+            },
+            // navigation: {
+            //     nextEl: ".swiper-button-next",
+            //     prevEl: ".swiper-button-prev"
+            // },
+            breakpoints: {
+                1400: {
+                    slidesPerView: 5,
+                    spaceBetween: 30
+                },
+                990: {
+                    slidesPerView: 4,
+                    spaceBetween: 30
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 30
+                },
+                480: {
+                    slidesPerView: 2,
+                    spaceBetween: 10
+                }
+            }
+        });
+
+
+        // 
+        $('.section-jarallax').jarallax({
+            speed: 0.2,
         });
 
 

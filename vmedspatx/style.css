@@ -7026,8 +7026,23 @@ body {
   transform: scale(1.2);
 }
 
+.explore_our_treatments {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.explore_our_treatments .main {
+  background-color: #FFFFFFE8;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+  text-align: center;
+}
+
 .section-title {
   color: #C79E55;
+  line-height: 1.7em;
   text-transform: uppercase;
 }
 
@@ -7183,6 +7198,12 @@ ul.social-list a:hover {
   width: 100%;
 }
 
+.our_services .our-services__item .item-link {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 .our_services .our-services__item .item-link a {
   background-color: #C79E55;
   fill: #FFFFFF;
@@ -7197,6 +7218,11 @@ ul.social-list a:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.site-main {
+  display: block;
+  z-index: 1;
 }
 
 section {
@@ -9854,6 +9880,10 @@ section {
     font-weight: 400;
     padding: 0% 0% 18% 0%;
     text-align: center;
+  }
+  .explore_our_treatments {
+    padding-top: 150px;
+    padding-bottom: 150px;
   }
   .header-menu-toggle {
     display: none;

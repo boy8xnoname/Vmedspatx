@@ -647,6 +647,22 @@
                     "max_height": "",
                     "max_size": "",
                     "mime_types": ""
+                },
+                {
+                    "key": "field_623af44611ff7",
+                    "label": "In the press link",
+                    "name": "in_the_press_link",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
                 }
             ]
         },
@@ -735,6 +751,25 @@
             },
             "placement": "top",
             "endpoint": 0
+        },
+        {
+            "key": "field_623af10ef1bbc",
+            "label": "Blog Post section title",
+            "name": "blog_post_section_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         },
         {
             "key": "field_623770a89c78b",
@@ -1112,6 +1147,25 @@
             "maxlength": ""
         },
         {
+            "key": "field_623ae700045df",
+            "label": "Contact Us before form title",
+            "name": "contact_us_before_form_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_6237728fe4e54",
             "label": "Contact Form Short Code",
             "name": "contact_form_short_code",
@@ -1129,6 +1183,25 @@
             "prepend": "",
             "append": "",
             "maxlength": ""
+        },
+        {
+            "key": "field_623ae70e045e0",
+            "label": "Contact us form description",
+            "name": "contact_us_form_description",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
         }
     ],
     "location": [
@@ -1149,5 +1222,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1647969592
+    "modified": 1648030842
 }
