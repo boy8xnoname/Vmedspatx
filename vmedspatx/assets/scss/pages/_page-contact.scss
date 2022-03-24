@@ -1,11 +1,26 @@
 .header-jarallax {
-    margin: 14% 0% 0% 0%;
+    display: flex;
+    margin: 0% 0% 0% 0%;
+    min-height: 70vh;
     padding: 0px 0px 0px 0px;
+    width: 100%;
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
 }
 
 .page-contact-wrap {
     .entry-title {
-        margin: 14% 0% 0% 0%;
+        margin: 14% 0% 5% 0%;
         padding: 0px 0px 0px 0px;
     }
+}
+
+.page-section.contact_us {
+    background-image: url('assets/images/Gold-Background.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

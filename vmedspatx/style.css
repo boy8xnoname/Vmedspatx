@@ -7026,6 +7026,20 @@ body {
   transform: scale(1.2);
 }
 
+.btn.btn-view-more {
+  background-color: #C79E55;
+  fill: #FFFFFF;
+  color: #FFFFFF;
+  border-radius: 50px 50px 50px 50px;
+  box-shadow: 0px 20px 33px 1px rgba(0, 0, 0, 0.11);
+  padding: 18px 50px 18px 50px;
+}
+
+.btn.btn-view-more:hover {
+  background-color: #222222;
+  color: #ffffff;
+}
+
 .explore_our_treatments {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -7179,13 +7193,29 @@ ul.social-list a:hover {
 }
 
 .header-jarallax {
-  margin: 14% 0% 0% 0%;
+  display: flex;
+  margin: 0% 0% 0% 0%;
+  min-height: 70vh;
   padding: 0px 0px 0px 0px;
+  width: 100%;
+}
+
+.header-jarallax .container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .page-contact-wrap .entry-title {
-  margin: 14% 0% 0% 0%;
+  margin: 14% 0% 5% 0%;
   padding: 0px 0px 0px 0px;
+}
+
+.page-section.contact_us {
+  background-image: url("assets/images/Gold-Background.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .our_services .our-services__item {

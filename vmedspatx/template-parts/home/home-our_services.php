@@ -14,12 +14,12 @@
 				$services_item_learn_more_link = get_sub_field('services_item_learn_more_link');
 				?>
 					<div class="our-services__item-wrap">
-						<div class="item-image">
+						<div class="item-image reveal slideInLeft delay-2s">
 							<div class="item-image-wrap">
 								<img class="" src="<?php echo esc_url($services_item_image['url']);?>" alt="<?php echo $services_item_heading;?>">
 							</div>
 						</div>
-						<div class="item-text">
+						<div class="item-text reveal slideInRight  delay-2s">
 							<div class="item-text-wrap">
 								<h2 class="item-heading">
 									<?php echo $services_item_heading;?>
@@ -31,7 +31,7 @@
 								<?php } ?>
 								<?php if(!empty($services_item_learn_more_link)) {?> 
 									<div class="item-link">
-										<a href="<?php echo $services_item_learn_more_link;?>" title="<?php echo $services_item_heading;?>">
+										<a class="btn btn-view-more btn-service" href="<?php echo $services_item_learn_more_link;?>" title="<?php echo $services_item_heading;?>">
 											<?php echo esc_attr('LEARN MORE');?>
 										</a>
 									</div>

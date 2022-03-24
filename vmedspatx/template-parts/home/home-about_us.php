@@ -18,10 +18,18 @@
                     echo '<div class="about-us-description">'.$about_us_description.'</div>';
                 endif;
                 ?>
+
+                <div class="d-flex justify-content-center">
+                    <?php if(!empty( $about_us_learn_more_link)) :
+                        echo '<a class="btn btn-view-more" href="'.$about_us_learn_more_link.'">LEARN MORE</a>';
+                    endif;?>
+                </div>
             </div>
             <div class="col col-lg-2">
             </div>
         </div>
+
+
      
        
        <?php if( have_rows('about_us_video') ): ?>
@@ -32,15 +40,15 @@
             ?>
             <div id="about-us-hero">
                 <img src="<?php echo $video_image_thumb['url']; ?>" alt="<?php echo esc_attr( $about_us_title ); ?>" />
-                <div class="content">
-                    <a href="<?php echo esc_url( $video_link ); ?>">
+                <div class="play-video-content">
+                    <a class="btn btn-play-video" href="<?php echo esc_url( $video_link ); ?>">
                         <i aria-hidden="true" class="eicon-play"></i>
                     </a>
                 </div>
             </div>
             <?php endwhile; ?>
         <?php endif; ?>
-
+      
     </div>
 </section>
 <?php endif; ?>
