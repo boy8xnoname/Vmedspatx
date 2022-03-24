@@ -8,6 +8,10 @@
         padding-right: 1.5em;
         padding-left: 1.5em;
         text-align: center;
+        h2.content-our-treatments-title {
+            color: #54595F;
+            font-size: 36px;
+        }
     }
     // Small devices (landscape phones, 576px and up)
     @media (min-width: 576px) {}
@@ -19,7 +23,13 @@
         padding-bottom: 150px
     }
     // X-Large devices (large desktops, 1200px and up)
-    @media (min-width: 1200px) {}
+    @media (min-width: 1200px) {
+        .main {
+            h2.content-our-treatments-title {
+                font-size: 50px;
+            }
+        }
+    }
     // XX-Large devices (larger desktops, 1400px and up)
     @media (min-width: 1400px) {}
 }

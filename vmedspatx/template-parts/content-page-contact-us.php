@@ -24,21 +24,26 @@ $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full');
 		</div>
 	</div><!-- .entry-content -->
 
+	<section class="page-section contact_locations">
+		
+	</section>
+
 	<section class="page-section contact_us">
 		<div class="container">
 			<?php 
 				$sectionContactTitle = !empty(get_field('contact_us_title')) ? get_field('contact_us_title') : 'CONTACT US';
-				$formContactTitle = !empty(get_field('contact_us_before_form_title')) ? get_field('contact_us_before_form_title') : 'Send us a message';
+				$formContactTitle = !empty(get_field('contact_us_before_form_title')) ? get_field('contact_us_before_form_title') : '';
 				$formContactShortcode = !empty(get_field('contact_form_short_code')) ? get_field('contact_form_short_code') : '';
 				$formContactDescription = !empty(get_field('contact_us_form_description')) ? get_field('contact_us_form_description') : 'By submitting this form you agree to be contacted via phone/text/email.*';
 			?>
-			<h2 class="section-title text-center">
-				<?php echo esc_attr( $sectionContactTitle, 'vmedspatx' ) ?>
-			</h2>
+	
 			<div class="row">
 				<div class="col col-lg-3">
 				</div>
-				<div class="col col-lg-6">
+				<div class="form-content-wrap col col-lg-6">
+					<h2 class="section-title text-center">
+						<?php echo esc_attr( $sectionContactTitle, 'vmedspatx' ) ?>
+					</h2>
 					<?php  if(!empty($formContactShortcode)) { ?>
 						<h2 class="contact-form-title text-center">
 							<?php echo esc_attr( $formContactTitle, 'vmedspatx' ); ?>

@@ -683,6 +683,30 @@
             "endpoint": 0
         },
         {
+            "key": "field_623c41ade51fe",
+            "label": "Book appointment image",
+            "name": "book_appointment_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
             "key": "field_6237706e9c788",
             "label": "Book your next appointment title",
             "name": "book_your_next_appointment_title",
@@ -1222,5 +1246,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1648030842
+    "modified": 1648116165
 }

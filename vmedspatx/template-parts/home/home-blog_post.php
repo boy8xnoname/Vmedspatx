@@ -10,9 +10,11 @@
 			<div class="row post-list">
 				<?php foreach( $blogPostItems as $post ):  setup_postdata($post); ?>
 					<div class="blog-post-item col col-lg-4">	
-						<?php vmedspatx_post_thumbnail(); ?>		
-						<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-						<span><?php the_field( 'field_name' ); ?></span>
+						<?php vmedspatx_post_thumbnail(); ?>
+						<div class="blog-post-item-text">
+							<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+					
+						</div>
 					</div>
 				<?php endforeach; ?>
 			</div>

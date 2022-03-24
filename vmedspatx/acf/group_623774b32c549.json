@@ -150,7 +150,7 @@
                     "key": "field_62377531c0b15",
                     "label": "Our Location Map Image",
                     "name": "our_location_map_image",
-                    "type": "text",
+                    "type": "image",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -159,11 +159,16 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
+                    "return_format": "array",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
                 },
                 {
                     "key": "field_6237753bc0b16",
@@ -337,5 +342,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1648048456
+    "modified": 1648119365
 }

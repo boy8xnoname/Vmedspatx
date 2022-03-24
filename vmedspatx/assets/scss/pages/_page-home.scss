@@ -3,6 +3,24 @@
         box-sizing: border-box;
         &:nth-child(2n) {}
         &:nth-child(2n+1) {}
+        .item-header {
+            .heading-services-icon {
+                background-image: url('assets/images/vmedspatx-icon.png');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                content: "";
+                display: block;
+                position: relative;
+                height: 50px;
+                width: 50px;
+            }
+            h2 {
+                color: $text__color;
+                font-size: 36px;
+                margin-top: 20px;
+            }
+        }
         .item-description {
             display: flex;
             margin-bottom: 15px;
@@ -10,7 +28,6 @@
         }
         .item-link {
             display: flex;
-            justify-content: center;
             width: 100%;
             a {
                 background-color: $brand__color;
@@ -18,7 +35,7 @@
                 color: #FFFFFF;
                 border-radius: 50px 50px 50px 50px;
                 box-shadow: 0px 20px 33px 1px rgba(0, 0, 0, 0.11);
-                padding: 18px 50px 18px 50px;
+                padding: 12px 50px 12px 50px;
             }
         }
     }
@@ -93,7 +110,19 @@
     // Large devices (desktops, 992px and up)
     @media (min-width: 992px) {}
     // X-Large devices (large desktops, 1200px and up)
-    @media (min-width: 1200px) {}
+    @media (min-width: 1200px) {
+        .our-services__item {
+            .item-header {
+                .heading-services-icon {
+                    height: 50px;
+                    width: 50px;
+                }
+                h2 {
+                    font-size: 64px;
+                }
+            }
+        }
+    }
     // XX-Large devices (larger desktops, 1400px and up)
     @media (min-width: 1400px) {}
 }

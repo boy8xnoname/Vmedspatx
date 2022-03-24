@@ -21,9 +21,13 @@
 						</div>
 						<div class="item-text reveal slideInRight  delay-2s">
 							<div class="item-text-wrap">
-								<h2 class="item-heading">
-									<?php echo $services_item_heading;?>
-								</h2>
+								<div class="item-header">
+									<span class="heading-services-icon">
+									</span>
+									<h2 class="item-heading">
+										<?php echo $services_item_heading;?>
+									</h2>
+								</div>
 								<?php if(!empty($services_item_description)) {?> 
 									<div class="item-description">
 										<?php echo $services_item_description;?>

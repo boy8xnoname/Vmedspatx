@@ -1,4 +1,22 @@
 .home-section.about_us {
+    background-color: #FCFAF5;
+    overflow: hidden;
+    border-style: solid;
+    border-width: 3px 0px 0px 0px;
+    border-color: $brand__color;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding: 4% 0% 0% 0%;
+    .about-us-top {}
+    .about-us-main {
+        margin: 0px 0px 0px 0px;
+        padding: 15px 0;
+    }
+    .about-us-hero {
+        margin: 0px 0px 0px 0px;
+        padding: 2em 0em 2em 0em;
+    }
     // Small devices (landscape phones, 576px and up)
     @media (min-width: 576px) {}
     // Medium devices (tablets, 768px and up)

@@ -5,8 +5,10 @@
         <div class="row">
             <?php while( have_rows('testimonials_content') ): the_row(); ?>
                 <div class="col col-lg-3">
-                    <p><?php the_sub_field('customer_say'); ?></p>
-                    <p><?php the_sub_field('customer_name'); ?></p>
+                <blockquote class="block-blockquote">
+                    <p class="blockquote__content"><?php the_sub_field('customer_say'); ?></p>
+                    <p class="blockquote__position">-<?php the_sub_field('customer_name'); ?>.</p>
+                </blockquote>
                 </div>
             <?php endwhile; ?>
         </div>

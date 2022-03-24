@@ -1,17 +1,18 @@
 <?php
-    $about_us_title = get_field('about_us_title');
-    $about_us_description = get_field('about_us_description');
-    $about_us_learn_more_link = get_field('about_us_learn_more_link');
-    if(!empty($about_us_title) || !empty($about_us_description)):
+    $book_appointment_image = get_field('book_appointment_image');
+    $book_your_next_appointment_title = get_field('book_your_next_appointment_title');
+    $book_appointment_button_title = if(isset(get_field('book_appointment_button_title'))) ? get_field('book_appointment_button_title') : 'CONTACT US';
+    $book_appointment_button_link = if(isset(get_field('book_appointment_button_link') )) ? get_field('book_appointment_button_link') : '#';
+    if(!empty($book_your_next_appointment_title) || !empty($book_appointment_button_link)):
 ?>
-<section class="home-section about_us">
+<section class="home-section book_your_next_appointment">
     <div class="container">
         <div class="row about-us-top">
             <div class="col col-lg-2">
             </div>
-            <div class="col about-us-main col-lg-8">
-                <?php if(!empty($about_us_title)) :
-                    echo '<h2 class="section-title text-center">'.$about_us_title.'</h2>';
+            <div class="book_your_next_appointment_main col col-lg-8">
+                <?php if(!empty($book_your_next_appointment_title)) :
+                    echo '<h2 class="section-title text-center">'.$book_your_next_appointment_title.'</h2>';
                 endif;
 
                 if(!empty($about_us_description)) :

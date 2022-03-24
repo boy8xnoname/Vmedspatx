@@ -49,7 +49,6 @@ var vmedspatx = {};
             });
         });
 
-
         $('.header-jarallax').jarallax({
             speed: 0.2,
         });
@@ -154,39 +153,33 @@ var vmedspatx = {};
             }
         });
 
-
-        vmedspatx.addAnimationToPageLoad = function() {
-
-            function reveal() {
-                var reveals = document.querySelectorAll(".reveal");
-
-                for (var i = 0; i < reveals.length; i++) {
-                    var windowHeight = window.innerHeight;
-                    var elementTop = reveals[i].getBoundingClientRect().top;
-                    var elementVisible = 150;
-
-                    if (elementTop < windowHeight - elementVisible) {
-                        reveals[i].classList.add("animated");
-                    } else {
-                        reveals[i].classList.remove("animated");
-                    }
-                }
-            }
-
-            window.addEventListener("scroll", reveal);
-
-
-        }
-
-
         // 
         $('.section-jarallax').jarallax({
             speed: 0.2,
         });
-
-
-
     }
+
+    // Add animation to content when load 
+    vmedspatx.addAnimationToPageLoad = function() {
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("animated");
+                } else {
+                    reveals[i].classList.remove("animated");
+                }
+            }
+        }
+
+        window.addEventListener("scroll", reveal);
+    }
+
 
     //$(function() {
     vmedspatx.init();

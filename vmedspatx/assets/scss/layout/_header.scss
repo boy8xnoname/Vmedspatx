@@ -10,6 +10,7 @@
     width: 100%;
     z-index: 999;
     &.fixed {
+        background-color: #000000e0 !important;
         position: fixed;
     }
     .col {

@@ -11,13 +11,17 @@
 			</div>
             <div class="main col col-lg-8 reveal bounce delay-4s">
                 <?php  if(!empty($explore_our_treatments_heading)) { ?> 
-                    <h2 class="section-title text-center">
+                    <h2 class="content-our-treatments-title text-center">
                         <?php echo esc_attr( $explore_our_treatments_heading);?>
                     </h2>
                 <?php } ?>
                 <?php  if(!empty($explore_our_treatments_descriptions)) { ?> 
                     <?php echo apply_filters( 'the_content', $explore_our_treatments_descriptions);?>
                 <?php } ?>
+
+                <a href="#book-treatments" class="btn btn-book-treatments" role="button">
+                    <span class="button-text">BOOK YOUR FREE CONSULTATION</span>
+                </a>
 			</div>
             <div class="col col-lg-2">
 			</div>
