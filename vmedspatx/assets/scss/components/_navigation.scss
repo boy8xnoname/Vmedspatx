@@ -126,8 +126,7 @@
         >li>a {
             color: #ffffff;
             padding: 13px 15px;
-            transform: scale(1);
-            transition: .4s;
+            transition: all .5s;
             &:hover {
                 color: $brand__color;
                 transform: scale(1.2);
@@ -145,48 +144,71 @@
                 padding-right: 20px;
             }
             >li {
-                &.has-mega-menu {
-                    position: initial;
-                }
-                &.has-mega-menu .dropdown-menu {
-                    display: none;
-                    width: 100%;
-                    position: absolute;
-                    top: 53px;
-                    z-index: 100;
-                    left: 0px;
-                    right: 0px;
-                    padding: 10px 15px;
-                }
-                &.has-mega-__menu>.dropdown-menu {
-                    flex-wrap: wrap;
-                    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
-                }
-                &.has-mega-menu.focus>.dropdown-menu {
-                    /*flexbox fallback for browsers that do not support CSS GRID lyout*/
-                    display: grid !important;
-                }
-            }
-            >li:not(.has-mega-menu) {
+                padding: 10px 0;
                 position: relative;
-                .sub-menu {
+                >.sub-menu {
                     background-color: #FFF;
-                    box-shadow: 2px 3px #f5f5f5;
+                    box-shadow: 2px 3px 7px rgba(255, 255, 255, 0.4);
                     visibility: hidden;
                     /* hides sub-menu */
                     opacity: 0;
                     position: absolute;
                     top: 100%;
                     left: 0;
-                    padding: 15px 15px 15px 20px;
+                    padding: 0;
                     width: 240px;
                     transform: translateY(-2em);
                     z-index: -1;
                     transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+                    li {
+                        display: flex;
+                        list-style: none;
+                        position: relative;
+                        &:focus,
+                        &:focus-within,
+                        &:hover {
+                            background-color: $brand__color;
+                            color: #ffffff;
+                            >a {
+                                color: #ffffff;
+                            }
+                        }
+                        .sub-menu {
+                            background-color: #FFF;
+                            box-shadow: 2px 3px 7px rgba(255, 255, 255, 0.4);
+                            visibility: hidden;
+                            /* hides sub-menu */
+                            opacity: 0;
+                            position: absolute;
+                            top: 0;
+                            left: 100%;
+                            padding: 0;
+                            width: 240px;
+                            transform: translateX(-2em);
+                            z-index: -1;
+                            transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+                        }
+                        &:focus>.sub-menu,
+                        &:focus-within>.sub-menu,
+                        &:hover>.sub-menu {
+                            visibility: visible;
+                            /* shows sub-menu */
+                            opacity: 1;
+                            z-index: 99;
+                            transform: translateX(0%);
+                            transition-delay: 0s, 0s, 0.3s;
+                            /* this removes the transition delay so the menu will be visible while the other styles transition */
+                        }
+                    }
+                    a {
+                        color: $text__color;
+                        padding: 10px 15px;
+                        text-transform: none;
+                    }
                 }
-                &:focus .sub-menu,
-                &:focus-within .sub-menu,
-                &:hover .sub-menu {
+                &:focus>.sub-menu,
+                &:focus-within>.sub-menu,
+                &:hover>.sub-menu {
                     visibility: visible;
                     /* shows sub-menu */
                     opacity: 1;
@@ -197,14 +219,6 @@
                 }
                 &:hover>a,
                 &.focus>a {}
-            }
-            li a {
-                font-size: 16px;
-                text-align: center;
-                line-height: 21px;
-                &:hover {
-                    color: $brand__color;
-                }
             }
         }
     }

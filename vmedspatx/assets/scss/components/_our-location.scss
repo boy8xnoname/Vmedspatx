@@ -1,0 +1,40 @@
+section.our_location {
+    background-color: transparent;
+    background-image: radial-gradient(at top center, #EAE4DADE 0%, #FFFFFF 67%);
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    padding: 3% 0% 3% 0%;
+    position: relative;
+    .location-list {
+        list-style: none;
+        .location-item {
+            padding: 4% 3% 4% 3%;
+            background-color: #FFFFFF;
+            border-style: solid;
+            border-width: 1px 1px 1px 1px;
+            border-color: #C79E554A;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.08);
+            margin-bottom: 35px;
+        }
+    }
+    .location-item {
+        .location-title {
+            font-family: "GothamHTF Book", OPEN SANS;
+            font-size: 19px;
+            font-weight: 600;
+        }
+        p {
+            margin: 0
+        }
+        a {}
+        .location-address,
+        .location-phone {}
+    }
+    .map-pins {
+        position: relative;
+        .map-pin-item {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+    }
+}

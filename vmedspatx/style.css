@@ -7013,6 +7013,29 @@ body {
 .home-section.about_us .about-us-hero {
   margin: 0px 0px 0px 0px;
   padding: 2em 0em 2em 0em;
+  position: relative;
+}
+
+.home-section.about_us .about-us-hero .play-video-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+}
+
+.home-section.about_us .about-us-hero .play-video-content i {
+  color: #C79E55;
+  font-size: 100px;
+  text-shadow: none;
+  background-color: white;
+  border-radius: 50%;
+  opacity: .8;
+  transition: all .5s;
+}
+
+.home-section.about_us .about-us-hero .play-video-content i:hover {
+  transform: scale(1.1);
 }
 
 .home-banner .card-content {
@@ -7034,6 +7057,11 @@ body {
 .home-banner .swiper-slide {
   height: 300px;
   overflow: hidden;
+}
+
+.home-banner .swiper-button-next,
+.home-banner .swiper-button-prev {
+  color: #C79E55;
 }
 
 .swiper-scale-effect .card-image {
@@ -7064,6 +7092,24 @@ body {
   color: #ffffff;
 }
 
+.btn.btn-book-treatments {
+  background-color: #C79E55;
+  fill: #FFFFFF;
+  color: #FFFFFF;
+  border-radius: 50px 50px 50px 50px;
+  box-shadow: 0px 20px 33px 1px rgba(0, 0, 0, 0.11);
+  padding: 18px 50px 18px 50px;
+}
+
+.btn.btn-book-treatments:hover {
+  background-color: #7A7A7A;
+  color: #ffffff;
+}
+
+.contact_us {
+  padding: 5% 0% 5% 0%;
+}
+
 .explore_our_treatments {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -7081,6 +7127,22 @@ body {
 .explore_our_treatments .main h2.content-our-treatments-title, .explore_our_treatments .main .content-our-treatments-title.h2 {
   color: #54595F;
   font-size: 36px;
+}
+
+.gform_wrapper form input {
+  color: #BAA788;
+  padding: 0px 0px 10px 0px;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom-color: currentcolor;
+  border-bottom-style: none;
+  border-bottom-width: medium;
+  border-bottom: 1px solid #313B67 !important;
+  font-size: 16px;
+  color: #BAA788;
+  height: 50px;
+  padding: 10px;
+  width: 100% !important;
 }
 
 .gform_wrapper .gform_footer input[type="submit"] {
@@ -7112,6 +7174,14 @@ body {
   color: #C79E55;
   line-height: 1.7em;
   text-transform: uppercase;
+}
+
+.instagram_feed_wrap {
+  border-style: dashed;
+  border-width: 2px 2px 2px 2px;
+  border-color: #C79E55;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  padding: 2% 1% 2% 1%;
 }
 
 .header-menu-toggle {
@@ -7219,8 +7289,7 @@ body {
 .main-navigation #primary-menu > li > a {
   color: #ffffff;
   padding: 13px 15px;
-  transform: scale(1);
-  transition: .4s;
+  transition: all .5s;
 }
 
 .main-navigation #primary-menu > li > a:hover {
@@ -7278,6 +7347,56 @@ ul.social-list a:hover {
   color: #C79E55;
   font-size: 1rem;
   font-weight: 300;
+}
+
+section.our_blog {
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #FFFFFF 38%, #C79E550F 42%);
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  padding: 3em 0em 3em 0em;
+  position: relative;
+}
+
+section.our_location {
+  background-color: transparent;
+  background-image: radial-gradient(at top center, #EAE4DADE 0%, #FFFFFF 67%);
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  padding: 3% 0% 3% 0%;
+  position: relative;
+}
+
+section.our_location .location-list {
+  list-style: none;
+}
+
+section.our_location .location-list .location-item {
+  padding: 4% 3% 4% 3%;
+  background-color: #FFFFFF;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #C79E554A;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.08);
+  margin-bottom: 35px;
+}
+
+section.our_location .location-item .location-title {
+  font-family: "GothamHTF Book", OPEN SANS;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+section.our_location .location-item p {
+  margin: 0;
+}
+
+section.our_location .map-pins {
+  position: relative;
+}
+
+section.our_location .map-pins .map-pin-item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }
 
 .header-jarallax {
@@ -7354,7 +7473,7 @@ ul.social-list a:hover {
 .our_services .our-services__item .item-header h2, .our_services .our-services__item .item-header .h2 {
   color: #7A7A7A;
   font-size: 36px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .our_services .our-services__item .item-description {
@@ -10045,6 +10164,16 @@ section {
     padding: 0% 0% 18% 0%;
     text-align: center;
   }
+  .book_your_next_appointment .book_your_next_appointment-wrap {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 75vh;
+  }
   .explore_our_treatments {
     padding-top: 150px;
     padding-bottom: 150px;
@@ -10062,48 +10191,71 @@ section {
     padding-left: 20px;
     padding-right: 20px;
   }
-  .main-navigation #primary-menu > li.has-mega-menu {
-    position: initial;
-  }
-  .main-navigation #primary-menu > li.has-mega-menu .dropdown-menu {
-    display: none;
-    width: 100%;
-    position: absolute;
-    top: 53px;
-    z-index: 100;
-    left: 0px;
-    right: 0px;
-    padding: 10px 15px;
-  }
-  .main-navigation #primary-menu > li.has-mega-__menu > .dropdown-menu {
-    flex-wrap: wrap;
-    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
-  }
-  .main-navigation #primary-menu > li.has-mega-menu.focus > .dropdown-menu {
-    /*flexbox fallback for browsers that do not support CSS GRID lyout*/
-    display: grid !important;
-  }
-  .main-navigation #primary-menu > li:not(.has-mega-menu) {
+  .main-navigation #primary-menu > li {
+    padding: 10px 0;
     position: relative;
   }
-  .main-navigation #primary-menu > li:not(.has-mega-menu) .sub-menu {
+  .main-navigation #primary-menu > li > .sub-menu {
     background-color: #FFF;
-    box-shadow: 2px 3px #f5f5f5;
+    box-shadow: 2px 3px 7px rgba(255, 255, 255, 0.4);
     visibility: hidden;
     /* hides sub-menu */
     opacity: 0;
     position: absolute;
     top: 100%;
     left: 0;
-    padding: 15px 15px 15px 20px;
+    padding: 0;
     width: 240px;
     transform: translateY(-2em);
     z-index: -1;
     transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
   }
-  .main-navigation #primary-menu > li:not(.has-mega-menu):focus .sub-menu,
-  .main-navigation #primary-menu > li:not(.has-mega-menu):focus-within .sub-menu,
-  .main-navigation #primary-menu > li:not(.has-mega-menu):hover .sub-menu {
+  .main-navigation #primary-menu > li > .sub-menu li {
+    display: flex;
+    list-style: none;
+    position: relative;
+  }
+  .main-navigation #primary-menu > li > .sub-menu li:focus, .main-navigation #primary-menu > li > .sub-menu li:focus-within, .main-navigation #primary-menu > li > .sub-menu li:hover {
+    background-color: #C79E55;
+    color: #ffffff;
+  }
+  .main-navigation #primary-menu > li > .sub-menu li:focus > a, .main-navigation #primary-menu > li > .sub-menu li:focus-within > a, .main-navigation #primary-menu > li > .sub-menu li:hover > a {
+    color: #ffffff;
+  }
+  .main-navigation #primary-menu > li > .sub-menu li .sub-menu {
+    background-color: #FFF;
+    box-shadow: 2px 3px 7px rgba(255, 255, 255, 0.4);
+    visibility: hidden;
+    /* hides sub-menu */
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    padding: 0;
+    width: 240px;
+    transform: translateX(-2em);
+    z-index: -1;
+    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+  }
+  .main-navigation #primary-menu > li > .sub-menu li:focus > .sub-menu,
+  .main-navigation #primary-menu > li > .sub-menu li:focus-within > .sub-menu,
+  .main-navigation #primary-menu > li > .sub-menu li:hover > .sub-menu {
+    visibility: visible;
+    /* shows sub-menu */
+    opacity: 1;
+    z-index: 99;
+    transform: translateX(0%);
+    transition-delay: 0s, 0s, 0.3s;
+    /* this removes the transition delay so the menu will be visible while the other styles transition */
+  }
+  .main-navigation #primary-menu > li > .sub-menu a {
+    color: #7A7A7A;
+    padding: 10px 15px;
+    text-transform: none;
+  }
+  .main-navigation #primary-menu > li:focus > .sub-menu,
+  .main-navigation #primary-menu > li:focus-within > .sub-menu,
+  .main-navigation #primary-menu > li:hover > .sub-menu {
     visibility: visible;
     /* shows sub-menu */
     opacity: 1;
@@ -10111,14 +10263,6 @@ section {
     transform: translateY(0%);
     transition-delay: 0s, 0s, 0.3s;
     /* this removes the transition delay so the menu will be visible while the other styles transition */
-  }
-  .main-navigation #primary-menu li a {
-    font-size: 16px;
-    text-align: center;
-    line-height: 21px;
-  }
-  .main-navigation #primary-menu li a:hover {
-    color: #C79E55;
   }
   section {
     padding: 3% 0% 1% 0%;
@@ -10956,6 +11100,10 @@ section {
   .site-footer .our-partner-logo .partner-item img {
     max-height: 100px;
     width: auto;
+  }
+  .youtube-popup .mfp-content {
+    width: 75%;
+    max-width: 100%;
   }
   .explore_our_treatments .main h2.content-our-treatments-title, .explore_our_treatments .main .content-our-treatments-title.h2 {
     font-size: 50px;

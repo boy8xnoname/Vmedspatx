@@ -122,6 +122,7 @@ add_action( 'after_setup_theme', 'vmedspatx_content_width', 0 );
 function vmedspatx_scripts() {
 
 	wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/assets/css/all.fontawesome.css', array(), _S_VERSION);
+	wp_enqueue_style( 'elementor-icons', get_template_directory_uri() . '/assets/css/elementor-icons.css', array(), _S_VERSION);
 	wp_enqueue_style( 'animate', get_template_directory_uri() . '/assets/css/animate.min.css', array(), _S_VERSION);
 	wp_enqueue_style( 'style-jarallax', get_template_directory_uri() . '/assets/css/jarallax.css', array(), _S_VERSION);
 	wp_enqueue_style( 'style-swiper', get_template_directory_uri() . '/assets/css/swiper.min.css', array(), _S_VERSION);

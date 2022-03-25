@@ -31,7 +31,9 @@
 						</a>
 					</div>
 					<div class="col col-12 col-md-6">
-						<a href="#">Privacy Policy</a>
+						<p class="text-right">
+							<a href="#">Privacy Policy</a>
+						</p>
 					</div>
 				</div>
 			</div>

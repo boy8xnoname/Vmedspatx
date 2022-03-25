@@ -38,7 +38,7 @@
             <div id="about-us-hero" class="about-us-hero">
                 <img src="<?php echo $video_image_thumb['url']; ?>" alt="<?php echo esc_attr( $about_us_title ); ?>" />
                 <div class="play-video-content">
-                    <a class="btn btn-play-video" href="<?php echo esc_url( $video_link ); ?>">
+                    <a class="btn-play-video popup-youtube" href="<?php echo esc_url( $video_link ); ?>">
                         <i aria-hidden="true" class="eicon-play"></i>
                     </a>
                 </div>

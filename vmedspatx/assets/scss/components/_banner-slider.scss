@@ -18,6 +18,10 @@
         height: 300px;
         overflow: hidden;
     }
+    .swiper-button-next,
+    .swiper-button-prev {
+        color: $brand__color;
+    }
     // Small devices (landscape phones, 576px and up)
     @media (min-width: 576px) {
         .swiper-slide {

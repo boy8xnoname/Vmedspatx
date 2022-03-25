@@ -28,8 +28,8 @@ if(have_rows('setup_banner_items')):
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
         <!-- Add Scrollbar -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+        <!-- <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div> -->
         </div>
     </div>
 </div>

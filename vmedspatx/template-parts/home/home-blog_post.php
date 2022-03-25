@@ -13,6 +13,9 @@
 						<?php vmedspatx_post_thumbnail(); ?>
 						<div class="blog-post-item-text">
 							<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+							<?php
+								vmedspatx_posted_on();
+							?>
 					
 						</div>
 					</div>

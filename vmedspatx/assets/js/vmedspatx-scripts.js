@@ -73,10 +73,10 @@ var vmedspatx = {};
                 delay: 9000,
                 disableOnInteraction: false
             },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev"
-            }
+            // navigation: {
+            //     nextEl: ".swiper-button-next",
+            //     prevEl: ".swiper-button-prev"
+            // }
         });
 
         // TREATMENTS FEATURED IN
@@ -156,6 +156,12 @@ var vmedspatx = {};
         // 
         $('.section-jarallax').jarallax({
             speed: 0.2,
+        });
+
+        // 
+        $('.popup-youtube').magnificPopup({
+            type: 'iframe',
+            mainClass: 'mfp-fade youtube-popup',
         });
     }
 
