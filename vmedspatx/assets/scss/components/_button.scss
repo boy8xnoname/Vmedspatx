@@ -35,3 +35,17 @@
     // XX-Large devices (larger desktops, 1400px and up)
     @media (min-width: 1400px) {}
 }
+
+input[type="button"],
+input.submit {
+    background-color: $brand__color;
+    fill: #FFFFFF;
+    color: #FFFFFF;
+    border-radius: 50px 50px 50px 50px;
+    box-shadow: 0px 20px 33px 1px rgba(0, 0, 0, 0.11);
+    padding: 18px 50px 18px 50px;
+    &:hover {
+        background-color: $text__color;
+        color: #ffffff;
+    }
+}

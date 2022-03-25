@@ -19,9 +19,10 @@
                     }  else  {
                         echo '<h2 class="section-title text-center">'.  $add_instagram_feed_title. '</h2>';
                     }?>
-                    
-           
                 <?php } ?> 
+                <?php if(!empty($add_instagram_feed_title)) {
+                    echo '<h2 class="account-name text-center">'. $instagram_account_name.'</h2>';
+                 } ?> 
 
                 <?php echo do_shortcode($instagram_feed_shortcode); ?>
             </div>

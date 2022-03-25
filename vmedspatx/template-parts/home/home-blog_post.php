@@ -10,13 +10,26 @@
 			<div class="row post-list">
 				<?php foreach( $blogPostItems as $post ):  setup_postdata($post); ?>
 					<div class="blog-post-item col col-lg-4">	
-						<?php vmedspatx_post_thumbnail(); ?>
-						<div class="blog-post-item-text">
-							<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-							<?php
-								vmedspatx_posted_on();
-							?>
-					
+						<div class="blog-post-item-wrap">
+							<?php vmedspatx_post_thumbnail(); ?>
+							<div class="blog-post-item-text text-center">
+								<h3 class="blog-title">
+									<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+								</h3>
+								<div class="post-excerpt">
+									<?php
+										vmedspatx_posted_on();
+									?>								
+								</div>
+								<div class="post-excerpt">
+									<?php echo wp_trim_words(get_the_excerpt(),30,$more = ''); ?> 									
+								</div>
+								<div class="item-action">
+									<a class="btn btn-blog-read-more" href="<?php the_permalink(); ?>">
+										<?php echo esc_attr('Read more'); ?>
+									</a>
+								</div>					
+							</div>
 						</div>
 					</div>
 				<?php endforeach; ?>

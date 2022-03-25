@@ -60,18 +60,24 @@
                     if ($our_location_map_image) {
                         echo '<img class="" src="'. esc_url($our_location_map_image['url']).'" alt="Our Location Map Image">';
                         if ($our_location_map_pins) {
+							$pin_item_count = 0;
 							foreach( $our_location_map_pins as $our_location_map_pin_item ) {
+								$pin_item_count++;
 								$map_pin_label = $our_location_map_pin_item['map_pin_label'];
 								$map_pin_url = $our_location_map_pin_item['map_pin_url'];
 								if (!empty($map_pin_url)) {
 									$map_pin_url_start = '<a href="' . $map_pin_url . '" target="_blank">';
 									$map_pin_url_end   = '</a>';
 								}
-								echo '<span class="map-pin-item">';
+								echo '<div class="map-pin-item map-pin-item-'.$pin_item_count.'">
+									<div class="e-hotspot__button e-hotspot--expand">
+										<div class="e-hotspot__outer-circle"></div>
+										<div class="e-hotspot__inner-circle"></div>
+									</div>';
 									if (!empty($map_pin_url)) { echo $map_pin_url_start;}
 										echo $map_pin_label;
 									if (!empty($map_pin_url)) {echo $map_pin_url_end;}
-								echo '</span>';
+								echo '</div>';
 							}
                         }
                     }
