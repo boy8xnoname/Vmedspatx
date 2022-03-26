@@ -35,7 +35,7 @@ $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full');
 				echo '<h2 class="section-title text-center">'.esc_attr($our_location_title).'</h2>';
 			} ?>
 			<div class="row d-flex justify-content-center">
-				<div class="col col-md-6">
+				<div class="col col-12 col-md-6">
 					<?php
 					if( $our_locations_list ) {
 						echo '<ul class="location-list">';
@@ -73,7 +73,7 @@ $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full');
 					}
 					?>		 	
 				</div>
-				<div class="col col-md-6 d-flex align-items-center">
+				<div class="col col-12 col-md-6 d-flex align-items-center">
 				<?php
 					if( $our_location_map ) {
 						echo '<div class="map-pins">';
@@ -123,9 +123,9 @@ $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full');
 				$formContactDescription = !empty(get_field('contact_us_form_description')) ? get_field('contact_us_form_description') : 'By submitting this form you agree to be contacted via phone/text/email.*';
 			?>
 			<div class="row">
-				<div class="col col-lg-3">
+				<div class="d-none d-lg-block  col col-lg-3">
 				</div>
-				<div class="form-content-wrap col col-lg-6">
+				<div class="form-content-wrap col col-12 col-lg-6">
 					<h2 class="section-title text-center">
 						<?php echo esc_attr( $sectionContactTitle, 'vmedspatx' ) ?>
 					</h2>
@@ -139,7 +139,7 @@ $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full');
 						</div>
 					<?php }?>
 				</div>
-				<div class="col col-lg-3">
+				<div class="d-none d-lg-block  col col-lg-3">
 				</div>
 			</div>
 		</div>

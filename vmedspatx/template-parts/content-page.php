@@ -6,31 +6,32 @@
  *
  * @package vmedspatx
  */
-
+$featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full');
+if (!empty($featured_img_url )) {
+	$featured_img_url  = get_template_directory_uri() . '/assets/images/dummy_1920x930_ffffff_cccccc.png';
+} 
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+
+
+	<header class="entry-header header-jarallax" style="background-image: url('<?php echo esc_url($featured_img_url);?>');">
+		<div class="container">
+			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		</div>
 	</header><!-- .entry-header -->
 
-	<?php vmedspatx_post_thumbnail(); ?>
 
 	<div class="entry-content">
-		<?php
-		the_content();
-
-		wp_link_pages(
-			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'vmedspatx' ),
-				'after'  => '</div>',
-			)
-		);
-		?>
+		<div class="container">
+			<?php vmedspatx_post_thumbnail(); ?>
+			<?php the_content(); ?>
+		</div>
 	</div><!-- .entry-content -->
 
 	<?php if ( get_edit_post_link() ) : ?>
 		<footer class="entry-footer">
+			<div class="container">
 			<?php
 			edit_post_link(
 				sprintf(
@@ -49,6 +50,7 @@
 				'</span>'
 			);
 			?>
+			</div>
 		</footer><!-- .entry-footer -->
 	<?php endif; ?>
 </article><!-- #post-<?php the_ID(); ?> -->

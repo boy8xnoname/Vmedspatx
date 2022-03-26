@@ -22,7 +22,7 @@
         position: absolute;
         height: 3px;
         width: 50%;
-        background: $brand__color;
+        background: #ffffff;
         opacity: 1;
         -webkit-transform: rotate(0deg);
         -moz-transform: rotate(0deg);
@@ -107,11 +107,6 @@
     @media (min-width: 1200px) {}
     // XX-Large devices (larger desktops, 1400px and up)
     @media (min-width: 1400px) {}
-    @media (max-width: 480px) {
-        &.open {
-            left: 302px;
-        }
-    }
 }
 
 .main-navigation {
@@ -139,6 +134,33 @@
             flex-direction: row;
             justify-content: space-between;
             width: 100%;
+            >li.current-menu-item>a {
+                color: $brand__color;
+            }
+            li {
+                &:focus,
+                &:focus-within,
+                &:hover {
+                    background-color: $brand__color;
+                    color: #ffffff;
+                    >a {
+                        color: #ffffff;
+                    }
+                }
+            }
+            >li.menu-item-has-children {
+                >a {
+                    position: relative;
+                }
+                >.fa {
+                    color: #ffffff;
+                    position: absolute;
+                    top: 46%;
+                    transform: translateY(-50%);
+                    right: 10px;
+                    font-size: 14px;
+                }
+            }
             >li>a {
                 padding-left: 20px;
                 padding-right: 20px;
@@ -164,6 +186,10 @@
                         display: flex;
                         list-style: none;
                         position: relative;
+                        >a {
+                            display: flex;
+                            width: 100%;
+                        }
                         &:focus,
                         &:focus-within,
                         &:hover {
@@ -198,6 +224,19 @@
                             transform: translateX(0%);
                             transition-delay: 0s, 0s, 0.3s;
                             /* this removes the transition delay so the menu will be visible while the other styles transition */
+                        }
+                    }
+                    >li.menu-item-has-children {
+                        >a {
+                            position: relative;
+                        }
+                        >.fa {
+                            color: $text__color;
+                            position: absolute;
+                            top: 46%;
+                            transform: translateY(-50%);
+                            right: 10px;
+                            font-size: 14px;
                         }
                     }
                     a {
@@ -243,6 +282,68 @@ ul.social-list {
         color: $brand__color;
         &:hover {
             color: $brand__color-dark;
+        }
+    }
+}
+
+#mobile-site-navigation {
+    background-color: #FFF;
+    li {
+        list-style: none;
+        text-align: center;
+        padding: 5px 0;
+        a {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            color: $brand__color;
+            padding: 10px 20px;
+            text-align: center;
+            width: 100%;
+        }
+        &.menu-item-has-children {
+            position: relative;
+            >a {
+                position: relative;
+                color: $brand__color;
+            }
+            >.fa {
+                color: $text__color;
+                position: absolute;
+                top: 18px;
+                transform: translateY(-50%);
+                right: 10px;
+                font-size: 14px;
+            }
+            .sub-menu {
+                display: none;
+                padding: 0
+            }
+            &.active {
+                >a {
+                    background-color: $brand__color;
+                    color: #ffffff;
+                }
+                >.sub-menu {
+                    display: block !important;
+                }
+                >.menu-collapsed {
+                    color: #ffffff;
+                }
+            }
+        }
+        .menu-collapsed {
+            cursor: pointer;
+            font-size: 18px;
+            top: 25px !important;
+            padding: 10px;
+        }
+    }
+    .header-mobile-navigation {
+        list-style: none;
+        >li>a {
+            display: flex;
+            width: 100%
         }
     }
 }

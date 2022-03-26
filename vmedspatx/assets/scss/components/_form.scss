@@ -32,13 +32,13 @@ form {
         line-height: 30px;
         align-items: center;
         justify-content: center;
-        font-size: 25px;
+        font-size: 16px;
         font-weight: 500;
         line-height: 0.1em;
         letter-spacing: 2.5px;
         color: #fff;
         height: 60px;
-        padding: 30px 30px 20px 30px;
+        padding: 10px 30px 10px 30px;
         margin-top: 15px;
         cursor: pointer;
         text-transform: uppercase;
@@ -47,4 +47,20 @@ form {
             background-color: $brand__color-dark;
         }
     }
+    // Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) {}
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) {
+        .gform_footer input[type="submit"] {
+            font-size: 25px;
+            font-weight: 500;
+            padding: 30px 30px 20px 30px;
+        }
+    }
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) {}
+    // X-Large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) {}
+    // XX-Large devices (larger desktops, 1400px and up)
+    @media (min-width: 1400px) {}
 }

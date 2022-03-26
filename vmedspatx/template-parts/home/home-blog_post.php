@@ -9,7 +9,7 @@
 
 			<div class="row post-list">
 				<?php foreach( $blogPostItems as $post ):  setup_postdata($post); ?>
-					<div class="blog-post-item col col-lg-4">	
+					<div class="blog-post-item col col-12 col-lg-4">	
 						<div class="blog-post-item-wrap">
 							<?php vmedspatx_post_thumbnail(); ?>
 							<div class="blog-post-item-text text-center">

@@ -35,8 +35,15 @@ var vmedspatx = {};
         $(document).ready(function() {
 
             $('.header-menu-toggle').on('click', function() {
-                $('.menu-hide').toggleClass('show');
+                $('#mobile-site-navigation').toggleClass('show');
                 $(this).toggleClass('open');
+            });
+
+
+            $('.menu-collapsed').on('click', function() {
+                $(this).parent().addClass('active');
+                $(this).parent().siblings().removeClass('active');
+                // $(this).toggleClass('open');
             });
 
             $(window).bind('scroll', function() {
@@ -48,6 +55,8 @@ var vmedspatx = {};
                 }
             });
         });
+
+
 
         $('.header-jarallax').jarallax({
             speed: 0.2,
@@ -162,6 +171,13 @@ var vmedspatx = {};
         $('.popup-youtube').magnificPopup({
             type: 'iframe',
             mainClass: 'mfp-fade youtube-popup',
+        });
+
+        $('.blog-post-item-wrap').matchHeight({
+            byRow: true,
+            property: 'height',
+            target: null,
+            remove: false
         });
     }
 

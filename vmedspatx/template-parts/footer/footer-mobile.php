@@ -117,8 +117,7 @@
           
             <div class="our-partner-logo">
                 <?php 
-                // $thumbnail_url = wp_get_attachment_image_src( get_theme_mod('footer_logo'), 'full', false, '' );
-                // 		$thumbnail_url = $thumbnail_url[0];
+               
                 if(get_theme_mod('partner_repeater') != ''){
                     $partners = get_theme_mod('partner_repeater');
                     foreach( $partners as $partner ) : 
@@ -126,7 +125,7 @@
                         <div class="partner-item">
                             <div class="image-holder">
                                 <a href="<?php echo $partner['partner_link']; ?>" title="Partner" target="_blank">
-                                    <img src="<?php echo wp_get_attachment_url( $partner['partner_img'] ); ?>" alt="Partner logo image"> 
+                                    <img src="<?php echo esc_url( $partner['partner_img'] ); ?>" alt="Partner logo image"> 
                                 </a>
                             </div>
                         </div>

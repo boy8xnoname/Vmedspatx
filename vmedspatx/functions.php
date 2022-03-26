@@ -120,8 +120,9 @@ add_action( 'after_setup_theme', 'vmedspatx_content_width', 0 );
  * Enqueue scripts and styles.
  */
 function vmedspatx_scripts() {
+	wp_enqueue_script( 'fontawesome', 'https://kit.fontawesome.com/54ed714a8b.js', array(), 'latest', false );
 
-	wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/assets/css/all.fontawesome.css', array(), _S_VERSION);
+	// wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/assets/css/all.fontawesome.css', array(), _S_VERSION);
 	wp_enqueue_style( 'elementor-icons', get_template_directory_uri() . '/assets/css/elementor-icons.css', array(), _S_VERSION);
 	wp_enqueue_style( 'animate', get_template_directory_uri() . '/assets/css/animate.min.css', array(), _S_VERSION);
 	wp_enqueue_style( 'style-jarallax', get_template_directory_uri() . '/assets/css/jarallax.css', array(), _S_VERSION);
@@ -136,6 +137,7 @@ function vmedspatx_scripts() {
 	wp_enqueue_script( 'jarallax', get_template_directory_uri() . '/assets/js/jarallax.min.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'jarallax-video', get_template_directory_uri() . '/assets/js/jarallax-video.min.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'swiper', get_template_directory_uri() . '/assets/js/swiper.min.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'matchHeight', get_template_directory_uri() . '/assets/js/jquery.matchHeight-min.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'magnific-popup', get_template_directory_uri() . '/assets/js/jquery.magnific-popup.min.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'vmedspatx-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'vmedspatx-scripts', get_template_directory_uri() . '/assets/js/vmedspatx-scripts.js', array(), _S_VERSION, true );

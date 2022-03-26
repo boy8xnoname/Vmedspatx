@@ -7,7 +7,7 @@
 <section class="home-section explore_our_treatments  section-jarallax" style="background-image: url('<?php echo esc_url($explore_our_treatments_img_url['url']);?>');">
     <div class="container explore_our_treatments_wrap">
         <div class="row">
-            <div class="col col-lg-2">
+            <div class="d-none d-lg-block col col-lg-2">
 			</div>
             <div class="main col col-lg-8 reveal bounce delay-4s">
                 <?php  if(!empty($explore_our_treatments_heading)) { ?> 
@@ -23,7 +23,7 @@
                     <span class="button-text">BOOK YOUR FREE CONSULTATION</span>
                 </a>
 			</div>
-            <div class="col col-lg-2">
+            <div class="d-none d-lg-block col col-lg-2">
 			</div>
         </div>
       

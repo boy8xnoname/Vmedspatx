@@ -12,7 +12,7 @@
 			echo '<h2 class="section-title text-center">'.esc_attr($our_location_title).'</h2>';
 		 } ?>
 		 <div class="row d-flex justify-content-center">
-			 <div class="col col-md-6">
+			 <div class="col col-12 col-md-6">
 				<?php
 				if( $our_locations_list ) {
 					echo '<ul class="location-list">';
@@ -50,7 +50,7 @@
 				}
 				?>		 	
 			 </div>
-			 <div class="col col-md-6 d-flex align-items-center">
+			 <div class="col col-12 col-md-6 d-flex align-items-center">
 			 <?php
 				if( $our_location_map ) {
 					echo '<div class="map-pins">';

@@ -1,9 +1,9 @@
 /// Regular font family
 /// @type List
-$text-font-stack: 'GothamBook' !important;
+$text-font-stack: 'GothamBook' !default;
 /// Code (monospace) font family
 /// @type List
-$code-font-stack: 'GothamBook' !important;
+$code-font-stack: 'GothamBook' !default;
 /// Copy text color
 /// @type Color
 $text__color: #7A7A7A !default;

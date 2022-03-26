@@ -10,9 +10,9 @@
 			<?php echo esc_attr( $sectionContactTitle, 'vmedspatx' ) ?>
 		</h2>
 		<div class="row">
-			<div class="col col-lg-3">
+			<div class="d-none d-lg-block col col-md-1 col col-lg-3">
 			</div>
-			<div class="col col-lg-6">
+			<div class="col col-12 col-md-10 col-lg-6">
 				<?php  if(!empty($formContactShortcode)) { ?>
 					<h2 class="contact-form-title text-center">
 						<?php echo esc_attr( $formContactTitle, 'vmedspatx' ); ?>
@@ -23,7 +23,7 @@
 					</div>
 				<?php }?>
 			</div>
-			<div class="col col-lg-3">
+			<div class="d-none d-lg-block  col col-md-1 col-lg-3">
 			</div>
 		</div>
 	

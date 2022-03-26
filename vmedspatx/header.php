@@ -28,41 +28,25 @@
 	<header id="masthead" class="site-header">
 		<div class="container">
 			<div class="row">
-				<div class="site-header__left col col-xs-6 col-sm-3 col-lg-3 col-xl-2">
-				<div class="site-branding">
-					<?php
-					
-					if(!empty( get_custom_logo())) {
-						the_custom_logo();
-					} else {	
-						if ( is_front_page() && is_home() ) :
-					?>
-						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php bloginfo( 'name' ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-						<?php else :  ?>
-							<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php bloginfo( 'name' ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-						<?php endif;
-
-					}
-				?>
-				</div><!-- .site-branding -->
-				</div>
-				<div class="site-header__center col col-xs-1 col-sm-3 col-lg-5 col-xl-7">
-					<nav id="site-navigation" class="main-navigation">
-					
-						<?php  if(has_nav_menu( 'primary-menu' )){
-							wp_nav_menu(
-								array(
-									'theme_location' => 'primary-menu',
-									'menu_id'        => 'primary-menu',
-									'container' => 'ul',
-									'menu_class'=>'nav navbar-nav header-primary-navigation d-none d-xl-flex'
-								)
-							);
-						}
+				<div class="site-header__left col col-5 col-sm-6 col-lg-3 col-xl-2">
+					<div class="site-branding">
+						<?php
+						
+						if(!empty( get_custom_logo())) {
+							the_custom_logo();
+						} else {	
+							if ( is_front_page() && is_home() ) :
 						?>
-					</nav><!-- #site-navigation -->
+							<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php bloginfo( 'name' ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+							<?php else :  ?>
+								<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php bloginfo( 'name' ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+							<?php endif;
+
+						}
+					?>
+					</div><!-- .site-branding -->
 				</div>
-				<div class="site-header__right col col-xs-5 col-sm-6 col-lg-4 col-xl-3">
+				<div class="site-header__right col col-7 col-sm-6 col-lg-4 col-xl-3">
 					<ul class='social-list navbar-nav menu menu-horizontal text-right'>
 						<?php 
 						$social_args = array(
@@ -86,6 +70,42 @@
 						<span></span>
 						<span></span>
 					</button>
+				</div>
+				<div class="site-header__center col d-none d-lg-block  col-xs-1 col-sm-3 col-lg-5 col-xl-7">
+					<nav id="site-navigation" class="main-navigation">
+					
+						<?php  if(has_nav_menu( 'primary-menu' )){
+							wp_nav_menu(
+								array(
+									'theme_location' => 'primary-menu',
+									'menu_id'        => 'primary-menu',
+									'container' => 'ul',
+									'menu_class'=>'nav navbar-nav header-primary-navigation d-none d-xl-flex'
+								)
+							);
+						}
+						?>
+					</nav><!-- #site-navigation -->
+				</div>
+				
+			</div>
+
+			<div class="row">
+				<div class="col col-12">
+					<nav id="mobile-site-navigation" class="mobile-main-navigation">
+					
+						<?php  if(has_nav_menu( 'primary-menu' )){
+							wp_nav_menu(
+								array(
+									'theme_location' => 'primary-menu',
+									'menu_id'        => 'primary-menu',
+									'container' => 'ul',
+									'menu_class'=>'nav navbar-nav header-mobile-navigation'
+								)
+							);
+						}
+						?>
+					</nav><!-- #site-navigation -->
 				</div>
 			</div>
 		</div>

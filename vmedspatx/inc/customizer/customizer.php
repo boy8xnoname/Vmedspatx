@@ -13,7 +13,7 @@
 function vmedspatx_customizer_sections( $wp_customize ) {
 	// $wp_customize->remove_control( 'custom_logo' );
 	// $wp_customize->remove_section( 'background_image' );
-	// $wp_customize->remove_section( 'colors' );
+	$wp_customize->remove_section( 'colors' );
 	// $wp_customize->remove_section( 'header_image' );
 	// $wp_customize->remove_section( 'nav' );
 }
@@ -48,6 +48,29 @@ Kirki::add_section(
 		'panel'          => 'vmedspatx_theme_options',
 	) 
 );
+
+Kirki::add_section( 
+	'vmedspatx_colors', 
+	array(
+		'priority'       => 5,
+		'title'          => __( 'Setup site Color' ),
+		'icon'           => 'dashicons-color-picker',
+		'description'    => '',
+		'panel'          => 'vmedspatx_theme_options',
+	) 
+);
+
+Kirki::add_section( 
+	'typography', 
+	array(
+		'priority'       => 5,
+		'title'          => __( 'Setup site Typography' ),
+		'icon'           => 'dashicons-editor-textcolor',
+		'description'    => '',
+		'panel'          => 'vmedspatx_theme_options',
+	) 
+);
+
 
 // vmedspatx Header Setting
 Kirki::add_section(
@@ -112,3 +135,5 @@ require_once get_theme_file_path( '/inc/customizer/sections/customizer-identity-
 require_once get_theme_file_path( '/inc/customizer/sections/customizer-header-configs.php' );
 require_once get_theme_file_path( '/inc/customizer/sections/customizer-footer-configs.php' );
 require_once get_theme_file_path( '/inc/customizer/sections/customizer-social-links.php' );
+require_once get_theme_file_path( '/inc/customizer/sections/customizer-color-configs.php' );
+require_once get_theme_file_path( '/inc/customizer/sections/customizer-typography-configs.php' );

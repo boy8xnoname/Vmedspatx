@@ -7,7 +7,7 @@
 <section class="home-section about_us">
     <div class="container">
         <div class="row about-us-top">
-            <div class="col col-lg-2">
+            <div class="d-none d-lg-block col col-lg-2">
             </div>
             <div class="col about-us-main col-lg-8">
                 <?php if(!empty($about_us_title)) :
@@ -25,7 +25,7 @@
                     endif;?>
                 </div>
             </div>
-            <div class="col col-lg-2">
+            <div class="d-none d-lg-block col col-lg-2">
             </div>
         </div>
        
