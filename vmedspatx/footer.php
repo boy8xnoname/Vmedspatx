@@ -22,7 +22,7 @@
 		<div class="site-info">
 			<div class="container-fluid">
 				<div class="row ">
-					<div class="col col-12 col-md-6">
+					<div class="footer-copyright col col-12 col-md-6">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
 							<?php
 							/* translators: %s: CMS name, i.e. WordPress. */
@@ -30,7 +30,7 @@
 							?>
 						</a>
 					</div>
-					<div class="col col-12 col-md-6">
+					<div class="footer-copyright-menu  col col-12 col-md-6">
 						<p class="text-right">
 							<a href="#">Privacy Policy</a>
 						</p>

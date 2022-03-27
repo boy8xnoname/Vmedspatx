@@ -7074,6 +7074,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  line-height: 1.6em;
   position: absolute;
   top: 0;
   left: 0;
@@ -10427,6 +10428,9 @@ section {
   .site-footer .our-partner-logo .partner-item img {
     max-height: 75px;
     width: auto;
+  }
+  .site-footer .footer-copyright-menu {
+    text-align: right;
   }
   .home-banner .swiper-slide {
     height: 95vh;
