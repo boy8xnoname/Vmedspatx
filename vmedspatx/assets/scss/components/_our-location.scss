@@ -35,8 +35,8 @@ section.our_location {
         .map-pin-item {
             position: absolute;
             &.map-pin-item-1 {
-                left: 32%;
-                top: 26%;
+                left: 30%;
+                top: 30%;
             }
             &.map-pin-item-2 {
                 left: 69%;
@@ -50,69 +50,61 @@ section.our_location {
     }
 }
 
-.e-hotspot__button {
-    cursor: pointer;
-    position: relative;
-    display: grid;
-    grid-auto-flow: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    color: $brand__color;
-    font-size: 18px;
-    min-width: 20px;
-    min-height: 20px;
-    &::before {
-        animation: e-hotspot-expand 2s infinite;
-        z-index: -2;
-        content: "";
-        width: 100%;
-        height: 100%;
-        left: -5px;
-        top: -5px;
+.map-pin-item {
+    .marker {
+        width: 100px;
+        height: 100px;
         position: absolute;
-        padding: 5px;
-        -webkit-box-sizing: content-box;
-        box-sizing: content-box;
-    }
-    .e-hotspot__outer-circle {
-        content: "";
-        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-    }
-    .e-hotspot__inner-circle {
-        content: "";
-        position: absolute;
-        top: 50%;
+        top: -50px;
+        /*positions our marker*/
         left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        background-color: $brand__color;
+        /*positions our marker*/
+        display: block;
+        z-index: 1;
+        transform: translateX(-50%);
+        .pin {
+            width: 20px;
+            height: 20px;
+            position: relative;
+            top: 22px;
+            left: 22px;
+            background: #C79E55;
+            border: 2px solid #FFF;
+            border-radius: 50%;
+            z-index: 1000;
+        }
+        .pin-effect {
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            top: 0;
+            display: block;
+            background: rgba(199, 157, 85, 0.658);
+            border-radius: 50%;
+            opacity: 0;
+            animation: pulsate 2400ms ease-out infinite;
+        }
+    }
+    a {
+        background-color: rgba(0, 0, 0, 0.5);
+        right: initial;
+        bottom: initial;
+        left: initial;
+        padding: 5px 10px;
+        top: calc(100% + 5px);
     }
 }
 
-@-webkit-keyframes e-hotspot-expand {
+@keyframes pulsate {
     0% {
-        -webkit-transform: scale(.5);
-        transform: scale(.5);
-        opacity: 1
+        transform: scale(0.1);
+        opacity: 0;
     }
-    to {
-        -webkit-transform: scale(1.5);
-        transform: scale(1.5);
-        opacity: 0
+    50% {
+        opacity: 1;
     }
-}
-
-@keyframes e-hotspot-expand {
-    0% {
-        -webkit-transform: scale(.5);
-        transform: scale(.5);
-        opacity: 1
-    }
-    to {
-        -webkit-transform: scale(1.5);
-        transform: scale(1.5);
-        opacity: 0
+    100% {
+        transform: scale(1.2);
+        opacity: 0;
     }
 }

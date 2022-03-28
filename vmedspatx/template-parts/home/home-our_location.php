@@ -70,10 +70,10 @@
 									$map_pin_url_end   = '</a>';
 								}
 								echo '<div class="map-pin-item map-pin-item-'.$pin_item_count.'">
-									<div class="e-hotspot__button e-hotspot--expand">
-										<div class="e-hotspot__outer-circle"></div>
-										<div class="e-hotspot__inner-circle"></div>
-									</div>';
+											<div class=" marker">
+											<div class="pin"></div>
+											<div class="pin-effect"></div>
+										</div>';
 									if (!empty($map_pin_url)) { echo $map_pin_url_start;}
 										echo $map_pin_label;
 									if (!empty($map_pin_url)) {echo $map_pin_url_end;}
