@@ -38,6 +38,7 @@
     }
     .footer-logo {
         margin-bottom: 30px;
+        text-align: center;
         img {
             max-width: 130px;
         }
@@ -54,7 +55,9 @@
         flex-direction: row;
         justify-content: center;
         .partner-item {
+            margin: 0 10px;
             flex: 1;
+            text-align: center;
             img {
                 max-height: 45px;
                 width: auto;
