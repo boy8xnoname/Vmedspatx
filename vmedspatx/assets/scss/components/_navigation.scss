@@ -112,9 +112,11 @@
 .main-navigation {
     a {
         color: #ffffff;
+        display: block;
         font-family: $text-font-stack;
-        font-size: 1rem;
+        font-size: 16px;
         font-weight: 400;
+        line-height: 18.5px;
         text-transform: uppercase;
     }
     #primary-menu {
@@ -124,7 +126,7 @@
             transition: all .5s;
             &:hover {
                 color: $brand__color;
-                transform: scale(1.2);
+                transform: scale(1.1);
             }
         }
     }
@@ -141,10 +143,9 @@
                 &:focus,
                 &:focus-within,
                 &:hover {
-                    background-color: $brand__color;
                     color: #ffffff;
                     >a {
-                        color: #ffffff;
+                        color: $brand__color;
                     }
                 }
             }
@@ -155,7 +156,7 @@
                 >.fa {
                     color: #ffffff;
                     position: absolute;
-                    top: 46%;
+                    top: 40%;
                     transform: translateY(-50%);
                     right: 10px;
                     font-size: 14px;

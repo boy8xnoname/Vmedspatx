@@ -7137,6 +7137,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   color: #FFFFFF;
   border-radius: 50px 50px 50px 50px;
   box-shadow: 0px 20px 33px 1px rgba(0, 0, 0, 0.11);
+  display: block;
   padding: 15px 15px 15px 15px;
   line-height: 18px;
   height: 50px;
@@ -7341,9 +7342,11 @@ form#commentform label {
 
 .main-navigation a {
   color: #ffffff;
+  display: block;
   font-family: "GothamBook";
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 400;
+  line-height: 18.5px;
   text-transform: uppercase;
 }
 
@@ -7355,7 +7358,7 @@ form#commentform label {
 
 .main-navigation #primary-menu > li > a:hover {
   color: #C79E55;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 ul.social-list {
@@ -7486,6 +7489,7 @@ ul.social-list a:hover {
   background-color: #C79E55;
   fill: #FFFFFF;
   color: #FFFFFF;
+  display: block;
   border-radius: 50px 50px 50px 50px;
   box-shadow: 0px 20px 33px 1px rgba(0, 0, 0, 0.11);
   height: 50px;
@@ -10497,11 +10501,10 @@ section {
     color: #C79E55;
   }
   .main-navigation #primary-menu li:focus, .main-navigation #primary-menu li:focus-within, .main-navigation #primary-menu li:hover {
-    background-color: #C79E55;
     color: #ffffff;
   }
   .main-navigation #primary-menu li:focus > a, .main-navigation #primary-menu li:focus-within > a, .main-navigation #primary-menu li:hover > a {
-    color: #ffffff;
+    color: #C79E55;
   }
   .main-navigation #primary-menu > li.menu-item-has-children > a {
     position: relative;
@@ -10509,7 +10512,7 @@ section {
   .main-navigation #primary-menu > li.menu-item-has-children > .fa {
     color: #ffffff;
     position: absolute;
-    top: 46%;
+    top: 40%;
     transform: translateY(-50%);
     right: 10px;
     font-size: 14px;
