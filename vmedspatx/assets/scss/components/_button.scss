@@ -35,9 +35,12 @@
     // Large devices (desktops, 992px and up)
     @media (min-width: 992px) {
         &.btn-view-more {
+            display: block;
+            line-height: 18px;
             padding: 15px 50px 15px 50px;
         }
         &.btn-book-treatments {
+            line-height: 18px;
             padding: 15px 50px 15px 50px;
         }
     }

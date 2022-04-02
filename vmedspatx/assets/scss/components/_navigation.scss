@@ -113,8 +113,9 @@
     a {
         color: #ffffff;
         font-family: $text-font-stack;
-        font-size: 1rem;
+        font-size: 16px;
         font-weight: 400;
+        line-height: 18.5px;
         text-transform: uppercase;
     }
     #primary-menu {
@@ -124,7 +125,7 @@
             transition: all .5s;
             &:hover {
                 color: $brand__color;
-                transform: scale(1.2);
+                transform: scale(1.1);
             }
         }
     }

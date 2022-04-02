@@ -94,8 +94,8 @@ $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full');
 									}
 									echo '<div class="map-pin-item map-pin-item-'.$pin_item_count.'">
 											<div class=" marker">
-												<div class="pin"></div>
-												<div class="pin-effect"></div>
+											<div class="pin"></div>
+											<div class="pin-effect"></div>
 											</div>';
 										if (!empty($map_pin_url)) { echo $map_pin_url_start;}
 											echo $map_pin_label;

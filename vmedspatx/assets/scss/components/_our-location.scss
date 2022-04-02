@@ -67,10 +67,11 @@ section.our_location {
             height: 20px;
             position: relative;
             top: 22px;
-            left: 22px;
+            left: 50%;
             background: #C79E55;
             border: 2px solid #FFF;
             border-radius: 50%;
+            transform: translateX(-50%);
             z-index: 1000;
         }
         .pin-effect {
@@ -78,11 +79,13 @@ section.our_location {
             height: 60px;
             position: absolute;
             top: 0;
+            left: 22%;
             display: block;
             background: rgba(199, 157, 85, 0.658);
             border-radius: 50%;
             opacity: 0;
             animation: pulsate 2400ms ease-out infinite;
+            transform: translateX(-50%);
         }
     }
     a {

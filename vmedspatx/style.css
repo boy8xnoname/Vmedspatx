@@ -7342,8 +7342,9 @@ form#commentform label {
 .main-navigation a {
   color: #ffffff;
   font-family: "GothamBook";
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 400;
+  line-height: 18.5px;
   text-transform: uppercase;
 }
 
@@ -7355,7 +7356,7 @@ form#commentform label {
 
 .main-navigation #primary-menu > li > a:hover {
   color: #C79E55;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 ul.social-list {
@@ -7624,10 +7625,11 @@ section.our_location .map-pins .map-pin-item.map-pin-item-3 {
   height: 20px;
   position: relative;
   top: 22px;
-  left: 22px;
+  left: 50%;
   background: #C79E55;
   border: 2px solid #FFF;
   border-radius: 50%;
+  transform: translateX(-50%);
   z-index: 1000;
 }
 
@@ -7636,12 +7638,14 @@ section.our_location .map-pins .map-pin-item.map-pin-item-3 {
   height: 60px;
   position: absolute;
   top: 0;
+  left: 22%;
   display: block;
   background: rgba(199, 157, 85, 0.658);
   border-radius: 50%;
   opacity: 0;
   -webkit-animation: pulsate 2400ms ease-out infinite;
           animation: pulsate 2400ms ease-out infinite;
+  transform: translateX(-50%);
 }
 
 .map-pin-item a {
@@ -7679,6 +7683,21 @@ section.our_location .map-pins .map-pin-item.map-pin-item-3 {
     transform: scale(1.2);
     opacity: 0;
   }
+}
+
+.error-404.not-found {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.error-404.not-found .page-404-number {
+  font-size: 100px;
+  font-weight: 600;
+  line-height: 1.2em;
+}
+
+.error-404.not-found .page-title {
+  margin: 0;
 }
 
 .header-jarallax {
@@ -10475,9 +10494,12 @@ section {
     min-height: 75vh;
   }
   .btn.btn-view-more {
+    display: block;
+    line-height: 18px;
     padding: 15px 50px 15px 50px;
   }
   .btn.btn-book-treatments {
+    line-height: 18px;
     padding: 15px 50px 15px 50px;
   }
   .explore_our_treatments {
@@ -11459,6 +11481,14 @@ section {
   }
   .our_services .our-services__item .item-header h2, .our_services .our-services__item .item-header .h2 {
     font-size: 64px;
+  }
+  .error-404.not-found {
+    padding-top: 200px;
+    padding-bottom: 150px;
+  }
+  .error-404.not-found .page-404-number {
+    font-size: 200px;
+    font-weight: 900;
   }
 }
 
