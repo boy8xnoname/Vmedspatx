@@ -7,7 +7,7 @@
  * @package vmedspatx
  */
 $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full');
-if (empty($featured_img_url )) {
+if (!empty($featured_img_url )) {
 	$featured_img_url  = get_template_directory_uri() . '/assets/images/dummy_1920x930_ffffff_cccccc.png';
 } 
 ?>
@@ -24,10 +24,14 @@ if (empty($featured_img_url )) {
 
 	<div class="entry-content">
 		<div class="container">
-			<?php vmedspatx_post_thumbnail(); ?>
 			<?php the_content(); ?>
 		</div>
 	</div><!-- .entry-content -->
+
+    <?php get_template_part( 'template-parts/about-us/content-top' ); ?>
+    <?php get_template_part( 'template-parts/about-us/content-our-leadership' ); ?>
+    <?php get_template_part( 'template-parts/about-us/content-bottom' ); ?>
+    <?php get_template_part( 'template-parts/about-us/content-contact' ); ?>
 
 	<?php if ( get_edit_post_link() ) : ?>
 		<footer class="entry-footer">

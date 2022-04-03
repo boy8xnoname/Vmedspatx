@@ -1,10 +1,10 @@
 {
-    "key": "group_623774b32c549",
-    "title": "Contact Us Content Setting",
+    "key": "group_6248edb53a3a5",
+    "title": "About Us Content Setting",
     "fields": [
         {
-            "key": "field_623774e2c0b0f",
-            "label": "Our Locations",
+            "key": "field_6248edd5c5b14",
+            "label": "Why choose us content",
             "name": "",
             "type": "tab",
             "instructions": "",
@@ -19,9 +19,9 @@
             "endpoint": 0
         },
         {
-            "key": "field_623774f3c0b10",
-            "label": "Our Location Title",
-            "name": "our_location_title",
+            "key": "field_6248edecc5b15",
+            "label": "Why choose us heading",
+            "name": "why_choose_us_heading",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -38,9 +38,63 @@
             "maxlength": ""
         },
         {
-            "key": "field_62377502c0b11",
-            "label": "Our Locations List",
-            "name": "our_locations_list",
+            "key": "field_6248edfec5b16",
+            "label": "Why choose us content",
+            "name": "why_choose_us_content",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_6248f8464ae4f",
+            "label": "Our Leadership",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_6248f8ab9b38e",
+            "label": "Our leadership Title",
+            "name": "our_leadership_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6248f8564ae50",
+            "label": "Our Leadership",
+            "name": "our_leadership",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -53,109 +107,19 @@
             "collapsed": "",
             "min": 0,
             "max": 0,
-            "layout": "table",
-            "button_label": "",
-            "sub_fields": [
-                {
-                    "key": "field_62377511c0b12",
-                    "label": "Our Location title",
-                    "name": "our_location_title",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
-                },
-                {
-                    "key": "field_623a08433ea35",
-                    "label": "Our location phone number",
-                    "name": "our_location_phone_number",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
-                },
-                {
-                    "key": "field_6237751bc0b13",
-                    "label": "Our location address",
-                    "name": "our_location_address",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
-                },
-                {
-                    "key": "field_623a084d3ea36",
-                    "label": "Our location address map URL",
-                    "name": "our_location_address_map_url",
-                    "type": "url",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": ""
-                }
-            ]
-        },
-        {
-            "key": "field_62377520c0b14",
-            "label": "Our Location Map",
-            "name": "our_location_map",
-            "type": "group",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
             "layout": "block",
+            "button_label": "Add new member",
             "sub_fields": [
                 {
-                    "key": "field_62377531c0b15",
-                    "label": "Our Location Map Image",
-                    "name": "our_location_map_image",
+                    "key": "field_6248f86a4ae51",
+                    "label": "Member Image",
+                    "name": "member_image",
                     "type": "image",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "",
+                        "width": "100",
                         "class": "",
                         "id": ""
                     },
@@ -171,10 +135,10 @@
                     "mime_types": ""
                 },
                 {
-                    "key": "field_6237753bc0b16",
-                    "label": "Our Location Map Pins",
-                    "name": "our_location_map_pins",
-                    "type": "repeater",
+                    "key": "field_6248f8724ae52",
+                    "label": "Member Name",
+                    "name": "member_name",
+                    "type": "text",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -183,57 +147,55 @@
                         "class": "",
                         "id": ""
                     },
-                    "collapsed": "",
-                    "min": 0,
-                    "max": 0,
-                    "layout": "table",
-                    "button_label": "",
-                    "sub_fields": [
-                        {
-                            "key": "field_62377548c0b17",
-                            "label": "Map Pin Label",
-                            "name": "map_pin_label",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_6237755bc0b18",
-                            "label": "Map Pin URL",
-                            "name": "map_pin_url",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        }
-                    ]
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_6248ff40b823c",
+                    "label": "Member Position",
+                    "name": "member_position",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_6248f88b4ae53",
+                    "label": "Member Description",
+                    "name": "member_description",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
                 }
             ]
         },
         {
-            "key": "field_62377569801f0",
-            "label": "Contact Us",
+            "key": "field_6248fb209e0ae",
+            "label": "About Us Content Bottom",
             "name": "",
             "type": "tab",
             "instructions": "",
@@ -244,11 +206,86 @@
                 "class": "",
                 "id": ""
             },
-            "placement": "left",
+            "placement": "top",
             "endpoint": 0
         },
         {
-            "key": "field_62377574801f1",
+            "key": "field_6248fb3b9e0af",
+            "label": "About Us content bottom",
+            "name": "about_us_content_bottom",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "row",
+            "button_label": "Add new content section",
+            "sub_fields": [
+                {
+                    "key": "field_6248fb4d9e0b0",
+                    "label": "Content heading",
+                    "name": "content_heading",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_6248fb6797d37",
+                    "label": "Content description",
+                    "name": "content_description",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
+                }
+            ]
+        },
+        {
+            "key": "field_6248fcaab9ccb",
+            "label": "About Us Contact",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_6248fcf1b9ccc",
             "label": "Contact Us Title",
             "name": "contact_us_title",
             "type": "text",
@@ -267,7 +304,7 @@
             "maxlength": ""
         },
         {
-            "key": "field_623b392c9d63a",
+            "key": "field_6248fd0eb9ccd",
             "label": "Contact Us before form title",
             "name": "contact_us_before_form_title",
             "type": "text",
@@ -286,7 +323,7 @@
             "maxlength": ""
         },
         {
-            "key": "field_6237757c801f2",
+            "key": "field_6248fd27b9cce",
             "label": "Contact Form Short Code",
             "name": "contact_form_short_code",
             "type": "text",
@@ -305,7 +342,7 @@
             "maxlength": ""
         },
         {
-            "key": "field_623b393a9765b",
+            "key": "field_6248fd39b9ccf",
             "label": "Contact us form description",
             "name": "contact_us_form_description",
             "type": "textarea",
@@ -327,16 +364,9 @@
     "location": [
         [
             {
-                "param": "post_template",
+                "param": "page_template",
                 "operator": "==",
-                "value": "page-contact.php"
-            }
-        ],
-        [
-            {
-                "param": "post_template",
-                "operator": "==",
-                "value": "page-contact-thankyou.php"
+                "value": "page-about-us.php"
             }
         ]
     ],
@@ -349,5 +379,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1648912588
+    "modified": 1648951731
 }

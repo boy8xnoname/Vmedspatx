@@ -6749,8 +6749,8 @@ html {
   box-sizing: border-box;
 }
 
-.container,
-.container-sm {
+.home .container,
+.home .container-sm {
   max-width: 100% !important;
 }
 
@@ -7701,6 +7701,43 @@ section.our_location .map-pins .map-pin-item.map-pin-item-3 {
 
 .error-404.not-found .page-title {
   margin: 0;
+}
+
+.about-us-content .container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.about-us-content.about-us-content-top .container {
+  border-bottom: 2px solid #C79E55;
+}
+
+.about-us-content.about-us-content-top .section-title {
+  color: #7A7A7A;
+}
+
+.about-us-content.about-us-leadership .section-title {
+  color: #7A7A7A;
+  margin-bottom: 30px;
+}
+
+.about-us-content.about-us-leadership .leadership-item {
+  border-bottom: 1px solid #C79E55;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+
+.about-us-content.about-us-content-bottom .section-title {
+  color: #7A7A7A;
+}
+
+.thankyou-content {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.thankyou-content .thankyou-content-wrap {
+  font-size: 16px;
 }
 
 .header-jarallax {
@@ -9598,7 +9635,7 @@ section {
   .gform_wrapper .gform_footer input[type="submit"] {
     font-size: 25px;
     font-weight: 500;
-    padding: 30px 30px 20px 30px;
+    padding: 25px 30px 20px 30px;
   }
   .our_services .our-services__item:nth-child(2n) .item-image {
     order: 2;
@@ -10630,6 +10667,13 @@ section {
     transition-delay: 0s, 0s, 0.3s;
     /* this removes the transition delay so the menu will be visible while the other styles transition */
   }
+  .thankyou-content {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .thankyou-content .thankyou-content-wrap {
+    font-size: 22px;
+  }
   section {
     padding: 3% 0% 1% 0%;
   }
@@ -11440,8 +11484,8 @@ section {
   .fs-4 {
     font-size: 1.5rem !important;
   }
-  .container,
-  .container-sm {
+  .home .container,
+  .home .container-sm {
     max-width: 1140px !important;
   }
   .site-header .site-header__center {
@@ -11491,6 +11535,10 @@ section {
   .error-404.not-found .page-404-number {
     font-size: 200px;
     font-weight: 900;
+  }
+  .about-us-content .container {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 
@@ -12254,8 +12302,8 @@ section {
 }
 
 @media (min-width: 1500px) {
-  .container,
-  .container-sm {
+  .home .container,
+  .home .container-sm {
     max-width: 1500px !important;
   }
 }

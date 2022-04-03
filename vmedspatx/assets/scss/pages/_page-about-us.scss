@@ -1,0 +1,48 @@
+.about-us-content {
+    .container {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .section-title {}
+    .about-us-content-text {}
+    &.about-us-content-top {
+        .container {
+            border-bottom: 2px solid $brand__color
+        }
+        .section-title {
+            color: $text__color;
+        }
+    }
+    &.about-us-leadership {
+        .section-title {
+            color: $text__color;
+            margin-bottom: 30px;
+        }
+        .leadership-item {
+            border-bottom: 1px solid $brand__color;
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+        }
+    }
+    &.about-us-content-bottom {
+        .container {}
+        .section-title {
+            color: $text__color;
+        }
+    }
+    // Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) {}
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) {}
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) {}
+    // X-Large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) {
+        .container {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+    }
+    // XX-Large devices (larger desktops, 1400px and up)
+    @media (min-width: 1400px) {}
+}

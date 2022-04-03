@@ -1,9 +1,10 @@
+<?php if( have_rows('in_the_press_logos') ): ?>
 <section class="home-section in_the_press">
 	<div class="container">
 		<h3 class="section-title text-center">In the press</h3>
 		
 		<?php 
-			if( have_rows('in_the_press_logos') ):
+			
 				echo '<div class="in_the_press_slider swiper-container"><div class="swiper-wrapper">';
 				while( have_rows('in_the_press_logos') ) : the_row();
 			
@@ -25,7 +26,8 @@
 				endwhile;
 				echo '</div></div>';
 				
-			endif;
+			
 		?>
 	</div>
 </section>
+<?php endif; ?>
