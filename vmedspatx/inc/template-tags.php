@@ -115,11 +115,12 @@ if ( ! function_exists( 'vmedspatx_post_thumbnail' ) ) :
 	 * element when on single views.
 	 */
 	function vmedspatx_post_thumbnail() {
-		if ( post_password_required() || is_attachment() || ! has_post_thumbnail() ) {
-			return;
-		}
+		
 
 		if ( is_singular() ) :
+			if ( post_password_required() || is_attachment() || ! has_post_thumbnail() ) {
+				return;
+			}
 			?>
 
 			<div class="post-thumbnail">
@@ -130,6 +131,7 @@ if ( ! function_exists( 'vmedspatx_post_thumbnail' ) ) :
 
 			<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
 				<?php
+				if ( has_post_thumbnail() ) {
 					the_post_thumbnail(
 						'post-thumbnail',
 						array(
@@ -140,6 +142,10 @@ if ( ! function_exists( 'vmedspatx_post_thumbnail' ) ) :
 							),
 						)
 					);
+				} else {
+					echo '<img src="'. get_template_directory_uri() . '/assets/images/dummy_1920x930_ffffff_cccccc.png'.'"/>';
+				}
+					
 				?>
 			</a>
 
@@ -158,3 +164,67 @@ if ( ! function_exists( 'wp_body_open' ) ) :
 		do_action( 'wp_body_open' );
 	}
 endif;
+
+
+
+/**
+ * Display navigation to next/previous set of posts when applicable.
+ */
+function medstar_01_pagination() {
+
+	ob_start();
+
+	global $wp_query, $wp_rewrite;
+
+	// Don't print empty markup if there's only one page.
+	if ( $wp_query->max_num_pages < 2 ) {
+		return;
+	}
+
+	$paged        = get_query_var( 'paged' ) ? intval( get_query_var( 'paged' ) ) : 1;
+	$pagenum_link = wp_kses_post( get_pagenum_link() );
+	$query_args   = array();
+	$url_parts    = explode( '?', $pagenum_link );
+
+	if ( isset( $url_parts[1] ) ) {
+		wp_parse_str( $url_parts[1], $query_args );
+	}
+
+	$pagenum_link = esc_url( remove_query_arg( array_keys( $query_args ), $pagenum_link ) );
+	$pagenum_link = trailingslashit( $pagenum_link ) . '%_%';
+
+	$format  = $wp_rewrite->using_index_permalinks() && ! strpos(
+		$pagenum_link,
+		'index.php'
+	) ? 'index.php/' : '';
+	$format .= $wp_rewrite->using_permalinks() ? user_trailingslashit(
+		$wp_rewrite->pagination_base . '/%#%',
+		'paged'
+	) : '?paged=%#%';
+
+	// Set up paginated links.
+	$links = paginate_links(
+		array(
+			'base'      => $pagenum_link,
+			'format'    => $format,
+			'total'     => $wp_query->max_num_pages,
+			'current'   => $paged,
+			'add_args'  => array_map( 'urlencode', $query_args ),
+			'prev_text' => 'prev',
+			'next_text' => 'next',
+			'type'      => 'list',
+			'end_size'  => 3,
+			'mid_size'  => 3,
+		)
+	);
+
+	if ( $links ) {
+		?>
+		<div class="tier1-pagination posts-pagination">
+			<?php echo wp_kses_post( $links ); ?>
+		</div><!-- .pagination -->
+		<?php
+	}
+
+	echo ob_get_clean(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+}

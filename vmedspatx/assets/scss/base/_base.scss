@@ -11,15 +11,32 @@ html {
 }
 
 .home {
+    .site-main {
+        .container,
+        .container-sm,
+        .container-md,
+        .container-lg,
+        .container-xl,
+        .container-xxl {
+            max-width: 100% !important;
+            @media (min-width: 1200px) {
+                max-width: 1140px !important;
+            }
+            @media (min-width: 1500px) {
+                max-width: 1500px !important;
+            }
+        }
+    }
+}
+
+@media (min-width: 1400px) {
     .container,
-    .container-sm {
-        max-width: 100% !important;
-        @media (min-width: 1200px) {
-            max-width: 1140px !important;
-        }
-        @media (min-width: 1500px) {
-            max-width: 1500px !important;
-        }
+    .container-sm,
+    .container-md,
+    .container-lg,
+    .container-xl,
+    .container-xxl {
+        max-width: 1170px;
     }
 }
 
@@ -48,4 +65,26 @@ a {
     @include on-event {
         color: $text__color;
     }
+}
+
+.alignleft {
+    /*rtl:ignore*/
+    float: left;
+    /*rtl:ignore*/
+    margin-right: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.alignright {
+    /*rtl:ignore*/
+    float: right;
+    /*rtl:ignore*/
+    margin-left: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.aligncenter {
+    clear: both;
+    @include center-block;
+    margin-bottom: 1.5em;
 }

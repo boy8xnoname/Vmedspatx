@@ -145,7 +145,8 @@
     // X-Large devices (large desktops, 1200px and up)
     @media (min-width: 1200px) {
         .footer-top-content {
-            padding: 0px 50px 40px 50px;
+            padding-top: 0;
+            padding-bottom: 40px
         }
         .footer-widgets {
             padding-bottom: 40px;

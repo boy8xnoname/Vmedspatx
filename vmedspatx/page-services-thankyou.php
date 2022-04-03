@@ -1,6 +1,6 @@
 <?php
 /**
- * Template name: Services page template
+ * Template name: Services Thank You page template
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -19,7 +19,7 @@ get_header();
 		<?php
 		while ( have_posts() ) : the_post();
 
-			get_template_part( 'template-parts/content', 'services' );
+			get_template_part( 'template-parts/content', 'services-thankyou' );
 
 		endwhile; // End of the loop.
 		?>

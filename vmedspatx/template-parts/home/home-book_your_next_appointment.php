@@ -10,10 +10,8 @@
     <div class="container">
         <?php if($book_appointment_image != '') { ?>
             <div class="row book_your_next_appointment-wrap" style="background-image: url('<?php echo esc_url($book_appointment_image['url']);?>');">
-
         <?php } else {?> 
             <div class="row book_your_next_appointment-wrap" >
-
         <?php } ?>
             <div class="book_your_next_appointment_main">
                 <?php if(!empty($book_your_next_appointment_title)) :
