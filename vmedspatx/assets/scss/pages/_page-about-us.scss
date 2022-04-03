@@ -3,7 +3,9 @@
         padding-top: 30px;
         padding-bottom: 30px;
     }
-    .section-title {}
+    .section-title {
+        margin-top: 0;
+    }
     .about-us-content-text {}
     &.about-us-content-top {
         .container {
@@ -14,6 +16,11 @@
         }
     }
     &.about-us-leadership {
+        .container {
+            border-bottom: 2px solid $brand__color;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
         .section-title {
             color: $text__color;
             margin-bottom: 30px;
@@ -23,9 +30,26 @@
             margin-bottom: 30px;
             padding-bottom: 30px;
         }
+        .leadership-item:last-child {
+            border-bottom: none;
+        }
+    }
+    .leadership-item {
+        h3.leadership-name {
+            color: $brand__color;
+            font-size: 30px;
+            margin: 0;
+        }
+        h4.leadership-position {
+            color: $brand__color;
+            font-size: 16px;
+        }
+        .leadership-content-des {}
     }
     &.about-us-content-bottom {
-        .container {}
+        .container {
+            padding-top: 0;
+        }
         .section-title {
             color: $text__color;
         }
@@ -35,12 +59,37 @@
     // Medium devices (tablets, 768px and up)
     @media (min-width: 768px) {}
     // Large devices (desktops, 992px and up)
-    @media (min-width: 992px) {}
+    @media (min-width: 992px) {
+        .section-title {}
+        .about-us-content-text {}
+        .leadership-item {
+            h3.leadership-name {
+                color: $brand__color;
+            }
+            h4.leadership-position {
+                color: $brand__color;
+            }
+            .leadership-content-des {}
+        }
+    }
     // X-Large devices (large desktops, 1200px and up)
     @media (min-width: 1200px) {
         .container {
             padding-top: 50px;
             padding-bottom: 50px;
+        }
+        .section-title {
+            font-size: 48px;
+        }
+        .about-us-content-text {}
+        .leadership-item {
+            h3.leadership-name {
+                font-size: 40px;
+            }
+            h4.leadership-position {
+                font-size: 18px;
+            }
+            .leadership-content-des {}
         }
     }
     // XX-Large devices (larger desktops, 1400px and up)
