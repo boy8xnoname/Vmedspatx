@@ -1,0 +1,76 @@
+.btn {
+    &.btn-view-more {
+        background-color: $brand__color;
+        fill: #FFFFFF;
+        color: #FFFFFF;
+        border-radius: 50px 50px 50px 50px;
+        box-shadow: 0px 20px 33px 1px rgba(0, 0, 0, 0.11);
+        padding: 15px 50px 15px 50px;
+        line-height: 18px;
+        height: 50px;
+        &:hover {
+            background-color: $text__color;
+            color: #ffffff;
+        }
+    }
+    &.btn-book-treatments {
+        background-color: $brand__color;
+        fill: #FFFFFF;
+        color: #FFFFFF;
+        border-radius: 50px 50px 50px 50px;
+        box-shadow: 0px 20px 33px 1px rgba(0, 0, 0, 0.11);
+        display: block;
+        padding: 15px 15px 15px 15px;
+        line-height: 18px;
+        height: 50px;
+        &:hover {
+            background-color: $text__color;
+            color: #ffffff;
+        }
+    }
+    &.btn-play-video {}
+    // Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) {}
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) {}
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) {
+        &.btn-view-more {
+            display: block;
+            line-height: 18px;
+            padding: 15px 50px 15px 50px;
+        }
+        &.btn-book-treatments {
+            line-height: 18px;
+            padding: 15px 50px 15px 50px;
+        }
+    }
+    // X-Large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) {}
+    // XX-Large devices (larger desktops, 1400px and up)
+    @media (min-width: 1400px) {}
+}
+
+input[type="button"],
+input.submit {
+    background-color: $brand__color;
+    fill: #FFFFFF;
+    color: #FFFFFF;
+    border-radius: 50px 50px 50px 50px;
+    box-shadow: 0px 20px 33px 1px rgba(0, 0, 0, 0.11);
+    padding: 18px 50px 18px 50px;
+    &:hover {
+        background-color: $text__color;
+        color: #ffffff;
+    }
+    // Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) {}
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) {}
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) {}
+    // X-Large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) {}
+    // XX-Large devices (larger desktops, 1400px and up)
+    @media (min-width: 1400px) {}
+}

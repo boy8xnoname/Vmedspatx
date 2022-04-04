@@ -1,0 +1,91 @@
+.service-banner-image {
+    color: #ffffff;
+    position: relative;
+    padding-top: 150px;
+    padding-bottom: 50px;
+    z-index: 3;
+    .row {
+        width: 100%;
+    }
+    .service-banner-title {
+        text-transform: uppercase;
+    }
+    .service-banner-description {}
+    .banner-button {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        a {
+            background-color: transparent;
+            border-style: solid;
+            border-width: 1px 1px 1px 1px;
+            border-radius: 0px 0px 0px 0px;
+            display: flex;
+            font-size: 17px;
+            font-weight: 400;
+            letter-spacing: 0.8px;
+            fill: #FFFFFF;
+            color: #FFFFFF;
+            padding: 15px 30px;
+            height: 50px;
+            text-transform: uppercase;
+            transition: all .5s;
+            &:hover {
+                transform: scale(0.9);
+            }
+        }
+    }
+    .service-our_award {
+        img {
+            max-width: 80px;
+        }
+    }
+    // Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) {}
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) {
+        .service-banner-title,
+        .service-banner-description {
+            text-align: right;
+        }
+    }
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) {}
+    // X-Large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) {
+        .service-banner-title {
+            font-size: 50px;
+        }
+        .service-our_award {
+            img {
+                max-width: 120px;
+            }
+        }
+    }
+    // XX-Large devices (larger desktops, 1400px and up)
+    @media (min-width: 1400px) {}
+}
+
+.service-entry-content {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        text-align: center;
+    }
+    .service-main-content.with-sidebar {}
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) {
+        .service-main-content.with-sidebar {
+            padding-right: 3%;
+            width: 70%
+        }
+    }
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) {}
+    // X-Large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) {}
+    // XX-Large devices (larger desktops, 1400px and up)
+    @media (min-width: 1400px) {}
+}

@@ -1,0 +1,19 @@
+/**
+ * Basic typography style for copy text
+ */
+
+body {
+    color: $text__color;
+    font-size: 16px;
+    font-family: $text-font-stack;
+    line-height: 1.4em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.8em;
+}

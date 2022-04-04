@@ -1,0 +1,134 @@
+.site-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #0000005C;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 10px 0px 10px 0px;
+    width: 100%;
+    z-index: 999;
+    &.fixed {
+        background-color: #000000e0 !important;
+        position: fixed;
+    }
+    &__right {
+        text-align: right;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        position: relative;
+    }
+    .col {
+        display: flex;
+        align-items: center;
+    }
+    .site-branding {
+        img {
+            max-width: 120px;
+            height: auto;
+        }
+        p {
+            margin: 0;
+        }
+    }
+    ul.social-list li {
+        margin: 0 5px;
+    }
+    ul.social-list a {
+        font-size: 16px;
+    }
+    #mobile-site-navigation {
+        display: none;
+        width: 100%;
+        &.show {
+            display: block;
+            background-color: #FFF;
+            padding: 30px 0
+        }
+    }
+    // Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) {
+        .site-branding {
+            img {
+                max-width: 175px;
+                height: auto;
+            }
+            p {
+                margin: 0;
+            }
+        }
+        &__right {
+            text-align: right;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        ul.social-list li {
+            margin-right: 8px;
+            margin-left: 8px;
+        }
+        ul.social-list a {
+            font-size: 18px;
+        }
+    }
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) {
+        .site-branding {
+            img {
+                max-width: 235px;
+                height: auto;
+            }
+            p {
+                margin: 0;
+            }
+        }
+    }
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) {
+        .site-branding {
+            img {
+                max-width: 135px;
+                height: auto;
+            }
+            p {
+                margin: 0;
+            }
+        }
+        .mobile-main-navigation {
+            display: none !important;
+        }
+        ul.social-list li {
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+        ul.social-list a {
+            font-size: 24px;
+        }
+        &__left {
+            order: 1;
+        }
+        &__center {
+            display: flex !important;
+            align-items: center;
+            order: 2;
+        }
+        &__right {
+            order: 3;
+        }
+        #mobile-site-navigation {
+            display: none !important
+        }
+    }
+    // X-Large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) {
+        .site-header__center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    // XX-Large devices (larger desktops, 1400px and up)
+    @media (min-width: 1400px) {}
+}

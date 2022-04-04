@@ -1,4 +1,4 @@
-const THEME_NAME = 'vmedspatx'
+const THEME_NAME = 'medstar-01'
 
 module.exports = {
     THEME_NAME,

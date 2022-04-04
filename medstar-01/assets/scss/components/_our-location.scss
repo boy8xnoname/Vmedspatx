@@ -1,0 +1,113 @@
+section.our_location {
+    background-color: transparent;
+    background-image: radial-gradient(at top center, #EAE4DADE 0%, #FFFFFF 67%);
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    padding: 3% 0% 3% 0%;
+    position: relative;
+    .location-list {
+        list-style: none;
+        padding-left: 0;
+        .location-item {
+            padding: 4% 3% 4% 3%;
+            background-color: #FFFFFF;
+            border-style: solid;
+            border-width: 1px 1px 1px 1px;
+            border-color: #C79E554A;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.08);
+            margin-bottom: 35px;
+        }
+    }
+    .location-item {
+        .location-title {
+            font-family: "GothamHTF Book", OPEN SANS;
+            font-size: 19px;
+            font-weight: 600;
+        }
+        p {
+            margin: 0
+        }
+        a {}
+        .location-address,
+        .location-phone {}
+    }
+    .map-pins {
+        position: relative;
+        .map-pin-item {
+            position: absolute;
+            &.map-pin-item-1 {
+                left: 30%;
+                top: 30%;
+            }
+            &.map-pin-item-2 {
+                left: 69%;
+                top: 24%;
+            }
+            &.map-pin-item-3 {
+                left: 72%;
+                bottom: 43%;
+            }
+        }
+    }
+}
+
+.map-pin-item {
+    .marker {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: -50px;
+        /*positions our marker*/
+        left: 50%;
+        /*positions our marker*/
+        display: block;
+        z-index: 1;
+        transform: translateX(-50%);
+        .pin {
+            width: 20px;
+            height: 20px;
+            position: relative;
+            top: 22px;
+            left: 50%;
+            background: #C79E55;
+            border: 2px solid #FFF;
+            border-radius: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+        }
+        .pin-effect {
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            top: 0;
+            left: 22%;
+            display: block;
+            background: rgba(199, 157, 85, 0.658);
+            border-radius: 50%;
+            opacity: 0;
+            animation: pulsate 2400ms ease-out infinite;
+            transform: translateX(-50%);
+        }
+    }
+    a {
+        background-color: rgba(0, 0, 0, 0.5);
+        right: initial;
+        bottom: initial;
+        left: initial;
+        padding: 5px 10px;
+        top: calc(100% + 5px);
+    }
+}
+
+@keyframes pulsate {
+    0% {
+        transform: scale(0.1);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}
