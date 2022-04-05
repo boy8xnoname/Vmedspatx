@@ -18,10 +18,14 @@
                 <?php  if(!empty($explore_our_treatments_descriptions)) { ?> 
                     <?php echo apply_filters( 'the_content', $explore_our_treatments_descriptions);?>
                 <?php } ?>
+                <div class="d-flex justify-content-center align-items-center">
 
-                <a href="#book-treatments" class="btn btn-book-treatments" role="button">
-                    <span class="button-text">BOOK YOUR FREE CONSULTATION</span>
-                </a>
+                    <a href="#book-treatments" class="btn btn-book-treatments" role="button">
+                        <span class="button-text">BOOK YOUR FREE CONSULTATION</span>
+                    </a>
+                    
+                </div>
+                
 			</div>
             <div class="d-none d-lg-block col col-lg-2">
 			</div>

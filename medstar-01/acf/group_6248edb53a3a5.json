@@ -1,6 +1,6 @@
 {
     "key": "group_6248edb53a3a5",
-    "title": "About Us Content Setting",
+    "title": "About Us Content Settings",
     "fields": [
         {
             "key": "field_6248edd5c5b14",
@@ -379,5 +379,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1648951731
+    "modified": 1649170274
 }

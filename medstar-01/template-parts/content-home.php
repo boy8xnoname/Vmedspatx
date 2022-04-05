@@ -32,9 +32,9 @@
 
 	<?php get_template_part( 'template-parts/home/home-in_the_press' ); ?>
 
-	<?php get_template_part( 'template-parts/home/home-blog_post' ); ?>
-
 	<?php get_template_part( 'template-parts/home/home-book_your_next_appointment' ); ?>
+
+	<?php get_template_part( 'template-parts/home/home-blog_post' ); ?>
 
 	<?php get_template_part( 'template-parts/home/home-instagram_feed' ); ?>
 

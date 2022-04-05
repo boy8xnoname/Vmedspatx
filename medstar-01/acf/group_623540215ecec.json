@@ -1,6 +1,6 @@
 {
     "key": "group_623540215ecec",
-    "title": "Home Content Setting",
+    "title": "Home Content Settings",
     "fields": [
         {
             "key": "field_62354038fa729",
@@ -1246,5 +1246,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1648116165
+    "modified": 1649170281
 }

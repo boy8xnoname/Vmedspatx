@@ -1,6 +1,6 @@
 {
     "key": "group_623774b32c549",
-    "title": "Contact Us Content Setting",
+    "title": "Contact Us Content Settings",
     "fields": [
         {
             "key": "field_623774e2c0b0f",
@@ -349,5 +349,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1648912588
+    "modified": 1649170277
 }
