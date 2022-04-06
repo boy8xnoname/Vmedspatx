@@ -1,17 +1,32 @@
 <?php 
 // get service page banner image
 $select_banner_videoimage_banner =  get_field('select_banner_videoimage_banner');
-$service_banner_video = get_field('service_banner_video');
+$service_banner_video_mp4 = get_field('service_banner_video_mp4');
+$service_banner_video_webm =  get_field('service_banner_video_webm');
+$service_banner_video_ogv =  get_field('service_banner_video_ogv');
+$service_banner_video_url = get_field('service_banner_video_url');
 $services_banner_image = get_field('service_banner_image');
 
 $service_banner_title = get_field('service_banner_title');
 $service_banner_description = get_field('service_banner_description');
 $service_button_title = get_field('service_button_title');
 $service_button_link = get_field('service_button_link');
-if(!empty($services_banner_image) || !empty($$service_banner_video)):
-if($select_banner_videoimage_banner == '') {?> 
+if(!empty($services_banner_image) || !empty($service_banner_video_mp4) || !empty($service_banner_video_url)):
+
+if(($select_banner_videoimage_banner == 'Hosted Video') && !empty($service_banner_video_mp4)  ) {
+    $hostedVideo = 'mp4:'.$service_banner_video_mp4['url'];
+    if (!empty($service_banner_video_ogv)) {
+        $hostedVideo .= ',webm:'.$service_banner_video_webm['url'];
+    }
+    if (!empty($service_banner_video_ogv)) {
+        $hostedVideo .= ',ogv:'.$service_banner_video_ogv['url'];
+    }
+?> 
     <!-- Background Self-Hosted Video Parallax -->
-    <div class="jarallax" data-jarallax data-video-src="mp4:./video/local-video.mp4,webm:./video/local-video.webm,ogv:./video/local-video.ogv">
+    <div class="jarallax" data-jarallax data-video-src="<?php echo $hostedVideo;?>">
+<?php } else if(($select_banner_videoimage_banner == 'Vimeo/youtube Video') &&  !empty($service_banner_video_url)) {?> 
+    <!-- Background Self-Hosted Video Parallax -->
+    <div class="jarallax" data-jarallax data-video-src="<?php echo esc_url($service_banner_video_url);?>">
 <?php } else {?>
     <div class="service-banner header-jarallax" style="background-image: url('<?php echo esc_url($services_banner_image['url']);?>');">
 

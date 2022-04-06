@@ -6545,6 +6545,8 @@ sup {
  */
 img {
   border-style: none;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Forms
@@ -6918,7 +6920,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #0000005C;
+  background-color: #000000E8;
   transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -7032,6 +7034,10 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   margin-bottom: 30px;
 }
 
+.site-footer .social-list a {
+  font-size: 20px;
+}
+
 .site-footer small, .site-footer .small {
   font-size: 12px;
   line-height: 16px;
@@ -7061,6 +7067,43 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 .site-footer .footer-vertical-menu li {
   font-size: 14px;
   margin-bottom: 15px;
+}
+
+.site-footer .mobile-footer-top-content .footer-brand-logo img {
+  max-width: 220px;
+}
+
+.site-footer .mobile-footer-top-content .content-list .contact-item h3, .site-footer .mobile-footer-top-content .content-list .contact-item .h3 {
+  font-size: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.site-footer .mobile-footer-top-content .time-working {
+  margin-bottom: 30px;
+}
+
+.site-footer .mobile-footer-top-content .time-wroking__item {
+  text-align: left !important;
+}
+
+.site-footer .mobile-footer-top-content .time-wroking__item strong {
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.site-footer .mobile-footer-top-content .our-partner-logo {
+  flex-direction: column;
+}
+
+.site-footer .mobile-footer-top-content .our-partner-logo .partner-item {
+  margin-bottom: 20px;
+}
+
+.site-footer .mobile-footer-top-content .our-partner-logo .partner-item img {
+  max-height: 75px;
+  width: auto;
 }
 
 .site-footer .site-info {

@@ -32,7 +32,8 @@
                 "id": ""
             },
             "choices": {
-                "Video": "Video",
+                "Hosted Video": "Hosted Video",
+                "Vimeo\/youtube Video": "Vimeo\/youtube Video",
                 "Image": "Image"
             },
             "default_value": "Image",
@@ -45,17 +46,17 @@
         },
         {
             "key": "field_624c7e06ea3b1",
-            "label": "Service Banner Video",
-            "name": "service_banner_video",
+            "label": "Service Banner Video MP4",
+            "name": "service_banner_video_mp4",
             "type": "file",
             "instructions": "",
-            "required": 0,
+            "required": 1,
             "conditional_logic": [
                 [
                     {
                         "field": "field_624c7d89c081c",
                         "operator": "==",
-                        "value": "Video"
+                        "value": "Hosted Video"
                     }
                 ]
             ],
@@ -69,6 +70,84 @@
             "min_size": "",
             "max_size": "",
             "mime_types": ""
+        },
+        {
+            "key": "field_624daad822f24",
+            "label": "Service Banner Video Webm",
+            "name": "service_banner_video_webm",
+            "type": "file",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_624c7d89c081c",
+                        "operator": "==",
+                        "value": "Hosted Video"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_624daad722f23",
+            "label": "Service Banner Video Ogv",
+            "name": "service_banner_video_ogv",
+            "type": "file",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_624c7d89c081c",
+                        "operator": "==",
+                        "value": "Hosted Video"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_624d9b3d31c3e",
+            "label": "Service Banner Video URL",
+            "name": "service_banner_video_url",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_624c7d89c081c",
+                        "operator": "==",
+                        "value": "Vimeo\/youtube Video"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
         },
         {
             "key": "field_6249c0092b4a3",
@@ -457,5 +536,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1649180362
+    "modified": 1649257700
 }

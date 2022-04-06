@@ -1,4 +1,4 @@
-<div class="footer-top-content container-fluid d-block d-md-none">
+<div class="footer-top-content mobile-footer-top-content container-fluid d-block d-md-none">
     <div class="row footer-widgets">
         <!-- Footer contact information -->
         <div class="widgets first-col-widget col col-4 col-md-4 col-xl-5">
@@ -30,61 +30,52 @@
             </ul>
         </div>
         <!-- Footer logo and partner logo content in footer -->
-        <div class="widgets second-col-widget col col-4 col-md-4 col-xl-2 text-center">
-            <div class="content-list">
-                <div class="contact-item">
-                    <h3>Dallas </h3>
-                    <ul>
-                        <li>
-                            <a href="tel:+19727704422">
-                                <span class="">972-770-4422</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                6915 Preston Rd. Dallas TX 75205
-                            </a>
-                        </li>
-                    </ul>
-                    
-                </div>
-                <div class="contact-item">
-                    <h3>Addison </h3>
-                    <ul>
-                        <li>
-                            <a href="tel:+19727704422">
-                                <span class="">972-770-4422</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                6915 Preston Rd. Dallas TX 75205
-                            </a>
-                        </li>
-                    </ul>
-                    
-                </div>
-                <div class="contact-item">
-                    <h3>Southlake </h3>
-                    <ul>
-                        <li>
-                            <a href="tel:+19727704422">
-                                <span class="">972-770-4422</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                6915 Preston Rd. Dallas TX 75205
-                            </a>
-                        </li>
-                    </ul>
-                    
-                </div>
-            </div>           
+        <div class="widgets second-col-widget col col-4 col-md-4 col-xl-2 text-left">
+        <?php 
+            if(get_theme_mod('location_repeater') != ''){
+                $locationsList = get_theme_mod('location_repeater');
+                echo '<div class="content-list">';
+                foreach( $locationsList as $locationItem ) : 
+                    $location_title = $locationItem['location_title'];
+                    $location_phone_number = $locationItem['location_phone_number'];
+                    $location_address = $locationItem['location_address'];
+                    $location_google_map_url = $locationItem['location_google_map_url'];
+                ?>
+                     <div class="contact-item">
+                        <h3><?php echo esc_attr($location_title);?></h3>
+                        <ul>
+                            <li>
+                                <a href="tel:<?php echo esc_attr($location_phone_number);?>">
+                                    <span class=""><?php echo esc_attr($location_phone_number);?></span>
+                                </a>
+                            </li>
+                            <li>
+                                <?php if(!empty($location_google_map_url)) {?> 
+                                    <a href="<?php echo esc_attr($location_google_map_url);?>">
+                                <?php } ?>
+                                    <?php echo esc_attr($location_address);?>
+                                <?php if(!empty($location_google_map_url)) {?> 
+                                    </a>
+                                <?php } ?>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                
+                <?php
+                endforeach;
+                echo '</div>';
+            } else { ?>
+                <h3><?php echo esc_attr('Please access to "Customize > Vmedspatx Theme Options >vmedspatx Footer Setting" for setup content');?></h3>
+            <?php } ?>         
             <div class="row">
-                <div class="d-none d-lg-block col col-lg-2 col-xl-4">
+                <div class="d-none d-lg-block col  col-lg-2 col-lg-2 col-xl-4">
                 </div>
-                <div class="col col-xs-12  col-sm-6 col-lg-5 col-xl-4">
+                <div class="col col-12 col-xs-12  col-sm-6 col-lg-5 col-xl-4 text-left">
+                    <?php  $timeWorking = get_theme_mod('time_working');
+                        if(!empty($timeWorking)) {
+                            echo apply_filters('the_content', $timeWorking);
+                        } else { ?> 
                     <div class="time-working">
                         <div class="time-wroking__item">
                         <p><strong>Monday – Friday</strong><br>8am to 6pm</p>
@@ -96,8 +87,9 @@
                         <p><strong>Sunday</strong><br>by appointment only</p>
                         </div>
                     </div>
+                    <?php }  ?>
                 </div>
-                <div class="col col-xs-12 col-sm-6 col-lg-5 col-xl-4">
+                <div class="col col-12 col-xs-12 col-sm-6 col-lg-5 col-xl-4 text-left">
                     <?php  if(has_nav_menu( 'footer-menu' )){
                         wp_nav_menu(
                             array(
