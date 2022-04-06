@@ -19,13 +19,73 @@
             "endpoint": 0
         },
         {
+            "key": "field_624c7d89c081c",
+            "label": "Select banner Video\/Image banner",
+            "name": "select_banner_videoimage_banner",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Video": "Video",
+                "Image": "Image"
+            },
+            "default_value": "Image",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_624c7e06ea3b1",
+            "label": "Service Banner Video",
+            "name": "service_banner_video",
+            "type": "file",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_624c7d89c081c",
+                        "operator": "==",
+                        "value": "Video"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
             "key": "field_6249c0092b4a3",
             "label": "Service banner image",
             "name": "service_banner_image",
             "type": "image",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_624c7d89c081c",
+                        "operator": "==",
+                        "value": "Image"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -397,5 +457,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1649170300
+    "modified": 1649180362
 }

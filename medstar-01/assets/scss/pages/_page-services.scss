@@ -89,3 +89,14 @@
     // XX-Large devices (larger desktops, 1400px and up)
     @media (min-width: 1400px) {}
 }
+
+.page-service-site-main {
+    // Large devices (desktops, 1200px and up)
+    @media (min-width: 1200px) {
+        .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {}
+        .container-fluid {
+            padding-right: 50px;
+            padding-left: 50px;
+        }
+    }
+}

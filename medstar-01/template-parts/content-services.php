@@ -30,8 +30,8 @@ $service_banner_image = !empty( get_field('service_banner_image')) ?  get_field(
     <?php get_template_part( 'template-parts/services/content-treaments_featured' ); ?>
 
 	<div class="entry-content service-entry-content">
-		<div class="container">
-			<div class="d-flex flex-column  flex-md-row-reverse">
+		<div class="container-fluid">
+			<div class="d-flex flex-column flex-md-row-reverse">
 				
 				<?php 
 					$contact_form_logo_image = get_field('contact_form_logo_image');
@@ -64,14 +64,15 @@ $service_banner_image = !empty( get_field('service_banner_image')) ?  get_field(
 					<?php the_content(); ?>
 				</div>
 			</div>
-			<div>
+			
+		</div>
+		<div class="container-fluid ">
 			<?php 
 				$services_before_after_setup = get_field('services_before_after_setup');
 				if(!empty($services_before_after_setup)) {
 					echo apply_filters('the_content',$services_before_after_setup );
 				}
 			?>
-			</div>
 		</div>
 	</div><!-- .entry-content -->
 

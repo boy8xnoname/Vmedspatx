@@ -1,13 +1,24 @@
 <?php 
 // get service page banner image
+$select_banner_videoimage_banner =  get_field('select_banner_videoimage_banner');
+$service_banner_video = get_field('service_banner_video');
 $services_banner_image = get_field('service_banner_image');
+
 $service_banner_title = get_field('service_banner_title');
 $service_banner_description = get_field('service_banner_description');
 $service_button_title = get_field('service_button_title');
 $service_button_link = get_field('service_button_link');
-if(!empty($services_banner_image)):
+if(!empty($services_banner_image) || !empty($$service_banner_video)):
+if($select_banner_videoimage_banner == '') {?> 
+    <!-- Background Self-Hosted Video Parallax -->
+    <div class="jarallax" data-jarallax data-video-src="mp4:./video/local-video.mp4,webm:./video/local-video.webm,ogv:./video/local-video.ogv">
+<?php } else {?>
+    <div class="service-banner header-jarallax" style="background-image: url('<?php echo esc_url($services_banner_image['url']);?>');">
+
+<?php }
 ?>
-<div class="service-banner header-jarallax" style="background-image: url('<?php echo esc_url($services_banner_image['url']);?>');">
+
+
     <div class="service-banner-image container">
         <div class="row">
             <div class="col col-12 col-md-4"></div>
