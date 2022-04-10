@@ -1,10 +1,10 @@
 {
     "key": "group_6249c00916671",
-    "title": "Services Content Setup",
+    "title": "Services Page Options",
     "fields": [
         {
             "key": "field_6249c00928bd0",
-            "label": "Servies banner",
+            "label": "Hero Section",
             "name": "",
             "type": "tab",
             "instructions": "",
@@ -20,7 +20,7 @@
         },
         {
             "key": "field_624c7d89c081c",
-            "label": "Select banner Video\/Image banner",
+            "label": "Hero Section Background Video\/Image",
             "name": "select_banner_videoimage_banner",
             "type": "select",
             "instructions": "",
@@ -32,9 +32,9 @@
                 "id": ""
             },
             "choices": {
-                "Hosted Video": "Hosted Video",
-                "Vimeo\/youtube Video": "Vimeo\/youtube Video",
-                "Image": "Image"
+                "Image": "Image",
+                "Vimeo\/YouTube Video": "Vimeo\/YouTube Video",
+                "Self Hosted Video": "Self Hosted Video"
             },
             "default_value": "Image",
             "allow_null": 0,
@@ -56,7 +56,7 @@
                     {
                         "field": "field_624c7d89c081c",
                         "operator": "==",
-                        "value": "Hosted Video"
+                        "value": "Self Hosted Video"
                     }
                 ]
             ],
@@ -83,7 +83,7 @@
                     {
                         "field": "field_624c7d89c081c",
                         "operator": "==",
-                        "value": "Hosted Video"
+                        "value": "Self Hosted Video"
                     }
                 ]
             ],
@@ -110,7 +110,7 @@
                     {
                         "field": "field_624c7d89c081c",
                         "operator": "==",
-                        "value": "Hosted Video"
+                        "value": "Self Hosted Video"
                     }
                 ]
             ],
@@ -127,17 +127,17 @@
         },
         {
             "key": "field_624d9b3d31c3e",
-            "label": "Service Banner Video URL",
+            "label": "Hero Section Background Video URL",
             "name": "service_banner_video_url",
             "type": "url",
-            "instructions": "",
+            "instructions": "Please include https:\/\/ to URL.",
             "required": 0,
             "conditional_logic": [
                 [
                     {
                         "field": "field_624c7d89c081c",
                         "operator": "==",
-                        "value": "Vimeo\/youtube Video"
+                        "value": "Vimeo\/YouTube Video"
                     }
                 ]
             ],
@@ -151,7 +151,7 @@
         },
         {
             "key": "field_6249c0092b4a3",
-            "label": "Service banner image",
+            "label": "Hero Section Background Image",
             "name": "service_banner_image",
             "type": "image",
             "instructions": "",
@@ -183,7 +183,7 @@
         },
         {
             "key": "field_6249c0092d488",
-            "label": "Service banner title",
+            "label": "Hero Section Title",
             "name": "service_banner_title",
             "type": "text",
             "instructions": "",
@@ -202,7 +202,7 @@
         },
         {
             "key": "field_6249c0092fb30",
-            "label": "Service banner description",
+            "label": "Hero Section Description Text",
             "name": "service_banner_description",
             "type": "wysiwyg",
             "instructions": "",
@@ -221,7 +221,7 @@
         },
         {
             "key": "field_6249c00932a33",
-            "label": "Service button title",
+            "label": "Button Label",
             "name": "service_button_title",
             "type": "text",
             "instructions": "",
@@ -240,7 +240,7 @@
         },
         {
             "key": "field_6249c00934ad1",
-            "label": "Service button link",
+            "label": "Button URL",
             "name": "service_button_link",
             "type": "text",
             "instructions": "Set link \"#service-contact-sidebar\" for click scroll to form get quote in sidebar",
@@ -259,7 +259,7 @@
         },
         {
             "key": "field_6249c009373a4",
-            "label": "Our award",
+            "label": "Our awards",
             "name": "our_award",
             "type": "repeater",
             "instructions": "",
@@ -320,7 +320,7 @@
         },
         {
             "key": "field_6249c0093b380",
-            "label": "Treaments Featured in title",
+            "label": "Treaments Featured in Title",
             "name": "treaments_featured_in_title",
             "type": "text",
             "instructions": "",
@@ -339,7 +339,7 @@
         },
         {
             "key": "field_6249c0093d3fc",
-            "label": "Treaments Featured in content",
+            "label": "Treaments Featured in Content",
             "name": "treaments_featured_in_items",
             "type": "repeater",
             "instructions": "",
@@ -403,7 +403,7 @@
         },
         {
             "key": "field_6249cd118d608",
-            "label": "Contact get quote form",
+            "label": "Contact Form",
             "name": "",
             "type": "tab",
             "instructions": "",
@@ -418,27 +418,8 @@
             "endpoint": 0
         },
         {
-            "key": "field_6249cd278d609",
-            "label": "Contact Us Title",
-            "name": "contact_us_title",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
             "key": "field_6249d4fbb603d",
-            "label": "Contact form logo image",
+            "label": "Contact form Graphics",
             "name": "contact_form_logo_image",
             "type": "image",
             "instructions": "",
@@ -462,7 +443,7 @@
         },
         {
             "key": "field_6249cd648d60a",
-            "label": "Contact Us before form title",
+            "label": "Contact Form Title",
             "name": "contact_us_before_form_title",
             "type": "text",
             "instructions": "",
@@ -500,7 +481,7 @@
         },
         {
             "key": "field_6249cd7f8d60c",
-            "label": "Contact us form description",
+            "label": "Contact Form Disclaimer Text",
             "name": "contact_us_form_description",
             "type": "text",
             "instructions": "",
@@ -516,6 +497,25 @@
             "prepend": "",
             "append": "",
             "maxlength": ""
+        },
+        {
+            "key": "field_62519b5dc6895",
+            "label": "Content description bottom form",
+            "name": "content_description_bottom_form",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
         }
     ],
     "location": [
@@ -536,5 +536,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1649257700
+    "modified": 1649515403
 }

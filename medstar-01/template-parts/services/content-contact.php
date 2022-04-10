@@ -4,6 +4,7 @@
 	$formContactTitle = !empty(get_field('contact_us_before_form_title')) ? get_field('contact_us_before_form_title') : 'Send us a message';
 	$formContactShortcode = !empty(get_field('contact_form_short_code')) ? get_field('contact_form_short_code') : '';
 	$formContactDescription = !empty(get_field('contact_us_form_description')) ? get_field('contact_us_form_description') : 'By submitting this form you agree to be contacted via phone/text/email.*';
+	$contentDescriptionBottomForm = get_field('content_description_bottom_form');
 ?>
 <?php if(!empty($formContactShortcode)) : ?>
 <section class="service-contact-section contact_us">
@@ -35,7 +36,14 @@
 			<div class="d-none d-lg-block  col col-md-1 col-lg-2">
 			</div>
 		</div>
-	
 	</div>
+
+	<?php if(!empty($contentDescriptionBottomForm)) : ?>
+		<div class="container-fluid">
+			<div class="content-bottom-form">
+				<?php echo apply_filters('the_content', $contentDescriptionBottomForm);?>
+			</div>
+		</div>
+	<?php endif; ?>
 </section>
 <?php endif; ?>

@@ -13,7 +13,7 @@ $service_button_title = get_field('service_button_title');
 $service_button_link = get_field('service_button_link');
 if(!empty($services_banner_image) || !empty($service_banner_video_mp4) || !empty($service_banner_video_url)):
 
-if(($select_banner_videoimage_banner == 'Hosted Video') && !empty($service_banner_video_mp4)  ) {
+if(($select_banner_videoimage_banner == 'Self Hosted Video') && !empty($service_banner_video_mp4)  ) {
     $hostedVideo = 'mp4:'.$service_banner_video_mp4['url'];
     if (!empty($service_banner_video_ogv)) {
         $hostedVideo .= ',webm:'.$service_banner_video_webm['url'];
@@ -24,16 +24,13 @@ if(($select_banner_videoimage_banner == 'Hosted Video') && !empty($service_banne
 ?> 
     <!-- Background Self-Hosted Video Parallax -->
     <div class="jarallax" data-jarallax data-video-src="<?php echo $hostedVideo;?>">
-<?php } else if(($select_banner_videoimage_banner == 'Vimeo/youtube Video') &&  !empty($service_banner_video_url)) {?> 
+<?php } else if(($select_banner_videoimage_banner == 'Vimeo/YouTube Video') &&  !empty($service_banner_video_url)) {?> 
     <!-- Background Self-Hosted Video Parallax -->
     <div class="jarallax" data-jarallax data-video-src="<?php echo esc_url($service_banner_video_url);?>">
 <?php } else {?>
     <div class="service-banner header-jarallax" style="background-image: url('<?php echo esc_url($services_banner_image['url']);?>');">
-
 <?php }
 ?>
-
-
     <div class="service-banner-image container">
         <div class="row">
             <div class="col col-12 col-md-4"></div>

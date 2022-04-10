@@ -20,7 +20,7 @@
         },
         {
             "key": "field_6248edecc5b15",
-            "label": "Why choose us heading",
+            "label": "Why Choose Us Title",
             "name": "why_choose_us_heading",
             "type": "text",
             "instructions": "",
@@ -39,7 +39,7 @@
         },
         {
             "key": "field_6248edfec5b16",
-            "label": "Why choose us content",
+            "label": "Why Choose Us Description",
             "name": "why_choose_us_content",
             "type": "wysiwyg",
             "instructions": "",
@@ -58,7 +58,7 @@
         },
         {
             "key": "field_6248f8464ae4f",
-            "label": "Our Leadership",
+            "label": "Our Staff Section",
             "name": "",
             "type": "tab",
             "instructions": "",
@@ -74,7 +74,7 @@
         },
         {
             "key": "field_6248f8ab9b38e",
-            "label": "Our leadership Title",
+            "label": "Our Staff Section Title",
             "name": "our_leadership_title",
             "type": "text",
             "instructions": "",
@@ -93,7 +93,7 @@
         },
         {
             "key": "field_6248f8564ae50",
-            "label": "Our Leadership",
+            "label": "Our Staff Section",
             "name": "our_leadership",
             "type": "repeater",
             "instructions": "",
@@ -112,7 +112,7 @@
             "sub_fields": [
                 {
                     "key": "field_6248f86a4ae51",
-                    "label": "Member Image",
+                    "label": "Staff Image",
                     "name": "member_image",
                     "type": "image",
                     "instructions": "",
@@ -136,7 +136,7 @@
                 },
                 {
                     "key": "field_6248f8724ae52",
-                    "label": "Member Name",
+                    "label": "Staff Name",
                     "name": "member_name",
                     "type": "text",
                     "instructions": "",
@@ -155,7 +155,7 @@
                 },
                 {
                     "key": "field_6248ff40b823c",
-                    "label": "Member Position",
+                    "label": "Staff Position",
                     "name": "member_position",
                     "type": "text",
                     "instructions": "",
@@ -174,7 +174,7 @@
                 },
                 {
                     "key": "field_6248f88b4ae53",
-                    "label": "Member Description",
+                    "label": "Staff Description",
                     "name": "member_description",
                     "type": "wysiwyg",
                     "instructions": "",
@@ -270,7 +270,7 @@
         },
         {
             "key": "field_6248fcaab9ccb",
-            "label": "About Us Contact",
+            "label": "About Us Page Contact Form",
             "name": "",
             "type": "tab",
             "instructions": "",
@@ -286,7 +286,7 @@
         },
         {
             "key": "field_6248fcf1b9ccc",
-            "label": "Contact Us Title",
+            "label": "Contact Us Form title",
             "name": "contact_us_title",
             "type": "text",
             "instructions": "",
@@ -305,7 +305,7 @@
         },
         {
             "key": "field_6248fd0eb9ccd",
-            "label": "Contact Us before form title",
+            "label": "Contact Form Description",
             "name": "contact_us_before_form_title",
             "type": "text",
             "instructions": "",
@@ -343,7 +343,7 @@
         },
         {
             "key": "field_6248fd39b9ccf",
-            "label": "Contact us form description",
+            "label": "Contact Form Disclaimer Text",
             "name": "contact_us_form_description",
             "type": "textarea",
             "instructions": "",
@@ -379,5 +379,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1649170274
+    "modified": 1649517262
 }

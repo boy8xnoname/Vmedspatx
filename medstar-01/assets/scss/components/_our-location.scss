@@ -34,6 +34,13 @@ section.our_location {
         position: relative;
         .map-pin-item {
             position: absolute;
+            a {
+                position: relative;
+                z-index: 3;
+                &:hover {
+                    color: #ffffff;
+                }
+            }
             &.map-pin-item-1 {
                 left: 30%;
                 top: 30%;

@@ -2,8 +2,8 @@
 /*!
 Theme Name: Medstar 01
 Theme URI: http://underscores.me/
-Author: vmedspatx
-Author URI: https://vmedspatx.com/
+Author: medstar
+Author URI: https://medstar.com/
 Description: Description
 Version: 1.0.0
 Tested up to: 5.4
@@ -16,7 +16,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned.
 
-vmedspatx is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+medstar is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
@@ -6995,6 +6995,11 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   padding-bottom: 30px;
 }
 
+.site-footer .widget-title {
+  color: #C79E55;
+  text-transform: uppercase;
+}
+
 .site-footer .content-list .contact-item {
   color: #C79E55;
   font-size: 15px;
@@ -7126,8 +7131,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   border-radius: 50%;
   display: none;
   position: fixed;
-  bottom: 75px;
-  right: 30px;
+  bottom: 45px;
+  right: 20px;
   z-index: 98;
   padding: 10px 14px;
   color: #fff;
@@ -7307,7 +7312,7 @@ input.submit:hover {
 }
 
 .contact_us.service-contact-sidebar .contact-form-title {
-  font-size: 24px;
+  font-size: 36px;
 }
 
 .explore_our_treatments {
@@ -7414,6 +7419,10 @@ form.search-form .search-submit {
   width: 100% !important;
 }
 
+.gform_wrapper.gravity-theme .gform_fields {
+  grid-row-gap: 12px !important;
+}
+
 .gform_wrapper .gform_footer input.gform_button,
 .gform_wrapper .gform_footer input[type="submit"] {
   background-color: #C79E55;
@@ -7431,7 +7440,7 @@ form.search-form .search-submit {
   color: #fff;
   height: 60px;
   padding: 10px 30px 10px 30px;
-  margin-top: 15px;
+  margin-top: 5px;
   cursor: pointer;
   text-transform: uppercase;
   width: 100%;
@@ -7807,6 +7816,15 @@ section.our_location .map-pins .map-pin-item {
   position: absolute;
 }
 
+section.our_location .map-pins .map-pin-item a {
+  position: relative;
+  z-index: 3;
+}
+
+section.our_location .map-pins .map-pin-item a:hover {
+  color: #ffffff;
+}
+
 section.our_location .map-pins .map-pin-item.map-pin-item-1 {
   left: 30%;
   top: 30%;
@@ -7921,6 +7939,7 @@ section.our_location .map-pins .map-pin-item.map-pin-item-3 {
 }
 
 .about-us-content .section-title {
+  line-height: 1;
   margin-top: 0;
 }
 
@@ -7956,6 +7975,7 @@ section.our_location .map-pins .map-pin-item.map-pin-item-3 {
 .about-us-content .leadership-item h3.leadership-name, .about-us-content .leadership-item .leadership-name.h3 {
   color: #C79E55;
   font-size: 30px;
+  line-height: 1.2em;
   margin: 0;
 }
 
@@ -8003,11 +8023,12 @@ section.our_location .map-pins .map-pin-item.map-pin-item-3 {
 .header-jarallax .container {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .header-jarallax .entry-title {
   color: #ffffff;
+  margin: 14% 0% 0% 0%;
   text-transform: uppercase;
   z-index: 9;
 }
@@ -8074,6 +8095,13 @@ body.single .entry-content {
   width: 100%;
 }
 
+.service-banner-image .services-banner-texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .service-banner-image .service-banner-title {
   text-transform: uppercase;
 }
@@ -8104,8 +8132,12 @@ body.single .entry-content {
   transform: scale(0.9);
 }
 
+.service-banner-image .service-our_award div {
+  margin: 0 5px;
+}
+
 .service-banner-image .service-our_award img {
-  max-width: 80px;
+  max-width: 90px;
 }
 
 .service-entry-content h1, .service-entry-content .h1,
@@ -8120,6 +8152,10 @@ body.single .entry-content {
 .service-entry-content h6,
 .service-entry-content .h6 {
   text-align: center;
+}
+
+.content-bottom-form {
+  padding: 30px 0;
 }
 
 .site-main {
@@ -9149,6 +9185,12 @@ section {
     height: 400px;
     overflow: hidden;
   }
+  .service-banner-image .service-our_award div {
+    margin: 0 5px;
+  }
+  .service-banner-image .service-our_award img {
+    max-width: 120px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -10014,9 +10056,30 @@ section {
   .service-banner-image .service-banner-description {
     text-align: right;
   }
+  .service-banner-image .service-our_award div {
+    margin: 0 5px;
+  }
+  .service-banner-image .service-our_award img {
+    max-width: 150px;
+  }
   .service-entry-content .service-main-content.with-sidebar {
     padding-right: 3%;
     width: 70%;
+  }
+}
+
+@media (min-width: 850px) {
+  .service-banner-image .services-banner-texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .service-banner-image .service-our_award div {
+    margin: 0 5px;
+  }
+  .service-banner-image .service-our_award img {
+    max-width: 80px;
   }
 }
 
@@ -11040,6 +11103,9 @@ section {
   .thankyou-content .thankyou-content-wrap {
     font-size: 22px;
   }
+  .header-jarallax .entry-title {
+    margin: 14% 0% 0% 0%;
+  }
   section {
     padding: 3% 0% 1% 0%;
   }
@@ -11928,6 +11994,9 @@ section {
   }
   .contact_us.service-contact-section .form-contact-us {
     padding: 20px 50px 20px 50px;
+  }
+  .contact_us.service-contact-sidebar .contact-form-title {
+    font-size: 54px;
   }
   .explore_our_treatments .main h2.content-our-treatments-title, .explore_our_treatments .main .content-our-treatments-title.h2 {
     font-size: 50px;

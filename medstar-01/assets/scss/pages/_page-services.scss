@@ -7,6 +7,12 @@
     .row {
         width: 100%;
     }
+    .services-banner-texts {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .service-banner-title {
         text-transform: uppercase;
     }
@@ -35,17 +41,54 @@
         }
     }
     .service-our_award {
+        div {
+            margin: 0 5px;
+        }
         img {
-            max-width: 80px;
+            max-width: 90px;
         }
     }
     // Small devices (landscape phones, 576px and up)
-    @media (min-width: 576px) {}
+    @media (min-width: 576px) {
+        .service-our_award {
+            div {
+                margin: 0 5px;
+            }
+            img {
+                max-width: 120px;
+            }
+        }
+    }
     // Medium devices (tablets, 768px and up)
     @media (min-width: 768px) {
         .service-banner-title,
         .service-banner-description {
             text-align: right;
+        }
+        .service-our_award {
+            div {
+                margin: 0 5px;
+            }
+            img {
+                max-width: 150px;
+            }
+        }
+    }
+    // Large devices (desktops,850px and up)
+    @media (min-width: 850px) {
+        .services-banner-texts {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+        }
+        .service-our_award {
+            div {
+                margin: 0 5px;
+            }
+            img {
+                max-width: 80px;
+            }
         }
     }
     // Large devices (desktops, 992px and up)
@@ -99,4 +142,8 @@
             padding-left: 50px;
         }
     }
+}
+
+.content-bottom-form {
+    padding: 30px 0;
 }

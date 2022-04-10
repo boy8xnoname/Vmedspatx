@@ -12,6 +12,10 @@
     .footer-widgets {
         padding-bottom: 30px;
     }
+    .widget-title {
+        color: $brand__color;
+        text-transform: uppercase;
+    }
     .content-list {
         .contact-item {
             color: $brand__color;
@@ -131,8 +135,8 @@
         border-radius: 50%;
         display: none;
         position: fixed;
-        bottom: 75px;
-        right: 30px;
+        bottom: 45px;
+        right: 20px;
         z-index: 98;
         padding: 10px 14px;
         color: #fff;

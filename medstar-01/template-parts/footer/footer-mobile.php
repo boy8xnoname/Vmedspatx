@@ -35,6 +35,7 @@
             if(get_theme_mod('location_repeater') != ''){
                 $locationsList = get_theme_mod('location_repeater');
                 echo '<div class="content-list">';
+                echo '<h3 class="widget-title">CONTACT INFORMATION</h3>';
                 foreach( $locationsList as $locationItem ) : 
                     $location_title = $locationItem['location_title'];
                     $location_phone_number = $locationItem['location_phone_number'];
@@ -72,6 +73,7 @@
                 <div class="d-none d-lg-block col  col-lg-2 col-lg-2 col-xl-4">
                 </div>
                 <div class="col col-12 col-xs-12  col-sm-6 col-lg-5 col-xl-4 text-left">
+                    <h3 class="widget-title">Hours of operation</h3>
                     <?php  $timeWorking = get_theme_mod('time_working');
                         if(!empty($timeWorking)) {
                             echo apply_filters('the_content', $timeWorking);
@@ -91,6 +93,7 @@
                 </div>
                 <div class="col col-12 col-xs-12 col-sm-6 col-lg-5 col-xl-4 text-left">
                     <?php  if(has_nav_menu( 'footer-menu' )){
+                        echo '<h3 class="widget-title">QUICK LINKS</h3>';
                         wp_nav_menu(
                             array(
                                 'theme_location' => 'footer-menu',

@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_624959c2c1e53",
-            "label": "Servies banner",
+            "label": "Services banner",
             "name": "",
             "type": "tab",
             "instructions": "",
@@ -278,5 +278,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1649170306
+    "modified": 1649503505
 }

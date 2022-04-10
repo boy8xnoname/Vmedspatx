@@ -4,6 +4,7 @@
         padding-bottom: 30px;
     }
     .section-title {
+        line-height: 1;
         margin-top: 0;
     }
     .about-us-content-text {}
@@ -38,6 +39,7 @@
         h3.leadership-name {
             color: $brand__color;
             font-size: 30px;
+            line-height: 1.2em;
             margin: 0;
         }
         h4.leadership-position {
