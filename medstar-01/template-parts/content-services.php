@@ -42,20 +42,20 @@ $service_banner_image = !empty( get_field('service_banner_image')) ?  get_field(
 					}
 					// Get contact form title
 					if(!empty(get_field('sidebar_contact_us_before_form_title'))) {
-						$contact_form_logo_image = get_field('sidebar_contact_us_before_form_title');
+						$formContactTitle = get_field('sidebar_contact_us_before_form_title');
 					} else {
 						$formContactTitle = !empty(get_field('contact_us_before_form_title')) ? get_field('contact_us_before_form_title') : 'Send us a message';
 
 					}
 					// Get contact form shortcode
-					if(!empty(get_field('contact_form_short_code'))) {
-
+					if(!empty(get_field('sidebar_contact_form_short_code'))) {
+						$formContactShortcode = get_field('sidebar_contact_form_short_code');
 					} else {
 						$formContactShortcode = !empty(get_field('contact_form_short_code')) ? get_field('contact_form_short_code') : '';
 					}
 					// Get contact form description
-					if(!empty(get_field('contact_us_form_description'))) {
-
+					if(!empty(get_field('sidebar_contact_us_form_description'))) {
+						$formContactDescription = get_field('sidebar_contact_us_form_description');
 					} else {
 						$formContactDescription = !empty(get_field('contact_us_form_description')) ? get_field('contact_us_form_description') : 'By submitting this form you agree to be contacted via phone/text/email.*';
 					}
