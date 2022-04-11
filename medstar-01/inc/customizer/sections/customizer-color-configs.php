@@ -1,11 +1,11 @@
 <?php
 Kirki::add_field( 
-	'vmedspatx',
+	'medstar01',
 	[
 		'type'        => 'switch',
 		'settings'    => 'use_custom_color',
 		'label'       => esc_html__( 'Use custom color for website', 'kirki' ),
-		'section'     => 'vmedspatx_colors',
+		'section'     => 'medstar01_colors',
 		'default'     => '0',
 		'priority'    => 5,
 		'choices'     => [
@@ -16,13 +16,13 @@ Kirki::add_field(
 );
 
 Kirki::add_field( 
-    'vmedspatx',
+    'medstar01',
     [
         'type'        => 'color',
 		'settings'    => 'color_setting_hex',
 		'label'       => __( 'Color Control (hex only)', 'kirki' ),
 		'description' => esc_html__( 'Regular color control, no alpha channel.', 'kirki' ),
-		'section'     => 'vmedspatx_colors',
+		'section'     => 'medstar01_colors',
 		'default'     => '#0008DC',
         'active_callback'  => [
             [

@@ -2,7 +2,7 @@
 /**
  * Logo section
  *
- * @package vmedspatx
+ * @package medstar01
  */
 
 

@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package vmedspatx
+ * @package medstar01
  */
 
 if ( ! is_active_sidebar( 'sidebar-1' ) ) {

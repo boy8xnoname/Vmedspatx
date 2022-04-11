@@ -8,39 +8,39 @@
  *
  * @link https://developer.wordpress.org/themes/functionality/custom-headers/
  *
- * @package vmedspatx
+ * @package medstar01
  */
 
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses vmedspatx_header_style()
+ * @uses medstar01_header_style()
  */
-function vmedspatx_custom_header_setup() {
+function medstar01_custom_header_setup() {
 	add_theme_support(
 		'custom-header',
 		apply_filters(
-			'vmedspatx_custom_header_args',
+			'medstar01_custom_header_args',
 			array(
 				'default-image'      => '',
 				'default-text-color' => '000000',
 				'width'              => 1000,
 				'height'             => 250,
 				'flex-height'        => true,
-				'wp-head-callback'   => 'vmedspatx_header_style',
+				'wp-head-callback'   => 'medstar01_header_style',
 			)
 		)
 	);
 }
-add_action( 'after_setup_theme', 'vmedspatx_custom_header_setup' );
+add_action( 'after_setup_theme', 'medstar01_custom_header_setup' );
 
-if ( ! function_exists( 'vmedspatx_header_style' ) ) :
+if ( ! function_exists( 'medstar01_header_style' ) ) :
 	/**
 	 * Styles the header image and text displayed on the blog.
 	 *
-	 * @see vmedspatx_custom_header_setup().
+	 * @see medstar01_custom_header_setup().
 	 */
-	function vmedspatx_header_style() {
+	function medstar01_header_style() {
 		$header_text_color = get_header_textcolor();
 
 		/*

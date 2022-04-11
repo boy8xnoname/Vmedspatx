@@ -9,7 +9,7 @@
 	<div class="container">
 	
 		<h2 class="section-title text-center">
-			<?php echo esc_attr( $sectionContactTitle, 'vmedspatx' ) ?>
+			<?php echo esc_attr( $sectionContactTitle, 'medstar01' ) ?>
 		</h2>
 		<div class="row">
 			<div class="d-none d-lg-block col col-md-1 col col-lg-3">
@@ -17,11 +17,11 @@
 			<div class="col col-12 col-md-10 col-lg-6">
 				<?php  if(!empty($formContactShortcode)) { ?>
 					<h2 class="contact-form-title text-center">
-						<?php echo esc_attr( $formContactTitle, 'vmedspatx' ); ?>
+						<?php echo esc_attr( $formContactTitle, 'medstar01' ); ?>
 					</h2>
 					<?php echo do_shortcode($formContactShortcode); ?>
 					<div class="contact-us-description text-center">
-						<small><?php echo esc_attr( $formContactDescription, 'vmedspatx'); ?></small>
+						<small><?php echo esc_attr( $formContactDescription, 'medstar01'); ?></small>
 					</div>
 				<?php }?>
 			</div>

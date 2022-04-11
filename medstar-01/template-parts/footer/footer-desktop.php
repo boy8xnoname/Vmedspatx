@@ -37,7 +37,7 @@
                 endforeach;
                 echo '</div>';
             } else { ?>
-                <h3><?php echo esc_attr('Please access to "Customize > Vmedspatx Theme Options >vmedspatx Footer Setting" for setup content');?></h3>
+                <h3><?php echo esc_attr('Please access to "Customize > medstar01 Theme Options >medstar01 Footer Setting" for setup content');?></h3>
             <?php } ?>
        
         </div>

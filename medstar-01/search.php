@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
  *
- * @package vmedspatx
+ * @package medstar01
  */
 
 get_header();
@@ -30,7 +30,7 @@ get_header();
 					<h1 class="page-title">
 						<?php
 						/* translators: %s: search query. */
-						printf( esc_html__( 'Search Results for: %s', 'vmedspatx' ), '<span>' . get_search_query() . '</span>' );
+						printf( esc_html__( 'Search Results for: %s', 'medstar01' ), '<span>' . get_search_query() . '</span>' );
 						?>
 					</h1>
 					<p><?php echo esc_attr( 'We have found some results with the word you searched.');?></p>

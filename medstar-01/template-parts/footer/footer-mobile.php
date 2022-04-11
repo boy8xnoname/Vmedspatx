@@ -67,7 +67,7 @@
                 endforeach;
                 echo '</div>';
             } else { ?>
-                <h3><?php echo esc_attr('Please access to "Customize > Vmedspatx Theme Options >vmedspatx Footer Setting" for setup content');?></h3>
+                <h3><?php echo esc_attr('Please access to "Customize > medstar01 Theme Options >medstar01 Footer Setting" for setup content');?></h3>
             <?php } ?>         
             <div class="row">
                 <div class="d-none d-lg-block col  col-lg-2 col-lg-2 col-xl-4">

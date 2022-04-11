@@ -11,14 +11,14 @@
 				<?php foreach( $blogPostItems as $post ):  setup_postdata($post); ?>
 					<div class="blog-post-item col col-12 col-lg-4">	
 						<div class="blog-post-item-wrap">
-							<?php vmedspatx_post_thumbnail(); ?>
+							<?php medstar01_post_thumbnail(); ?>
 							<div class="blog-post-item-text text-center">
 								<h3 class="blog-title">
 									<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 								</h3>
 								<div class="post-excerpt">
 									<?php
-										vmedspatx_posted_on();
+										medstar01_posted_on();
 									?>								
 								</div>
 								<div class="post-excerpt">

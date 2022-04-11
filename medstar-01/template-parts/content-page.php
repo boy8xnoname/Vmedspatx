@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package vmedspatx
+ * @package medstar01
  */
 $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full');
 if (empty($featured_img_url )) {
@@ -24,7 +24,7 @@ if (empty($featured_img_url )) {
 
 	<div class="entry-content">
 		<div class="container">
-			<?php vmedspatx_post_thumbnail(); ?>
+			<?php medstar01_post_thumbnail(); ?>
 			<?php the_content(); ?>
 		</div>
 	</div><!-- .entry-content -->
@@ -37,7 +37,7 @@ if (empty($featured_img_url )) {
 				sprintf(
 					wp_kses(
 						/* translators: %s: Name of current post. Only visible to screen readers */
-						__( 'Edit <span class="screen-reader-text">%s</span>', 'vmedspatx' ),
+						__( 'Edit <span class="screen-reader-text">%s</span>', 'medstar01' ),
 						array(
 							'span' => array(
 								'class' => array(),

@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.com/
  *
- * @package vmedspatx
+ * @package medstar01
  */
 
 /**
@@ -14,13 +14,13 @@
  * See: https://jetpack.com/support/responsive-videos/
  * See: https://jetpack.com/support/content-options/
  */
-function vmedspatx_jetpack_setup() {
+function medstar01_jetpack_setup() {
 	// Add theme support for Infinite Scroll.
 	add_theme_support(
 		'infinite-scroll',
 		array(
 			'container' => 'main',
-			'render'    => 'vmedspatx_infinite_scroll_render',
+			'render'    => 'medstar01_infinite_scroll_render',
 			'footer'    => 'page',
 		)
 	);
@@ -33,7 +33,7 @@ function vmedspatx_jetpack_setup() {
 		'jetpack-content-options',
 		array(
 			'post-details' => array(
-				'stylesheet' => 'vmedspatx-style',
+				'stylesheet' => 'medstar01-style',
 				'date'       => '.posted-on',
 				'categories' => '.cat-links',
 				'tags'       => '.tags-links',
@@ -48,13 +48,13 @@ function vmedspatx_jetpack_setup() {
 		)
 	);
 }
-add_action( 'after_setup_theme', 'vmedspatx_jetpack_setup' );
+add_action( 'after_setup_theme', 'medstar01_jetpack_setup' );
 
-if ( ! function_exists( 'vmedspatx_infinite_scroll_render' ) ) :
+if ( ! function_exists( 'medstar01_infinite_scroll_render' ) ) :
 	/**
 	 * Custom render function for Infinite Scroll.
 	 */
-	function vmedspatx_infinite_scroll_render() {
+	function medstar01_infinite_scroll_render() {
 		while ( have_posts() ) {
 			the_post();
 			if ( is_search() ) :

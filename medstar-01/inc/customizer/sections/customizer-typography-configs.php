@@ -1,7 +1,7 @@
 <?php
 
 Kirki::add_field( 
-	'vmedspatx',
+	'medstar01',
 	[
 		'type'        => 'switch',
 		'settings'    => 'use_google_font',
@@ -37,7 +37,7 @@ $choices = [
 ];
 
 
-Kirki::add_field( 'vmedspatx', [
+Kirki::add_field( 'medstar01', [
     'type'        => 'typography',
     'settings'    => 'typography_setting',
     'label'       => esc_html__( 'Global font', 'text-domain' ),
@@ -64,7 +64,7 @@ Kirki::add_field( 'vmedspatx', [
 ] );
 
 
-Kirki::add_field( 'vmedspatx', [
+Kirki::add_field( 'medstar01', [
     'type'        => 'typography',
     'settings'    => 'heading_typography_setting',
     'label'       => esc_html__( 'Heading font', 'text-domain' ),

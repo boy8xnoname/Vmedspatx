@@ -1,13 +1,13 @@
 'use strict'
-var vmedspatx = {};
+var medstar01 = {};
 (function($) {
-    vmedspatx.init = function() {
-        vmedspatx.vmedspatxHeaderScript()
-        vmedspatx.contentScripts()
-        vmedspatx.addAnimationToPageLoad()
+    medstar01.init = function() {
+        medstar01.medstar01HeaderScript()
+        medstar01.contentScripts()
+        medstar01.addAnimationToPageLoad()
     }
 
-    vmedspatx.vmedspatxHeaderScript = function() {
+    medstar01.medstar01HeaderScript = function() {
         let timeout = 0
         let previousScrollY = 0
 
@@ -65,7 +65,7 @@ var vmedspatx = {};
     }
 
 
-    vmedspatx.contentScripts = function() {
+    medstar01.contentScripts = function() {
         // HOME BANNER SLIDER
         let homeBannerSwiper = new Swiper(".home-banner-slider", {
             slidesPerView: 1,
@@ -200,7 +200,7 @@ var vmedspatx = {};
     }
 
     // Add animation to content when load 
-    vmedspatx.addAnimationToPageLoad = function() {
+    medstar01.addAnimationToPageLoad = function() {
         function reveal() {
             var reveals = document.querySelectorAll(".reveal");
 
@@ -222,6 +222,6 @@ var vmedspatx = {};
 
 
     //$(function() {
-    vmedspatx.init();
+    medstar01.init();
     //})
 })(jQuery) // eslint-disable-line

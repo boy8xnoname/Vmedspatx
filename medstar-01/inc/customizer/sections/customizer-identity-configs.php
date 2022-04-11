@@ -2,13 +2,13 @@
 /**
  * Logo section
  *
- * @package vmedspatx
+ * @package medstar01
  */
 
-Kirki::add_field( 'vmedspatx', [
+Kirki::add_field( 'medstar01', [
 	'type'        => 'slider',
 	'settings'    => 'logo_max_width',
-	'label'       => esc_html__( 'Logo Max Width', 'vmedspatx' ),
+	'label'       => esc_html__( 'Logo Max Width', 'medstar01' ),
 	'section'     => 'title_tagline',
 	'default'     => 200,
     'priority' => 10,

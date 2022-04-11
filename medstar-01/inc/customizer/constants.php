@@ -2,5 +2,5 @@
 /**
  * Define default value for customizer
  *
- * @package vmedspatx
+ * @package medstar01
  */

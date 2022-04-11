@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package vmedspatx
+ * @package medstar01
  */
 $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full'); 
 ?>
@@ -127,14 +127,14 @@ $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full');
 				</div>
 				<div class="form-content-wrap col col-12 col-lg-6">
 					<h2 class="section-title text-center">
-						<?php echo esc_attr( $sectionContactTitle, 'vmedspatx' ) ?>
+						<?php echo esc_attr( $sectionContactTitle, 'medstar01' ) ?>
 					</h2>
 						<h2 class="contact-form-title text-center">
-							<?php echo esc_attr( $formContactTitle, 'vmedspatx' ); ?>
+							<?php echo esc_attr( $formContactTitle, 'medstar01' ); ?>
 						</h2>
 						<?php echo do_shortcode($formContactShortcode); ?>
 						<div class="contact-us-description text-center">
-							<small><?php echo esc_attr( $formContactDescription, 'vmedspatx'); ?></small>
+							<small><?php echo esc_attr( $formContactDescription, 'medstar01'); ?></small>
 						</div>
 				</div>
 				<div class="d-none d-lg-block  col col-lg-3">

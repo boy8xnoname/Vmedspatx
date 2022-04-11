@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package vmedspatx
+ * @package medstar01
  */
 
 get_header();

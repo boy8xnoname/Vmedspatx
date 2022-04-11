@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package vmedspatx
+ * @package medstar01
  */
 $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full'); 
 ?>

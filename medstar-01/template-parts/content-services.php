@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package vmedspatx
+ * @package medstar01
  */
 $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full');
 if (empty($featured_img_url )) {
@@ -46,15 +46,15 @@ $service_banner_image = !empty( get_field('service_banner_image')) ?  get_field(
 							<?php  if(!empty($formContactShortcode)) { ?>
 								<?php if(!empty($contact_form_logo_image)) { ?>
 									<div class="text-center">
-										<img src="<?php echo esc_url($contact_form_logo_image['url']);?>" alt="<?php echo esc_attr( $formContactTitle, 'vmedspatx' ); ?>"/>
+										<img src="<?php echo esc_url($contact_form_logo_image['url']);?>" alt="<?php echo esc_attr( $formContactTitle, 'medstar01' ); ?>"/>
 									</div>
 								<?php } ?>
 								<h2 class="contact-form-title text-center">
-									<?php echo esc_attr( $formContactTitle, 'vmedspatx' ); ?>
+									<?php echo esc_attr( $formContactTitle, 'medstar01' ); ?>
 								</h2>
 								<?php echo do_shortcode($formContactShortcode); ?>
 								<div class="contact-us-description text-center">
-									<small><?php echo esc_attr( $formContactDescription, 'vmedspatx'); ?></small>
+									<small><?php echo esc_attr( $formContactDescription, 'medstar01'); ?></small>
 								</div>
 							<?php }?>
 						</div>
@@ -87,7 +87,7 @@ $service_banner_image = !empty( get_field('service_banner_image')) ?  get_field(
 				sprintf(
 					wp_kses(
 						/* translators: %s: Name of current post. Only visible to screen readers */
-						__( 'Edit <span class="screen-reader-text">%s</span>', 'vmedspatx' ),
+						__( 'Edit <span class="screen-reader-text">%s</span>', 'medstar01' ),
 						array(
 							'span' => array(
 								'class' => array(),

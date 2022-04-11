@@ -1,10 +1,10 @@
 <?php
 /**
- * vmedspatx functions and definitions
+ * medstar01 functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package vmedspatx
+ * @package medstar01
  */
 
 if ( ! defined( '_S_VERSION' ) ) {
@@ -19,14 +19,14 @@ if ( ! defined( '_S_VERSION' ) ) {
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
-function vmedspatx_setup() {
+function medstar01_setup() {
 	/*
 		* Make theme available for translation.
 		* Translations can be filed in the /languages/ directory.
-		* If you're building a theme based on vmedspatx, use a find and replace
-		* to change 'vmedspatx' to the name of your theme in all the template files.
+		* If you're building a theme based on medstar01, use a find and replace
+		* to change 'medstar01' to the name of your theme in all the template files.
 		*/
-	load_theme_textdomain( 'vmedspatx', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'medstar01', get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
@@ -49,8 +49,8 @@ function vmedspatx_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
 		array(
-			'primary-menu' => esc_html__( 'Primary Menu', 'vmedspatx' ),
-			'footer-menu' => esc_html__( 'Footer Menu', 'vmedspatx' ),
+			'primary-menu' => esc_html__( 'Primary Menu', 'medstar01' ),
+			'footer-menu' => esc_html__( 'Footer Menu', 'medstar01' ),
 		)
 	);
 
@@ -75,7 +75,7 @@ function vmedspatx_setup() {
 	add_theme_support(
 		'custom-background',
 		apply_filters(
-			'vmedspatx_custom_background_args',
+			'medstar01_custom_background_args',
 			array(
 				'default-color' => 'ffffff',
 				'default-image' => '',
@@ -101,7 +101,7 @@ function vmedspatx_setup() {
 		)
 	);
 }
-add_action( 'after_setup_theme', 'vmedspatx_setup' );
+add_action( 'after_setup_theme', 'medstar01_setup' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -110,16 +110,16 @@ add_action( 'after_setup_theme', 'vmedspatx_setup' );
  *
  * @global int $content_width
  */
-function vmedspatx_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'vmedspatx_content_width', 640 );
+function medstar01_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'medstar01_content_width', 640 );
 }
-add_action( 'after_setup_theme', 'vmedspatx_content_width', 0 );
+add_action( 'after_setup_theme', 'medstar01_content_width', 0 );
 
 
 /**
  * Enqueue scripts and styles.
  */
-function vmedspatx_scripts() {
+function medstar01_scripts() {
 	wp_enqueue_script( 'fontawesome', 'https://kit.fontawesome.com/54ed714a8b.js', array(), 'latest', false );
 
 	// wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/assets/css/all.fontawesome.css', array(), _S_VERSION);
@@ -128,8 +128,8 @@ function vmedspatx_scripts() {
 	wp_enqueue_style( 'style-jarallax', get_template_directory_uri() . '/assets/css/jarallax.css', array(), _S_VERSION);
 	wp_enqueue_style( 'style-swiper', get_template_directory_uri() . '/assets/css/swiper.min.css', array(), _S_VERSION);
 	wp_enqueue_style( 'style-magnific-popup', get_template_directory_uri() . '/assets/css/magnific-popup.css', array(), _S_VERSION);
-	wp_enqueue_style( 'vmedspatx-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_style_add_data( 'vmedspatx-style', 'rtl', 'replace' );
+	wp_enqueue_style( 'medstar01-style', get_stylesheet_uri(), array(), _S_VERSION );
+	wp_style_add_data( 'medstar01-style', 'rtl', 'replace' );
 
 
 	wp_enqueue_script( 'jquery');
@@ -139,15 +139,15 @@ function vmedspatx_scripts() {
 	wp_enqueue_script( 'swiper', get_template_directory_uri() . '/assets/js/swiper.min.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'matchHeight', get_template_directory_uri() . '/assets/js/jquery.matchHeight-min.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'magnific-popup', get_template_directory_uri() . '/assets/js/jquery.magnific-popup.min.js', array(), _S_VERSION, true );
-	wp_enqueue_script( 'vmedspatx-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), _S_VERSION, true );
-	wp_enqueue_script( 'vmedspatx-scripts', get_template_directory_uri() . '/assets/js/vmedspatx-scripts.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'medstar01-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'medstar01-scripts', get_template_directory_uri() . '/assets/js/medstar01-scripts.js', array(), _S_VERSION, true );
 
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'vmedspatx_scripts' );
+add_action( 'wp_enqueue_scripts', 'medstar01_scripts' );
 
 
 /**
@@ -155,12 +155,12 @@ add_action( 'wp_enqueue_scripts', 'vmedspatx_scripts' );
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function vmedspatx_widgets_init() {
+function medstar01_widgets_init() {
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Sidebar', 'vmedspatx' ),
+			'name'          => esc_html__( 'Sidebar', 'medstar01' ),
 			'id'            => 'sidebar-1',
-			'description'   => esc_html__( 'Add widgets here.', 'vmedspatx' ),
+			'description'   => esc_html__( 'Add widgets here.', 'medstar01' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
@@ -168,7 +168,7 @@ function vmedspatx_widgets_init() {
 		)
 	);
 }
-add_action( 'widgets_init', 'vmedspatx_widgets_init' );
+add_action( 'widgets_init', 'medstar01_widgets_init' );
 
 
 /**

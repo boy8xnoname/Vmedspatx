@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package vmedspatx
+ * @package medstar01
  */
 
 ?>
@@ -26,7 +26,7 @@
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
 							<?php
 							/* translators: %s: CMS name, i.e. WordPress. */
-							printf( esc_html__( '2022 – '. get_bloginfo( 'name' ).'. All Rights Reserved. ', 'vmedspatx' ));
+							printf( esc_html__( '2022 – '. get_bloginfo( 'name' ).'. All Rights Reserved. ', 'medstar01' ));
 							?>
 						</a>
 					</div>

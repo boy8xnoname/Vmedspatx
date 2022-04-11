@@ -1,8 +1,8 @@
 <?php
 /**
- * vmedspatxrmineTheme Customizer
+ * medstar01rmineTheme Customizer
  *
- * @package vmedspatx
+ * @package medstar01
  */
 
 /**
@@ -10,53 +10,53 @@
  *
  * @param object $wp_customize WPCustomizer instance.
  */
-function vmedspatx_customizer_sections( $wp_customize ) {
+function medstar01_customizer_sections( $wp_customize ) {
 	// $wp_customize->remove_control( 'custom_logo' );
 	// $wp_customize->remove_section( 'background_image' );
 	$wp_customize->remove_section( 'colors' );
 	// $wp_customize->remove_section( 'header_image' );
 	// $wp_customize->remove_section( 'nav' );
 }
-add_action( 'customize_register', 'vmedspatx_customizer_sections' );
+add_action( 'customize_register', 'medstar01_customizer_sections' );
 
 /**
  * Add sections
  */
 Kirki::add_config(
-	'vmedspatx',
+	'medstar01',
 	array(
 		'option_type' => 'theme_mod',
 		'capability'  => 'edit_theme_options',
 	)
 );
 
-Kirki::add_panel( 'vmedspatx_theme_options', array(
+Kirki::add_panel( 'medstar01_theme_options', array(
 	'priority'    => 40,
-	'title'       => esc_html__( 'Vmedspatx Theme Options', 'vmedspatx' ),
-	'description' => esc_html__( 'This is theme option for website vmedspatx', 'vmedspatx' ),
+	'title'       => esc_html__( 'medstar01 Theme Options', 'medstar01' ),
+	'description' => esc_html__( 'This is theme option for website medstar01', 'medstar01' ),
 	'icon' => 'dashicons-admin-generic',
 ) );
 
-// vmedspatx Header Setting	
+// medstar01 Header Setting	
 Kirki::add_section( 
 	'title_tagline', 
 	array(
 		'priority'       => 5,
-		'title'          => __( 'Vmedspatx Site Identity (Logo, Favicon, Tags...)' ),
+		'title'          => __( 'medstar01 Site Identity (Logo, Favicon, Tags...)' ),
 		'icon'           => 'dashicons-media-code',
 		'description'    => '',
-		'panel'          => 'vmedspatx_theme_options',
+		'panel'          => 'medstar01_theme_options',
 	) 
 );
 
 Kirki::add_section( 
-	'vmedspatx_colors', 
+	'medstar01_colors', 
 	array(
 		'priority'       => 5,
 		'title'          => __( 'Setup site Color' ),
 		'icon'           => 'dashicons-color-picker',
 		'description'    => '',
-		'panel'          => 'vmedspatx_theme_options',
+		'panel'          => 'medstar01_theme_options',
 	) 
 );
 
@@ -67,65 +67,65 @@ Kirki::add_section(
 		'title'          => __( 'Setup site Typography' ),
 		'icon'           => 'dashicons-editor-textcolor',
 		'description'    => '',
-		'panel'          => 'vmedspatx_theme_options',
+		'panel'          => 'medstar01_theme_options',
 	) 
 );
 
 
-// vmedspatx Header Setting
+// medstar01 Header Setting
 Kirki::add_section(
 	'section_header_configs',
 	array(
 		'priority'       => 10,
 		'capability'     => 'edit_theme_options',
 		'theme_supports' => '',
-		'title'          => esc_html__( 'vmedspatx Header Setting', 'vmedspatx' ),
+		'title'          => esc_html__( 'medstar01 Header Setting', 'medstar01' ),
 		'icon' => 'dashicons-schedule',
 		'description'    => '',
-		'panel'          => 'vmedspatx_theme_options',
+		'panel'          => 'medstar01_theme_options',
 	)
 );
 
-// vmedspatx Footer Setting
+// medstar01 Footer Setting
 Kirki::add_section(
 	'section_footer_config',
 	array(
 		'priority'       => 15,
 		'capability'     => 'edit_theme_options',
 		'theme_supports' => '',
-		'title'          => esc_html__( 'vmedspatx Footer Setting', 'vmedspatx' ),
+		'title'          => esc_html__( 'medstar01 Footer Setting', 'medstar01' ),
 		'description'    => '',
 		'icon' => 'dashicons-schedule',
-		'panel'          => 'vmedspatx_theme_options',
+		'panel'          => 'medstar01_theme_options',
 	)
 );
 
 
-// vmedspatx Events Setting
+// medstar01 Events Setting
 Kirki::add_section(
 	'section_single_events_settings',
 	array(
 		'priority'       => 16,
 		'capability'     => 'edit_theme_options',
 		'theme_supports' => '',
-		'title'          => esc_html__( 'Event Settings', 'vmedspatx' ),
+		'title'          => esc_html__( 'Event Settings', 'medstar01' ),
 		'description'    => '',
 		'icon'           => 'dashicons-rest-api',
-		'panel'          => 'vmedspatx_theme_options',
+		'panel'          => 'medstar01_theme_options',
 	)
 );
 
-// vmedspatx Social Link Setting
+// medstar01 Social Link Setting
 Kirki::add_section(
 	'section_social_links',
 	array(
 		'priority'       => 20,
 		'capability'     => 'edit_theme_options',
 		'theme_supports' => '',
-		'title'          => esc_html__( 'Vmedspatx Social Links Configs', 'vmedspatx' ),
+		'title'          => esc_html__( 'medstar01 Social Links Configs', 'medstar01' ),
 		'description'    => '',
 		'icon'           => 'dashicons-twitter',
-		'panel'          => 'vmedspatx_theme_options',
+		'panel'          => 'medstar01_theme_options',
 		
 	)
 );

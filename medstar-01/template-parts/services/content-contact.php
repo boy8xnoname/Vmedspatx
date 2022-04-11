@@ -11,7 +11,7 @@
 	<div class="container">
 		<?php if(!empty($sectionContactTitle)) : ?>
 		<h2 class="section-title text-center">
-			<?php echo esc_attr( $sectionContactTitle, 'vmedspatx' ) ?>
+			<?php echo esc_attr( $sectionContactTitle, 'medstar01' ) ?>
 		</h2>
 		<?php endif; ?>
 		<div class="row">
@@ -21,15 +21,15 @@
 				<?php  if(!empty($formContactShortcode)) { ?>
 					<?php if(!empty($contact_form_logo_image)) { ?>
 						<div class="text-center">
-						<img src="<?php echo esc_url($contact_form_logo_image['url']);?>" alt="<?php echo esc_attr( $formContactTitle, 'vmedspatx' ); ?>"/>
+						<img src="<?php echo esc_url($contact_form_logo_image['url']);?>" alt="<?php echo esc_attr( $formContactTitle, 'medstar01' ); ?>"/>
 						</div>
 					<?php } ?>
 					<h2 class="contact-form-title text-center">
-						<?php echo esc_attr( $formContactTitle, 'vmedspatx' ); ?>
+						<?php echo esc_attr( $formContactTitle, 'medstar01' ); ?>
 					</h2>
 					<?php echo do_shortcode($formContactShortcode); ?>
 					<div class="contact-us-description text-center">
-						<small><?php echo esc_attr( $formContactDescription, 'vmedspatx'); ?></small>
+						<small><?php echo esc_attr( $formContactDescription, 'medstar01'); ?></small>
 					</div>
 				<?php }?>
 			</div>

@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package vmedspatx
+ * @package medstar01
  */
 
 ?>
@@ -12,7 +12,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 <div class="row">
 	<div class="col col-12 col-md-4">
-		<?php vmedspatx_post_thumbnail(); ?>
+		<?php medstar01_post_thumbnail(); ?>
 	</div>
 	<div class="col col-12 col-md-8">
 	<header class="entry-header">
@@ -21,8 +21,8 @@
 		<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
 			<?php
-			vmedspatx_posted_on();
-			vmedspatx_posted_by();
+			medstar01_posted_on();
+			medstar01_posted_by();
 			?>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
@@ -34,7 +34,7 @@
 	</div><!-- .entry-summary -->
 
 	<footer class="entry-footer">
-		<?php vmedspatx_entry_footer(); ?>
+		<?php medstar01_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 	</div>
 </div>

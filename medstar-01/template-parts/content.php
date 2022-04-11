@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package vmedspatx
+ * @package medstar01
  */
 $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full');
 if (!empty($featured_img_url )) {
@@ -28,7 +28,7 @@ if (!empty($featured_img_url )) {
 	</header><!-- .entry-header -->
 	<div class="entry-content">
 		<div class="container">
-			<?php vmedspatx_post_thumbnail(); ?>
+			<?php medstar01_post_thumbnail(); ?>
 
 			<?php
 				the_content();
@@ -38,7 +38,7 @@ if (!empty($featured_img_url )) {
 	
 	<footer class="entry-footer">
 		<div class="container">
-		<?php vmedspatx_entry_footer(); ?>
+		<?php medstar01_entry_footer(); ?>
 		</div>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
