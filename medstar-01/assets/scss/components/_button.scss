@@ -22,7 +22,6 @@
         display: block;
         padding: 15px 15px 15px 15px;
         line-height: 18px;
-        height: 50px;
         &:hover {
             background-color: $text__color;
             color: #ffffff;
@@ -30,7 +29,11 @@
     }
     &.btn-play-video {}
     // Small devices (landscape phones, 576px and up)
-    @media (min-width: 576px) {}
+    @media (min-width: 576px) {
+        &.btn-book-treatments {
+            height: 50px;
+        }
+    }
     // Medium devices (tablets, 768px and up)
     @media (min-width: 768px) {}
     // Large devices (desktops, 992px and up)

@@ -6,6 +6,12 @@ section.blog_post {
     position: relative;
     .blog-post-item {
         margin-bottom: 30px;
+        .item-action {
+            margin-top: 10px;
+        }
+    }
+    .blog-title {
+        line-height: 1.2em;
     }
     .blog-post-item-wrap {
         margin: 0px 0px 0px 0px;

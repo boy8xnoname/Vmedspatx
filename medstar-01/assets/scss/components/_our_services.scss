@@ -4,21 +4,29 @@
         margin-bottom: 30px;
         &:nth-child(2n) {}
         &:nth-child(2n+1) {}
+        .item-text-wrap {
+            padding-top: 15px;
+        }
         .item-header {
             .heading-services-icon {
-                background-image: url('assets/images/medstar01-icon.png');
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
+                // background-image: url('assets/images/medstar01-icon.png');
+                // background-position: center;
+                // background-repeat: no-repeat;
+                // background-size: cover;
                 content: "";
                 display: block;
                 position: relative;
                 height: 50px;
                 width: 50px;
+                img {
+                    height: auto;
+                    width: 100%;
+                }
             }
             h2 {
                 color: $text__color;
                 font-size: 36px;
+                line-height: 1.2em;
                 margin-top: 10px;
             }
         }

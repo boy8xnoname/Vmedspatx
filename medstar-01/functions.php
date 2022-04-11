@@ -146,6 +146,70 @@ function medstar01_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+
+	wp_enqueue_style(
+        'custom-style',
+        get_template_directory_uri() . '/css/custom_script.css'
+    );
+
+	$adminLoggedInStyle = "";		
+	if(current_user_can('administrator')) { 
+		$adminLoggedInStyle .= "
+			html{ margin-top: 32px !important; }
+			.site-header { top: 32px !important; }
+		";
+	} 
+	wp_add_inline_style( 'custom-style', $adminLoggedInStyle );
+	// Style color by change in customize
+	$customColorStyle = "";	
+	if( get_theme_mod('use_custom_color')) {
+		$customColor = get_theme_mod('color_setting_hex');
+		$customColorStyle .= "
+			ul.social-list a,
+			.blog-title a,
+			.posted-on a,
+			.location-item a,
+			.section-title,
+			.our_testimonials .block-blockquote::before,
+			.our_testimonials .blockquote__position,
+			.main-navigation #primary-menu > li.current-menu-item > a,
+			.site-footer .content-list .contact-item h3, 
+			.site-footer .content-list .contact-item .h3,
+			.site-footer .content-list .contact-item a,
+			.site-footer .time-working,
+			.footer-vertical-menu a,
+			.about-us-content .leadership-item h3.leadership-name, 
+			.about-us-content .leadership-item .leadership-name.h3,
+			.about-us-content .leadership-item h4.leadership-position, 
+			.about-us-content .leadership-item .leadership-position.h4 {
+				color: $customColor !important;
+			}
+		";
+
+		$customColorStyle .= "
+			.btn.btn-view-more,
+			.btn.btn-book-treatments ,
+			.site-footer #toTopBtn,
+			.gform_wrapper .gform_footer input[type='submit'],
+			.site-footer .first-col-widget::before,
+			.site-footer .third-col-widget::before {
+				background-color: $customColor !important;
+			}
+		";	
+
+		$customColorStyle .= "
+			.home-section.about_us,
+			.our_services .our-services__item:nth-child(2n) .item-text-wrap,
+			.our_services .our-services__item:nth-child(2n+1) .item-text-wrap {
+				border-color: $customColor !important;
+			}
+		";
+
+		
+	}
+
+	wp_add_inline_style( 'custom-style', $customColorStyle );
+
 }
 add_action( 'wp_enqueue_scripts', 'medstar01_scripts' );
 

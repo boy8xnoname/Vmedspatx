@@ -139,12 +139,25 @@ Kirki::add_field(
 Kirki::add_field( 
 	'medstar01',
 	[
+		'type'        => 'editor',
+		'settings'    => 'footer_description_text',
+		'label'       => esc_html__( 'Footer description', 'medstar01' ),
+		'description' => esc_html__( 'Add footer description text here.', 'medstar01' ),
+		'section'     => 'section_footer_config',
+		'priority' => 10,
+		'default'     => '',
+	] 
+);
+
+Kirki::add_field( 
+	'medstar01',
+	[
 		'type'        => 'switch',
 		'settings'    => 'show_copyright_content',
 		'label'       => esc_html__( 'Show/Hide Copyright text in footer', 'medstar01' ),
 		'section'     => 'section_footer_config',
 		'default'     => '1',
-		'priority'    => 5,
+		'priority'    => 10,
 		'choices'     => [
 			'on'  => esc_html__( 'Enable', 'medstar01' ),
 			'off' => esc_html__( 'Disable', 'medstar01' ),
@@ -158,7 +171,7 @@ Kirki::add_field(
 		'type'        => 'editor',
 		'settings'    => 'copyright_content',
 		'label'       => esc_html__( 'Copyright/Terms and Conditions', 'medstar01' ),
-		'description' => esc_html__( 'Add Copyright text and  Terms and Conditions link.', 'medstar01' ),
+		'description' => esc_html__( 'Add Copyright text here.', 'medstar01' ),
 		'section'     => 'section_footer_config',
 		'priority' => 10,
 		'default'     => '',

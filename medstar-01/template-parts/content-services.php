@@ -34,11 +34,31 @@ $service_banner_image = !empty( get_field('service_banner_image')) ?  get_field(
 			<div class="d-flex flex-column flex-md-row-reverse">
 				
 				<?php 
-					$contact_form_logo_image = get_field('contact_form_logo_image');
-					$sectionContactTitle = !empty(get_field('contact_us_title')) ? get_field('contact_us_title') : '';
-					$formContactTitle = !empty(get_field('contact_us_before_form_title')) ? get_field('contact_us_before_form_title') : 'Send us a message';
-					$formContactShortcode = !empty(get_field('contact_form_short_code')) ? get_field('contact_form_short_code') : '';
-					$formContactDescription = !empty(get_field('contact_us_form_description')) ? get_field('contact_us_form_description') : 'By submitting this form you agree to be contacted via phone/text/email.*';
+					// Get contact form image logo
+					if(!empty(get_field('sidebar_contact_form_logo_image'))) {
+						$contact_form_logo_image = get_field('sidebar_contact_form_logo_image');
+					} else {
+						$contact_form_logo_image = get_field('contact_form_logo_image');
+					}
+					// Get contact form title
+					if(!empty(get_field('sidebar_contact_us_before_form_title'))) {
+						$contact_form_logo_image = get_field('sidebar_contact_us_before_form_title');
+					} else {
+						$formContactTitle = !empty(get_field('contact_us_before_form_title')) ? get_field('contact_us_before_form_title') : 'Send us a message';
+
+					}
+					// Get contact form shortcode
+					if(!empty(get_field('contact_form_short_code'))) {
+
+					} else {
+						$formContactShortcode = !empty(get_field('contact_form_short_code')) ? get_field('contact_form_short_code') : '';
+					}
+					// Get contact form description
+					if(!empty(get_field('contact_us_form_description'))) {
+
+					} else {
+						$formContactDescription = !empty(get_field('contact_us_form_description')) ? get_field('contact_us_form_description') : 'By submitting this form you agree to be contacted via phone/text/email.*';
+					}
 				?>
 				<?php if(!empty($formContactShortcode)) : ?>
 					<div id="service-contact-sidebar" class="service-contact-sidebar contact_us">

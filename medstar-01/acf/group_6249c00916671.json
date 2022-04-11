@@ -402,6 +402,120 @@
             ]
         },
         {
+            "key": "field_6253eb859e1d8",
+            "label": "Sidebar Contact Form",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_6253ec27a86f3",
+            "label": "Contact form mesage",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "When admin haven't config informations of contact form sidebar this content will get contact form bottom.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_6253eb9c9e1d9",
+            "label": "Contact form Graphics",
+            "name": "sidebar_contact_form_logo_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_6253ebd553793",
+            "label": "Contact Form Title",
+            "name": "sidebar_contact_us_before_form_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6253ebeb53794",
+            "label": "Contact Form Short Code",
+            "name": "sidebar_contact_form_short_code",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6253ebfe53795",
+            "label": "Contact Form Disclaimer Text",
+            "name": "sidebar_contact_us_form_description",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_6249cd118d608",
             "label": "Contact Form",
             "name": "",
@@ -499,6 +613,22 @@
             "maxlength": ""
         },
         {
+            "key": "field_6253fdb45a5c1",
+            "label": "Disclaimer Text",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
             "key": "field_62519b5dc6895",
             "label": "Content description bottom form",
             "name": "content_description_bottom_form",
@@ -536,5 +666,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1649515403
+    "modified": 1649671633
 }

@@ -1,6 +1,7 @@
 <section class="home-section our_services">
 		<div class="container">
 		<?php 
+		$service_icon_before_title = get_field('service_icon_before_title');
 		if( have_rows('setup_our_services_item') ):
 			$ourServicesCount = 0;
 			echo '<div class="our_services__list">';
@@ -23,6 +24,12 @@
 							<div class="item-text-wrap">
 								<div class="item-header">
 									<span class="heading-services-icon">
+										<?php if(!empty($service_icon_before_title)) { ?>
+											<img src="<?php echo $service_icon_before_title['url'];?>" alt="<?php echo $services_item_heading;?>">
+										<?php } else { ?>
+											<img src="<?php echo get_template_directory_uri() . '/assets/images/medstar01-icon.png';?>" alt="<?php echo $services_item_heading;?>">
+										<?php } ?>
+
 									</span>
 									<h2 class="item-heading">
 										<?php echo $services_item_heading;?>

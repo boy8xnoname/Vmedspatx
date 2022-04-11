@@ -23,7 +23,7 @@
                 );
                 foreach ($social_args as $value) {
                     if (!empty(Kirki::get_option($value))) {
-                        echo '<li class="nav-item"><a class="social-item" href="'.Kirki::get_option($value).'"><i class="fab fa-'.$value.'"></i></a></li>';
+                        echo '<li class="nav-item"><a class="social-item" href="'.Kirki::get_option($value).'" target="_blank"><i class="fab fa-'.$value.'"></i></a></li>';
                     }
                 }
                 ?>

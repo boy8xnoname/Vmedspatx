@@ -18,6 +18,11 @@ function unibet_plugins_list() { // phpcs:ignore Squiz.Scope.MethodScope.Missing
 			'slug'     => 'kirki',
 			'required' => true,
 		),
+		array(
+			'name'     => 'Smash Balloon Social Photo Feed',
+			'slug'     => 'instagram-feed',
+			'required' => true,
+		),
 	);
 
 	return $plugins;

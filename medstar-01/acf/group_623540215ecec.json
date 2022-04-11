@@ -211,6 +211,30 @@
             "endpoint": 0
         },
         {
+            "key": "field_6253f6db21458",
+            "label": "Service icon before title",
+            "name": "service_icon_before_title",
+            "type": "image",
+            "instructions": "Leave this field if use default icon for this.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
             "key": "field_62361b5a5ea34",
             "label": "Our Services Items",
             "name": "setup_our_services_item",
@@ -1246,5 +1270,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1649502431
+    "modified": 1649670037
 }

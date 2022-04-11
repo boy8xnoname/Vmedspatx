@@ -8,7 +8,8 @@
  *
  * @package medstar01
  */
-
+$isHeaderSticky = get_theme_mod('is_header_sticky');
+$isHeaderFullyVisible = get_theme_mod('is_header_fully_visible');
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -25,7 +26,7 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'medstar01' ); ?></a>
 
-	<header id="masthead" class="site-header">
+	<header id="masthead" class="site-header <?php if($isHeaderSticky) echo'sticky';?>">
 		<div class="container">
 			<div class="row">
 				<div class="site-header__left col col-5 col-sm-6 col-lg-3 col-xl-2">
@@ -57,7 +58,7 @@
 						);
 						foreach ($social_args as $value) {
 							if (!empty(Kirki::get_option($value))) {
-								echo '<li class="nav-item"><a class="social-item" href="'.Kirki::get_option($value).'"><i class="fab fa-'.$value.'"></i></a></li>';
+								echo '<li class="nav-item"><a class="social-item" href="'.Kirki::get_option($value).'" target="_blank"><i class="fab fa-'.$value.'"></i></a></li>';
 							}
 						}
 						?>

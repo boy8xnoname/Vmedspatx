@@ -23,12 +23,18 @@
 			<div class="container-fluid">
 				<div class="row ">
 					<div class="footer-copyright col col-12 col-md-6">
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-							<?php
-							/* translators: %s: CMS name, i.e. WordPress. */
-							printf( esc_html__( '2022 – '. get_bloginfo( 'name' ).'. All Rights Reserved. ', 'medstar01' ));
-							?>
-						</a>
+						<?php if(get_theme_mod('show_copyright_content')): 
+							 if(!empty( get_theme_mod('copyright_content'))) {
+								echo nl2br(get_theme_mod('copyright_content'));
+							 } else { ?>
+							<a href="<?php echo esc_url(home_url('/')); ?>">
+								<?php
+                                /* translators: %s: CMS name, i.e. WordPress. */
+                                printf(esc_html__('2022 – '. get_bloginfo('name').'. All Rights Reserved. ', 'medstar01')); ?>
+							</a>
+						<?php
+                             } 
+							endif; ?>
 					</div>
 					<div class="footer-copyright-menu  col col-12 col-md-6">
 						<p class="text-right">
@@ -48,6 +54,7 @@
 			</a>
 		</div>
 	</footer><!-- #colophon -->
+
 </div><!-- #page -->
 <?php wp_footer(); ?>
 </body>

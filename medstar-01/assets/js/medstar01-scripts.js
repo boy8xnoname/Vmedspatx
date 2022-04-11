@@ -12,7 +12,7 @@ var medstar01 = {};
         let previousScrollY = 0
 
         function scan() {
-            const sticky = document.querySelector('.site-header')
+            const sticky = document.querySelector('.site-header.sticky')
             let scrollY = window.scrollY
             let scrollingDirection = scrollY - previousScrollY
             if (scrollY > sticky.offsetHeight) {
@@ -26,6 +26,7 @@ var medstar01 = {};
             }
             previousScrollY = scrollY
         }
+
         window.onscroll = function() {
             clearTimeout();
             timeout = setTimeout(scan, 10)
@@ -49,9 +50,9 @@ var medstar01 = {};
             $(window).bind('scroll', function() {
                 var navHeight = $(window).height() - 70;
                 if ($(window).scrollTop() > navHeight) {
-                    $('.site-header').addClass('fixed');
+                    $('.site-header.sticky').addClass('fixed');
                 } else {
-                    $('.site-header').removeClass('fixed');
+                    $('.site-header.sticky').removeClass('fixed');
                 }
             });
         });
@@ -79,7 +80,7 @@ var medstar01 = {};
                 clickable: true
             },
             autoplay: {
-                delay: 9000,
+                delay: 6000,
                 disableOnInteraction: false
             },
             // navigation: {
@@ -96,7 +97,7 @@ var medstar01 = {};
             paginationClickable: true,
             spaceBetween: 20,
             autoplay: {
-                delay: 5000,
+                delay: 3000,
                 disableOnInteraction: false
             },
             breakpoints: {
@@ -135,7 +136,7 @@ var medstar01 = {};
             //     clickable: true
             // },
             autoplay: {
-                delay: 5000,
+                delay: 3000,
                 disableOnInteraction: false
             },
             // navigation: {
