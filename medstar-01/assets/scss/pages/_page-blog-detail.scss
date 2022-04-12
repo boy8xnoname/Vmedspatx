@@ -1,0 +1,36 @@
+.single_site-main {
+    .post-thumbnail {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .single-blog-sidebar {
+        .form-contact-us {
+            background-color: #fff;
+            border-style: solid;
+            border-width: 1px 1px 1px 1px;
+            border-color: #FAFAFA;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+            padding: 20px 15px;
+        }
+    }
+    @media (min-width: 992px) {
+        .single-blog-main {
+            flex-grow: 1;
+            max-width: 65%;
+        }
+        .single-blog-sidebar {
+            width: 35%;
+        }
+    }
+    @media (min-width: 1400px) {
+        .container-fluid,
+        .container-sm,
+        .container-md,
+        .container-lg,
+        .container-xl,
+        .container-xxl {
+            padding-right: 50px;
+            padding-left: 50px;
+        }
+    }
+}

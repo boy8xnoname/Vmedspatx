@@ -103,12 +103,12 @@ Kirki::add_section(
 
 // medstar01 Events Setting
 Kirki::add_section(
-	'section_single_events_settings',
+	'section_blog_settings',
 	array(
 		'priority'       => 16,
 		'capability'     => 'edit_theme_options',
 		'theme_supports' => '',
-		'title'          => esc_html__( 'Event Settings', 'medstar01' ),
+		'title'          => esc_html__( 'Medstar01 Blog Settings', 'medstar01' ),
 		'description'    => '',
 		'icon'           => 'dashicons-rest-api',
 		'panel'          => 'medstar01_theme_options',
@@ -137,3 +137,4 @@ require_once get_theme_file_path( '/inc/customizer/sections/customizer-footer-co
 require_once get_theme_file_path( '/inc/customizer/sections/customizer-social-links.php' );
 require_once get_theme_file_path( '/inc/customizer/sections/customizer-color-configs.php' );
 require_once get_theme_file_path( '/inc/customizer/sections/customizer-typography-configs.php' );
+require_once get_theme_file_path( '/inc/customizer/sections/customizer-blog-settings.php' );

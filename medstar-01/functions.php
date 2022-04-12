@@ -152,14 +152,20 @@ function medstar01_scripts() {
         get_template_directory_uri() . '/css/custom_script.css'
     );
 
-	$adminLoggedInStyle = "";		
-	if(current_user_can('administrator')) { 
+	$user = wp_get_current_user();
+	$allowed_roles = array('editor', 'administrator', 'author');
+	if( array_intersect($allowed_roles, $user->roles ) ) {  
+		// Stuff here for allowed roles
+		$adminLoggedInStyle = "";		
+
 		$adminLoggedInStyle .= "
 			html{ margin-top: 32px !important; }
 			.site-header { top: 32px !important; }
 		";
-	} 
-	wp_add_inline_style( 'custom-style', $adminLoggedInStyle );
+		wp_add_inline_style( 'custom-style', $adminLoggedInStyle );
+	}
+
+
 	// Style color by change in customize
 	$customColorStyle = "";	
 	if( get_theme_mod('use_custom_color')) {
