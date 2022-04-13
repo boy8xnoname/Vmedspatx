@@ -12,19 +12,21 @@ var medstar01 = {};
         let previousScrollY = 0
 
         function scan() {
-            const sticky = document.querySelector('.site-header.sticky')
-            let scrollY = window.scrollY
-            let scrollingDirection = scrollY - previousScrollY
-            if (scrollY > sticky.offsetHeight) {
-                if (scrollingDirection < 0) {
-                    sticky.setAttribute('data-visible', 'sticky')
-                } else if (scrollingDirection > 0) {
-                    sticky.setAttribute('data-visible', 'false')
+            if ($('.site-header').hasClass('sticky')) {
+                const sticky = document.querySelector('.site-header.sticky')
+                let scrollY = window.scrollY
+                let scrollingDirection = scrollY - previousScrollY
+                if (scrollY > sticky.offsetHeight) {
+                    if (scrollingDirection < 0) {
+                        sticky.setAttribute('data-visible', 'sticky')
+                    } else if (scrollingDirection > 0) {
+                        sticky.setAttribute('data-visible', 'false')
+                    }
+                } else {
+                    sticky.setAttribute('data-visible', 'true')
                 }
-            } else {
-                sticky.setAttribute('data-visible', 'true')
+                previousScrollY = scrollY
             }
-            previousScrollY = scrollY
         }
 
         window.onscroll = function() {

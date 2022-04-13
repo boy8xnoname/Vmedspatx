@@ -8087,7 +8087,6 @@ section.our_location .map-pins .map-pin-item.map-pin-item-3 {
 }
 
 .home-section.contact_us {
-  background-image: url("assets/images/Gold-Background.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -8185,10 +8184,6 @@ body.single .entry-content {
 
 .content-bottom-form {
   padding: 30px 0;
-}
-
-html {
-  margin-top: 32px !important;
 }
 
 .site-main {
