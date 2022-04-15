@@ -9,7 +9,7 @@
         <div class="row">
             <div class="d-none d-lg-block col col-lg-2">
 			</div>
-            <div class="main col col-lg-8 reveal bounce delay-4s">
+            <div class="main col col-lg-8 reveal animatable bounceIn delay-4s">
                 <?php  if(!empty($explore_our_treatments_heading)) { ?> 
                     <h2 class="content-our-treatments-title text-center">
                         <?php echo esc_attr( $explore_our_treatments_heading);?>

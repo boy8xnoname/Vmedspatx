@@ -24,7 +24,7 @@ $isHeaderFullyVisible = get_theme_mod('is_header_fully_visible');
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'medstar01' ); ?></a>
+	<!-- <a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'medstar01' ); ?></a> -->
 
 	<header id="masthead" class="site-header <?php if($isHeaderSticky) echo'sticky';?>">
 		<div class="container">
@@ -32,7 +32,6 @@ $isHeaderFullyVisible = get_theme_mod('is_header_fully_visible');
 				<div class="site-header__left col col-5 col-sm-6 col-lg-3 col-xl-2">
 					<div class="site-branding">
 						<?php
-						
 						if(!empty( get_custom_logo())) {
 							the_custom_logo();
 						} else {	

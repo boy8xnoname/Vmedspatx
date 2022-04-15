@@ -70,100 +70,106 @@ var medstar01 = {};
 
     medstar01.contentScripts = function() {
         // HOME BANNER SLIDER
-        let homeBannerSwiper = new Swiper(".home-banner-slider", {
-            slidesPerView: 1,
-            spaceBetween: 0,
-            centeredSlides: false,
-            freeMode: true,
-            grabCursor: true,
-            loop: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true
-            },
-            autoplay: {
-                delay: 6000,
-                disableOnInteraction: false
-            },
-            // navigation: {
-            //     nextEl: ".swiper-button-next",
-            //     prevEl: ".swiper-button-prev"
-            // }
-        });
+        if ($(".home-banner-slider").length > 0) {
+            let homeBannerSwiper = new Swiper(".home-banner-slider", {
+                slidesPerView: 1,
+                spaceBetween: 0,
+                centeredSlides: false,
+                freeMode: true,
+                grabCursor: true,
+                loop: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true
+                },
+                autoplay: {
+                    delay: 6000,
+                    disableOnInteraction: false
+                },
+                // navigation: {
+                //     nextEl: ".swiper-button-next",
+                //     prevEl: ".swiper-button-prev"
+                // }
+            });
+        }
 
         // TREATMENTS FEATURED IN
-        let treamentsFeaturedSwiper = new Swiper(".treaments_featured_slider", {
-            loop: true,
+        if ($(".treaments_featured_slider").length > 0) {
+            let treamentsFeaturedSwiper = new Swiper(".treaments_featured_slider", {
+                loop: true,
 
-            slidesPerView: 6,
-            paginationClickable: true,
-            spaceBetween: 20,
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false
-            },
-            breakpoints: {
-                1920: {
-                    slidesPerView: 6,
-                    spaceBetween: 30
+                slidesPerView: 6,
+                paginationClickable: true,
+                spaceBetween: 20,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false
                 },
-                1400: {
-                    slidesPerView: 5,
-                    spaceBetween: 30
-                },
-                990: {
-                    slidesPerView: 4,
-                    spaceBetween: 30
-                },
-                768: {
-                    slidesPerView: 3,
-                    spaceBetween: 30
-                },
-                480: {
-                    slidesPerView: 2,
-                    spaceBetween: 10
+                breakpoints: {
+                    1920: {
+                        slidesPerView: 6,
+                        spaceBetween: 30
+                    },
+                    1400: {
+                        slidesPerView: 5,
+                        spaceBetween: 30
+                    },
+                    990: {
+                        slidesPerView: 4,
+                        spaceBetween: 30
+                    },
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 30
+                    },
+                    480: {
+                        slidesPerView: 2,
+                        spaceBetween: 10
+                    }
                 }
-            }
-        });
+            });
+        }
 
 
         // TREATMENTS FEATURED IN
-        let inThePressSwiper = new Swiper(".in_the_press_slider", {
-            loop: true,
-            slidesPerView: 5,
-            paginationClickable: true,
-            spaceBetween: 20,
-            // pagination: {
-            //     el: ".swiper-pagination",
-            //     clickable: true
-            // },
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false
-            },
-            // navigation: {
-            //     nextEl: ".swiper-button-next",
-            //     prevEl: ".swiper-button-prev"
-            // },
-            breakpoints: {
-                1400: {
-                    slidesPerView: 5,
-                    spaceBetween: 30
+        if ($(".in_the_press_slider").length > 0) {
+            let inThePressSwiper = new Swiper(".in_the_press_slider", {
+                loop: true,
+                slidesPerView: 5,
+                paginationClickable: true,
+                spaceBetween: 20,
+                // pagination: {
+                //     el: ".swiper-pagination",
+                //     clickable: true
+                // },
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false
                 },
-                990: {
-                    slidesPerView: 4,
-                    spaceBetween: 30
-                },
-                768: {
-                    slidesPerView: 3,
-                    spaceBetween: 30
-                },
-                480: {
-                    slidesPerView: 2,
-                    spaceBetween: 10
+                // navigation: {
+                //     nextEl: ".swiper-button-next",
+                //     prevEl: ".swiper-button-prev"
+                // },
+                breakpoints: {
+                    1400: {
+                        slidesPerView: 5,
+                        spaceBetween: 30
+                    },
+                    990: {
+                        slidesPerView: 4,
+                        spaceBetween: 30
+                    },
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 30
+                    },
+                    480: {
+                        slidesPerView: 2,
+                        spaceBetween: 10
+                    }
                 }
-            }
-        });
+            });
+        }
 
         // 
         $('.section-jarallax').jarallax({
@@ -204,23 +210,37 @@ var medstar01 = {};
 
     // Add animation to content when load 
     medstar01.addAnimationToPageLoad = function() {
-        function reveal() {
-            var reveals = document.querySelectorAll(".reveal");
 
-            for (var i = 0; i < reveals.length; i++) {
-                var windowHeight = window.innerHeight;
-                var elementTop = reveals[i].getBoundingClientRect().top;
-                var elementVisible = 150;
 
-                if (elementTop < windowHeight - elementVisible) {
-                    reveals[i].classList.add("animated");
-                } else {
-                    reveals[i].classList.remove("animated");
+        jQuery(function($) {
+
+            // Function which adds the 'animated' class to any '.animatable' in view
+            var doAnimations = function() {
+
+                // Calc current offset and get all animatables
+                var offset = $(window).scrollTop() + $(window).height(),
+                    $animatables = $('.animatable');
+
+                // Unbind scroll handler if we have no animatables
+                if ($animatables.length == 0) {
+                    $(window).off('scroll', doAnimations);
                 }
-            }
-        }
 
-        window.addEventListener("scroll", reveal);
+                // Check all animatables and animate them if necessary
+                $animatables.each(function(i) {
+                    var $animatable = $(this);
+                    if (($animatable.offset().top + $animatable.height() - 20) < offset) {
+                        $animatable.removeClass('animatable').addClass('animated');
+                    }
+                });
+
+            };
+
+            // Hook doAnimations on scroll, and trigger a scroll
+            $(window).on('scroll', doAnimations);
+            $(window).trigger('scroll');
+
+        });
     }
 
 
