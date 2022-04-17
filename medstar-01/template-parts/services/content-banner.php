@@ -7,6 +7,7 @@ $service_banner_video_ogv =  get_field('service_banner_video_ogv');
 $service_banner_video_url = get_field('service_banner_video_url');
 $services_banner_image = get_field('service_banner_image');
 
+$service_banner_top_image = get_field('service_banner_top_image');
 $service_banner_title = get_field('service_banner_title');
 $service_banner_description = get_field('service_banner_description');
 $service_button_title = get_field('service_button_title');
@@ -23,10 +24,10 @@ if(($select_banner_videoimage_banner == 'Self Hosted Video') && !empty($service_
     }
 ?> 
     <!-- Background Self-Hosted Video Parallax -->
-    <div class="jarallax" data-jarallax data-video-src="<?php echo $hostedVideo;?>">
+    <div class="jarallax jarallax-video-bg" data-jarallax data-video-src="<?php echo $hostedVideo;?>">
 <?php } else if(($select_banner_videoimage_banner == 'Vimeo/YouTube Video') &&  !empty($service_banner_video_url)) {?> 
     <!-- Background Self-Hosted Video Parallax -->
-    <div class="jarallax" data-jarallax data-video-src="<?php echo esc_url($service_banner_video_url);?>">
+    <div class="jarallax  jarallax-video-bg" data-jarallax data-video-src="<?php echo esc_url($service_banner_video_url);?>">
 <?php } else {?>
     <div class="service-banner header-jarallax" style="background-image: url('<?php echo esc_url($services_banner_image['url']);?>');">
 <?php }
@@ -35,7 +36,12 @@ if(($select_banner_videoimage_banner == 'Self Hosted Video') && !empty($service_
         <div class="row">
             <div class="col col-12 col-md-4"></div>
             <div class="services-banner-texts col col-12 col-md-8 d-flex flex-column justify-content-md-end align-items-md-end">
-                <?php if(!empty($service_banner_title)) { 
+                <?php if (!empty($service_banner_top_image)) {
+                    echo '<div class="services-banner-top-logo">';
+                    echo '<img src="'.$service_banner_top_image['url'].'" alt="'.$service_banner_title.'"/>';
+                    echo '</div>';
+                }
+                if(!empty($service_banner_title)) { 
                     echo '<h2 class="service-banner-title">'.$service_banner_title.'</h2>';
                 } ?>
                  <?php if(!empty($service_banner_description)) { 

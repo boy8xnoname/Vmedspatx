@@ -1,3 +1,9 @@
+.jarallax-video-bg {
+    video {
+        margin: 0 !important
+    }
+}
+
 .service-banner-image {
     color: #ffffff;
     position: relative;
@@ -12,6 +18,12 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    .services-banner-top-logo {
+        img {
+            max-height: 100px;
+            width: auto;
+        }
     }
     .service-banner-title {
         text-transform: uppercase;
@@ -95,6 +107,7 @@
     @media (min-width: 992px) {}
     // X-Large devices (large desktops, 1200px and up)
     @media (min-width: 1200px) {
+        padding-top: 200px;
         .service-banner-title {
             font-size: 50px;
         }

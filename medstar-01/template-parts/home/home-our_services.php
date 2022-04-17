@@ -15,12 +15,12 @@
 				$services_item_learn_more_link = get_sub_field('services_item_learn_more_link');
 				?>
 					<div class="our-services__item-wrap">
-						<div class="item-image animatable slideInLeft delay-2s">
+						<div class="item-image"  data-aos="fade-right" data-aos-delay="200">
 							<div class="item-image-wrap">
 								<img class="" src="<?php echo esc_url($services_item_image['url']);?>" alt="<?php echo $services_item_heading;?>">
 							</div>
 						</div>
-						<div class="item-text animatable slideInRight  delay-2s">
+						<div class="item-text"  data-aos="fade-left" data-aos-delay="200">
 							<div class="item-text-wrap">
 								<div class="item-header">
 									<span class="heading-services-icon">

@@ -182,6 +182,30 @@
             "mime_types": ""
         },
         {
+            "key": "field_6259b2479550c",
+            "label": "Hero Section Top Logo Image",
+            "name": "service_banner_top_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
             "key": "field_6249c0092d488",
             "label": "Hero Section Title",
             "name": "service_banner_title",
@@ -666,5 +690,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1649698538
+    "modified": 1650045568
 }
