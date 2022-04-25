@@ -6,10 +6,9 @@
 	<section class="home-section blog_post">
 		<div class="container">
 			<h2 class="section-title text-center">Blog Posts</h2>
-
 			<div class="row post-list">
 				<?php foreach( $blogPostItems as $post ):  setup_postdata($post); ?>
-					<div class="blog-post-item col col-12 col-lg-4">	
+					<div class="blog-post-item col col-12 col-md-4 col-lg-4">	
 						<div class="blog-post-item-wrap">
 							<?php medstar01_post_thumbnail(); ?>
 							<div class="blog-post-item-text text-center">

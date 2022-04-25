@@ -31,7 +31,8 @@
 		
 		<div class="row">
 			<!-- Style Contact Us Version 1 -->
-			<?php if($contactusStyle == 'contact_us_style_1') { ?>
+			<?php 
+			if($contactusStyle == 'contact_us_style_1') { ?>
 				<div class="d-none d-lg-block col col-md-1 col col-lg-3">
 				</div>
 				<div class="col col-12 col-md-10 col-lg-6">
@@ -50,7 +51,7 @@
 			<?php } ?>
 			<?php if($contactusStyle == 'contact_us_style_2') { ?>
 				<!-- Style Contact Us Version 2 -->
-				<div class="contact_image_content col col-12 col-md-6  col-lg-5">
+				<div class="contact_image_content d-flex align-items-center col col-12 col-md-6  col-lg-5">
 					<img src="<?php echo $contactImageContent;?>" alt="<?php echo esc_attr( $sectionContactTitle, 'medstar01' ) ?>">
 				</div>
 				<div class="d-none d-lg-block col col-md-1 col col-lg-2">

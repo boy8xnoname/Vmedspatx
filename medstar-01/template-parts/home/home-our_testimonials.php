@@ -7,7 +7,7 @@ if( have_rows('testimonials_content') ):
         $sectionStyle = 'style="background-image: url(' . $testimonialImageBackground['url'] . ')"';
     }
 ?>
-<section class="home-section our_testimonials <?php echo $testimonialStyle;?>" <?php echo $sectionStyle;?> >
+<section class="home-section our_testimonials <?php echo $testimonialStyle;?> <?php if($testimonialStyle == 'testimonials_style_2') echo 'section-jarallax"'; ?>" <?php echo $sectionStyle;?> >
     <div class="container">
         <h2 class="section-title text-center"><?php echo esc_attr('Testimonials');?></h2>
         <div class="row  testimonials-reveal slideInRight  delay-2s" >
