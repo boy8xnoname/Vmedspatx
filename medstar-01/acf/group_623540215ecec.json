@@ -19,6 +19,31 @@
             "endpoint": 0
         },
         {
+            "key": "field_6264332115381",
+            "label": "Select Hero Banner Style",
+            "name": "hero_banner_style",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "style1": "Banner Style 1",
+                "style2": "Banner Style 2"
+            },
+            "default_value": "style1",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
             "key": "field_62354064fa72a",
             "label": "Slider Content",
             "name": "setup_banner_items",
@@ -46,7 +71,7 @@
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "",
+                        "width": "30",
                         "class": "",
                         "id": ""
                     },
@@ -520,6 +545,30 @@
             "prepend": "",
             "append": "",
             "maxlength": ""
+        },
+        {
+            "key": "field_6265db0c8ff47",
+            "label": "About Us Image",
+            "name": "about_us_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
         },
         {
             "key": "field_62376f37ac805",
@@ -1294,5 +1343,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1649862373
+    "modified": 1650842398
 }

@@ -26,9 +26,11 @@
 
 	<?php get_template_part( 'template-parts/home/home-explore_our_treatments' ); ?>
 
+	<?php  get_template_part( 'template-parts/home/home-about_us' ); ?>
+
 	<?php get_template_part( 'template-parts/home/home-our_testimonials' ); ?>
 
-	<?php get_template_part( 'template-parts/home/home-about_us' ); ?>
+	<?php // get_template_part( 'template-parts/home/home-about_us' ); ?>
 
 	<?php get_template_part( 'template-parts/home/home-in_the_press' ); ?>
 

@@ -7149,7 +7149,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
   margin-top: 0%;
   margin-bottom: 0%;
-  padding: 4% 0% 0% 0%;
+  padding: 5% 10% 5% 10%;
 }
 
 .home-section.about_us .about-us-main {
@@ -7185,14 +7185,15 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   transform: scale(1.1);
 }
 
-.home-banner .card-content {
+.home-banner .slide-style1 .card-content {
   background-repeat: no-repeat;
   background-position: 50%;
   color: #ffffff;
   display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  line-height: 1.6em;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  line-height: 1.4em;
   position: absolute;
   top: 0;
   left: 0;
@@ -7200,6 +7201,58 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   right: 0;
   padding: 50px;
   margin: auto;
+}
+
+.home-banner .slide-style1 .h2 {
+  line-height: 1.4em;
+  text-align: center;
+}
+
+.home-banner .slide-style1 p {
+  text-align: center;
+}
+
+.home-banner .slide-style2 .card-content {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  line-height: 1.4em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 50px;
+  margin: auto;
+}
+
+.home-banner .slide-style2 .h2 {
+  line-height: 1.4em;
+  text-align: right;
+}
+
+.home-banner .slide-style2 p {
+  text-align: right;
+}
+
+.home-banner .card-content .h2 {
+  line-height: 1.4em;
+}
+
+.home-banner .card-content .card-action a {
+  background-color: #ffffff;
+  color: #7A7A7A;
+  font-size: 16px;
+  padding: 12px 30px;
+}
+
+.home-banner .card-content .card-action a:hover {
+  background-color: #C79E55;
+  color: #ffffff;
 }
 
 .home-banner .swiper-slide {
@@ -10955,15 +11008,54 @@ section {
   .site-footer .footer-copyright-menu {
     text-align: right;
   }
+  .home-section.about_us .about-us-image {
+    padding: 0 30px 0 15px;
+  }
+  .home-section.about_us .about-us-main {
+    margin: 0px 0px 0px 0px;
+    padding: 15px 0 0 30px;
+  }
+  .home-banner .slide-style1 .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .home-banner .slide-style1 .card-content .h2 {
+    line-height: 1.4em;
+    text-align: center;
+  }
+  .home-banner .slide-style1 .card-content p {
+    text-align: center;
+  }
+  .home-banner .slide-style2 .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .home-banner .slide-style2 .card-content .h2 {
+    line-height: 1.4em;
+    text-align: right;
+  }
+  .home-banner .slide-style2 .card-content p {
+    text-align: right;
+  }
   .home-banner .swiper-slide {
     height: 95vh;
     overflow: hidden;
   }
   .home-banner .card-content {
+    padding: 0% 0% 18% 0%;
+  }
+  .home-banner .card-content h2, .home-banner .card-content .h2 {
     font-size: 4.3rem;
     font-weight: 400;
-    padding: 0% 0% 18% 0%;
-    text-align: center;
+    line-height: 1.4em;
+  }
+  .home-banner .card-content p {
+    font-size: 1.8rem;
+    font-weight: 400;
   }
   .book_your_next_appointment .book_your_next_appointment-wrap {
     background-position: center;

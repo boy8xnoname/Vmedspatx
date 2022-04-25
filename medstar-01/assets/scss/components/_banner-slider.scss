@@ -1,19 +1,73 @@
 .home-banner {
+    .slide-style1 {
+        .card-content {
+            background-repeat: no-repeat;
+            background-position: 50%;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            line-height: 1.4em;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            padding: 50px;
+            margin: auto;
+        }
+        .h2 {
+            line-height: 1.4em;
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+    }
+    .slide-style2 {
+        .card-content {
+            background-repeat: no-repeat;
+            background-position: 50%;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: flex-end;
+            line-height: 1.4em;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            padding: 50px;
+            margin: auto;
+        }
+        .h2 {
+            line-height: 1.4em;
+            text-align: right;
+        }
+        p {
+            text-align: right;
+        }
+    }
     .card-content {
-        background-repeat: no-repeat;
-        background-position: 50%;
-        color: #ffffff;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-        line-height: 1.6em;
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        padding: 50px;
-        margin: auto;
+        .h2 {
+            line-height: 1.4em;
+        }
+        p {}
+        .card-action {
+            a {
+                background-color: #ffffff;
+                color: $text__color;
+                font-size: 16px;
+                padding: 12px 30px;
+                &:hover {
+                    background-color: $brand__color;
+                    color: #ffffff;
+                }
+            }
+        }
     }
     .swiper-slide {
         height: 300px;
@@ -43,15 +97,51 @@
     }
     // Large devices (desktops, 992px and up)
     @media (min-width: 992px) {
+        .slide-style1 {
+            .card-content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .h2 {
+                    line-height: 1.4em;
+                    text-align: center;
+                }
+                p {
+                    text-align: center;
+                }
+            }
+        }
+        .slide-style2 {
+            .card-content {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                justify-content: center;
+                .h2 {
+                    line-height: 1.4em;
+                    text-align: right;
+                }
+                p {
+                    text-align: right;
+                }
+            }
+        }
         .swiper-slide {
             height: 95vh;
             overflow: hidden;
         }
         .card-content {
-            font-size: 4.3rem;
-            font-weight: 400;
             padding: 0% 0% 18% 0%;
-            text-align: center;
+            h2 {
+                font-size: 4.3rem;
+                font-weight: 400;
+                line-height: 1.4em;
+            }
+            p {
+                font-size: 1.8rem;
+                font-weight: 400;
+            }
         }
     }
     // X-Large devices (large desktops, 1200px and up)
