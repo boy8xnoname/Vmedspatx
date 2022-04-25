@@ -1,10 +1,10 @@
-<?php 	if ( is_front_page()) : 
+<?php 	if ( is_front_page() || is_page_template( 'page-home.php' )) : 
 // get home page banner slider
 $hero_banner_style = get_field('hero_banner_style');
 if(have_rows('setup_banner_items')):
 
 ?>
-<div class="home-banner">
+<div class="home-banner slide-<?php echo $hero_banner_style;?>">
     <div class="home-banner-slider swiper-container swiper-scale-effect">
         <div class="swiper-wrapper">
 <?php
@@ -18,7 +18,7 @@ if(have_rows('setup_banner_items')):
                 $banner_link_end   = '</a>';
             }
             if($hero_banner_style == 'style1') {?> 
-                <div class="swiper-slide slide-<?php echo $hero_banner_style;?>">
+                <div class="swiper-slide">
                     <?php  if (!empty($banner_link)) {echo $banner_link_start;}?> 
                         <div class="card-image" style="background-image: url('<?php echo esc_url($banner_image['url']);?>')">
                             <img class="d-hide d-none" src="<?php echo esc_url($banner_image['url']);?>" alt="Image Slider">

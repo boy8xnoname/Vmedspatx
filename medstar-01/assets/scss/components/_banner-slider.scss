@@ -1,5 +1,5 @@
 .home-banner {
-    .slide-style1 {
+    &.slide-style1 {
         .card-content {
             background-repeat: no-repeat;
             background-position: 50%;
@@ -16,16 +16,16 @@
             right: 0;
             padding: 50px;
             margin: auto;
-        }
-        .h2 {
-            line-height: 1.4em;
-            text-align: center;
-        }
-        p {
-            text-align: center;
+            .h2 {
+                line-height: 1.4em;
+                text-align: center;
+            }
+            p {
+                text-align: center;
+            }
         }
     }
-    .slide-style2 {
+    &.slide-style2 {
         .card-content {
             background-repeat: no-repeat;
             background-position: 50%;
@@ -42,13 +42,13 @@
             right: 0;
             padding: 50px;
             margin: auto;
-        }
-        .h2 {
-            line-height: 1.4em;
-            text-align: right;
-        }
-        p {
-            text-align: right;
+            .h2 {
+                line-height: 1.4em;
+                text-align: right;
+            }
+            p {
+                text-align: right;
+            }
         }
     }
     .card-content {
@@ -97,14 +97,13 @@
     }
     // Large devices (desktops, 992px and up)
     @media (min-width: 992px) {
-        .slide-style1 {
+        &.slide-style1 {
             .card-content {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                .h2 {
-                    line-height: 1.4em;
+                h2 {
                     text-align: center;
                 }
                 p {
@@ -112,14 +111,13 @@
                 }
             }
         }
-        .slide-style2 {
+        &.slide-style2 {
             .card-content {
                 display: flex;
                 flex-direction: column;
                 align-items: flex-end;
                 justify-content: center;
-                .h2 {
-                    line-height: 1.4em;
+                h2 {
                     text-align: right;
                 }
                 p {

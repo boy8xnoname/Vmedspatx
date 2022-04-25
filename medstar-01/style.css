@@ -7185,7 +7185,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   transform: scale(1.1);
 }
 
-.home-banner .slide-style1 .card-content {
+.home-banner.slide-style1 .card-content {
   background-repeat: no-repeat;
   background-position: 50%;
   color: #ffffff;
@@ -7203,16 +7203,16 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   margin: auto;
 }
 
-.home-banner .slide-style1 .h2 {
+.home-banner.slide-style1 .card-content .h2 {
   line-height: 1.4em;
   text-align: center;
 }
 
-.home-banner .slide-style1 p {
+.home-banner.slide-style1 .card-content p {
   text-align: center;
 }
 
-.home-banner .slide-style2 .card-content {
+.home-banner.slide-style2 .card-content {
   background-repeat: no-repeat;
   background-position: 50%;
   color: #ffffff;
@@ -7230,12 +7230,12 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   margin: auto;
 }
 
-.home-banner .slide-style2 .h2 {
+.home-banner.slide-style2 .card-content .h2 {
   line-height: 1.4em;
   text-align: right;
 }
 
-.home-banner .slide-style2 p {
+.home-banner.slide-style2 .card-content p {
   text-align: right;
 }
 
@@ -7361,6 +7361,11 @@ input.submit:hover {
 
 .contact_us.service-contact-sidebar .contact-form-title {
   font-size: 36px;
+}
+
+.contact_us.contact_us_style_2 .contact_image_content {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .explore_our_treatments {
@@ -7804,6 +7809,63 @@ ul.social-list a:hover {
   color: #C79E55;
   font-size: 1rem;
   font-weight: 300;
+}
+
+.our_testimonials.testimonials_style_2 {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5em 2em 5em 2em;
+  position: relative;
+}
+
+.our_testimonials.testimonials_style_2:before {
+  background-color: rgba(255, 255, 255, 0.5);
+  content: " ";
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.our_testimonials.testimonials_style_2 .container {
+  position: relative;
+  z-index: 2;
+}
+
+.our_testimonials.testimonials_style_2 .section-title {
+  color: #ffffff;
+}
+
+.our_testimonials.testimonials_style_2 .block-blockquote {
+  background-color: #0000005E;
+  color: #ffffff;
+  height: 100%;
+  padding: 15px;
+  text-align: center;
+}
+
+.our_testimonials.testimonials_style_2 .block-blockquote:before {
+  content: " ";
+}
+
+.our_testimonials.testimonials_style_2 .testimonials-item {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.our_testimonials.testimonials_style_2 .testimonials-item:nth-child(2n) .block-blockquote {
+  background-color: #F3F3F345;
+}
+
+.our_testimonials.testimonials_style_2 .testimonials-item:nth-child(2n + 1) .block-blockquote {
+  background-color: #0000005E;
+}
+
+.our_testimonials.testimonials_style_2 .blockquote__position {
+  color: #ffffff;
 }
 
 section.blog_post {
@@ -10083,6 +10145,10 @@ section {
     flex-basis: 40%;
     width: 40%;
   }
+  .contact_us.contact_us_style_2 .contact_image_content {
+    margin-bottom: 0;
+    text-align: left;
+  }
   .gform_wrapper .gform_footer input[type="submit"] {
     font-size: 25px;
     font-weight: 500;
@@ -11015,30 +11081,28 @@ section {
     margin: 0px 0px 0px 0px;
     padding: 15px 0 0 30px;
   }
-  .home-banner .slide-style1 .card-content {
+  .home-banner.slide-style1 .card-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  .home-banner .slide-style1 .card-content .h2 {
-    line-height: 1.4em;
+  .home-banner.slide-style1 .card-content h2, .home-banner.slide-style1 .card-content .h2 {
     text-align: center;
   }
-  .home-banner .slide-style1 .card-content p {
+  .home-banner.slide-style1 .card-content p {
     text-align: center;
   }
-  .home-banner .slide-style2 .card-content {
+  .home-banner.slide-style2 .card-content {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
   }
-  .home-banner .slide-style2 .card-content .h2 {
-    line-height: 1.4em;
+  .home-banner.slide-style2 .card-content h2, .home-banner.slide-style2 .card-content .h2 {
     text-align: right;
   }
-  .home-banner .slide-style2 .card-content p {
+  .home-banner.slide-style2 .card-content p {
     text-align: right;
   }
   .home-banner .swiper-slide {
@@ -12131,6 +12195,10 @@ section {
   }
   .contact_us.service-contact-sidebar .contact-form-title {
     font-size: 54px;
+  }
+  .contact_us.contact_us_style_2 .contact_image_content,
+  .contact_us.contact_us_style_2 .contact_image_form {
+    padding: 50px 50px 50px 50px;
   }
   .explore_our_treatments .main h2.content-our-treatments-title, .explore_our_treatments .main .content-our-treatments-title.h2 {
     font-size: 50px;

@@ -9,12 +9,12 @@
     <div class="container">
         <div class="row about-us-top">
             
-            <div class="about-us-image col col-md-5">
+            <div class="about-us-image col col-12 col-md-5">
                 <?php if(!empty($about_us_image)) { ?>
                     <img src="<?php echo $about_us_image['url']; ?>" alt="<?php echo esc_attr( $about_us_title ); ?>" />
                 <?php } else {} ?>
             </div>
-            <div class="about-us-main d-flex align-items-center col col-md-7">
+            <div class="about-us-main d-flex align-items-center col  col-12 col-md-7">
                 <div class="about-us-main-wrap">
                     <?php if(!empty($about_us_title)) :
                         echo '<h2 class="section-title">'.$about_us_title.'</h2>';

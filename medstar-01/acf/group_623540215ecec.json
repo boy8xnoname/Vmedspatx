@@ -23,7 +23,7 @@
             "label": "Select Hero Banner Style",
             "name": "hero_banner_style",
             "type": "select",
-            "instructions": "",
+            "instructions": "<strong>Banner Style 1<\/strong>: This style will make all content align center <br\/>\r\n<strong>Banner Style 2<\/strong>: This style will make all content align right",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -451,6 +451,63 @@
             },
             "placement": "top",
             "endpoint": 0
+        },
+        {
+            "key": "field_62660a979dde0",
+            "label": "Testimonials style",
+            "name": "testimonials_style",
+            "type": "select",
+            "instructions": "<strong>Testimonial Style 1<\/strong>: This style will make content without background image <br\/>\r\n<strong>Testimonial Style 2<\/strong>: This style will make content with background image",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "testimonials_style_1": "Testimonial style 1",
+                "testimonials_style_2": "Testimonial style 2"
+            },
+            "default_value": "testimonials_style_1",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_62663b04829e4",
+            "label": "Testimonal background image",
+            "name": "testimonal_background_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_62660a979dde0",
+                        "operator": "==",
+                        "value": "testimonials_style_2"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
         },
         {
             "key": "field_62376ec2ac800",
@@ -1225,13 +1282,78 @@
             "endpoint": 0
         },
         {
+            "key": "field_62665d586bf45",
+            "label": "Contact Us Style",
+            "name": "contact_us_style",
+            "type": "select",
+            "instructions": "<strong>Contact Us Style 1<\/strong>: This style will make content without background image <br\/>\r\n<strong>Contact Us Style 2<\/strong>: This style will make content with background image",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "contact_us_style_1": "Contact Us style 1",
+                "contact_us_style_2": "Contact Us style 2"
+            },
+            "default_value": "contact_us_style_1",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
             "key": "field_6256e6c096271",
             "label": "Contact section image background",
             "name": "contact_section_image_background",
             "type": "image",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_62665d586bf45",
+                        "operator": "==",
+                        "value": "contact_us_style_1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_6266699c89562",
+            "label": "Contact section image",
+            "name": "contact_section_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_62665d586bf45",
+                        "operator": "==",
+                        "value": "contact_us_style_2"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -1343,5 +1465,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1650842398
+    "modified": 1650879241
 }

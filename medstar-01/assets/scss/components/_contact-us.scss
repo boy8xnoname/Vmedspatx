@@ -29,6 +29,12 @@
             font-size: 36px;
         }
     }
+    &.contact_us_style_2 {
+        .contact_image_content {
+            text-align: center;
+            margin-bottom: 30px
+        }
+    }
     // Small devices (landscape phones, 576px and up)
     @media (min-width: 576px) {}
     // Medium devices (tablets, 768px and up)
@@ -36,6 +42,12 @@
         &.service-contact-sidebar {
             flex-basis: 40%;
             width: 40%;
+        }
+        &.contact_us_style_2 {
+            .contact_image_content {
+                margin-bottom: 0;
+                text-align: left;
+            }
         }
     }
     // Large devices (desktops, 992px and up)
@@ -54,6 +66,13 @@
         &.service-contact-sidebar {
             .contact-form-title {
                 font-size: 54px;
+            }
+        }
+        &.contact_us_style_2 {
+            .contact_image_content {}
+            .contact_image_content,
+            .contact_image_form {
+                padding: 50px 50px 50px 50px;
             }
         }
     }
