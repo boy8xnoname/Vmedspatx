@@ -91,7 +91,7 @@
                     "label": "Slider Heading",
                     "name": "banner_heading",
                     "type": "wysiwyg",
-                    "instructions": "",
+                    "instructions": "Please use Heading 2 for title and Paragraph for description",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -1465,5 +1465,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1651155978
+    "modified": 1651157684
 }

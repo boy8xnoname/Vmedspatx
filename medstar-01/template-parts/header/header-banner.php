@@ -19,14 +19,19 @@ if(have_rows('setup_banner_items')):
             }
             if($hero_banner_style == 'style1') {?> 
                 <div class="swiper-slide">
-                    <?php  if (!empty($banner_link)) {echo $banner_link_start;}?> 
                         <div class="card-image" style="background-image: url('<?php echo esc_url($banner_image['url']);?>')">
                             <img class="d-hide d-none" src="<?php echo esc_url($banner_image['url']);?>" alt="Image Slider">
                         </div>
                         <div class="card-content">
                             <?php echo apply_filters('the_content', $banner_heading);?>
+                            <div class="card-action">
+                            <?php  if (!empty($banner_link)) {
+                                echo $banner_link_start;
+                                echo esc_attr('READ MORE','medstar01');
+                                echo $banner_link_end;
+                            }?> 
+                            </div>
                         </div>
-                    <?php  if (!empty($banner_link)) {echo $banner_link_end;}?> 
                 </div>
             <?php } else {?>
                 <div class="swiper-slide slide-<?php echo $hero_banner_style;?>">
@@ -41,7 +46,6 @@ if(have_rows('setup_banner_items')):
                             echo esc_attr('READ MORE','medstar01');
                             echo $banner_link_end;
                         }?> 
-
                         </div>
                     </div>
                 </div>
