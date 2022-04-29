@@ -17,11 +17,14 @@ $isHeaderFullyVisible = get_theme_mod('is_header_fully_visible');
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-
+	<!-- Start / Tracking Code Should Go Here -->
+	<!-- End / Tracking Code Should Go Here -->
 	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
+<!-- Start / Tracking Code Should Go Here -->
+<!-- End / Tracking Code Should Go Here -->	
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 	<!-- <a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'medstar01' ); ?></a> -->

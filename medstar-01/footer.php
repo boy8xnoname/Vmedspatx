@@ -56,6 +56,8 @@
 	</footer><!-- #colophon -->
 
 </div><!-- #page -->
+<!-- Start / Tracking Code Should Go Here -->
+<!-- End / Tracking Code Should Go Here -->
 <?php wp_footer(); ?>
 </body>
 </html>
