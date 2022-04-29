@@ -7682,11 +7682,9 @@ ul.social-list a:hover {
 }
 
 #mobile-site-navigation li.menu-item-has-children .menu-collapsed {
-  color: #7A7A7A;
-  position: absolute;
-  top: 18px;
-  transform: translateY(-50%);
-  right: 10px;
+  color: #C79E55;
+  margin-left: 10px;
+  transform: translateY(0);
   font-size: 14px;
 }
 
@@ -7707,6 +7705,7 @@ ul.social-list a:hover {
 #mobile-site-navigation li.menu-item-has-children.active .menu-collapsed {
   color: #ffffff;
   margin-left: 7px;
+  position: initial;
 }
 
 #mobile-site-navigation li .menu-collapsed {
@@ -7725,6 +7724,7 @@ ul.social-list a:hover {
 #mobile-site-navigation .header-mobile-navigation .menu-item-has-children > a {
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 100%;
 }
 
@@ -8318,6 +8318,53 @@ body.single .entry-content {
 
 section {
   padding: 30px 0;
+}
+
+a.skip-link.screen-reader-text {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+}
+
+#colophon .footer-copyright {
+  padding-top: 35px;
+  position: relative;
+}
+
+#acwp-toolbar-btn svg {
+  opacity: 0;
+}
+
+#acwp-toolbar-btn::before {
+  content: 'ADA Accessible';
+  width: 200px;
+  color: #fff;
+  position: absolute;
+  top: 4px;
+  font-size: 14px;
+  left: -20px;
+}
+
+#acwp-toolbar-btn {
+  position: absolute;
+  top: 0px !important;
+  left: 15px !important;
+  width: 25px;
+  height: 25px;
+  background: url(/wp-content/themes/medstar-01/assets/images/icon.svg) no-repeat center center #3c8dbc;
+  background-size: auto;
+  background-size: 15px 15px;
+  border-width: 2px;
+  border-radius: 7px;
+  right: auto !important;
+}
+
+@-moz-document url-prefix() {
+  .main-navigation #primary-menu > li.menu-item-has-children > .fa {
+    top: 47%;
+    transform: translateY(-50%);
+    right: 9px;
+  }
 }
 
 @font-face {

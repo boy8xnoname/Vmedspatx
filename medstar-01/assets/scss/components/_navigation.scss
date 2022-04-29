@@ -313,11 +313,9 @@ ul.social-list {
                 color: $brand__color;
             }
             .menu-collapsed {
-                color: $text__color;
-                position: absolute;
-                top: 18px;
-                transform: translateY(-50%);
-                right: 10px;
+                color: $brand__color;
+                margin-left: 10px;
+                transform: translateY(0);
                 font-size: 14px;
             }
             .sub-menu {
@@ -335,6 +333,7 @@ ul.social-list {
                 .menu-collapsed {
                     color: #ffffff;
                     margin-left: 7px;
+                    position: initial;
                 }
             }
         }
@@ -352,6 +351,7 @@ ul.social-list {
         .menu-item-has-children>a {
             display: flex;
             align-items: center;
+            justify-content: center;
             width: 100%
         }
     }

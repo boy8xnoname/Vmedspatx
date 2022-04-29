@@ -1,4 +1,46 @@
-// -----------------------------------------------------------------------------
-// When having several themes, this file contains everything related to the
-// default one.
-// -----------------------------------------------------------------------------
+a.skip-link.screen-reader-text {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#colophon .footer-copyright {
+    padding-top: 35px;
+    position: relative;
+}
+
+#acwp-toolbar-btn svg {
+    opacity: 0;
+}
+
+#acwp-toolbar-btn::before {
+    content: 'ADA Accessible';
+    width: 200px;
+    color: #fff;
+    position: absolute;
+    top: 4px;
+    font-size: 14px;
+    left: -20px;
+}
+
+#acwp-toolbar-btn {
+    position: absolute;
+    top: 0px !important;
+    left: 15px !important;
+    width: 25px;
+    height: 25px;
+    background: url(/wp-content/themes/medstar-01/assets/images/icon.svg) no-repeat center center #3c8dbc;
+    background-size: auto;
+    background-size: 15px 15px;
+    border-width: 2px;
+    border-radius: 7px;
+    right: auto !important;
+}
+
+@-moz-document url-prefix() {
+    .main-navigation #primary-menu>li.menu-item-has-children>.fa {
+        top: 47%;
+        transform: translateY(-50%);
+        right: 9px;
+    }
+}
