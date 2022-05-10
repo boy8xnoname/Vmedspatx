@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_6249c00928bd0",
-            "label": "Hero Section",
+            "label": "Hero Section (Desktop) - Image\/Video Settings",
             "name": "",
             "type": "tab",
             "instructions": "",
@@ -32,15 +32,15 @@
                 "id": ""
             },
             "choices": {
-                "Image": "Image",
-                "Vimeo\/YouTube Video": "Vimeo\/YouTube Video",
-                "Self Hosted Video": "Self Hosted Video"
+                "image": "Image",
+                "vimeo_youtube_video": "Vimeo\/YouTube Video",
+                "self_hosted_video": "Self Hosted Video"
             },
-            "default_value": "Image",
+            "default_value": "image",
             "allow_null": 0,
             "multiple": 0,
             "ui": 0,
-            "return_format": "value",
+            "return_format": "array",
             "ajax": 0,
             "placeholder": ""
         },
@@ -50,13 +50,13 @@
             "name": "service_banner_video_mp4",
             "type": "file",
             "instructions": "",
-            "required": 1,
+            "required": 0,
             "conditional_logic": [
                 [
                     {
                         "field": "field_624c7d89c081c",
                         "operator": "==",
-                        "value": "Self Hosted Video"
+                        "value": "self_hosted_video"
                     }
                 ]
             ],
@@ -83,7 +83,7 @@
                     {
                         "field": "field_624c7d89c081c",
                         "operator": "==",
-                        "value": "Self Hosted Video"
+                        "value": "self_hosted_video"
                     }
                 ]
             ],
@@ -110,7 +110,7 @@
                     {
                         "field": "field_624c7d89c081c",
                         "operator": "==",
-                        "value": "Self Hosted Video"
+                        "value": "self_hosted_video"
                     }
                 ]
             ],
@@ -137,7 +137,7 @@
                     {
                         "field": "field_624c7d89c081c",
                         "operator": "==",
-                        "value": "Vimeo\/YouTube Video"
+                        "value": "vimeo_youtube_video"
                     }
                 ]
             ],
@@ -180,6 +180,201 @@
             "max_height": "",
             "max_size": "",
             "mime_types": ""
+        },
+        {
+            "key": "field_627a8ba11c160",
+            "label": "Hero Section (Mobile) - Image\/Video Settings",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_627a8bedd15bf",
+            "label": "Mobile - Hero Section Background Video\/Image",
+            "name": "mobile_select_banner_videoimage_banner",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "image": "Image",
+                "vimeo_youtube_video": "Vimeo\/YouTube Video",
+                "self_hosted_video": "Self Hosted Video"
+            },
+            "default_value": "image",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "array",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_627a929d69ed9",
+            "label": "Mobile - Service Banner Video MP4",
+            "name": "mobile_service_banner_video_mp4",
+            "type": "file",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_627a8bedd15bf",
+                        "operator": "==",
+                        "value": "self_hosted_video"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_627a92c18827a",
+            "label": "Mobile - Service Banner Video Webm",
+            "name": "mobile_service_banner_video_webm",
+            "type": "file",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_627a8bedd15bf",
+                        "operator": "==",
+                        "value": "self_hosted_video"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_627a92e75bc61",
+            "label": "Mobile - Service Banner Video Ogv",
+            "name": "mobile_service_banner_video_ogv",
+            "type": "file",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_627a8bedd15bf",
+                        "operator": "==",
+                        "value": "self_hosted_video"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_627a930a784ae",
+            "label": "Mobile - Hero Section Background Video URL",
+            "name": "mobile_service_banner_video_url",
+            "type": "url",
+            "instructions": "Please include https:\/\/ to URL.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_627a8bedd15bf",
+                        "operator": "==",
+                        "value": "vimeo_youtube_video"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_627a961f3b2ca",
+            "label": "Mobile - Hero Section Background Image",
+            "name": "mobile_service_banner_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_627a8bedd15bf",
+                        "operator": "==",
+                        "value": "image"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_627a8c5b38ade",
+            "label": "Hero Section - Content Setting",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
         },
         {
             "key": "field_6259b2479550c",
@@ -690,5 +885,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1650045568
+    "modified": 1652201031
 }

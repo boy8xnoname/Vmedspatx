@@ -10,13 +10,36 @@ $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full');
 if (empty($featured_img_url )) {
 	$featured_img_url  = get_template_directory_uri() . '/assets/images/dummy_1920x930_ffffff_cccccc.png';
 } 
-$service_banner_image = !empty( get_field('service_banner_image')) ?  get_field('service_banner_image') : '';
+// Get service banner fields data for desktop
+
+$serviceBannerVideoMp4 = !empty( get_field('service_banner_video_mp4')) ?  get_field('service_banner_video_mp4') : '';
+$serviceBannerVideoWebm = !empty( get_field('service_banner_video_webm')) ?  get_field('service_banner_video_webm') : '';
+$serviceBannerVideoOgv = !empty( get_field('service_banner_video_ogv')) ?  get_field('service_banner_video_ogv') : '';
+$serviceBannerVideoUrl = !empty( get_field('service_banner_video_url')) ?  get_field('service_banner_video_url') : '';
+$serviceBannerImage = !empty( get_field('service_banner_image')) ?  get_field('service_banner_image') : '';
+
+// Get service banner fields data for Mobile
+$mobileServiceBannerVideoMp4 = !empty( get_field('mobile_service_banner_video_mp4')) ?  get_field('mobile_service_banner_video_mp4') : '';
+$mobileServiceBannerVideoWebm = !empty( get_field('mobile_service_banner_video_webm')) ?  get_field('mobile_service_banner_video_webm') : '';
+$mobileServiceBannerVideoOgv = !empty( get_field('mobile_service_banner_video_ogv')) ?  get_field('mobile_service_banner_video_ogv') : '';
+$mobileServiceBannerVideoUrl = !empty( get_field('mobile_service_banner_video_url')) ?  get_field('mobile_service_banner_video_url') : '';
+$mobileServiceBannerImage = !empty( get_field('mobile_service_banner_image')) ?  get_field('mobile_service_banner_image') : '';
+
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<?php if(!empty($service_banner_image )) {?> 
-		<?php get_template_part( 'template-parts/services/content-banner' ); ?>
+	<?php if(!empty($serviceBannerVideoMp4) || !empty($serviceBannerVideoWebm) || !empty($serviceBannerVideoOgv) || !empty($serviceBannerVideoUrl) || !empty($serviceBannerImage) ) {?> 
+		<?php if(!empty($serviceBannerVideoMp4) || !empty($serviceBannerVideoWebm) || !empty($serviceBannerVideoOgv) || !empty($serviceBannerVideoUrl) || !empty($serviceBannerImage) ) {
+			if(wp_is_mobile()) { 
+				get_template_part('template-parts/services/content-banner-mobile');
+			} else {
+				get_template_part('template-parts/services/content-banner-desktop');
+			}
+		} else {
+			get_template_part('template-parts/services/content-banner-desktop'); 
+		} ?> 
+
 	<?php } else { ?> 
 		<header class="entry-header header-jarallax" style="background-image: url('<?php echo esc_url($featured_img_url);?>');">
 			<div class="container">
