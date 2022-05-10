@@ -29,8 +29,23 @@ $mobileServiceBannerImage = !empty( get_field('mobile_service_banner_image')) ? 
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<?php if(!empty($serviceBannerVideoMp4) || !empty($serviceBannerVideoWebm) || !empty($serviceBannerVideoOgv) || !empty($serviceBannerVideoUrl) || !empty($serviceBannerImage) ) {?> 
-		<?php if(!empty($serviceBannerVideoMp4) || !empty($serviceBannerVideoWebm) || !empty($serviceBannerVideoOgv) || !empty($serviceBannerVideoUrl) || !empty($serviceBannerImage) ) {
+	<?php 
+		// check if admin ready config service banner content
+		if(
+			!empty($serviceBannerVideoMp4) || 
+			!empty($serviceBannerVideoWebm) || 
+			!empty($serviceBannerVideoOgv) || 
+			!empty($serviceBannerVideoUrl) || 
+			!empty($serviceBannerImage) 
+		) {
+			// check if admin ready config mobile service banner content
+			if(
+				!empty($mobileServiceBannerVideoMp4) || 
+				!empty($mobileServiceBannerVideoWebm) || 
+				!empty($mobileServiceBannerVideoOgv) || 
+				!empty($mobileServiceBannerVideoUrl) || 
+				!empty($mobileServiceBannerImage) 
+			) {
 			if(wp_is_mobile()) { 
 				get_template_part('template-parts/services/content-banner-mobile');
 			} else {
