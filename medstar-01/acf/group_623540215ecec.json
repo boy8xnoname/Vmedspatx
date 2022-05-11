@@ -64,14 +64,38 @@
             "sub_fields": [
                 {
                     "key": "field_62354084fa72b",
-                    "label": "Slider Image",
+                    "label": "Slider Image (Desktop)",
                     "name": "banner_image",
                     "type": "image",
-                    "instructions": "",
+                    "instructions": "This field for admin can setup image of banner slider on desktop and mobile (if mobile image field haven't setup).",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
                         "width": "30",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_627be1cfca483",
+                    "label": "Slider Image (Mobile)",
+                    "name": "slider_image_mobile",
+                    "type": "image",
+                    "instructions": "This field for admin can setup image of banner slider on mobile",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
                         "class": "",
                         "id": ""
                     },
@@ -1465,5 +1489,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1651157684
+    "modified": 1652286507
 }
