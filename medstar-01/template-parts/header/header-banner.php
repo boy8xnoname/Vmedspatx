@@ -19,7 +19,6 @@ if(have_rows('setup_banner_items')):
                 $banner_link_start = '<a href="' . $banner_link . '">';
                 $banner_link_end   = '</a>';
             }
-            var_dump($banner_image_mobile );
             if($hero_banner_style == 'style1') {?> 
                 <div class="swiper-slide">
                             <?php if(!empty($banner_image_mobile)) {
