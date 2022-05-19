@@ -24,7 +24,6 @@ if (empty($featured_img_url )) {
 
 	<div class="entry-content">
 		<div class="container">
-			<?php medstar01_post_thumbnail(); ?>
 			<?php the_content(); ?>
 		</div>
 	</div><!-- .entry-content -->
