@@ -41,11 +41,7 @@ get_header();
 		<?php if(!empty($formContactShortcode)) : ?>
 		<section class="service-contact-section contact_us">
 			<div class="container">
-				<?php if(!empty($sectionContactTitle)) : ?>
-				<h2 class="section-title text-center">
-					<?php echo esc_attr( $sectionContactTitle, 'medstar01' ) ?>
-				</h2>
-				<?php endif; ?>
+			
 				<div class="row">
 					<div class="d-none d-lg-block col col-md-1 col col-lg-2">
 					</div>
