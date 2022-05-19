@@ -7,7 +7,7 @@
  * @package medstar01
  */
 $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full');
-if (!empty($featured_img_url )) {
+if (empty($featured_img_url )) {
 	$featured_img_url  = get_template_directory_uri() . '/assets/images/dummy_1920x930_ffffff_cccccc.png';
 } 
 ?>
