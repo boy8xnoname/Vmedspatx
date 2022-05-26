@@ -21,16 +21,16 @@ if(have_rows('setup_banner_items')):
             }
             if($hero_banner_style == 'style1') {?> 
                 <div class="swiper-slide">
-                            <?php if(!empty($banner_image_mobile)) {
-                                if(wp_is_mobile()) {  ?> 
-                                    <div class="card-image" style="background-image: url('<?php echo esc_url($banner_image_mobile['url']);?>')">
+                            <?php if(!empty($banner_image_mobile)) { ?>
+                                
+                                    <div class="card-image d-block d-sm-none" style="background-image: url('<?php echo esc_url($banner_image_mobile['url']);?>')">
                                         <img class="d-hide d-none" src="<?php echo esc_url($banner_image_mobile['url']);?>" alt="Image Slider">
                                     </div>
-                                <?php } else {?>
-                                    <div class="card-image" style="background-image: url('<?php echo esc_url($banner_image['url']);?>')">
+                                
+                                    <div class="card-image d-none d-sm-block" style="background-image: url('<?php echo esc_url($banner_image['url']);?>')">
                                         <img class="d-hide d-none" src="<?php echo esc_url($banner_image['url']);?>" alt="Image Slider">
                                     </div>
-                                <?php } ?>
+                                
                             <?php } else {?>
                                 <div class="card-image" style="background-image: url('<?php echo esc_url($banner_image['url']);?>')">
                                     <img class="d-hide d-none" src="<?php echo esc_url($banner_image['url']);?>" alt="Image Slider">
@@ -50,16 +50,14 @@ if(have_rows('setup_banner_items')):
                 </div>
             <?php } else {?>
                 <div class="swiper-slide slide-<?php echo $hero_banner_style;?>">
-                        <?php if(!empty($banner_image_mobile)) {
-                            if(wp_is_mobile()) {  ?> 
-                                <div class="card-image" style="background-image: url('<?php echo esc_url($banner_image_mobile['url']);?>')">
+                        <?php if(!empty($banner_image_mobile)) { ?> 
+                                <div class="card-image d-block d-sm-none" style="background-image: url('<?php echo esc_url($banner_image_mobile['url']);?>')">
                                     <img class="d-hide d-none" src="<?php echo esc_url($banner_image_mobile['url']);?>" alt="Image Slider">
                                 </div>
-                            <?php } else {?>
-                                <div class="card-image" style="background-image: url('<?php echo esc_url($banner_image['url']);?>')">
+                          
+                                <div class="card-image d-none d-sm-block" style="background-image: url('<?php echo esc_url($banner_image['url']);?>')">
                                     <img class="d-hide d-none" src="<?php echo esc_url($banner_image['url']);?>" alt="Image Slider">
                                 </div>
-                            <?php } ?>
                         <?php } else {?>
                             <div class="card-image" style="background-image: url('<?php echo esc_url($banner_image['url']);?>')">
                                 <img class="d-hide d-none" src="<?php echo esc_url($banner_image['url']);?>" alt="Image Slider">

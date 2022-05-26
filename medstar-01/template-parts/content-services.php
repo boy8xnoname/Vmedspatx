@@ -46,11 +46,13 @@ $mobileServiceBannerImage = !empty( get_field('mobile_service_banner_image')) ? 
 				!empty($mobileServiceBannerVideoUrl) || 
 				!empty($mobileServiceBannerImage) 
 			) {
-			if(wp_is_mobile()) { 
-				get_template_part('template-parts/services/content-banner-mobile');
-			} else {
-				get_template_part('template-parts/services/content-banner-desktop');
-			}
+				echo '<div class="d-block d-sm-none">';
+					get_template_part('template-parts/services/content-banner-mobile');
+				echo '</div>';
+				echo '<div class="d-none d-sm-block">';
+					get_template_part('template-parts/services/content-banner-desktop');
+				echo '</div>';
+			
 		} else {
 			get_template_part('template-parts/services/content-banner-desktop'); 
 		} ?> 

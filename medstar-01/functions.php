@@ -176,6 +176,8 @@ function medstar01_scripts() {
 	if( get_theme_mod('use_custom_color')) {
 		$customColor = get_theme_mod('color_setting_hex');
 		$customColorStyle .= "
+			.main-navigation #primary-menu > li:hover > a,
+			.main-navigation #primary-menu > li:hover .fa,
 			ul.social-list a,
 			.blog-title a,
 			.posted-on a,
@@ -198,6 +200,9 @@ function medstar01_scripts() {
 		";
 
 		$customColorStyle .= "
+			.main-navigation #primary-menu > li > .sub-menu li:focus, 
+			.main-navigation #primary-menu > li > .sub-menu li:focus-within, 
+			.main-navigation #primary-menu > li > .sub-menu li:hover,
 			.btn.btn-view-more,
 			.btn.btn-book-treatments ,
 			.site-footer #toTopBtn,

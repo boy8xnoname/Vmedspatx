@@ -133,11 +133,7 @@
              $footerDescription = get_theme_mod('footer_description_text');
              if(!empty( $footerDescription)) {
                 echo nl2br(get_theme_mod('footer_description_text'));
-             } else {?>
-                <small>
-                *By submitting this form you are to be contacted by Vitalyc and receive marketing messages via phone, text or email. You will be able to unsubscribe from these communications at any time. We are committed to protecting and respecting your privacy. For more information, please review our Privacy Policy.
-                </small>
-            <?php }  ?>
+             } ?>               
         </div>
         <div class="col col-12 col-md-1 col-xl-2"></div>
     </div>

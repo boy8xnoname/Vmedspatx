@@ -66,6 +66,33 @@ Kirki::add_field( 'medstar01', [
 
 Kirki::add_field( 'medstar01', [
     'type'        => 'typography',
+    'settings'    => 'header_footer_typography_setting',
+    'label'       => esc_html__( 'Header/Footer Custom font', 'text-domain' ),
+    'section'     => 'typography',
+    'default'     => [
+        'font-family'    => 'Manjari',
+    ],
+    'choices'   => $choices, //I explain this below
+    'priority'    => 10,
+    'transport'   => 'auto',
+    'output'      => [
+        [
+            'element' => '.site-header h1, .site-header  h2,.site-header  h3, .site-header h4, .site-header  p, .site-header a, .site-footer h1, .site-footer h2,.site-footer  h3, .site-footer h4, .site-footer  p, .site-footer a',
+        ],
+    ],
+    'active_callback'  => [
+		[
+			'setting'  => 'use_google_font',
+			'operator' => '==',
+			'value'    => true,
+		],
+	
+	]
+] );
+
+
+Kirki::add_field( 'medstar01', [
+    'type'        => 'typography',
     'settings'    => 'heading_typography_setting',
     'label'       => esc_html__( 'Heading font', 'text-domain' ),
     'section'     => 'typography',
