@@ -5,7 +5,7 @@ Theme URI: http://underscores.me/
 Author: medstar
 Author URI: https://medstar.com/
 Description: Description
-Version: 1.0.0
+Version: 1.0.1
 Tested up to: 5.4
 Requires PHP: 5.6
 License: GNU General Public License v2 or later
@@ -7615,7 +7615,8 @@ form.search-form .search-submit {
 
 .main-navigation a {
   color: #ffffff;
-  display: block;
+  display: flex;
+  align-items: center;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -11230,6 +11231,7 @@ a.skip-link.screen-reader-text {
     color: #ffffff;
     font-size: 14px;
     height: 14px;
+    margin-top: -2px;
     margin-left: 10px;
   }
   .main-navigation #primary-menu > li > a {
