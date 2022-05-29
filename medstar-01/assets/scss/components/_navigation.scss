@@ -159,8 +159,9 @@
                 .menu-collapsed {
                     color: #ffffff;
                     font-size: 14px;
-                    height: 14px;
-                    margin-top: -2px;
+                    height: 10px;
+                    line-height: 10px;
+                    margin-top: -3px;
                     margin-left: 10px;
                 }
             }
@@ -356,5 +357,11 @@ ul.social-list {
             justify-content: center;
             width: 100%
         }
+    }
+}
+
+.macOs {
+    .main-navigation #primary-menu>li.menu-item-has-children .menu-collapsed {
+        margin-top: -5px;
     }
 }

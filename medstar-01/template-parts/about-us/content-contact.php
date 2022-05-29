@@ -1,11 +1,16 @@
 <?php 
+	$contactImageBackground = get_field('contact_section_image_background');
+
+	if(!empty($contactImageBackground)) {
+		$sectionContactBackground = $contactImageBackground['url'];
+	}
 	$sectionContactTitle = !empty(get_field('contact_us_title')) ? get_field('contact_us_title') : 'CONTACT US';
 	$formContactTitle = !empty(get_field('contact_us_before_form_title')) ? get_field('contact_us_before_form_title') : 'Send us a message';
 	$formContactShortcode = !empty(get_field('contact_form_short_code')) ? get_field('contact_form_short_code') : '';
 	$formContactDescription = !empty(get_field('contact_us_form_description')) ? get_field('contact_us_form_description') : 'By submitting this form you agree to be contacted via phone/text/email.*';
 ?>
 <?php if(!empty($formContactShortcode)) : ?>
-<section class="home-section contact_us">
+<section class="home-section contact_us" <?php if(!empty($contactImageBackground)) { ?> style ="background-image: url(<?php echo $sectionContactBackground;?>)" <?php } ?>>
 	<div class="container">
 	
 		<h2 class="section-title text-center">

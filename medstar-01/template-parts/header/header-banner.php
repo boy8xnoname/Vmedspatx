@@ -5,7 +5,7 @@ $hero_banner_style = get_field('hero_banner_style');
 if(have_rows('setup_banner_items')):
 ?>
 <div class="home-banner slide-<?php echo $hero_banner_style;?>">
-    <div class="home-banner-slider swiper-container swiper-scale-effect">
+    <div class="<?php if($hero_banner_style != 'style3') echo 'home-banner-slider';?> swiper-container swiper-scale-effect">
         <div class="swiper-wrapper">
         <?php
         while( have_rows('setup_banner_items') ) : the_row();

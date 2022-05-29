@@ -2,6 +2,8 @@
     $explore_our_treatments_img_url = get_field('explore_our_treatments_background_image');
     $explore_our_treatments_heading  =  get_field('explore_our_treatments_heading');
     $explore_our_treatments_descriptions  =  get_field('explore_our_treatments_descriptions');
+    $explore_our_treatments_button_link  =  get_field('explore_our_treatments_button_link');
+
     if(!empty($explore_our_treatments_heading) || !empty($explore_our_treatments_descriptions)) :
 ?>
 <section class="home-section explore_our_treatments  section-jarallax" style="background-image: url('<?php echo esc_url($explore_our_treatments_img_url['url']);?>');">
@@ -19,10 +21,11 @@
                     <?php echo apply_filters( 'the_content', $explore_our_treatments_descriptions);?>
                 <?php } ?>
                 <div class="d-flex justify-content-center align-items-center">
-
-                    <a href="#book-treatments" class="btn btn-book-treatments" role="button">
-                        <span class="button-text">BOOK YOUR FREE CONSULTATION</span>
-                    </a>
+                    <?php if(!empty($explore_our_treatments_button_link )) {?>
+                        <a href="<?php echo esc_attr($explore_our_treatments_button_link);?>" class="btn btn-book-treatments" role="button">
+                            <span class="button-text">BOOK YOUR FREE CONSULTATION</span>
+                        </a>
+                    <?php } ?>
                     
                 </div>
                 

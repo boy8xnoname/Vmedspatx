@@ -5,8 +5,18 @@
         font-size: 36px;
         line-height: 1.2em;
         margin-bottom: 30px;
+        p {
+            font-size: 36px;
+        }
     }
     &.service-contact-section {
+        &.contact_with_bg {
+            .form-contact-us {
+                background-color: transparent;
+                border: none;
+                box-shadow: none;
+            }
+        }
         .form-contact-us {
             background-color: #fff;
             border-style: solid;
@@ -18,6 +28,9 @@
     }
     &.service-contact-sidebar {
         .form-contact-us {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
             background-color: #fff;
             border-style: solid;
             border-width: 1px 1px 1px 1px;
@@ -27,13 +40,53 @@
         }
         .contact-form-title {
             font-size: 36px;
+            p {
+                font-size: 36px;
+                margin: 0;
+            }
         }
     }
     &.contact_us_style_2 {
         .contact_image_content {
             justify-content: center;
             text-align: center;
-            margin-bottom: 30px
+            margin-bottom: 30px;
+            img {
+                height: auto;
+                width: 100%;
+            }
+        }
+        .contact_image_form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .gform_wrapper {
+                width: 100%;
+            }
+        }
+    }
+    &.contact_us_style_3 {
+        .contact_image_content {
+            justify-content: center;
+            text-align: center;
+            margin-bottom: 30px;
+            img {
+                height: auto;
+                width: 100%;
+            }
+        }
+        .contact_image_form {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .gform_wrapper {
+                width: 100%;
+            }
         }
     }
     // Small devices (landscape phones, 576px and up)
@@ -50,6 +103,32 @@
                 margin-bottom: 0;
                 text-align: left;
             }
+            .contact_image_form {
+                .gform_wrapper {
+                    max-width: 480px;
+                }
+            }
+        }
+        &.contact_us_style_3 {
+            .container-fluid {
+                padding: 0;
+            }
+            .contact_image_content {
+                justify-content: flex-start;
+                margin-bottom: 0;
+                padding-right: 0;
+                text-align: left;
+                img {
+                    height: auto;
+                    width: 100%;
+                }
+            }
+            .contact_image_form {
+                padding-left: 0;
+                .gform_wrapper {
+                    max-width: 480px;
+                }
+            }
         }
     }
     // Large devices (desktops, 992px and up)
@@ -59,6 +138,9 @@
         h2.section-title {}
         .contact-form-title {
             font-size: 54px;
+            p {
+                font-size: 54px;
+            }
         }
         &.service-contact-section {
             .form-contact-us {
@@ -68,6 +150,9 @@
         &.service-contact-sidebar {
             .contact-form-title {
                 font-size: 54px;
+                p {
+                    font-size: 54px;
+                }
             }
         }
         &.contact_us_style_2 {

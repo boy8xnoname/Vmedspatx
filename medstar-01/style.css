@@ -5,7 +5,7 @@ Theme URI: http://underscores.me/
 Author: medstar
 Author URI: https://medstar.com/
 Description: Description
-Version: 1.0.1
+Version: 1.0.3
 Tested up to: 5.4
 Requires PHP: 5.6
 License: GNU General Public License v2 or later
@@ -7204,7 +7204,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 
 .home-banner.slide-style1 .card-content .h2 {
-  line-height: 1.4em;
+  line-height: 1.2em;
   text-align: center;
 }
 
@@ -7231,7 +7231,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 
 .home-banner.slide-style2 .card-content .h2 {
-  line-height: 1.4em;
+  line-height: 1.2em;
   text-align: right;
 }
 
@@ -7239,8 +7239,35 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   text-align: right;
 }
 
-.home-banner .card-content .h2 {
+.home-banner.slide-style3 .card-content {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
   line-height: 1.4em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 50px;
+  margin: auto;
+}
+
+.home-banner.slide-style3 .card-content .h2 {
+  line-height: 1.2em;
+  text-align: center;
+}
+
+.home-banner.slide-style3 .card-content p {
+  text-align: center;
+}
+
+.home-banner .card-content .h2 {
+  line-height: 1.2em;
 }
 
 .home-banner .card-content .card-action a {
@@ -7341,6 +7368,16 @@ input.submit:hover {
   margin-bottom: 30px;
 }
 
+.contact_us .contact-form-title p {
+  font-size: 36px;
+}
+
+.contact_us.service-contact-section.contact_with_bg .form-contact-us {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+
 .contact_us.service-contact-section .form-contact-us {
   background-color: #fff;
   border-style: solid;
@@ -7351,6 +7388,9 @@ input.submit:hover {
 }
 
 .contact_us.service-contact-sidebar .form-contact-us {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: #fff;
   border-style: solid;
   border-width: 1px 1px 1px 1px;
@@ -7363,10 +7403,56 @@ input.submit:hover {
   font-size: 36px;
 }
 
+.contact_us.service-contact-sidebar .contact-form-title p {
+  font-size: 36px;
+  margin: 0;
+}
+
 .contact_us.contact_us_style_2 .contact_image_content {
   justify-content: center;
   text-align: center;
   margin-bottom: 30px;
+}
+
+.contact_us.contact_us_style_2 .contact_image_content img {
+  height: auto;
+  width: 100%;
+}
+
+.contact_us.contact_us_style_2 .contact_image_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact_us.contact_us_style_2 .contact_image_form .gform_wrapper {
+  width: 100%;
+}
+
+.contact_us.contact_us_style_3 .contact_image_content {
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact_us.contact_us_style_3 .contact_image_content img {
+  height: auto;
+  width: 100%;
+}
+
+.contact_us.contact_us_style_3 .contact_image_form {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact_us.contact_us_style_3 .contact_image_form .gform_wrapper {
+  width: 100%;
 }
 
 .explore_our_treatments {
@@ -7727,6 +7813,10 @@ ul.social-list a:hover {
   align-items: center;
   justify-content: center;
   width: 100%;
+}
+
+.macOs .main-navigation #primary-menu > li.menu-item-has-children .menu-collapsed {
+  margin-top: -5px;
 }
 
 .our_services .our-services__item {
@@ -8187,11 +8277,17 @@ section.our_location .map-pins .map-pin-item.map-pin-item-3 {
 }
 
 .page-section.contact_us {
-  margin-top: 2%;
-  padding: 0% 0% 3% 0%;
+  padding: 3% 0% 3% 0%;
+}
+
+.page-section.contact_us.contact_with_bg .form-content-wrap {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
 }
 
 .page-section.contact_us .form-content-wrap {
+  background-color: #ffffff;
   border-style: dashed;
   border-width: 1px 1px 1px 1px;
   border-color: #C79E5569;
@@ -8304,6 +8400,7 @@ body.single .entry-content {
 .service-entry-content h6,
 .service-entry-content .h6 {
   text-align: center;
+  line-height: 1.2em;
 }
 
 .content-bottom-form {
@@ -10199,6 +10296,28 @@ a.skip-link.screen-reader-text {
     margin-bottom: 0;
     text-align: left;
   }
+  .contact_us.contact_us_style_2 .contact_image_form .gform_wrapper {
+    max-width: 480px;
+  }
+  .contact_us.contact_us_style_3 .container-fluid, .contact_us.contact_us_style_3 .container-sm, .contact_us.contact_us_style_3 .container-md, .contact_us.contact_us_style_3 .container-lg, .contact_us.contact_us_style_3 .container-xl, .contact_us.contact_us_style_3 .container-xxl {
+    padding: 0;
+  }
+  .contact_us.contact_us_style_3 .contact_image_content {
+    justify-content: flex-start;
+    margin-bottom: 0;
+    padding-right: 0;
+    text-align: left;
+  }
+  .contact_us.contact_us_style_3 .contact_image_content img {
+    height: auto;
+    width: 100%;
+  }
+  .contact_us.contact_us_style_3 .contact_image_form {
+    padding-left: 0;
+  }
+  .contact_us.contact_us_style_3 .contact_image_form .gform_wrapper {
+    max-width: 480px;
+  }
   .gform_wrapper .gform_footer input[type="submit"] {
     font-size: 25px;
     font-weight: 500;
@@ -11165,7 +11284,7 @@ a.skip-link.screen-reader-text {
   .home-banner .card-content h2, .home-banner .card-content .h2 {
     font-size: 4.3rem;
     font-weight: 400;
-    line-height: 1.4em;
+    line-height: 1.2em;
   }
   .home-banner .card-content p {
     font-size: 1.8rem;
@@ -11230,8 +11349,9 @@ a.skip-link.screen-reader-text {
   .main-navigation #primary-menu > li.menu-item-has-children .menu-collapsed {
     color: #ffffff;
     font-size: 14px;
-    height: 14px;
-    margin-top: -2px;
+    height: 10px;
+    line-height: 10px;
+    margin-top: -3px;
     margin-left: 10px;
   }
   .main-navigation #primary-menu > li > a {
@@ -12267,10 +12387,16 @@ a.skip-link.screen-reader-text {
   .contact_us .contact-form-title {
     font-size: 54px;
   }
+  .contact_us .contact-form-title p {
+    font-size: 54px;
+  }
   .contact_us.service-contact-section .form-contact-us {
     padding: 20px 50px 20px 50px;
   }
   .contact_us.service-contact-sidebar .contact-form-title {
+    font-size: 54px;
+  }
+  .contact_us.service-contact-sidebar .contact-form-title p {
     font-size: 54px;
   }
   .contact_us.contact_us_style_2 .contact_image_content,
@@ -12338,7 +12464,7 @@ a.skip-link.screen-reader-text {
     font-size: 50px;
   }
   .service-banner-image .service-our_award img {
-    max-width: 120px;
+    max-width: 150px;
   }
   .page-service-site-main .container-fluid, .page-service-site-main .container-sm, .page-service-site-main .container-md, .page-service-site-main .container-lg, .page-service-site-main .container-xl, .page-service-site-main .container-xxl {
     padding-right: 50px;

@@ -53,9 +53,16 @@
 }
 
 .page-section.contact_us {
-    margin-top: 2%;
-    padding: 0% 0% 3% 0%;
+    padding: 3% 0% 3% 0%;
+    &.contact_with_bg {
+        .form-content-wrap {
+            background-color: transparent;
+            border: none;
+            box-shadow: none;
+        }
+    }
     .form-content-wrap {
+        background-color: #ffffff;
         border-style: dashed;
         border-width: 1px 1px 1px 1px;
         border-color: #C79E5569;

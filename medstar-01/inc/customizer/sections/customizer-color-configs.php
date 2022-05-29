@@ -35,4 +35,23 @@ Kirki::add_field(
 	]
 );
 
-?>
+
+Kirki::add_field( 
+    'medstar01',
+    [
+        'type'        => 'color',
+		'settings'    => 'second_color_setting_hex',
+		'label'       => __( 'Color Control (hex only)', 'kirki' ),
+		'description' => esc_html__( 'Regular color control, no alpha channel.', 'kirki' ),
+		'section'     => 'medstar01_colors',
+		'default'     => '#080C77',
+        'active_callback'  => [
+            [
+                'setting'  => 'use_custom_color',
+                'operator' => '==',
+                'value'    => true,
+            ],
+        
+        ]
+	]
+);

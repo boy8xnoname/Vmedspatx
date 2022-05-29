@@ -74,6 +74,11 @@ $mobileServiceBannerImage = !empty( get_field('mobile_service_banner_image')) ? 
 			<div class="d-flex flex-column flex-md-row-reverse">
 				
 				<?php 
+						$contactSidebarImageBackground = get_field('contact_sidebar_image_background');
+
+						if(!empty($contactSidebarImageBackground)) {
+							$contactSidebarImageBackground = $contactSidebarImageBackground['url'];
+						}
 					// Get contact form image logo
 					if(!empty(get_field('sidebar_contact_form_logo_image'))) {
 						$contact_form_logo_image = get_field('sidebar_contact_form_logo_image');
@@ -101,8 +106,8 @@ $mobileServiceBannerImage = !empty( get_field('mobile_service_banner_image')) ? 
 					}
 				?>
 				<?php if(!empty($formContactShortcode)) : ?>
-					<div id="service-contact-sidebar" class="service-contact-sidebar contact_us">
-						<div class="form-contact-us">
+					<div id="service-contact-sidebar" class="service-contact-sidebar contact_us" >
+						<div class="form-contact-us <?php if(!empty($contactImageBackground)) { echo'contact_with_bg'; }?>" <?php if(!empty($contactSidebarImageBackground)) { ?> style ="background-image: url(<?php echo $contactSidebarImageBackground;?>)" <?php } ?>>
 							<?php  if(!empty($formContactShortcode)) { ?>
 								<?php if(!empty($contact_form_logo_image)) { ?>
 									<div class="text-center">
@@ -110,7 +115,7 @@ $mobileServiceBannerImage = !empty( get_field('mobile_service_banner_image')) ? 
 									</div>
 								<?php } ?>
 								<h2 class="contact-form-title text-center">
-									<?php echo esc_attr( $formContactTitle, 'medstar01' ); ?>
+									<?php echo apply_filters('the_content', $formContactTitle); ?>
 								</h2>
 								<?php echo do_shortcode($formContactShortcode); ?>
 								<div class="contact-us-description text-center">

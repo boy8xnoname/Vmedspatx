@@ -2,9 +2,18 @@
 var medstar01 = {};
 (function($) {
     medstar01.init = function() {
+        medstar01.medstar01DetectOsDevice()
         medstar01.medstar01HeaderScript()
         medstar01.contentScripts()
         medstar01.addAnimationToPageLoad()
+    }
+
+    medstar01.medstar01DetectOsDevice = function() {
+        if (navigator.userAgent.indexOf('Mac OS X') != -1) {
+            $("body").addClass("macOs");
+        } else {
+            $("body").addClass("otherOs");
+        }
     }
 
     medstar01.medstar01HeaderScript = function() {
@@ -69,6 +78,7 @@ var medstar01 = {};
 
 
     medstar01.contentScripts = function() {
+
         // HOME BANNER SLIDER
         if ($(".home-banner-slider").length > 0) {
             let homeBannerSwiper = new Swiper(".home-banner-slider", {

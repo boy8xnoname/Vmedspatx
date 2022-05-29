@@ -175,6 +175,7 @@ function medstar01_scripts() {
 	$customColorStyle = "";	
 	if( get_theme_mod('use_custom_color')) {
 		$customColor = get_theme_mod('color_setting_hex');
+		$customSecondColor = get_theme_mod('second_color_setting_hex');
 		$customColorStyle .= "
 			.main-navigation #primary-menu > li:hover > a,
 			.main-navigation #primary-menu > li:hover .fa,
@@ -210,6 +211,18 @@ function medstar01_scripts() {
 			.site-footer .first-col-widget::before,
 			.site-footer .third-col-widget::before {
 				background-color: $customColor !important;
+			}
+		";	
+
+
+		$customColorStyle .= "
+			.btn.btn-book-treatments:hover,
+			.btn.btn-view-more:hover,
+			.home-banner .card-content .card-action a:hover,
+			.our_services .our-services__item .item-link a:hover,
+			.gform_wrapper .gform_footer input.gform_button:hover, 
+			.gform_wrapper .gform_footer input[type='submit']:hover {
+				background-color: $customSecondColor !important;
 			}
 		";	
 

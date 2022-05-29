@@ -21,7 +21,7 @@
 	$formContactDescription = !empty(get_field('contact_us_form_description')) ? get_field('contact_us_form_description') : 'By submitting this form you agree to be contacted via phone/text/email.*';
 ?>
 <?php if(!empty($formContactShortcode)) : ?>
-<section class="home-section contact_us <?php echo $contactusStyle;?>" <?php if($contactusStyle == 'contact_us_style_1') { ?> style ="background-image: url(<?php echo $sectionContactBackground;?>)" <?php } ?>>
+<section id="section-contact_us" class="home-section contact_us <?php echo $contactusStyle;?>" <?php if($contactusStyle == 'contact_us_style_1') { ?> style ="background-image: url(<?php echo $sectionContactBackground;?>)" <?php } ?>>
 	<div class="<?php if($contactusStyle == 'contact_us_style_1') { echo 'container'; } else {echo 'container-fluid';}?> ">
 		<?php if($contactusStyle == 'contact_us_style_1') { ?>
 		<h2 class="section-title text-center">
@@ -57,6 +57,27 @@
 				<div class="d-none d-lg-block col col-md-1 col col-lg-2">
 				</div>
 				<div class="contact_image_form col col-12 col-md-5 col-lg-5">
+					<h2 class="section-title text-center">
+						<?php echo esc_attr( $sectionContactTitle, 'medstar01' ) ?>
+					</h2>
+					<?php  if(!empty($formContactShortcode)) { ?>
+						<h2 class="contact-form-title text-center">
+							<?php echo esc_attr( $formContactTitle, 'medstar01' ); ?>
+						</h2>
+						<?php echo do_shortcode($formContactShortcode); ?>
+						<div class="contact-us-description text-center">
+							<small><?php echo esc_attr( $formContactDescription, 'medstar01'); ?></small>
+						</div>
+					<?php }?>
+				</div>
+			<?php } ?>
+			<?php if($contactusStyle == 'contact_us_style_3') { ?>
+				<!-- Style Contact Us Version 3 -->
+				<div class="contact_image_content d-flex align-items-center col col-12 col-md-6 ">
+					<img src="<?php echo $contactImageContent;?>" alt="<?php echo esc_attr( $sectionContactTitle, 'medstar01' ) ?>">
+				</div>
+			
+				<div class="contact_image_form col col-12 col-md-6" style ="background-image: url(<?php echo $sectionContactBackground;?>)" >
 					<h2 class="section-title text-center">
 						<?php echo esc_attr( $sectionContactTitle, 'medstar01' ) ?>
 					</h2>

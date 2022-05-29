@@ -23,7 +23,7 @@
             "label": "Select Hero Banner Style",
             "name": "hero_banner_style",
             "type": "select",
-            "instructions": "<strong>Banner Style 1<\/strong>: This style will make all content align center <br\/>\r\n<strong>Banner Style 2<\/strong>: This style will make all content align right",
+            "instructions": "<strong>Banner Style 1<\/strong>: This style will make all content align center <br\/>\r\n<strong>Banner Style 2<\/strong>: This style will make all content align right <br\/>\r\n<strong>Banner Style 3<\/strong>: Single Image banner",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -33,7 +33,8 @@
             },
             "choices": {
                 "style1": "Banner Style 1",
-                "style2": "Banner Style 2"
+                "style2": "Banner Style 2",
+                "style3": "Banner Style 3"
             },
             "default_value": "style1",
             "allow_null": 0,
@@ -459,6 +460,25 @@
             "toolbar": "full",
             "media_upload": 1,
             "delay": 0
+        },
+        {
+            "key": "field_62910a6c77ed6",
+            "label": "Explore our Treatments Button link",
+            "name": "explore_our_treatments_button_link",
+            "type": "text",
+            "instructions": "Please use link '#section-contact_us' for make click to scroll down to contact section",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         },
         {
             "key": "field_62376eb5ac7ff",
@@ -1310,7 +1330,7 @@
             "label": "Contact Us Style",
             "name": "contact_us_style",
             "type": "select",
-            "instructions": "<strong>Contact Us Style 1<\/strong>: This style will make content without background image <br\/>\r\n<strong>Contact Us Style 2<\/strong>: This style will make content with background image",
+            "instructions": "<strong>Contact Us Style 1<\/strong>: This style will make content without background image <br\/>\r\n<strong>Contact Us Style 2<\/strong>: This style will make content with background image<br\/>\r\n<strong>Contact Us Style 3<\/strong>: This style will make 50% left content by image and 50% right content by form with background image",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -1320,7 +1340,8 @@
             },
             "choices": {
                 "contact_us_style_1": "Contact Us style 1",
-                "contact_us_style_2": "Contact Us style 2"
+                "contact_us_style_2": "Contact Us style 2",
+                "contact_us_style_3": "Contact Us style 3"
             },
             "default_value": "contact_us_style_1",
             "allow_null": 0,
@@ -1343,6 +1364,13 @@
                         "field": "field_62665d586bf45",
                         "operator": "==",
                         "value": "contact_us_style_1"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_62665d586bf45",
+                        "operator": "==",
+                        "value": "contact_us_style_3"
                     }
                 ]
             ],
@@ -1375,6 +1403,13 @@
                         "field": "field_62665d586bf45",
                         "operator": "==",
                         "value": "contact_us_style_2"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_62665d586bf45",
+                        "operator": "==",
+                        "value": "contact_us_style_3"
                     }
                 ]
             ],
@@ -1485,9 +1520,11 @@
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_on_screen": "",
+    "hide_on_screen": [
+        "the_content"
+    ],
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1652286507
+    "modified": 1653726612
 }

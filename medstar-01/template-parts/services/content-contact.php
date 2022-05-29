@@ -1,4 +1,9 @@
 <?php 
+	$contactImageBackground = get_field('contact_section_image_background');
+
+	if(!empty($contactImageBackground)) {
+		$sectionContactBackground = $contactImageBackground['url'];
+	}
 	$contact_form_logo_image = get_field('contact_form_logo_image');
 	$formContactTitle = !empty(get_field('contact_us_before_form_title')) ? get_field('contact_us_before_form_title') : 'Send us a message';
 	$formContactShortcode = !empty(get_field('contact_form_short_code')) ? get_field('contact_form_short_code') : '';
@@ -6,7 +11,7 @@
 	$contentDescriptionBottomForm = get_field('content_description_bottom_form');
 ?>
 <?php if(!empty($formContactShortcode)) : ?>
-<section class="service-contact-section contact_us">
+<section class="service-contact-section contact_us <?php if(!empty($contactImageBackground)) { echo'contact_with_bg'; }?>" <?php if(!empty($contactImageBackground)) { ?> style ="background-image: url(<?php echo $sectionContactBackground;?>)" <?php } ?>>
 	<div class="container">
 		
 		<div class="row">
@@ -20,7 +25,7 @@
 						</div>
 					<?php } ?>
 					<h2 class="contact-form-title text-center">
-						<?php echo esc_attr( $formContactTitle, 'medstar01' ); ?>
+						<?php echo apply_filters('the_content', $formContactTitle); ?>
 					</h2>
 					<?php echo do_shortcode($formContactShortcode); ?>
 					<div class="contact-us-description text-center">

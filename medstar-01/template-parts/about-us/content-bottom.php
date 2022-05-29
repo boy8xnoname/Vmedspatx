@@ -2,18 +2,21 @@
     <?php while( have_rows('about_us_content_bottom') ): the_row(); 
         $about_us_bottom_heading = get_sub_field('content_heading');
         $about_us_bottom_content = get_sub_field('content_description');
-        ?>
+        if (!empty($about_us_bottom_content) || !empty($about_us_bottom_content)) {
+            ?>
         <section class="about-us-content about-us-content-bottom">
             <div class="container">
-                <?php if(!empty($about_us_bottom_heading)) :?>
+                <?php if (!empty($about_us_bottom_heading)) :?>
                     <h2 class="section-title text-center"><?php echo $about_us_bottom_heading; ?></h2>
                 <?php endif; ?> 
-                <?php if(!empty($about_us_bottom_content)) :?>
+                <?php if (!empty($about_us_bottom_content)) :?>
                     <div class="about-us-content-text">
-                        <?php echo apply_filters('the_content', $about_us_bottom_content);?>
+                        <?php echo apply_filters('the_content', $about_us_bottom_content); ?>
                     </div>
                 <?php endif; ?> 
             </div>
         </section>
-    <?php endwhile; ?>
+    <?php
+        }
+    endwhile; ?>
 <?php endif; ?>
