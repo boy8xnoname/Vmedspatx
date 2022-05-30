@@ -481,138 +481,6 @@
             "maxlength": ""
         },
         {
-            "key": "field_62376eb5ac7ff",
-            "label": "Testimonials Section",
-            "name": "",
-            "type": "tab",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "placement": "top",
-            "endpoint": 0
-        },
-        {
-            "key": "field_62660a979dde0",
-            "label": "Testimonials style",
-            "name": "testimonials_style",
-            "type": "select",
-            "instructions": "<strong>Testimonial Style 1<\/strong>: This style will make content without background image <br\/>\r\n<strong>Testimonial Style 2<\/strong>: This style will make content with background image",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "choices": {
-                "testimonials_style_1": "Testimonial style 1",
-                "testimonials_style_2": "Testimonial style 2"
-            },
-            "default_value": "testimonials_style_1",
-            "allow_null": 0,
-            "multiple": 0,
-            "ui": 0,
-            "return_format": "value",
-            "ajax": 0,
-            "placeholder": ""
-        },
-        {
-            "key": "field_62663b04829e4",
-            "label": "Testimonal background image",
-            "name": "testimonal_background_image",
-            "type": "image",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_62660a979dde0",
-                        "operator": "==",
-                        "value": "testimonials_style_2"
-                    }
-                ]
-            ],
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array",
-            "preview_size": "medium",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": ""
-        },
-        {
-            "key": "field_62376ec2ac800",
-            "label": "Testimonials Items",
-            "name": "testimonials_content",
-            "type": "repeater",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "collapsed": "",
-            "min": 0,
-            "max": 0,
-            "layout": "table",
-            "button_label": "Add new testimonial item",
-            "sub_fields": [
-                {
-                    "key": "field_62376edaac801",
-                    "label": "Testimonials Text",
-                    "name": "customer_say",
-                    "type": "textarea",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "maxlength": "",
-                    "rows": "",
-                    "new_lines": ""
-                },
-                {
-                    "key": "field_62376ef1ac802",
-                    "label": "Reviewer Name",
-                    "name": "customer_name",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
-                }
-            ]
-        },
-        {
             "key": "field_62376f18ac803",
             "label": "About Us",
             "name": "",
@@ -762,6 +630,138 @@
             },
             "default_value": "",
             "placeholder": ""
+        },
+        {
+            "key": "field_62376eb5ac7ff",
+            "label": "Testimonials Section",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_62660a979dde0",
+            "label": "Testimonials style",
+            "name": "testimonials_style",
+            "type": "select",
+            "instructions": "<strong>Testimonial Style 1<\/strong>: This style will make content without background image <br\/>\r\n<strong>Testimonial Style 2<\/strong>: This style will make content with background image",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "testimonials_style_1": "Testimonial style 1",
+                "testimonials_style_2": "Testimonial style 2"
+            },
+            "default_value": "testimonials_style_1",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_62663b04829e4",
+            "label": "Testimonal background image",
+            "name": "testimonal_background_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_62660a979dde0",
+                        "operator": "==",
+                        "value": "testimonials_style_2"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_62376ec2ac800",
+            "label": "Testimonials Items",
+            "name": "testimonials_content",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Add new testimonial item",
+            "sub_fields": [
+                {
+                    "key": "field_62376edaac801",
+                    "label": "Testimonials Text",
+                    "name": "customer_say",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "new_lines": ""
+                },
+                {
+                    "key": "field_62376ef1ac802",
+                    "label": "Reviewer Name",
+                    "name": "customer_name",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
         },
         {
             "key": "field_62376ff484964",
@@ -922,8 +922,8 @@
             "key": "field_6237708e9c789",
             "label": "Book appointment button link",
             "name": "book_appointment_button_link",
-            "type": "url",
-            "instructions": "",
+            "type": "text",
+            "instructions": "Add URL link to page or id (like: '#section-contact_us' ) of section to this field for make button action",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -932,7 +932,10 @@
                 "id": ""
             },
             "default_value": "",
-            "placeholder": ""
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         },
         {
             "key": "field_623770979c78a",
@@ -1526,5 +1529,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1653726612
+    "modified": 1653920923
 }

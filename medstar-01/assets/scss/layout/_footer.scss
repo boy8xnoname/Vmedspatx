@@ -13,7 +13,7 @@
         padding-bottom: 30px;
     }
     .widget-title {
-        color: $brand__color;
+        color: #000000;
         text-transform: uppercase;
     }
     .content-list {
@@ -214,7 +214,11 @@
             }
         }
         .footer-copyright-menu {
+            padding-top: 35px;
             text-align: right;
+            p {
+                margin: 0;
+            }
         }
     }
     // X-Large devices (large desktops, 1200px and up)

@@ -5,7 +5,7 @@ Theme URI: http://underscores.me/
 Author: medstar
 Author URI: https://medstar.com/
 Description: Description
-Version: 1.0.3
+Version: 1.0.4
 Tested up to: 5.4
 Requires PHP: 5.6
 License: GNU General Public License v2 or later
@@ -6990,7 +6990,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 
 .site-footer .widget-title {
-  color: #C79E55;
+  color: #000000;
   text-transform: uppercase;
 }
 
@@ -7275,6 +7275,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   color: #7A7A7A;
   font-size: 16px;
   padding: 12px 30px;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
 }
 
 .home-banner .card-content .card-action a:hover {
@@ -7319,6 +7320,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   padding: 15px 50px 15px 50px;
   line-height: 18px;
   height: 50px;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
 }
 
 .btn.btn-view-more:hover {
@@ -7372,7 +7374,13 @@ input.submit:hover {
   font-size: 36px;
 }
 
-.contact_us.service-contact-section.contact_with_bg .form-contact-us {
+.contact_us.service-contact-section .form-content-wrap.contact_with_bg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact_us.service-contact-section .form-content-wrap.contact_with_bg .form-contact-us {
   background-color: transparent;
   border: none;
   box-shadow: none;
@@ -8280,7 +8288,13 @@ section.our_location .map-pins .map-pin-item.map-pin-item-3 {
   padding: 3% 0% 3% 0%;
 }
 
-.page-section.contact_us.contact_with_bg .form-content-wrap {
+.page-section.contact_us .form-contact-us.contact_with_bg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page-section.contact_us .form-contact-us.contact_with_bg .form-content-wrap {
   background-color: transparent;
   border: none;
   box-shadow: none;
@@ -8293,7 +8307,7 @@ section.our_location .map-pins .map-pin-item.map-pin-item-3 {
   border-color: #C79E5569;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.09);
   transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-  margin: 0px 30px 0px 0px;
+  margin: 0;
   padding: 5% 5% 5% 5%;
 }
 
@@ -11241,7 +11255,11 @@ a.skip-link.screen-reader-text {
     width: auto;
   }
   .site-footer .footer-copyright-menu {
+    padding-top: 35px;
     text-align: right;
+  }
+  .site-footer .footer-copyright-menu p {
+    margin: 0;
   }
   .home-section.about_us .about-us-image {
     padding: 0 30px 0 15px;

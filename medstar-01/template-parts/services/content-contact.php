@@ -11,13 +11,13 @@
 	$contentDescriptionBottomForm = get_field('content_description_bottom_form');
 ?>
 <?php if(!empty($formContactShortcode)) : ?>
-<section class="service-contact-section contact_us <?php if(!empty($contactImageBackground)) { echo'contact_with_bg'; }?>" <?php if(!empty($contactImageBackground)) { ?> style ="background-image: url(<?php echo $sectionContactBackground;?>)" <?php } ?>>
+<section class="service-contact-section contact_us ">
 	<div class="container">
 		
 		<div class="row">
 			<div class="d-none d-lg-block col col-md-1 col col-lg-2">
 			</div>
-			<div class="form-contact-us col col-12 col-md-10 col-lg-8">
+			<div class="form-contact-us col col-12 col-md-10 col-lg-8 <?php if(!empty($contactImageBackground)) { echo'contact_with_bg'; }?>"  <?php if(!empty($contactImageBackground)) { ?> style ="background-image: url(<?php echo $sectionContactBackground;?>)" <?php } ?>>
 				<?php  if(!empty($formContactShortcode)) { ?>
 					<?php if(!empty($contact_form_logo_image)) { ?>
 						<div class="text-center">

@@ -10,11 +10,16 @@
         }
     }
     &.service-contact-section {
-        &.contact_with_bg {
-            .form-contact-us {
-                background-color: transparent;
-                border: none;
-                box-shadow: none;
+        .form-content-wrap {
+            &.contact_with_bg {
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                .form-contact-us {
+                    background-color: transparent;
+                    border: none;
+                    box-shadow: none;
+                }
             }
         }
         .form-contact-us {

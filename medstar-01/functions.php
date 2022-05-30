@@ -119,6 +119,47 @@ function medstar01_content_width() {
 }
 add_action( 'after_setup_theme', 'medstar01_content_width', 0 );
 
+//* Function to convert Hex colors to RGBA
+function hex2rgba( $color, $opacity = false ) {
+
+    $defaultColor = 'rgb(0,0,0)';
+
+    // Return default color if no color provided
+    if ( empty( $color ) ) {
+        return $defaultColor;
+    }
+
+    // Ignore "#" if provided
+    if ( $color[0] == '#' ) {
+        $color = substr( $color, 1 );
+    }
+
+    // Check if color has 6 or 3 characters, get values
+    if ( strlen($color) == 6 ) {
+        $hex = array( $color[0] . $color[1], $color[2] . $color[3], $color[4] . $color[5] );
+    } elseif ( strlen( $color ) == 3 ) {
+        $hex = array( $color[0] . $color[0], $color[1] . $color[1], $color[2] . $color[2] );
+    } else {
+        return $default;
+    }
+
+    // Convert hex values to rgb values
+    $rgb =  array_map( 'hexdec', $hex );
+
+    // Check if opacity is set(rgba or rgb)
+    if ( $opacity ) {
+        if( abs( $opacity ) > 1 ) {
+            $opacity = 1.0;
+        }
+        $output = 'rgba(' . implode( ",", $rgb ) . ',' . $opacity . ')';
+    } else {
+        $output = 'rgb(' . implode( ",", $rgb ) . ')';
+    }
+
+    // Return rgb(a) color string
+    return $output;
+
+}
 
 /**
  * Enqueue scripts and styles.
@@ -176,6 +217,7 @@ function medstar01_scripts() {
 	if( get_theme_mod('use_custom_color')) {
 		$customColor = get_theme_mod('color_setting_hex');
 		$customSecondColor = get_theme_mod('second_color_setting_hex');
+		$rgbaCustomColor = hex2rgba($customColor, 0.6);
 		$customColorStyle .= "
 			.main-navigation #primary-menu > li:hover > a,
 			.main-navigation #primary-menu > li:hover .fa,
@@ -186,12 +228,14 @@ function medstar01_scripts() {
 			.section-title,
 			.our_testimonials .block-blockquote::before,
 			.our_testimonials .blockquote__position,
-			.main-navigation #primary-menu > li.current-menu-item > a,
+			.main-navigation #primary-menu > li.current-menu-item > a,			
+			.map-pins a,
 			.site-footer .content-list .contact-item h3, 
 			.site-footer .content-list .contact-item .h3,
 			.site-footer .content-list .contact-item a,
 			.site-footer .time-working,
 			.footer-vertical-menu a,
+			.site-footer .site-info a:hover,
 			.about-us-content .leadership-item h3.leadership-name, 
 			.about-us-content .leadership-item .leadership-name.h3,
 			.about-us-content .leadership-item h4.leadership-position, 
@@ -206,13 +250,23 @@ function medstar01_scripts() {
 			.main-navigation #primary-menu > li > .sub-menu li:hover,
 			.btn.btn-view-more,
 			.btn.btn-book-treatments ,
+			.map-pin-item .marker .pin,
 			.site-footer #toTopBtn,
+			.home-banner .card-content .card-action a,
 			.gform_wrapper .gform_footer input[type='submit'],
 			.site-footer .first-col-widget::before,
 			.site-footer .third-col-widget::before {
 				background-color: $customColor !important;
 			}
 		";	
+		
+		$customColorStyle .= "
+		.map-pin-item .marker .pin-effect {
+			background-color: $rgbaCustomColor !important;
+		}
+		";
+		
+
 
 
 		$customColorStyle .= "
@@ -221,6 +275,7 @@ function medstar01_scripts() {
 			.home-banner .card-content .card-action a:hover,
 			.our_services .our-services__item .item-link a:hover,
 			.gform_wrapper .gform_footer input.gform_button:hover, 
+			.home-banner .card-content .card-action a:hover,
 			.gform_wrapper .gform_footer input[type='submit']:hover {
 				background-color: $customSecondColor !important;
 			}

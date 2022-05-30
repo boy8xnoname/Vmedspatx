@@ -125,12 +125,12 @@ $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full');
 		$formContactDescription = !empty(get_field('contact_us_form_description')) ? get_field('contact_us_form_description') : 'By submitting this form you agree to be contacted via phone/text/email.*';
 	?>
 	<?php  if(!empty($formContactShortcode)) :?>
-	<section class="page-section contact_us <?php if(!empty($contactImageBackground)) { echo'contact_with_bg'; }?>" <?php if(!empty($contactImageBackground)) { ?> style ="background-image: url(<?php echo $sectionContactBackground;?>)" <?php } ?>>
+	<section class="page-section contact_us " >
 		<div class="container">		
 			<div class="row">
 				<div class="d-none d-lg-block  col col-lg-3">
 				</div>
-				<div class="form-content-wrap col col-12 col-lg-6">
+				<div class="form-content-wrap col col-12 col-lg-6 <?php if(!empty($contactImageBackground)) { echo'contact_with_bg'; }?>" <?php if(!empty($contactImageBackground)) { ?> style ="background-image: url(<?php echo $sectionContactBackground;?>)" <?php } ?>>
 					<h2 class="section-title text-center">
 						<?php echo esc_attr( $sectionContactTitle, 'medstar01' ) ?>
 					</h2>
