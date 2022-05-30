@@ -328,13 +328,13 @@ ul.social-list {
             &.active {
                 >a {
                     background-color: $brand__color;
-                    color: #ffffff;
+                    color: #ffffff !important;
                 }
                 >.sub-menu {
                     display: block !important;
                 }
                 .menu-collapsed {
-                    color: #ffffff;
+                    color: #ffffff!important;
                     margin-left: 7px;
                     position: initial;
                 }

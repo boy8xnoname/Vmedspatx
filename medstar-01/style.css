@@ -7790,7 +7790,7 @@ ul.social-list a:hover {
 
 #mobile-site-navigation li.menu-item-has-children.active > a {
   background-color: #C79E55;
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 #mobile-site-navigation li.menu-item-has-children.active > .sub-menu {
@@ -7798,7 +7798,7 @@ ul.social-list a:hover {
 }
 
 #mobile-site-navigation li.menu-item-has-children.active .menu-collapsed {
-  color: #ffffff;
+  color: #ffffff !important;
   margin-left: 7px;
   position: initial;
 }

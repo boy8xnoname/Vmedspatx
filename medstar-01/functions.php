@@ -222,6 +222,8 @@ function medstar01_scripts() {
 			.main-navigation #primary-menu > li:hover > a,
 			.main-navigation #primary-menu > li:hover .fa,
 			ul.social-list a,
+			#mobile-site-navigation li a,
+			#mobile-site-navigation li.menu-item-has-children .menu-collapsed,
 			.blog-title a,
 			.posted-on a,
 			.location-item a,
@@ -245,6 +247,7 @@ function medstar01_scripts() {
 		";
 
 		$customColorStyle .= "
+			#mobile-site-navigation li.menu-item-has-children.active > a,
 			.main-navigation #primary-menu > li > .sub-menu li:focus, 
 			.main-navigation #primary-menu > li > .sub-menu li:focus-within, 
 			.main-navigation #primary-menu > li > .sub-menu li:hover,
