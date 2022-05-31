@@ -56,7 +56,7 @@
 				</div>
 				<div class="d-none d-lg-block col col-md-1 col col-lg-2">
 				</div>
-				<div class="contact_image_form col col-12 col-md-5 col-lg-5">
+				<div class="contact_image_form col col-12 col-md-5 col-lg-5" style ="background-image: url(<?php echo $sectionContactBackground;?>)">
 					<h2 class="section-title text-center">
 						<?php echo esc_attr( $sectionContactTitle, 'medstar01' ) ?>
 					</h2>
