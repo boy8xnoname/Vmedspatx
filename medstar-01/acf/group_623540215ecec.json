@@ -23,7 +23,7 @@
             "label": "Select Hero Banner Style",
             "name": "hero_banner_style",
             "type": "select",
-            "instructions": "<strong>Banner Style 1<\/strong>: This style will make all content align center <br\/>\r\n<strong>Banner Style 2<\/strong>: This style will make all content align right <br\/>\r\n<strong>Banner Style 3<\/strong>: Single Image banner",
+            "instructions": "<strong>Banner Style 1<\/strong>: Use this style to make all the content in hero section align center<br\/>\r\n<strong>Banner Style 2<\/strong>: Use this style to make all the content in hero section align right <br\/>\r\n<strong>Banner Style 3<\/strong>: Use this style for a Single hero background image",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -150,7 +150,7 @@
         },
         {
             "key": "field_623540df18b73",
-            "label": "Treaments Featured In Content",
+            "label": "Treaments Featured In Section",
             "name": "",
             "type": "tab",
             "instructions": "",
@@ -246,7 +246,7 @@
         },
         {
             "key": "field_6235489419d91",
-            "label": "Our services Section Content",
+            "label": "Our services Section",
             "name": "",
             "type": "tab",
             "instructions": "",
@@ -466,7 +466,7 @@
             "label": "Explore our Treatments Button link",
             "name": "explore_our_treatments_button_link",
             "type": "text",
-            "instructions": "Please use link '#section-contact_us' for make click to scroll down to contact section",
+            "instructions": "Paste '#section-contact_us' in the field to make the page scroll down to bottom contact form on click",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -617,7 +617,7 @@
         },
         {
             "key": "field_62376f79ac809",
-            "label": "About Us Learn More Link",
+            "label": "About Us - Learn More button Link",
             "name": "about_us_learn_more_link",
             "type": "url",
             "instructions": "",
@@ -649,10 +649,10 @@
         },
         {
             "key": "field_62660a979dde0",
-            "label": "Testimonials style",
+            "label": "Testimonials styles",
             "name": "testimonials_style",
             "type": "select",
-            "instructions": "<strong>Testimonial Style 1<\/strong>: This style will make content without background image <br\/>\r\n<strong>Testimonial Style 2<\/strong>: This style will make content with background image",
+            "instructions": "<strong>Testimonial Style 1<\/strong>: Use this style for non-background image <br\/>\r\n<strong>Testimonial Style 2<\/strong>: Use this style to add background image",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -661,8 +661,8 @@
                 "id": ""
             },
             "choices": {
-                "testimonials_style_1": "Testimonial style 1",
-                "testimonials_style_2": "Testimonial style 2"
+                "testimonials_style_1": "Testimonials style 1",
+                "testimonials_style_2": "Testimonials style 2"
             },
             "default_value": "testimonials_style_1",
             "allow_null": 0,
@@ -674,7 +674,7 @@
         },
         {
             "key": "field_62663b04829e4",
-            "label": "Testimonal background image",
+            "label": "Testimonals background image",
             "name": "testimonal_background_image",
             "type": "image",
             "instructions": "",
@@ -858,7 +858,7 @@
         },
         {
             "key": "field_623c41ade51fe",
-            "label": "Book appointment image",
+            "label": "Book your appointment image",
             "name": "book_appointment_image",
             "type": "image",
             "instructions": "",
@@ -923,7 +923,7 @@
             "label": "Book appointment button link",
             "name": "book_appointment_button_link",
             "type": "text",
-            "instructions": "Add URL link to page or id (like: '#section-contact_us' ) of section to this field for make button action",
+            "instructions": "Paste '#section-contact_us' without quotes in the below field to make the page scroll down to bottom contact form on click",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -977,7 +977,7 @@
             "label": "Select Blog Posts",
             "name": "select_blog_posts",
             "type": "post_object",
-            "instructions": "Please select post for add content to section \"Blog Posts\"",
+            "instructions": "Click on the select field to select and add blog posts",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -1330,10 +1330,10 @@
         },
         {
             "key": "field_62665d586bf45",
-            "label": "Contact Us Style",
+            "label": "Contact Us Styles",
             "name": "contact_us_style",
             "type": "select",
-            "instructions": "<strong>Contact Us Style 1<\/strong>: This style will make content without background image <br\/>\r\n<strong>Contact Us Style 2<\/strong>: This style will make content with background image<br\/>\r\n<strong>Contact Us Style 3<\/strong>: This style will make 50% left content by image and 50% right content by form with background image",
+            "instructions": "<strong>Contact Us Style 1<\/strong>: Use this style for a non-background image section<br\/>\r\n<strong>Contact Us Style 2<\/strong>: Use this style to add a background image in this section<br\/>\r\n<strong>Contact Us Style 3<\/strong>: Use this style to make the image and form cover 50% area each in this section",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -1529,5 +1529,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1653920923
+    "modified": 1654013379
 }

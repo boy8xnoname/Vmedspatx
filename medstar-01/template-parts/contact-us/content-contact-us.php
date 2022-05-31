@@ -3,29 +3,32 @@
 	$contactImageBackground = get_field('contact_section_image_background');
 	$contactImageContent = get_field('contact_section_image');
 
-	if(!empty($contactImageBackground)) {
+	if(empty($contactImageBackground)) {
+		$sectionContactBackground = get_template_directory_uri() . '/assets/images/Gold-Background.jpeg';
+	} else {
 		$sectionContactBackground = $contactImageBackground['url'];
 	}
-	
+
 	if(empty($contactImageContent)) {
 		$contactImageContent = get_template_directory_uri() . '/assets/images/dummy_620x475_ffffff_cccccc.png';
 	} else {
 		$contactImageContent = $contactImageContent['url'];
 	}
-
-	$sectionContactTitle = !empty(get_field('contact_us_title')) ? get_field('contact_us_title') : '';
+	$sectionContactTitle = !empty(get_field('contact_us_title')) ? get_field('contact_us_title') : 'CONTACT US';
 	$formContactTitle = !empty(get_field('contact_us_before_form_title')) ? get_field('contact_us_before_form_title') : 'Send us a message';
 	$formContactShortcode = !empty(get_field('contact_form_short_code')) ? get_field('contact_form_short_code') : '';
 	$formContactDescription = !empty(get_field('contact_us_form_description')) ? get_field('contact_us_form_description') : 'By submitting this form you agree to be contacted via phone/text/email.*';
 ?>
 <?php if(!empty($formContactShortcode)) : ?>
-<section  class="home-section contact_us <?php echo $contactusStyle;?>" <?php if($contactusStyle == 'contact_us_style_1') { ?> style ="background-image: url(<?php echo $sectionContactBackground;?>)" <?php } ?>>
+
+<section id="section-contact_us" class="home-section contact_us <?php echo $contactusStyle;?>" <?php if($contactusStyle == 'contact_us_style_1') { ?> style ="background-image: url(<?php echo $sectionContactBackground;?>)" <?php } ?>>
 	<div class="<?php if(($contactusStyle == 'contact_us_style_1') || $contactusStyle == 'contact_us_style_3') { echo 'container'; } else {echo 'container-fluid';}?> ">
 		<?php if($contactusStyle == 'contact_us_style_1') { ?>
 		<h2 class="section-title text-center">
 			<?php echo esc_attr( $sectionContactTitle, 'medstar01' ) ?>
 		</h2>
 		<?php } ?>
+		
 		<div class="row">
 			<!-- Style Contact Us Version 1 -->
 			<?php 

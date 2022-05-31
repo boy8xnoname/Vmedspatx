@@ -219,8 +219,10 @@ function medstar01_scripts() {
 		$customSecondColor = get_theme_mod('second_color_setting_hex');
 		$rgbaCustomColor = hex2rgba($customColor, 0.6);
 		$customColorStyle .= "
+			.site a,
 			.main-navigation #primary-menu > li:hover > a,
 			.main-navigation #primary-menu > li:hover .fa,
+			.main-navigation #primary-menu > li.menu-item-has-children .menu-collapsed,
 			ul.social-list a,
 			#mobile-site-navigation li a,
 			#mobile-site-navigation li.menu-item-has-children .menu-collapsed,
@@ -268,7 +270,12 @@ function medstar01_scripts() {
 			background-color: $rgbaCustomColor !important;
 		}
 		";
-		
+		$customColorStyle .= "
+		.about-us-content.about-us-content-top .container,
+		.about-us-content.about-us-leadership .leadership-item,
+		.about-us-content.about-us-leadership .container {
+			border-color: $customColor !important;
+		}";
 
 
 

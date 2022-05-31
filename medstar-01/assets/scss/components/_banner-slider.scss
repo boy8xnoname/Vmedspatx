@@ -84,8 +84,8 @@
         p {}
         .card-action {
             a {
-                background-color: #ffffff;
-                color: $text__color;
+                background-color: $brand__color;
+                color: #ffffff !important;
                 font-size: 16px;
                 padding: 12px 30px;
                 transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;

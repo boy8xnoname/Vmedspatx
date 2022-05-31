@@ -248,13 +248,54 @@
             "endpoint": 0
         },
         {
+            "key": "field_62964aacc764d",
+            "label": "Contact Us Styles",
+            "name": "contact_us_styles",
+            "type": "select",
+            "instructions": "<strong>Contact Us Style 1<\/strong>: Use this style for a non-background image section<br\/>\r\n<strong>Contact Us Style 2<\/strong>: Use this style to add a background image in this section<br\/>\r\n<strong>Contact Us Style 3<\/strong>: Use this style to make the image and form cover 50% area each in this section",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "contact_us_style_1": "Contact Us style 1",
+                "contact_us_style_2": "Contact Us style 2",
+                "contact_us_style_3": "Contact Us style 3"
+            },
+            "default_value": "contact_us_style_1",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
             "key": "field_6293964c480c0",
-            "label": "Contact section image background",
+            "label": "Contact section background image",
             "name": "contact_section_image_background",
             "type": "image",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_62964aacc764d",
+                        "operator": "==",
+                        "value": "contact_us_style_1"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_62964aacc764d",
+                        "operator": "==",
+                        "value": "contact_us_style_3"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -272,9 +313,48 @@
             "mime_types": ""
         },
         {
-            "key": "field_62377574801f1",
-            "label": "Contact Form Title",
-            "name": "contact_us_title",
+            "key": "field_62964c8855eb8",
+            "label": "Contact section image",
+            "name": "contact_section_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_62964aacc764d",
+                        "operator": "==",
+                        "value": "contact_us_style_2"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_62964aacc764d",
+                        "operator": "==",
+                        "value": "contact_us_style_3"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_623b392c9d63a",
+            "label": "Contact Form Description",
+            "name": "contact_us_before_form_title",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -291,9 +371,9 @@
             "maxlength": ""
         },
         {
-            "key": "field_623b392c9d63a",
-            "label": "Contact Form Description",
-            "name": "contact_us_before_form_title",
+            "key": "field_62377574801f1",
+            "label": "Contact Form Title",
+            "name": "contact_us_title",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -373,5 +453,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1653839449
+    "modified": 1654017403
 }

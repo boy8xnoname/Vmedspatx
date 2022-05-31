@@ -362,7 +362,7 @@
         },
         {
             "key": "field_627a8c5b38ade",
-            "label": "Hero Section - Content Setting",
+            "label": "Hero Section - Content",
             "name": "",
             "type": "tab",
             "instructions": "",
@@ -462,7 +462,7 @@
             "label": "Button URL",
             "name": "service_button_link",
             "type": "text",
-            "instructions": "Set link \"#service-contact-sidebar\" for click scroll to form get quote in sidebar",
+            "instructions": "Paste '#service-contact-sidebar' without quotes in the below field to make the page scroll down to bottom contact form on click",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -523,7 +523,7 @@
         },
         {
             "key": "field_6249c00939442",
-            "label": "Treaments Featured in content",
+            "label": "Treaments Featured in Content",
             "name": "",
             "type": "tab",
             "instructions": "",
@@ -601,7 +601,7 @@
                 },
                 {
                     "key": "field_6249c00980c09",
-                    "label": "Treaments Featured link",
+                    "label": "Treatments Featured link",
                     "name": "treaments_featured_link",
                     "type": "text",
                     "instructions": "",
@@ -655,7 +655,7 @@
         },
         {
             "key": "field_6291df9c6926e",
-            "label": "Contact sidebar image background",
+            "label": "Contact sidebar background image",
             "name": "contact_sidebar_image_background",
             "type": "image",
             "instructions": "",
@@ -760,7 +760,7 @@
         },
         {
             "key": "field_6249cd118d608",
-            "label": "Contact Form",
+            "label": "Contact Form - Bottom",
             "name": "",
             "type": "tab",
             "instructions": "",
@@ -776,7 +776,7 @@
         },
         {
             "key": "field_6291dec171785",
-            "label": "Contact section image background",
+            "label": "Contact section background image",
             "name": "contact_section_image_background",
             "type": "image",
             "instructions": "",
@@ -933,5 +933,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1653727221
+    "modified": 1654010829
 }

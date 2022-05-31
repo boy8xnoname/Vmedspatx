@@ -1,10 +1,10 @@
 {
     "key": "group_6249dd1df1242",
-    "title": "Services Content Before\/After Setup",
+    "title": "Service Page Full Width Content",
     "fields": [
         {
             "key": "field_6249dd5fd4169",
-            "label": "Services Before\/After setup",
+            "label": "Full Width Content",
             "name": "services_before_after_setup",
             "type": "wysiwyg",
             "instructions": "",
@@ -40,5 +40,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1649170293
+    "modified": 1654010829
 }
