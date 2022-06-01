@@ -18,7 +18,7 @@
 ?>
 <?php if(!empty($formContactShortcode)) : ?>
 <section id="section-contact_us" class="home-section contact_us <?php echo $contactusStyle;?>" <?php if($contactusStyle == 'contact_us_style_1') { ?> style ="background-image: url(<?php echo $sectionContactBackground;?>)" <?php } ?>>
-	<div class="<?php if(($contactusStyle == 'contact_us_style_1') || $contactusStyle == 'contact_us_style_3') { echo 'container'; } else {echo 'container-fluid';}?> ">
+	<div class="container">
 		<?php if($contactusStyle == 'contact_us_style_1') { ?>
 		<h2 class="section-title text-center">
 			<?php echo esc_attr( $sectionContactTitle, 'medstar01' ) ?>
@@ -49,26 +49,27 @@
 			<?php } ?>
 			<?php if($contactusStyle == 'contact_us_style_2') { ?>
 				<!-- Style Contact Us Version 2 -->
-				<div class="contact_image_content d-flex align-items-center col col-12 col-md-6  col-lg-5">
-					<img src="<?php echo $contactImageContent;?>" alt="<?php echo esc_attr( $sectionContactTitle, 'medstar01' ) ?>">
+				<div class="d-none d-lg-block col col-md-1 col col-lg-3">
 				</div>
-				<div class="d-none d-lg-block col col-md-1 col col-lg-2">
-				</div>
-				<div class="contact_image_form col col-12 col-md-5 col-lg-5">
-					<?php  if(!empty($formContactTitle)) { ?>
-						<h2 class="section-title text-center">
-							<?php echo esc_attr( $sectionContactTitle, 'medstar01' ) ?>
-						</h2>
-					<?php }?>
+				<div class="col col-12 col-md-10 col-lg-6 form-contact-us" <?php if(!empty($sectionContactBackground)) { ?> style ="background-image: url(<?php echo $sectionContactBackground;?>)" <?php } ?>>
 					<?php  if(!empty($formContactShortcode)) { ?>
-						<h2 class="contact-form-title text-center">
-							<?php echo esc_attr( $formContactTitle, 'medstar01' ); ?>
-						</h2>
+						<?php  if(!empty($sectionContactTitle)) { ?>
+							<h2 class="section-title text-center">
+								<?php echo esc_attr( $sectionContactTitle, 'medstar01' ) ?>
+							</h2>
+						<?php }?>
+						<?php  if(!empty($formContactTitle)) { ?>
+							<h2 class="contact-form-title text-center">
+								<?php echo esc_attr( $formContactTitle, 'medstar01' ); ?>
+							</h2>
+						<?php }?>
 						<?php echo do_shortcode($formContactShortcode); ?>
 						<div class="contact-us-description text-center">
 							<small><?php echo esc_attr( $formContactDescription, 'medstar01'); ?></small>
 						</div>
 					<?php }?>
+				</div>
+				<div class="d-none d-lg-block  col col-md-1 col-lg-3">
 				</div>
 			<?php } ?>
 			<?php if($contactusStyle == 'contact_us_style_3') { ?>
@@ -96,25 +97,7 @@
 					<?php }?>
 				</div>
 			<?php } ?>
-			<?php if($contactusStyle == 'contact_us_style_4') { ?>
-				<div class="d-none d-lg-block col col-md-1 col col-lg-3">
-				</div>
-				<div class="col col-12 col-md-10 col-lg-6 form-contact-us" <?php if(!empty($sectionContactBackground)) { ?> style ="background-image: url(<?php echo $sectionContactBackground;?>)" <?php } ?>>
-					<?php  if(!empty($formContactShortcode)) { ?>
-						<?php  if(!empty($formContactTitle)) { ?>
-							<h2 class="contact-form-title text-center">
-								<?php echo esc_attr( $formContactTitle, 'medstar01' ); ?>
-							</h2>
-						<?php }?>
-						<?php echo do_shortcode($formContactShortcode); ?>
-						<div class="contact-us-description text-center">
-							<small><?php echo esc_attr( $formContactDescription, 'medstar01'); ?></small>
-						</div>
-					<?php }?>
-				</div>
-				<div class="d-none d-lg-block  col col-md-1 col-lg-3">
-				</div>
-			<?php } ?>
+			
 		</div>
 	
 	</div>
