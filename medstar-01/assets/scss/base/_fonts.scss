@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Gotham';
+    src: url('assets/fonts/Gotham-Book.eot');
+    /* IE9*/
+    src: url('assets/fonts/Gotham-Book.eot?#iefix') format('embedded-opentype'), url('assets/fonts/Gotham-Book.woff2') format('woff2'), url('assets/fonts/Gotham-Book.woff') format('woff'), url('assets/fonts/Gotham-Book.ttf') format('truetype'), url('assets/fonts/Gotham-Book.svg#assets/fonts/Gotham-Book') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('assets/fonts/Gotham-Thin.eot');
+    /* IE9*/
+    src: url('assets/fonts/Gotham-Thin.eot?#iefix') format('embedded-opentype'), url('assets/fonts/Gotham-Thin.woff2') format('woff2'), url('assets/fonts/Gotham-Thin.woff') format('woff'), url('assets/fonts/Gotham-Thin.ttf') format('truetype'), url('assets/fonts/Gotham-Thin.svg#assets/fonts/Gotham-Thin') format('svg');
+    /* iOS 4.1- */
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('assets/fonts/Gotham-Medium.eot');
+    /* IE9*/
+    src: url('assets/fonts/Gotham-Medium.eot?#iefix') format('embedded-opentype'), url('assets/fonts/Gotham-Medium.woff2') format('woff2'), url('assets/fonts/Gotham-Medium.woff') format('woff'), url('assets/fonts/Gotham-Medium.ttf') format('truetype'), url('assets/fonts/Gotham-Medium.svg#assets/fonts/Gotham-Medium') format('svg');
+    /* iOS 4.1- */
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Gotham";
+    src: url("assets/fonts/Gotham-Regular.eot");
+    /* IE9*/
+    src: url("assets/fonts/Gotham-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("assets/fonts/Gotham-Regular.woff2") format("woff2"), /* chrome、firefox */
+    url("assets/fonts/Gotham-Regular.woff") format("woff"), /* chrome、firefox */
+    url("assets/fonts/Gotham-Regular.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("assets/fonts/Gotham-Regular.svg#Gotham") format("svg");
+    /* iOS 4.1- */
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('assets/fonts/Gotham-Black.eot');
+    /* IE9*/
+    src: url('assets/fonts/Gotham-Black.eot?#iefix') format('embedded-opentype'), url('assets/fonts/Gotham-Black.woff2') format('woff2'), url('assets/fonts/Gotham-Black.woff') format('woff'), url('assets/fonts/Gotham-Black.ttf') format('truetype'), url('assets/fonts/Gotham-Black.svg#assets/fonts/Gotham-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('assets/fonts/Gotham-Bold.eot');
+    /* IE9*/
+    src: url('assets/fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype'), url('assets/fonts/Gotham-Bold.woff2') format('woff2'), url('assets/fonts/Gotham-Bold.woff') format('woff'), url('assets/fonts/Gotham-Bold.ttf') format('truetype'), url('assets/fonts/Gotham-Bold.svg#assets/fonts/Gotham-Bold') format('svg');
+    /* iOS 4.1- */
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('assets/fonts/Gotham-Light.eot');
+    /* IE9*/
+    src: url('assets/fonts/Gotham-Light.eot?#iefix') format('embedded-opentype'), url('assets/fonts/Gotham-Light.woff2') format('woff2'), url('assets/fonts/Gotham-Light.woff') format('woff'), url('assets/fonts/Gotham-Light.ttf') format('truetype'), url('assets/fonts/Gotham-Light.svg#assets/fonts/Gotham-Light') format('svg');
+    /* iOS 4.1- */
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
