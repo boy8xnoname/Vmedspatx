@@ -7466,6 +7466,15 @@ input.submit:hover {
   font-size: 36px;
 }
 
+.contact_us.contact_us_style_4 .form-contact-us {
+  background-color: #fff;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #FAFAFA;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  padding: 20px 50px 20px 50px;
+}
+
 .contact_us.service-contact-section .form-content-wrap.contact_with_bg {
   background-position: center;
   background-repeat: no-repeat;
