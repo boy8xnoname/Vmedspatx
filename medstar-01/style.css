@@ -29,6 +29,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manjari:wght@100;400;700&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -7079,6 +7080,10 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   text-transform: uppercase;
 }
 
+.site-footer p {
+  font-family: 'Manjari', sans-serif;
+}
+
 .site-footer .content-list .contact-item {
   color: #C79E55;
   font-size: 15px;
@@ -7087,6 +7092,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 
 .site-footer .content-list .contact-item h3, .site-footer .content-list .contact-item .h3 {
   color: #C79E55;
+  font-family: 'Manjari', sans-serif;
   font-size: 17px;
   font-weight: 600;
 }
@@ -7099,6 +7105,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 
 .site-footer .content-list .contact-item a {
   color: #C79E55;
+  font-family: 'Manjari', sans-serif;
 }
 
 .site-footer .content-list .contact-item a:hover {
@@ -7331,7 +7338,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   line-height: 1.4em;
   position: absolute;
   top: 0;
@@ -7796,7 +7803,7 @@ form.search-form .search-submit {
   color: #ffffff;
   display: flex;
   align-items: center;
-  font-family: "Gotham", sans-serif;
+  font-family: 'Manjari', sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 18.5px;

@@ -16,6 +16,9 @@
         color: #000000;
         text-transform: uppercase;
     }
+    p {
+        font-family: 'Manjari', sans-serif;
+    }
     .content-list {
         .contact-item {
             color: $brand__color;
@@ -23,6 +26,7 @@
             margin-bottom: 20px;
             h3 {
                 color: $brand__color;
+                font-family: 'Manjari', sans-serif;
                 font-size: 17px;
                 font-weight: 600;
             }
@@ -34,6 +38,7 @@
             li {}
             a {
                 color: $brand__color;
+                font-family: 'Manjari', sans-serif;
                 &:hover {
                     color: $brand__color-dark;
                 }
