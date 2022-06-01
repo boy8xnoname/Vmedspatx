@@ -273,7 +273,8 @@ function medstar01_scripts() {
 		$customColorStyle .= "
 		.about-us-content.about-us-content-top .container,
 		.about-us-content.about-us-leadership .leadership-item,
-		.about-us-content.about-us-leadership .container {
+		.about-us-content.about-us-leadership .container,
+		section.our_location .location-list .location-item {
 			border-color: $customColor !important;
 		}";
 
