@@ -7286,6 +7286,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   margin: auto;
 }
 
+.home-banner.slide-style1 .card-content h2, .home-banner.slide-style1 .card-content .h2,
 .home-banner.slide-style1 .card-content .h2 {
   line-height: 1.2em;
   text-align: center;
@@ -7313,6 +7314,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   margin: auto;
 }
 
+.home-banner.slide-style2 .card-content h2, .home-banner.slide-style2 .card-content .h2,
 .home-banner.slide-style2 .card-content .h2 {
   line-height: 1.2em;
   text-align: right;
@@ -7340,6 +7342,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   margin: auto;
 }
 
+.home-banner.slide-style3 .card-content h2, .home-banner.slide-style3 .card-content .h2,
 .home-banner.slide-style3 .card-content .h2 {
   line-height: 1.2em;
   text-align: center;
