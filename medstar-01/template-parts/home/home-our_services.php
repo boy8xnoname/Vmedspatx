@@ -27,7 +27,7 @@
 										<?php if(!empty($service_icon_before_title)) { ?>
 											<img src="<?php echo $service_icon_before_title['url'];?>" alt="<?php echo $services_item_heading;?>">
 										<?php } else { ?>
-											<img src="<?php echo get_template_directory_uri() . '/assets/images/medstar01-icon.png';?>" alt="<?php echo $services_item_heading;?>">
+<!--											<img src="--><?php //echo get_template_directory_uri() . '/assets/images/medstar01-icon.png';?><!--" alt="--><?php //echo $services_item_heading;?><!--">-->
 										<?php } ?>
 
 									</span>
