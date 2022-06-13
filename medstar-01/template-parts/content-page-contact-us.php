@@ -45,7 +45,7 @@ $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full');
 							$our_location_address = $our_locations_item['our_location_address'];
 							$our_location_address_map_url = $our_locations_item['our_location_address_map_url'];
 							if (!empty($our_location_phone_number)) {
-								$location_phone_link_start = '<a href="tel:' . $our_location_phone_number . '" target="_blank">';
+								$location_phone_link_start = '<a href="tel:' . clean_phone_link($our_location_phone_number) . '" target="_blank">';
 								$location_phone_link_end   = '</a>';
 							}
 							if (!empty($our_location_address_map_url)) {

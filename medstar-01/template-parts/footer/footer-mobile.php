@@ -46,7 +46,7 @@
                         <h3><?php echo esc_attr($location_title);?></h3>
                         <ul>
                             <li>
-                                <a href="tel:<?php echo esc_attr($location_phone_number);?>">
+                                <a href="tel:<?php echo esc_attr(clean_phone_link($location_phone_number));?>">
                                     <span class=""><?php echo esc_attr($location_phone_number);?></span>
                                 </a>
                             </li>
