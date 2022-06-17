@@ -28,7 +28,11 @@ $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full');
 			<div class="contact-information-list">
 				<?php if(!empty($contact_us_phone_number)) {?> 
 				<div class="contact-information-item">
-					<div class="item-box-icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+					<div class="item-box-icon">
+                        <a href="tel:<?php echo $contact_us_phone_number;?>">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                        </a>
+                    </div>
 					<div class="item-box-content">
 						<h3 class="information-title">
 							<a href="tel:<?php echo $contact_us_phone_number;?>">
@@ -45,7 +49,11 @@ $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full');
 				<?php } ?> 
 				<?php if(!empty($contact_us_fax_number)) {?> 
 				<div class="contact-information-item">
-					<div class="item-box-icon"><i class="fa fa-fax" aria-hidden="true"></i></div>
+					<div class="item-box-icon">
+                        <a href="tel:<?php echo $contact_us_fax_number;?>">
+                            <i class="fa fa-fax" aria-hidden="true"></i>
+                        </a>
+                    </div>
 					<div class="item-box-content">
 						<h3 class="information-title">
 							<?php echo __('Fax','medstar01');?>
@@ -59,10 +67,14 @@ $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full');
 				</div>
 				<?php } ?> 
 				<div class="contact-information-item">
-					<div class="item-box-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+					<div class="item-box-icon">
+                        <a href="https://maps.google.com/?q=<?php echo $contact_us_location_address;?>">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        </a>
+                    </div>
 					<div class="item-box-content">
 						<h3 class="information-title">
-								<?php echo __('Location','medstar01');?>
+                            <?php echo __('Location','medstar01');?>
 						</h3>
 						<div class="information-description">
 							<?php echo $contact_us_location_address;?>
@@ -71,7 +83,9 @@ $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full');
 				</div>
 				<div class="contact-information-item">
 					<div class="item-box-icon">
-						<i class="fa fa-envelope" aria-hidden="true"></i>
+                        <a href="mailto:<?php echo $contact_us_email_address;?>">
+						    <i class="fa fa-envelope" aria-hidden="true"></i>
+                        </a>
 					</div>
 					<div class="item-box-content">
 						<h3 class="information-title">

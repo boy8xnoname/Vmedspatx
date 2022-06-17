@@ -135,7 +135,7 @@
                     "key": "field_623540aefa72d",
                     "label": "Slider Button URL",
                     "name": "banner_link",
-                    "type": "url",
+                    "type": "text",
                     "instructions": "For this field we can leave this if admin don't need add link to banner",
                     "required": 0,
                     "conditional_logic": 0,
@@ -145,7 +145,10 @@
                         "id": ""
                     },
                     "default_value": "",
-                    "placeholder": ""
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
                 }
             ]
         },
@@ -1530,5 +1533,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1655464686
+    "modified": 1655479313
 }
