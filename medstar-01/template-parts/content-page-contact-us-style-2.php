@@ -29,18 +29,18 @@ $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full');
 				<?php if(!empty($contact_us_phone_number)) {?> 
 				<div class="contact-information-item">
 					<div class="item-box-icon">
-                        <a href="tel:<?php echo $contact_us_phone_number;?>">
+                        <a href="tel:<?php echo clean_phone_link($contact_us_phone_number); ?>">
                             <i class="fa fa-phone" aria-hidden="true"></i>
                         </a>
                     </div>
 					<div class="item-box-content">
 						<h3 class="information-title">
-							<a href="tel:<?php echo $contact_us_phone_number;?>">
+							<a href="tel:<?php echo clean_phone_link($contact_us_phone_number); ?>">
 								<?php echo __('Phone','medstar01');?>
 							</a >
 						</h3>
 						<div class="information-description">
-							<a href="tel:<?php echo $contact_us_phone_number;?>">
+							<a href="tel:<?php echo clean_phone_link($contact_us_phone_number); ?>">
 								<?php echo $contact_us_phone_number;?>
 							</a>
 						</div>
@@ -50,7 +50,7 @@ $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full');
 				<?php if(!empty($contact_us_fax_number)) {?> 
 				<div class="contact-information-item">
 					<div class="item-box-icon">
-                        <a href="tel:<?php echo $contact_us_fax_number;?>">
+                        <a href="tel:<?php echo clean_phone_link($contact_us_fax_number);?>">
                             <i class="fa fa-fax" aria-hidden="true"></i>
                         </a>
                     </div>
@@ -59,7 +59,7 @@ $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full');
 							<?php echo __('Fax','medstar01');?>
 						</h3>
 						<div class="information-description">
-							<a href="tel:<?php echo $contact_us_fax_number;?>">
+							<a href="tel:<?php echo clean_phone_link($contact_us_fax_number); ?>">
 								<?php echo $contact_us_fax_number;?>
 							</a>
 						</div>
