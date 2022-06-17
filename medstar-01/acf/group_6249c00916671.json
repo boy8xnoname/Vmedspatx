@@ -33,6 +33,7 @@
             },
             "choices": {
                 "image": "Image",
+                "image_fixed": "Image Fixed",
                 "vimeo_youtube_video": "Vimeo\/YouTube Video",
                 "self_hosted_video": "Self Hosted Video"
             },
@@ -161,7 +162,14 @@
                     {
                         "field": "field_624c7d89c081c",
                         "operator": "==",
-                        "value": "Image"
+                        "value": "image"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_624c7d89c081c",
+                        "operator": "==",
+                        "value": "image_fixed"
                     }
                 ]
             ],
@@ -212,6 +220,7 @@
             },
             "choices": {
                 "image": "Image",
+                "image_fixed": "Image Fixed",
                 "vimeo_youtube_video": "Vimeo\/YouTube Video",
                 "self_hosted_video": "Self Hosted Video"
             },
@@ -341,6 +350,13 @@
                         "field": "field_627a8bedd15bf",
                         "operator": "==",
                         "value": "image"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_627a8bedd15bf",
+                        "operator": "==",
+                        "value": "image_fixed"
                     }
                 ]
             ],
@@ -933,5 +949,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1654010829
+    "modified": 1655468775
 }

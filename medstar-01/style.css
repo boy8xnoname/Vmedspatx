@@ -8533,6 +8533,16 @@ body.single .entry-content {
   margin: 0 !important;
 }
 
+.service-banner {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+.service-banner.service-banner_fixed {
+  background-attachment: fixed;
+}
+
 .service-banner-image {
   color: #ffffff;
   position: relative;

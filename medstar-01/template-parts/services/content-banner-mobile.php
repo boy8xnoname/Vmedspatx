@@ -28,8 +28,10 @@ if(($select_banner_videoimage_banner['value'] == 'self_hosted_video') && !empty(
 <?php } else if(($select_banner_videoimage_banner['value'] == 'vimeo_youtube_video') &&  !empty($service_banner_video_url)) {?> 
     <!-- Background Self-Hosted Video Parallax -->
     <div class="jarallax  jarallax-video-bg" data-jarallax data-video-src="<?php echo esc_url($service_banner_video_url);?>">
-<?php } else {?>
+<?php } else if(($select_banner_videoimage_banner['value'] == 'image') &&  !empty($service_banner_video_url)) { ?>
     <div class="service-banner header-jarallax" style="background-image: url('<?php echo esc_url($services_banner_image['url']);?>');">
+<?php } else { ?>
+    <div class="service-banner service-banner_fixed" style="background-image: url('<?php echo esc_url($services_banner_image['url']);?>');">
 <?php }
 ?>
     <div class="service-banner-image container">
