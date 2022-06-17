@@ -1,11 +1,12 @@
 <?php 
 	$contactusStyle = get_field('contact_us_styles');
-	$contactImageBackground = get_field('contact_section_image_background');
+	$contactImageBackground = !empty(get_field('contact_section_image_background')) ? get_field('contact_section_image_background') : '';
 	$contactImageContent = get_field('contact_section_image');
 
 	if(!empty($contactImageBackground)) {
-	
 		$sectionContactBackground = $contactImageBackground['url'];
+	} else {
+		$sectionContactBackground = '';
 	}
 
 	if(!empty($contactImageContent)) {	
@@ -37,7 +38,8 @@
 						<h2 class="contact-form-title text-center">
 							<?php echo esc_attr( $formContactTitle, 'medstar01' ); ?>
 						</h2>
-						<?php echo do_shortcode($formContactShortcode); ?>
+						<?php
+						 echo do_shortcode($formContactShortcode); ?>
 						<?php  if(!empty($formContactDescription)) { ?>
 							<div class="contact-us-description text-center">
 								<small><?php echo esc_attr( $formContactDescription, 'medstar01'); ?></small>

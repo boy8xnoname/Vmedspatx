@@ -174,6 +174,7 @@ function medstar01_scripts() {
 
 
 	wp_enqueue_script( 'jquery');
+	wp_enqueue_script( 'googleapis', '//maps.googleapis.com/maps/api/js?key=AIzaSyBsuplYWJsF-qc5nD7w2iGNlxOTEVn2K3A', array(), _S_VERSION, true );
 	wp_enqueue_script( 'swiper', get_template_directory_uri() . '/assets/js/swiper.min.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'aos-animate', get_template_directory_uri() . '/assets/js/aos.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'jarallax', get_template_directory_uri() . '/assets/js/jarallax.min.js', array(), _S_VERSION, true );
@@ -239,7 +240,8 @@ function medstar01_scripts() {
 			.about-us-content .leadership-item h3.leadership-name, 
 			.about-us-content .leadership-item .leadership-name.h3,
 			.about-us-content .leadership-item h4.leadership-position, 
-			.about-us-content .leadership-item .leadership-position.h4 {
+			.about-us-content .leadership-item .leadership-position.h4,
+			.page-contact-wrap .contact-information-item .item-box-icon {
 				color: $customColor !important;
 			}
 		";
@@ -270,7 +272,8 @@ function medstar01_scripts() {
 		.about-us-content.about-us-content-top .container,
 		.about-us-content.about-us-leadership .leadership-item,
 		.about-us-content.about-us-leadership .container,
-		section.our_location .location-list .location-item {
+		section.our_location .location-list .location-item,
+		.page-contact-wrap .contact-information-item .item-box-icon {
 			border-color: $customColor !important;
 		}";
 
@@ -303,6 +306,15 @@ function medstar01_scripts() {
 
 }
 add_action( 'wp_enqueue_scripts', 'medstar01_scripts' );
+
+
+function medstar01_admin_script_panel() {
+    $version = wp_get_theme()->get('Version');
+    
+	wp_enqueue_script( 'googleapis',  '//maps.googleapis.com/maps/api/js?key=AIzaSyBsuplYWJsF-qc5nD7w2iGNlxOTEVn2K3A', array(), _S_VERSION, true );
+
+}
+add_action( 'admin_enqueue_scripts', 'medstar01_admin_script_panel' );
 
 
 /**
