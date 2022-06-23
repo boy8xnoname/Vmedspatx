@@ -1,5 +1,4 @@
-.page-template-page-contact .contact_us.contact_us_style_3 .contact_image_form,
-.page-template-page-about-us .contact_us.contact_us_style_3 .contact_image_form  {
+.page-template-page-contact .contact_us.contact_us_style_3 .contact_image_form, .page-template-page-about-us .contact_us.contact_us_style_3 .contact_image_form  {
     padding-bottom: 2%;
 }
 @media (min-width: 768px) {
@@ -8,20 +7,17 @@
         width: 100%;
     }
 }
-.page-template-page-contact .contact_image_form .section-title,
-.page-template-page-about-us .contact_image_form .section-title {
+.page-template-page-contact .contact_image_form .section-title, .page-template-page-about-us .contact_image_form .section-title {
     padding-top: 33px;
 }
-.explore_our_treatments .main h2.content-our-treatments-title,
-.explore_our_treatments .main .content-our-treatments-title.h2 {
+.explore_our_treatments .main h2.content-our-treatments-title, .explore_our_treatments .main .content-our-treatments-title.h2 {
     line-height: 1.4em;
     margin-bottom: 25px;
 }
 .our_services .our-services__item .item-link a {
     line-height: 22px;
 }
-.contact_us.service-contact-sidebar .contact-form-title p,
-.contact_us .contact-form-title p {
+.contact_us.service-contact-sidebar .contact-form-title p, .contact_us .contact-form-title p {
     margin-top: 22px;
 }
 .home-banner.slide-style1 .card-content h2 {
@@ -29,8 +25,7 @@
 }
 @media all and (max-width: 768px) {
     .header-jarallax {
-        max-height: 76vh;
-        min-height: auto;
+        min-height: 30vh;
     }
     .home-section.treaments_featured {
         padding: 23px 0 0 0;
