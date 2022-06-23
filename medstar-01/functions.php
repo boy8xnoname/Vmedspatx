@@ -9,7 +9,7 @@
 
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', '1.0.0' );
+	define( '_S_VERSION', '1.0.8' );
 }
 
 /**
@@ -170,6 +170,7 @@ function medstar01_scripts() {
 	// wp_enqueue_style( 'style-magnific-popup', get_template_directory_uri() . '/assets/css/magnific-popup.css', array(), _S_VERSION);
 	wp_enqueue_style( 'common-lib', get_template_directory_uri() . '/assets/css/common-lib.min.css', array(), _S_VERSION);
 	wp_enqueue_style( 'medstar01-style', get_stylesheet_uri(), array(), _S_VERSION );
+    wp_enqueue_style('medstar-custom', get_template_directory_uri() . '//assets/css/custom.css', array('medstar01-style'), _S_VERSION);
 	wp_style_add_data( 'medstar01-style', 'rtl', 'replace' );
 
 
