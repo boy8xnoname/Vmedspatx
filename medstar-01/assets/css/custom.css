@@ -57,3 +57,7 @@
 .gfield_label {
     display: none !important;
 }
+
+#section-contact_us > .container {
+    max-width: 1500px !important;
+}
