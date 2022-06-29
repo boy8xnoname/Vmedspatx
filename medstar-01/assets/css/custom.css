@@ -72,3 +72,9 @@ body .accordion-button:not(.collapsed)::after {
 #section-contact_us > .container {
     max-width: 1500px !important;
 }
+
+@media (max-width: 480px){
+    .service-banner.service-banner_fixed {
+        background-attachment: inherit;
+    }
+}
