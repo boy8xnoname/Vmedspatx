@@ -243,7 +243,8 @@ function medstar01_scripts() {
 			.about-us-content .leadership-item .leadership-name.h3,
 			.about-us-content .leadership-item h4.leadership-position, 
 			.about-us-content .leadership-item .leadership-position.h4,
-			.page-contact-wrap .contact-information-item .item-box-icon {
+			.page-contact-wrap .contact-information-item .item-box-icon,
+			.accordion-button:not(.collapsed) {
 				color: $customColor !important;
 			}
 		";

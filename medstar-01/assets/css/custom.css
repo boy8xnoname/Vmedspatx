@@ -1,3 +1,14 @@
+.accordion-button::after {
+    background-image: none !important;
+    transform: none !important;
+    content: '\f107';
+    font-family: "Font Awesome 6 Free";
+    font-weight: 600;
+    text-align: center;
+}
+body .accordion-button:not(.collapsed)::after {
+    transform: rotate(-180deg) !important;
+}
 .page-template-page-contact .contact_us.contact_us_style_3 .contact_image_form, .page-template-page-about-us .contact_us.contact_us_style_3 .contact_image_form  {
     padding-bottom: 2%;
 }
