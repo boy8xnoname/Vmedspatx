@@ -39,9 +39,7 @@
 					<div class="footer-copyright-menu  col col-12 col-md-6">
 						<p class="text-right">
 							<?php if(!empty(get_theme_mod('select_privacy_policy'))){ ?>
-								<a href="<?php echo esc_url( get_page_link( get_theme_mod('select_privacy_policy') ) ); ?>">
-									<?php echo esc_attr( 'Privacy Policy' );?>
-								</a>
+								<?php echo get_theme_mod('select_privacy_policy');?>
 							<?php } ?>
 						</p>
 					</div>

@@ -179,7 +179,8 @@ Kirki::add_field(
 );
 
 Kirki::add_field( 'medstar01', [
-	'type'        => 'dropdown-pages',
+	//'type'        => 'dropdown-pages',
+	'type'        => 'editor',
 	'settings'    => 'select_privacy_policy',
 	'label'       => esc_html__( 'Privacy Policy Pages', 'medstar01' ),
 	'section'     => 'section_footer_config',
