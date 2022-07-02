@@ -120,6 +120,20 @@
             display: flex;
         }
     }
+    @media (min-width: 768px) and (max-width: 991.99px) {
+        .our-services__item {
+            &:nth-child(2n) {
+                .item-text-wrap {
+                    padding: 30px;
+                }
+            }
+            &:nth-child(2n+1) {
+                .item-text-wrap {
+                    padding: 30px;
+                }
+            }
+        }
+    }
     // Large devices (desktops, 992px and up)
     @media (min-width: 992px) {
         .our-services__item {

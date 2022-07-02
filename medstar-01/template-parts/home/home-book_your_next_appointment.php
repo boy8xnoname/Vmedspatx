@@ -1,5 +1,13 @@
 <?php
-    $book_appointment_image = !empty( get_field('book_appointment_image')) ?  get_field('book_appointment_image') : '';
+if (!wp_is_mobile()) {
+    $book_appointment_image = !empty(get_field('book_appointment_image')) ?  get_field('book_appointment_image') : '';
+} else {
+    if(!empty(get_field('book_appointment_image_mobile'))) {
+        $book_appointment_image = get_field('book_appointment_image_mobile');
+    } else {
+        $book_appointment_image = get_field('book_appointment_image');
+    }
+}
     $book_your_next_appointment_title = get_field('book_your_next_appointment_title');
     $book_your_next_appointment_description = get_field('book_your_next_appointment_description');
     $book_appointment_button_title = !empty(get_field('book_appointment_button_title')) ? get_field('book_appointment_button_title') : 'CONTACT US';

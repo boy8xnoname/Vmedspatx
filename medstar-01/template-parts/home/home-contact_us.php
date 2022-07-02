@@ -49,7 +49,7 @@
 			<?php } ?>
 			<?php if($contactusStyle == 'contact_us_style_2') { ?>
 				<!-- Style Contact Us Version 2 -->
-				<div class="d-none d-lg-block col col-md-1 col col-lg-3">
+				<div class="d-none d-md-block col col-md-1 col col-lg-3">
 				</div>
 				<div class="col col-12 col-md-10 col-lg-6 form-contact-us" <?php if(!empty($sectionContactBackground)) { ?> style ="background-image: url(<?php echo $sectionContactBackground;?>)" <?php } ?>>
 					<?php  if(!empty($formContactShortcode)) { ?>
@@ -69,7 +69,7 @@
 						</div>
 					<?php }?>
 				</div>
-				<div class="d-none d-lg-block  col col-md-1 col-lg-3">
+				<div class="d-none d-md-block  col col-md-1 col-lg-3">
 				</div>
 			<?php } ?>
 			<?php if($contactusStyle == 'contact_us_style_3') { ?>

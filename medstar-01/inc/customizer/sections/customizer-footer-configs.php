@@ -179,10 +179,21 @@ Kirki::add_field(
 );
 
 Kirki::add_field( 'medstar01', [
-	//'type'        => 'dropdown-pages',
-	'type'        => 'editor',
+	'type'        => 'dropdown-pages',
+	// 'type'        => 'editor',
 	'settings'    => 'select_privacy_policy',
 	'label'       => esc_html__( 'Privacy Policy Pages', 'medstar01' ),
+	'section'     => 'section_footer_config',
+	'default'     => '',
+	'priority'    => 10,
+] );
+
+
+Kirki::add_field( 'medstar01', [
+	'type'        => 'dropdown-pages',
+	// 'type'        => 'editor',
+	'settings'    => 'select_terms_of_use',
+	'label'       => esc_html__( 'Terms of Use Pages', 'medstar01' ),
 	'section'     => 'section_footer_config',
 	'default'     => '',
 	'priority'    => 10,

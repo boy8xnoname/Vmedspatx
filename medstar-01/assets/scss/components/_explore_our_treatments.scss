@@ -17,6 +17,14 @@
     @media (min-width: 576px) {}
     // Medium devices (tablets, 768px and up)
     @media (min-width: 768px) {}
+    @media (min-width: 768px) and (max-width: 991.99px) {
+        .explore_our_treatments_wrap {
+            .main {
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+        }
+    }
     // Large devices (desktops, 992px and up)
     @media (min-width: 992px) {
         padding-top: 150px;

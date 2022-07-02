@@ -134,6 +134,14 @@
             }
         }
     }
+    .footer-copyright-menu {
+        a {
+            margin-left: 10px;
+            // &:hover {
+            //     text-decoration: underline;
+            // }
+        }
+    }
     /** BACK TO TOP **/
     #toTopBtn {
         background-color: $brand__color;
@@ -181,6 +189,7 @@
         .footer-vertical-menu {
             text-align: right;
         }
+        .footer-copyright-menu {}
     }
     // Large devices (desktops, 992px and up)
     @media (min-width: 992px) {

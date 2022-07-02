@@ -25,7 +25,7 @@
                     endif;
                     ?>
 
-                    <div class="d-flex justify-content-start">
+                    <div class="d-flex justify-content-center justify-content-lg-start">
                         <?php if(!empty( $about_us_learn_more_link)) :
                             echo '<a class="btn btn-view-more" href="'.$about_us_learn_more_link.'">'.esc_attr('LEARN MORE', 'medstar01').'</a>';
                         endif;?>

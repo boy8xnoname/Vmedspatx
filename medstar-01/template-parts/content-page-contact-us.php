@@ -6,9 +6,17 @@
  *
  * @package medstar01
  */
-$featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full'); 
+$featured_img_url = '';
+if (!wp_is_mobile()) {
+	$featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full'); 
+} else {
+	if(empty(get_post_meta(get_the_ID(), 'second_featured_image', true))) {
+		$featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full');
+	} else {
+        $featured_img_url = wp_get_attachment_image_url(get_post_meta(get_the_ID(), 'second_featured_image', true), 'full');
+    }
+}
 ?>
-
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header header-jarallax" style="background-image: url('<?php echo esc_url($featured_img_url);?>');">
 		<div class="container">

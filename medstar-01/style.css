@@ -7015,7 +7015,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 
 .site-header .site-branding img {
-  max-width: 120px;
+  max-width: 100px;
   height: auto;
 }
 
@@ -7201,6 +7201,10 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 
 .site-footer .site-info a:hover {
   color: #C79E55;
+}
+
+.site-footer .footer-copyright-menu a {
+  margin-left: 10px;
 }
 
 .site-footer #toTopBtn {
@@ -7394,6 +7398,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 
 .book_your_next_appointment .book_your_next_appointment-wrap {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 100px 0;
 }
 
@@ -9675,7 +9682,7 @@ a.skip-link.screen-reader-text {
     text-align: center !important;
   }
   .site-header .site-branding img {
-    max-width: 175px;
+    max-width: 130px;
     height: auto;
   }
   .site-header .site-branding p {
@@ -9706,6 +9713,43 @@ a.skip-link.screen-reader-text {
   }
   .service-banner-image .service-our_award img {
     max-width: 120px;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1200px) {
+  .about-us-content .container,
+  .about-us-content .container-sm,
+  .about-us-content .container-md,
+  .about-us-content .container-lg,
+  .about-us-content .container-xl,
+  .about-us-content .container-xxl {
+    padding-right: 50px !important;
+    padding-left: 50px !important;
+  }
+  .about-us-content .container-fluid, .about-us-content .container-sm, .about-us-content .container-md, .about-us-content .container-lg, .about-us-content .container-xl, .about-us-content .container-xxl {
+    padding-right: 50px !important;
+    padding-left: 50px !important;
+  }
+  .page-contact-wrap .container,
+  .page-contact-wrap .container-sm,
+  .page-contact-wrap .container-md,
+  .page-contact-wrap .container-lg,
+  .page-contact-wrap .container-xl,
+  .page-contact-wrap .container-xxl {
+    padding-right: 50px !important;
+    padding-left: 50px !important;
+  }
+  .page-contact-wrap .container-fluid, .page-contact-wrap .container-sm, .page-contact-wrap .container-md, .page-contact-wrap .container-lg, .page-contact-wrap .container-xl, .page-contact-wrap .container-xxl {
+    padding-right: 50px !important;
+    padding-left: 50px !important;
+  }
+  .page-service-site-main .container, .page-service-site-main .container-sm, .page-service-site-main .container-md, .page-service-site-main .container-lg, .page-service-site-main .container-xl, .page-service-site-main .container-xxl {
+    padding-right: 50px !important;
+    padding-left: 50px !important;
+  }
+  .page-service-site-main .container-fluid, .page-service-site-main .container-sm, .page-service-site-main .container-md, .page-service-site-main .container-lg, .page-service-site-main .container-xl, .page-service-site-main .container-xxl {
+    padding-right: 50px !important;
+    padding-left: 50px !important;
   }
 }
 
@@ -10467,7 +10511,7 @@ a.skip-link.screen-reader-text {
     text-align: center !important;
   }
   .site-header .site-branding img {
-    max-width: 235px;
+    max-width: 150px;
     height: auto;
   }
   .site-header .site-branding p {
@@ -10617,6 +10661,39 @@ a.skip-link.screen-reader-text {
   .service-entry-content .service-main-content.with-sidebar {
     padding-right: 3%;
     width: 70%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.99px) {
+  .home-section.about_us {
+    padding: 50px;
+  }
+  .home-banner .swiper-slide {
+    max-height: 450px;
+  }
+  .home-banner .card-content h2, .home-banner .card-content .h2,
+  .home-banner .card-content .h2 {
+    font-size: 45px;
+  }
+  .book_your_next_appointment .book_your_next_appointment-wrap {
+    max-height: 450px;
+  }
+  .book_your_next_appointment .book_your_next_appointment-wrap h2.section-title, .book_your_next_appointment .book_your_next_appointment-wrap .section-title.h2 {
+    font-size: 45px;
+    line-height: 1.4em;
+  }
+  .book_your_next_appointment .book_your_next_appointment-wrap .btn-view-more {
+    font-size: 20px;
+  }
+  .explore_our_treatments .explore_our_treatments_wrap .main {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .our_services .our-services__item:nth-child(2n) .item-text-wrap {
+    padding: 30px;
+  }
+  .our_services .our-services__item:nth-child(2n+1) .item-text-wrap {
+    padding: 30px;
   }
 }
 
