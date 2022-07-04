@@ -17,7 +17,7 @@
 		<div class="row">
 			<div class="d-none d-lg-block col col-md-1 col col-lg-2">
 			</div>
-			<div class="form-contact-us col col-12 col-md-10 col-lg-8 <?php if(!empty($contactImageBackground)) { echo'contact_with_bg'; }?>"  <?php if(!empty($contactImageBackground)) { ?> style ="background-image: url(<?php echo $sectionContactBackground;?>)" <?php } ?>>
+			<div class="form-contact-us col col-12 col-md-12 col-lg-8 <?php if(!empty($contactImageBackground)) { echo'contact_with_bg'; }?>"  <?php if(!empty($contactImageBackground)) { ?> style ="background-image: url(<?php echo $sectionContactBackground;?>)" <?php } ?>>
 				<?php  if(!empty($formContactShortcode)) { ?>
 					<?php if(!empty($contact_form_logo_image)) { ?>
 						<div class="text-center">
