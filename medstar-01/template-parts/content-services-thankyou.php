@@ -7,6 +7,7 @@
  * @package medstar01
  */
 $featured_img_url = '';
+$detect = new Mobile_Detect;
 if (!wp_is_mobile()) {
 	$featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full'); 
 } else {

@@ -7,13 +7,24 @@
  * @package medstar01
  */
 $featured_img_url = '';
+$detect = new Mobile_Detect;
 if (!wp_is_mobile()) {
 	$featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full'); 
 } else {
 	if(empty(get_post_meta(get_the_ID(), 'second_featured_image', true))) {
 		$featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full');
 	} else {
-        $featured_img_url = wp_get_attachment_image_url(get_post_meta(get_the_ID(), 'second_featured_image', true), 'full');
+       // Any tablet device.
+		if(!$detect->isTablet() ){
+			// Image for mobile banner will here
+			$featured_img_url = wp_get_attachment_image_url(get_post_meta(get_the_ID(), 'second_featured_image', true), 'full');
+		} else {
+			if(empty(get_post_meta(get_the_ID(), 'third_featured_image', true))) {
+				$featured_img_url = wp_get_attachment_image_url(get_post_meta(get_the_ID(), 'second_featured_image', true), 'full');
+			} else {
+				$featured_img_url = wp_get_attachment_image_url(get_post_meta(get_the_ID(), 'third_featured_image', true), 'full');
+			}
+		}
     }
 }
 ?>

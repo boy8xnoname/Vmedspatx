@@ -7,6 +7,7 @@
  * @package medstar01
  */
 $featured_img_url = '';
+$detect = new Mobile_Detect;
 if (!wp_is_mobile()) {
 	$featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full'); 
 } else {
@@ -55,10 +56,10 @@ $mobileServiceBannerImage = !empty( get_field('mobile_service_banner_image')) ? 
 				!empty($mobileServiceBannerVideoUrl) || 
 				!empty($mobileServiceBannerImage) 
 			) {
-				echo '<div class="d-block d-sm-none">';
+				echo '<div class="d-block d-lg-none">';
 					get_template_part('template-parts/services/content-banner-mobile');
 				echo '</div>';
-				echo '<div class="d-none d-sm-block">';
+				echo '<div class="d-none d-lg-block">';
 					get_template_part('template-parts/services/content-banner-desktop');
 				echo '</div>';
 			

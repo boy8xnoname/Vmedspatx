@@ -1,11 +1,23 @@
 <?php 
+$detect = new Mobile_Detect;
+
 // get service page banner image
 $select_banner_videoimage_banner =  get_field('mobile_select_banner_videoimage_banner');
 $service_banner_video_mp4 = get_field('mobile_service_banner_video_mp4');
 $service_banner_video_webm =  get_field('mobile_service_banner_video_webm');
 $service_banner_video_ogv =  get_field('mobile_service_banner_video_ogv');
 $service_banner_video_url = get_field('mobile_service_banner_video_url');
-$services_banner_image = get_field('mobile_service_banner_image');
+// Any tablet device.
+if(!$detect->isTablet() ){
+    // Image for mobile banner will here
+    $services_banner_image = get_field('mobile_service_banner_image');
+} else {
+    if(empty(get_field('tablet_service_banner_image'))) {
+        $services_banner_image = get_field('mobile_service_banner_image');
+    } else {
+        $services_banner_image = get_field('tablet_service_banner_image');
+    }
+}
 
 $service_banner_top_image = get_field('service_banner_top_image');
 $service_banner_title = get_field('service_banner_title');

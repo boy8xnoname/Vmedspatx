@@ -347,6 +347,11 @@ add_action( 'widgets_init', 'medstar01_widgets_init' );
 require get_template_directory() . '/inc/custom-header.php';
 
 /**
+ * Function mobile detect.
+ */
+require get_template_directory() . '/inc/Mobile_Detect.php';
+
+/**
  * Custom template tags for this theme.
  */
 require get_template_directory() . '/inc/template-tags.php';
