@@ -69,7 +69,7 @@ function custom_postimage_meta_box(){
     //on which post types should the box appear?
     $post_types = array('post','page');
     foreach($post_types as $pt){
-        add_meta_box('custom_postimage_meta_box',__( 'Mobile/Tablet Featured Images', 'medstar01'),'custom_postimage_meta_box_func',$pt,'side','low');
+        add_meta_box('custom_postimage_meta_box',__( 'Mobile/Tablet Featured Image', 'medstar01'),'custom_postimage_meta_box_func',$pt,'side','low');
     }
 }
 
@@ -83,10 +83,10 @@ function custom_postimage_meta_box_func($post){
     ?>
         <div class="custom_postimage_wrapper" id="<?php echo $meta_key; ?>_wrapper" style="margin:20px 0;">
 			<?php if($meta_key == 'second_featured_image') {
-				echo '<h3 class="image-label" style="font-size: 14px;">Mobile Featured Images</h3>';
+				echo '<h3 class="image-label" style="font-size: 14px;">Mobile Featured Image</h3>';
 			} ?>
 			<?php if($meta_key == 'third_featured_image') {
-				echo '<h3 class="image-label" style="font-size: 14px;">Tablet Featured Images</h3>';
+				echo '<h3 class="image-label" style="font-size: 14px;">Tablet Featured Image</h3>';
 			} ?>
             <img src="<?php echo ($image_meta_val!=''?wp_get_attachment_image_src( $image_meta_val)[0]:''); ?>" style="width:100%;display: <?php echo ($image_meta_val!=''?'block':'none'); ?>" alt="">
             <a class="addimage button" onclick="custom_postimage_add_image('<?php echo $meta_key; ?>');"><?php _e('Add image','medstar01'); ?></a><br>
