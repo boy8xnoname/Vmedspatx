@@ -95,3 +95,10 @@ body .accordion-button:not(.collapsed)::after {
         background-attachment: inherit;
     }
 }
+
+.site-footer .footer-copyright-menu a {
+    margin:  0;
+}
+.site-footer .footer-copyright-menu span.separator {
+    margin:  0 5px;
+}
