@@ -49,9 +49,9 @@
 			<?php } ?>
 			<?php if($contactusStyle == 'contact_us_style_2') { ?>
 				<!-- Style Contact Us Version 2 -->
-				<div class="d-none d-md-block col col-md-1 col col-lg-3">
+				<div class="d-none d-md-block col col-md-1 col col-lg-2">
 				</div>
-				<div class="col col-12 col-md-10 col-lg-6 form-contact-us" <?php if(!empty($sectionContactBackground)) { ?> style ="background-image: url(<?php echo $sectionContactBackground;?>)" <?php } ?>>
+				<div class="col col-12 col-md-10 col-lg-8 form-contact-us" <?php if(!empty($sectionContactBackground)) { ?> style ="background-image: url(<?php echo $sectionContactBackground;?>)" <?php } ?>>
 					<?php  if(!empty($formContactShortcode)) { ?>
 						<?php  if(!empty($sectionContactTitle)) { ?>
 							<h2 class="section-title text-center">
@@ -69,7 +69,7 @@
 						</div>
 					<?php }?>
 				</div>
-				<div class="d-none d-md-block  col col-md-1 col-lg-3">
+				<div class="d-none d-md-block  col col-md-1 col-lg-2">
 				</div>
 			<?php } ?>
 			<?php if($contactusStyle == 'contact_us_style_3') { ?>
