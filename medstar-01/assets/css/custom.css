@@ -38,11 +38,6 @@ body .accordion-button:not(.collapsed)::after {
     line-height: 22px;
 }
 
-.contact_us.service-contact-sidebar .contact-form-title p,
-.contact_us .contact-form-title p {
-    margin-top: 22px;
-}
-
 .home-banner.slide-style1 .card-content h2 {
     margin-bottom: 30px;
 }
@@ -74,7 +69,6 @@ body .accordion-button:not(.collapsed)::after {
     }
     .contact_us .contact-form-title p {
         line-height: 1.2em !important;
-        margin-top: 16px;
     }
 }
 
@@ -104,9 +98,9 @@ body .accordion-button:not(.collapsed)::after {
 }
 
 @media (max-width: 820px){
-        .header-jarallax {
-                min-height: 45vh;
-        }
+    .header-jarallax {
+            min-height: 45vh;
+    }
     .header-jarallax div[id^="jarallax-container"] > div {
         margin-top: 0 !important;
         background-size: contain !important;
@@ -114,13 +108,13 @@ body .accordion-button:not(.collapsed)::after {
     }
 }
 @media (max-width: 768px){
-        .header-jarallax {
-                min-height: 50vh;
-        }
+    .header-jarallax {
+            min-height: 50vh;
+    }
 }
 @media (max-width: 480px){
-        .header-jarallax {
-            max-height: 50vh;
-            min-height: 35VH;
-        }
+    .header-jarallax {
+        max-height: 50vh;
+        min-height: 35VH;
+    }
 }

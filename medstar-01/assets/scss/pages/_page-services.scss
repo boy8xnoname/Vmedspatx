@@ -36,8 +36,18 @@
     }
     .service-banner-title {
         text-transform: uppercase;
+        line-height: 1;
+        margin-bottom: 0;
     }
-    .service-banner-description {}
+    .service-banner-description {
+        p {
+            margin-bottom: 0;
+        }
+        h2 {
+            line-height: 1.2;
+            margin-bottom: 0;
+        }
+    }
     .banner-button {
         margin-top: 30px;
         margin-bottom: 30px;
@@ -128,6 +138,18 @@
     }
     // XX-Large devices (larger desktops, 1400px and up)
     @media (min-width: 1400px) {}
+    @media (max-width: 480px) {
+        .service-banner-title {
+            font-size: 30px;
+            p {
+                font-size: 30px !important;
+            }
+        }
+        .service-banner-description {
+            text-align: center;
+            line-height: 1.1;
+        }
+    }
 }
 
 .service-entry-content {

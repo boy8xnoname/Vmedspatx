@@ -5,7 +5,7 @@ Theme URI: http://underscores.me/
 Author: medstar
 Author URI: https://medstar.com/
 Description: Description
-Version: 1.1.0
+Version: 1.1.2
 Tested up to: 5.4
 Requires PHP: 5.6
 License: GNU General Public License v2 or later
@@ -8576,6 +8576,17 @@ body.single .entry-content {
 
 .service-banner-image .service-banner-title {
   text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 0;
+}
+
+.service-banner-image .service-banner-description p {
+  margin-bottom: 0;
+}
+
+.service-banner-image .service-banner-description h2, .service-banner-image .service-banner-description .h2 {
+  line-height: 1.2;
+  margin-bottom: 0;
 }
 
 .service-banner-image .banner-button {
@@ -13880,10 +13891,23 @@ a.skip-link.screen-reader-text {
 }
 
 @media (max-width: 480px) {
+  .contact_us .contact-form-title p {
+    font-size: 26px;
+  }
   .page-contact-wrap .contact-information-item .item-box-icon {
     font-size: 20px;
     height: 50px;
     width: 50px;
+  }
+  .service-banner-image .service-banner-title {
+    font-size: 30px;
+  }
+  .service-banner-image .service-banner-title p {
+    font-size: 30px !important;
+  }
+  .service-banner-image .service-banner-description {
+    text-align: center;
+    line-height: 1.1;
   }
 }
 

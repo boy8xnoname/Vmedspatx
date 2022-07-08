@@ -182,4 +182,11 @@
     }
     // XX-Large devices (larger desktops, 1400px and up)
     @media (min-width: 1400px) {}
+    @media (max-width: 480px) {
+        .contact-form-title {
+            p {
+                font-size: 26px;
+            }
+        }
+    }
 }
