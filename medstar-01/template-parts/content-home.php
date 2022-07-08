@@ -40,7 +40,7 @@
 
 	<?php get_template_part( 'template-parts/home/home-instagram_feed' ); ?>
 
-	<?php get_template_part( 'template-parts/home/home-our_location' ); ?>
+	<?php //get_template_part( 'template-parts/home/home-our_location' ); ?>
 
 	<?php get_template_part( 'template-parts/home/home-contact_us' ); ?>
 

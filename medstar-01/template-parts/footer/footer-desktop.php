@@ -125,17 +125,4 @@
             </div>
         </div>
     </div>
-
-    <!--<div class="row ">
-        <div class="col col-12 col-md-1 col-xl-2"></div>
-        <div class="col col-12 col-md-10 col-xl-8 text-center">
-            <?php 
-                $footerDescription = get_theme_mod('footer_description_text');
-                if(!empty( $footerDescription)) {
-                    echo nl2br(get_theme_mod('footer_description_text'));
-                }
-            ?>               
-        </div>
-        <div class="col col-12 col-md-1 col-xl-2"></div>
-    </div>-->
 </div>

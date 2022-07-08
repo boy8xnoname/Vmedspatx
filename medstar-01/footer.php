@@ -43,8 +43,8 @@
 									<?php echo esc_attr( 'Privacy Policy' );?>
 								</a>
 							<?php } ?>
-								<span class="separator">|</span>
 							<?php if(!empty(get_theme_mod('select_terms_of_use'))){ ?>
+                                <span class="separator">|</span>
 								<a href="<?php echo esc_url( get_page_link( get_theme_mod('select_terms_of_use') ) ); ?>">
 									<?php echo esc_attr( 'Terms of Use' );?>
 								</a>
