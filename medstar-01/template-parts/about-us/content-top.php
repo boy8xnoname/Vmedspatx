@@ -1,5 +1,5 @@
 <?php
-$why_choose_us_heading = get_field('why_choose_us_heading');
+$why_choose_us_heading = strip_tags(get_field('why_choose_us_heading'));
 $why_choose_us_content = get_field('why_choose_us_content');
 if(!empty($why_choose_us_heading) || !empty($why_choose_us_content)) : 
 ?>

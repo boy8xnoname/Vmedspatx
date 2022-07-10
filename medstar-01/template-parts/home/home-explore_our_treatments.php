@@ -1,6 +1,6 @@
 <?php 
     $explore_our_treatments_img_url = get_field('explore_our_treatments_background_image');
-    $explore_our_treatments_heading  =  get_field('explore_our_treatments_heading');
+    $explore_our_treatments_heading  =  strip_tags(get_field('explore_our_treatments_heading'));
     $explore_our_treatments_descriptions  =  get_field('explore_our_treatments_descriptions');
     $explore_our_treatments_button_link  =  get_field('explore_our_treatments_button_link');
 

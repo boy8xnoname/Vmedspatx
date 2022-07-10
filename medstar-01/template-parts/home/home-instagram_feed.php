@@ -1,5 +1,5 @@
 <?php
-    $add_instagram_feed_title = get_field('add_instagram_feed_title');
+    $add_instagram_feed_title = wp_strip_all_tags(get_field('add_instagram_feed_title'));
     $instagram_feed_url = get_field('instagram_feed_url');
     $instagram_account_name = get_field('instagram_account_name');
     $instagram_feed_shortcode = get_field('instagram_feed_shortcode');

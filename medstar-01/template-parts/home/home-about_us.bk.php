@@ -1,5 +1,5 @@
 <?php
-    $about_us_title = get_field('about_us_title');
+    $about_us_title = wp_strip_all_tags(get_field('about_us_title'));
     $about_us_description = get_field('about_us_description');
     $about_us_learn_more_link = get_field('about_us_learn_more_link');
     if(!empty($about_us_title) || !empty($about_us_description)):

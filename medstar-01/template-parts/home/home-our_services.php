@@ -10,7 +10,7 @@
 				echo '<div class="our-services__item item-'.$ourServicesCount.'">';
 				// Get parent value.
 				$services_item_image = get_sub_field('services_item_image');
-				$services_item_heading = get_sub_field('services_item_heading');
+				$services_item_heading = strip_tags(get_sub_field('services_item_heading'));
 				$services_item_description = get_sub_field('services_item_description');
 				$services_item_learn_more_link = get_sub_field('services_item_learn_more_link');
 				?>
