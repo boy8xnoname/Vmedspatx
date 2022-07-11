@@ -80,7 +80,7 @@ $mobileServiceBannerImage = !empty( get_field('mobile_service_banner_image')) ? 
     <?php get_template_part( 'template-parts/services/content-treaments_featured' ); ?>
 
 	<div class="entry-content service-entry-content">
-		<div class="container-fluid">
+		<div class="container">
 			<div class="d-flex flex-column flex-md-row-reverse">
 				
 				<?php 
@@ -141,7 +141,7 @@ $mobileServiceBannerImage = !empty( get_field('mobile_service_banner_image')) ? 
 			</div>
 			
 		</div>
-		<div class="container-fluid ">
+		<div class="container ">
 			<?php 
 				$services_before_after_setup = get_field('services_before_after_setup');
 				if(!empty($services_before_after_setup)) {

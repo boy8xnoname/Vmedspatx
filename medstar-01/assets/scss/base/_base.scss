@@ -10,68 +10,56 @@ html {
     box-sizing: border-box;
 }
 
-.site-header,
-.site-footer {
-    .container,
-    .container-sm,
-    .container-md,
-    .container-lg,
-    .container-xl,
-    .container-xxl {
-        max-width: 100% !important;
-        @media (min-width: 1200px) {
-            max-width: 1140px !important;
-        }
-        @media (min-width: 1500px) {
-            max-width: 1500px !important;
-        }
-    }
-}
-
-.site-main {
-    .container,
-    .container-sm,
-    .container-md,
-    .container-lg,
-    .container-xl,
-    .container-xxl {
-        max-width: 100% !important;
-        @media (min-width: 1200px) {
-            max-width: 1140px !important;
-        }
-        @media (min-width: 1500px) {
-            max-width: 1500px !important;
-        }
-    }
-    &.box-1200-site-main {
-        .container,
-        .container-sm,
-        .container-md,
-        .container-lg,
-        .container-xl,
-        .container-xxl {
-            max-width: 100% !important;
-            @media (min-width: 1200px) {
-                max-width: 1140px !important;
-            }
-            @media (min-width: 1400px) {
-                max-width: 1200px !important;
-            }
-        }
-    }
-}
-
-@media (min-width: 1400px) {
-    .container,
-    .container-sm,
-    .container-md,
-    .container-lg,
-    .container-xl,
-    .container-xxl {
-        max-width: 1170px;
-    }
-}
-
+// .site-header,
+// .site-footer {
+//     .container,
+//     .container-sm,
+//     .container-md,
+//     .container-lg,
+//     .container-xl,
+//     .container-xxl {
+//         max-width: 100% !important;
+//         @media (min-width: 1200px) {
+//             max-width: 1170px !important;
+//         }
+//     }
+// }
+// .site-main {
+//     .container,
+//     .container-sm,
+//     .container-md,
+//     .container-lg,
+//     .container-xl,
+//     .container-xxl {
+//         max-width: 100% !important;
+//         @media (min-width: 1200px) {
+//             max-width: 1170px !important;
+//         }
+//     }
+//     &.box-1200-site-main {
+//         .container,
+//         .container-sm,
+//         .container-md,
+//         .container-lg,
+//         .container-xl,
+//         .container-xxl {
+//             max-width: 100% !important;
+//             @media (min-width: 1200px) {
+//                 max-width: 1170px !important;
+//             }
+//         }
+//     }
+// }
+// @media (min-width: 1200px) {
+//     .container,
+//     .container-sm,
+//     .container-md,
+//     .container-lg,
+//     .container-xl,
+//     .container-xxl {
+//         max-width: 1170px;
+//     }
+// }
 
 /**
  * Make all elements from the DOM inherit from the parent box-sizing

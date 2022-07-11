@@ -20,7 +20,7 @@
 		?>
 		
 		<div class="site-info">
-			<div class="container-fluid">
+			<div class="container">
 				<div class="row ">
 					<div class="footer-copyright col col-12 col-md-6">
 						<?php if(get_theme_mod('show_copyright_content')): 

@@ -39,7 +39,7 @@
 	</div>
 
 	<?php if(!empty($contentDescriptionBottomForm)) : ?>
-		<div class="container-fluid">
+		<div class="container">
 			<div class="content-bottom-form">
 				<?php echo apply_filters('the_content', $contentDescriptionBottomForm);?>
 			</div>

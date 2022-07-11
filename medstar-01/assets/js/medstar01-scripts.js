@@ -73,6 +73,10 @@ var medstar01 = {};
 
         $('.header-jarallax').jarallax({
             speed: 0.2,
+            imgPosition: '50% 0',
+            imgSize: 'auto',
+            disableParallax: /iPad|iPhone|iPod|Android/,
+            disableVideo: /iPad|iPhone|iPod|Android/
         });
 
     }

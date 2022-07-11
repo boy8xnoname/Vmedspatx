@@ -23,7 +23,7 @@ get_header();
 				</div>
 			</div>
 		</div>
-		<div class="container-fluid">
+		<div class="container">
 			<?php if ( have_posts() ) : ?>
 
 				<header class="page-header">

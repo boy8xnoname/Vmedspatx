@@ -27,7 +27,7 @@ if (empty($featured_img_url )) {
 		</div>
 	</header><!-- .entry-header -->
 	<div class="entry-content">
-		<div class="container-fluid">
+		<div class="container">
 			<div class="d-flex flex-column flex-md-row">
 				<?php 
 					// Get contact form image logo
@@ -83,7 +83,7 @@ if (empty($featured_img_url )) {
 	</div>
 	
 	<footer class="entry-footer">
-		<div class="container-fluid">
+		<div class="container">
 			<?php // medstar01_entry_footer(); ?>
 		</div>
 	</footer><!-- .entry-footer -->

@@ -6753,39 +6753,6 @@ html {
   box-sizing: border-box;
 }
 
-.site-header .container,
-.site-header .container-sm,
-.site-header .container-md,
-.site-header .container-lg,
-.site-header .container-xl,
-.site-header .container-xxl,
-.site-footer .container,
-.site-footer .container-sm,
-.site-footer .container-md,
-.site-footer .container-lg,
-.site-footer .container-xl,
-.site-footer .container-xxl {
-  max-width: 100% !important;
-}
-
-.site-main .container,
-.site-main .container-sm,
-.site-main .container-md,
-.site-main .container-lg,
-.site-main .container-xl,
-.site-main .container-xxl {
-  max-width: 100% !important;
-}
-
-.site-main.box-1200-site-main .container,
-.site-main.box-1200-site-main .container-sm,
-.site-main.box-1200-site-main .container-md,
-.site-main.box-1200-site-main .container-lg,
-.site-main.box-1200-site-main .container-xl,
-.site-main.box-1200-site-main .container-xxl {
-  max-width: 100% !important;
-}
-
 /**
  * Make all elements from the DOM inherit from the parent box-sizing
  * Since `*` has a specificity of 0, it does not override the `html` value
@@ -8352,6 +8319,9 @@ section.our_location .map-pins .map-pin-item.map-pin-item-3 {
 }
 
 .header-jarallax {
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   margin: 0% 0% 0% 0%;
   min-height: 70vh;
@@ -9727,43 +9697,6 @@ a.skip-link.screen-reader-text {
   }
 }
 
-@media (min-width: 640px) and (max-width: 1200px) {
-  .about-us-content .container,
-  .about-us-content .container-sm,
-  .about-us-content .container-md,
-  .about-us-content .container-lg,
-  .about-us-content .container-xl,
-  .about-us-content .container-xxl {
-    padding-right: 50px !important;
-    padding-left: 50px !important;
-  }
-  .about-us-content .container-fluid, .about-us-content .container-sm, .about-us-content .container-md, .about-us-content .container-lg, .about-us-content .container-xl, .about-us-content .container-xxl {
-    padding-right: 50px !important;
-    padding-left: 50px !important;
-  }
-  .page-contact-wrap .container,
-  .page-contact-wrap .container-sm,
-  .page-contact-wrap .container-md,
-  .page-contact-wrap .container-lg,
-  .page-contact-wrap .container-xl,
-  .page-contact-wrap .container-xxl {
-    padding-right: 50px !important;
-    padding-left: 50px !important;
-  }
-  .page-contact-wrap .container-fluid, .page-contact-wrap .container-sm, .page-contact-wrap .container-md, .page-contact-wrap .container-lg, .page-contact-wrap .container-xl, .page-contact-wrap .container-xxl {
-    padding-right: 50px !important;
-    padding-left: 50px !important;
-  }
-  .page-service-site-main .container, .page-service-site-main .container-sm, .page-service-site-main .container-md, .page-service-site-main .container-lg, .page-service-site-main .container-xl, .page-service-site-main .container-xxl {
-    padding-right: 50px !important;
-    padding-left: 50px !important;
-  }
-  .page-service-site-main .container-fluid, .page-service-site-main .container-sm, .page-service-site-main .container-md, .page-service-site-main .container-lg, .page-service-site-main .container-xl, .page-service-site-main .container-xxl {
-    padding-right: 50px !important;
-    padding-left: 50px !important;
-  }
-}
-
 @media (min-width: 768px) {
   .container, .container-sm, .container-md {
     max-width: 720px;
@@ -10570,9 +10503,6 @@ a.skip-link.screen-reader-text {
   }
   .contact_us.contact_us_style_2 .contact_image_form .gform_wrapper {
     max-width: 480px;
-  }
-  .contact_us.contact_us_style_3 .container-fluid, .contact_us.contact_us_style_3 .container-sm, .contact_us.contact_us_style_3 .container-md, .contact_us.contact_us_style_3 .container-lg, .contact_us.contact_us_style_3 .container-xl, .contact_us.contact_us_style_3 .container-xxl {
-    padding: 0;
   }
   .contact_us.contact_us_style_3 .contact_image_content {
     justify-content: flex-start;
@@ -11517,21 +11447,6 @@ a.skip-link.screen-reader-text {
   }
   .site-footer {
     padding-top: 50px;
-  }
-  .site-footer .container,
-  .site-footer .container-sm,
-  .site-footer .container-md,
-  .site-footer .container-lg,
-  .site-footer .container-xl,
-  .site-footer .container-xxl,
-  .site-footer .container-fluid,
-  .site-footer .container-sm,
-  .site-footer .container-md,
-  .site-footer .container-lg,
-  .site-footer .container-xl,
-  .site-footer .container-xxl {
-    padding-right: 50px;
-    padding-left: 50px;
   }
   .site-footer .first-col-widget,
   .site-footer .third-col-widget {
@@ -12635,55 +12550,10 @@ a.skip-link.screen-reader-text {
   .fs-4 {
     font-size: 1.5rem !important;
   }
-  .site-header .container,
-  .site-header .container-sm,
-  .site-header .container-md,
-  .site-header .container-lg,
-  .site-header .container-xl,
-  .site-header .container-xxl,
-  .site-footer .container,
-  .site-footer .container-sm,
-  .site-footer .container-md,
-  .site-footer .container-lg,
-  .site-footer .container-xl,
-  .site-footer .container-xxl {
-    max-width: 1140px !important;
-  }
-  .site-main .container,
-  .site-main .container-sm,
-  .site-main .container-md,
-  .site-main .container-lg,
-  .site-main .container-xl,
-  .site-main .container-xxl {
-    max-width: 1140px !important;
-  }
-  .site-main.box-1200-site-main .container,
-  .site-main.box-1200-site-main .container-sm,
-  .site-main.box-1200-site-main .container-md,
-  .site-main.box-1200-site-main .container-lg,
-  .site-main.box-1200-site-main .container-xl,
-  .site-main.box-1200-site-main .container-xxl {
-    max-width: 1140px !important;
-  }
   .site-header .site-header__center {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  .site-footer .container,
-  .site-footer .container-sm,
-  .site-footer .container-md,
-  .site-footer .container-lg,
-  .site-footer .container-xl,
-  .site-footer .container-xxl,
-  .site-footer .container-fluid,
-  .site-footer .container-sm,
-  .site-footer .container-md,
-  .site-footer .container-lg,
-  .site-footer .container-xl,
-  .site-footer .container-xxl {
-    padding-right: 60px;
-    padding-left: 60px;
   }
   .site-footer .footer-top-content {
     padding-top: 0;
@@ -12799,10 +12669,6 @@ a.skip-link.screen-reader-text {
   }
   .service-banner-image .service-our_award img {
     max-width: 150px;
-  }
-  .page-service-site-main .container-fluid, .page-service-site-main .container-sm, .page-service-site-main .container-md, .page-service-site-main .container-lg, .page-service-site-main .container-xl, .page-service-site-main .container-xxl {
-    padding-right: 50px;
-    padding-left: 50px;
   }
 }
 
@@ -13563,56 +13429,6 @@ a.skip-link.screen-reader-text {
   .text-xxl-center {
     text-align: center !important;
   }
-  .site-main.box-1200-site-main .container,
-  .site-main.box-1200-site-main .container-sm,
-  .site-main.box-1200-site-main .container-md,
-  .site-main.box-1200-site-main .container-lg,
-  .site-main.box-1200-site-main .container-xl,
-  .site-main.box-1200-site-main .container-xxl {
-    max-width: 1200px !important;
-  }
-  .container,
-  .container-sm,
-  .container-md,
-  .container-lg,
-  .container-xl,
-  .container-xxl {
-    max-width: 1170px;
-  }
-  .single_site-main .container-fluid, .single_site-main .container-sm, .single_site-main .container-md, .single_site-main .container-lg, .single_site-main .container-xl, .single_site-main .container-xxl,
-  .single_site-main .container-sm,
-  .single_site-main .container-md,
-  .single_site-main .container-lg,
-  .single_site-main .container-xl,
-  .single_site-main .container-xxl {
-    padding-right: 50px;
-    padding-left: 50px;
-  }
-}
-
-@media (min-width: 1500px) {
-  .site-header .container,
-  .site-header .container-sm,
-  .site-header .container-md,
-  .site-header .container-lg,
-  .site-header .container-xl,
-  .site-header .container-xxl,
-  .site-footer .container,
-  .site-footer .container-sm,
-  .site-footer .container-md,
-  .site-footer .container-lg,
-  .site-footer .container-xl,
-  .site-footer .container-xxl {
-    max-width: 1500px !important;
-  }
-  .site-main .container,
-  .site-main .container-sm,
-  .site-main .container-md,
-  .site-main .container-lg,
-  .site-main .container-xl,
-  .site-main .container-xxl {
-    max-width: 1500px !important;
-  }
 }
 
 @media (min-width: 1600px) {
@@ -13892,7 +13708,7 @@ a.skip-link.screen-reader-text {
 
 @media (max-width: 480px) {
   .contact_us .contact-form-title p {
-    font-size: 26px;
+    font-size: 26px !important;
   }
   .page-contact-wrap .contact-information-item .item-box-icon {
     font-size: 20px;

@@ -193,16 +193,6 @@
     }
     // Large devices (desktops, 992px and up)
     @media (min-width: 992px) {
-        .container,
-        .container-sm,
-        .container-md,
-        .container-lg,
-        .container-xl,
-        .container-xxl,
-        .container-fluid {
-            padding-right: 50px;
-            padding-left: 50px;
-        }
         padding-top: 50px;
         .first-col-widget,
         .third-col-widget {
@@ -237,16 +227,6 @@
     }
     // X-Large devices (large desktops, 1200px and up)
     @media (min-width: 1200px) {
-        .container,
-        .container-sm,
-        .container-md,
-        .container-lg,
-        .container-xl,
-        .container-xxl,
-        .container-fluid {
-            padding-right: 60px;
-            padding-left: 60px;
-        }
         .footer-top-content {
             padding-top: 0;
             padding-bottom: 40px

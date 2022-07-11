@@ -1,4 +1,4 @@
-<div class="footer-top-content container-fluid d-none d-md-block">
+<div class="footer-top-content container d-none d-md-block">
     <div class="row footer-widgets">
         <!-- Footer contact information -->
         <div class="widgets first-col-widget col col-sm-4 col-md-4 col-xl-5">
@@ -95,19 +95,7 @@
                     <?php  $timeWorking = get_theme_mod('time_working');
                         if(!empty($timeWorking)) {
                             echo apply_filters('the_content', $timeWorking);
-                        } else { ?> 
-                    <div class="time-working">
-                        <div class="time-wroking__item">
-                        <p><strong>Monday – Friday</strong><br>8am to 6pm</p>
-                        </div>
-                        <div class="time-wroking__item">
-                        <p><strong>Saturday</strong><br>10am to 6pm</p>
-                        </div>
-                        <div class="time-wroking__item">
-                        <p><strong>Sunday</strong><br>by appointment only</p>
-                        </div>
-                    </div>
-                    <?php }  ?>
+                        }  ?>
                 </div>
                 <div class="col col-sm-6 col-lg-5 col-xl-4">
                     <?php  if(has_nav_menu( 'footer-menu' )){

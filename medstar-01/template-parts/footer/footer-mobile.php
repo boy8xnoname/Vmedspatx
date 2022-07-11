@@ -1,4 +1,4 @@
-<div class="footer-top-content mobile-footer-top-content container-fluid d-block d-md-none">
+<div class="footer-top-content mobile-footer-top-content container d-block d-md-none">
     <div class="row footer-widgets">
         <!-- Footer contact information -->
         <div class="widgets first-col-widget col col-4 col-md-4 col-xl-5">
