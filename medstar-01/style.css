@@ -7778,6 +7778,17 @@ form.search-form .search-submit {
   left: 345px;
 }
 
+.main-navigation {
+  /*@media(min-width: 1600px) {
+        #primary-menu {
+            >li>a {
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+        }
+    }*/
+}
+
 .main-navigation a {
   color: #ffffff;
   display: flex;
@@ -13432,10 +13443,6 @@ a.skip-link.screen-reader-text {
 }
 
 @media (min-width: 1600px) {
-  .main-navigation #primary-menu > li > a {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
   .page-contact-wrap .contact-us-disclaimer-text .disclaimer-text {
     margin-left: auto;
     margin-right: auto;

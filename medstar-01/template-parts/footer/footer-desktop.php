@@ -92,23 +92,15 @@
                 <div class="d-none d-lg-block col col-lg-2 col-xl-4">
                 </div>
                 <div class="col col-sm-6 col-lg-5 col-xl-4">
-                    <?php  $timeWorking = get_theme_mod('time_working');
-                        if(!empty($timeWorking)) {
-                            echo apply_filters('the_content', $timeWorking);
-                        }  ?>
+
                 </div>
                 <div class="col col-sm-6 col-lg-5 col-xl-4">
-                    <?php  if(has_nav_menu( 'footer-menu' )){
-                        wp_nav_menu(
-                            array(
-                                'theme_location' => 'footer-menu',
-                                'menu_id'        => 'footer-menu',
-                                'container' => 'ul',
-                                'menu_class'=>'nav navbar-nav footer-vertical-menu'
-                            )
-                        );
-                    }
-                    ?>							
+                    <?php
+                        $timeWorking = get_theme_mod('time_working');
+                        if(!empty($timeWorking)) {
+                            echo apply_filters('the_content', $timeWorking);
+                        }
+                    ?>
                 </div>
             </div>
         </div>
