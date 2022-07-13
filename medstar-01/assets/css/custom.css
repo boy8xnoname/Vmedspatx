@@ -166,8 +166,8 @@ body .accordion-button:not(.collapsed)::after {
 }
 @media (max-width: 480px){
     .header-jarallax {
-        max-height: 50vh;
-        min-height: 35VH;
+        max-height: 583px;
+        min-height: 583px;
     }
 }
 @media (min-width: 1200px) {
