@@ -41,7 +41,15 @@
         font-size: 16px;
     }
 }
-
+.accordion-button {
+    background-color: #f0f0f0;
+}
+.accordion-button::before {
+    content: '\f067';
+    font-family: "Font Awesome 6 Free";
+    font-weight: bold;
+    margin-right: 15px;
+}
 .accordion-button::after {
     background-image: none !important;
     transform: none !important;
