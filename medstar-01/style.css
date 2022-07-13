@@ -10598,8 +10598,8 @@ a.skip-link.screen-reader-text {
     height: 100%;
   }
   .service-banner-image {
-    min-height: 90vh;
-    height: 90vh;
+    min-height: 70vh;
+    height: 70vh;
   }
   .service-banner-image .service-banner-title,
   .service-banner-image .service-banner-description {
@@ -10616,8 +10616,8 @@ a.skip-link.screen-reader-text {
     width: 70%;
   }
   .header-jarallax {
-    min-height: 90vh;
-    height: 90vh;
+    min-height: 70vh;
+    height: 70vh;
   }
 }
 
@@ -12696,12 +12696,17 @@ a.skip-link.screen-reader-text {
   .service-banner-image {
     padding-top: 200px;
     min-height: 90vh;
+    height: 90vh;
   }
   .service-banner-image .service-banner-title {
     font-size: 50px;
   }
   .service-banner-image .service-our_award img {
     max-width: 150px;
+  }
+  .header-jarallax {
+    min-height: 90vh;
+    height: 90vh;
   }
 }
 
