@@ -4,12 +4,16 @@
         margin-top: 0 !important;
     }
 }
+
 .home-banner.slide-style3 .card-content p {
     line-height: 1.4em;
 }
-.page-template-page-contact-thankyou .header-jarallax .entry-title, .page-template-page-about-us .header-jarallax .entry-title {
+
+.page-template-page-contact-thankyou .header-jarallax .entry-title,
+.page-template-page-about-us .header-jarallax .entry-title {
     line-height: 1.2em;
 }
+
 .page-template-page-services-thankyou .service-banner-image .service-banner-title {
     margin-bottom: 20px;
     font-size: 50px;
@@ -21,6 +25,7 @@
     line-height: 1.6em;
     font-size: 30px;
 }
+
 @media (max-width: 1024px) {
     .page-template-page-services-thankyou .services-banner-texts {
         width: 100%;
@@ -36,20 +41,24 @@
         text-align: center;
     }
 }
+
 @media (max-width: 480px) {
     .page-template-page-services-thankyou .service-banner-image .service-banner-description p {
         font-size: 16px;
     }
 }
+
 .accordion-button {
     background-color: #f0f0f0;
 }
+
 .accordion-button::before {
     content: '\f067';
     font-family: "Font Awesome 6 Free";
     font-weight: bold;
     margin-right: 15px;
 }
+
 .accordion-button::after {
     background-image: none !important;
     transform: none !important;
@@ -143,77 +152,82 @@ body .accordion-button:not(.collapsed)::after {
 }
 
 .site-footer .footer-copyright-menu a {
-    margin:  0;
-}
-.site-footer .footer-copyright-menu span.separator {
-    margin:  0 5px;
+    margin: 0;
 }
 
-@media (max-width: 820px){
+.site-footer .footer-copyright-menu span.separator {
+    margin: 0 5px;
+}
+
+@media (max-width: 820px) {
     .header-jarallax {
         min-height: 45vh;
     }
-    .header-jarallax div[id^="jarallax-container"] > div {
+    .header-jarallax div[id^="jarallax-container"]>div {
         margin-top: 0 !important;
         background-size: contain !important;
         background-position: top center !important;
     }
 }
-@media (max-width: 768px){
+
+@media (max-width: 768px) {
     .header-jarallax {
         min-height: 50vh;
     }
 }
-@media (max-width: 480px){
+
+
+/* @media (max-width: 480px){
     .header-jarallax {
         max-height: 583px;
         min-height: 583px;
     }
-}
+} */
+
 @media (min-width: 1200px) {
     .service-banner-image .service-our_award img {
         max-width: 165px;
     }
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
     /* reset bug css */
     .our_services .our-services__item:nth-child(2n) .our-services__item-wrap .item-image-wrap,
     .our_services .our-services__item:nth-child(2n) .item-text-wrap,
-    .our_services .our-services__item:nth-child(2n+1) .item-text-wrap{
+    .our_services .our-services__item:nth-child(2n+1) .item-text-wrap {
         margin: 0;
     }
 }
 
-@media (max-width: 1499px) and (min-width: 992px){
-    .our_services .our-services__item:nth-child(2n) .our-services__item-wrap .item-image-wrap img{
+@media (max-width: 1499px) and (min-width: 992px) {
+    .our_services .our-services__item:nth-child(2n) .our-services__item-wrap .item-image-wrap img {
         width: 100%;
     }
 }
 
-@media (min-width: 1400px){
-    .our_services .our-services__item .item-image-wrap img{
+@media (min-width: 1400px) {
+    .our_services .our-services__item .item-image-wrap img {
         width: 100%;
     }
 }
+
 
 /* begin new css */
-@media (min-width: 768px){
-    .our_services .our-services__item-wrap{
+
+@media (min-width: 768px) {
+    .our_services .our-services__item-wrap {
         justify-content: space-between;
         align-items: center;
     }
-    .our_services .our-services__item .item-image{
+    .our_services .our-services__item .item-image {
         flex: 0 0 40%;
         max-width: 40%;
     }
-
-    .our_services .our-services__item .item-text{
+    .our_services .our-services__item .item-text {
         flex: 0 0 50%;
         max-width: 50%;
     }
-
-    .our_services .our-services__item .item-image-wrap img{
+    .our_services .our-services__item .item-image-wrap img {
         width: 100%;
     }
 }
