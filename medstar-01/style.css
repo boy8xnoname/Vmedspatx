@@ -10596,6 +10596,10 @@ a.skip-link.screen-reader-text {
   .page-contact-wrap.page-contact-style-2 .acf-map {
     height: 100%;
   }
+  .service-banner-image {
+    min-height: 90vh;
+    height: 90vh;
+  }
   .service-banner-image .service-banner-title,
   .service-banner-image .service-banner-description {
     text-align: right;
@@ -10612,6 +10616,7 @@ a.skip-link.screen-reader-text {
   }
   .header-jarallax {
     min-height: 90vh;
+    height: 90vh;
   }
 }
 
@@ -12686,6 +12691,7 @@ a.skip-link.screen-reader-text {
   }
   .service-banner-image {
     padding-top: 200px;
+    min-height: 90vh;
   }
   .service-banner-image .service-banner-title {
     font-size: 50px;
