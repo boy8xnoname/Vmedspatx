@@ -11707,6 +11707,10 @@ a.skip-link.screen-reader-text {
     transition-delay: 0s, 0s, 0.3s;
     /* this removes the transition delay so the menu will be visible while the other styles transition */
   }
+  .our_services .our-services__item .item-image {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+  }
   .our_services .our-services__item:nth-child(2n) .item-image-wrap {
     display: flex;
     margin: 0em -3em 0em 3em;
@@ -11731,7 +11735,7 @@ a.skip-link.screen-reader-text {
     padding: 4em 4em 4em 5em;
   }
   .our_services .our-services__item .item-image-wrap img {
-    width: 80%;
+    width: 75%;
   }
   .our_services .our-services__item-wrap {
     display: flex;
@@ -12627,7 +12631,7 @@ a.skip-link.screen-reader-text {
   }
   .our_services .our-services__item:nth-child(2n) .item-image-wrap {
     display: flex;
-    margin: 0em -5em 0em 5em;
+    margin: 0em -5em 0em 5em !important;
     position: relative;
     width: 100%;
     flex-wrap: wrap;

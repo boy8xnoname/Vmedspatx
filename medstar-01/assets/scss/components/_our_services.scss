@@ -143,6 +143,10 @@
     // Large devices (desktops, 992px and up)
     @media (min-width: 992px) {
         .our-services__item {
+            .item-image {
+                flex: 0 0 50% !important;
+                max-width: 50% !important;
+            }
             &:nth-child(2n) {
                 .item-image-wrap {
                     display: flex;
@@ -175,7 +179,7 @@
                 }
             }
             .item-image-wrap img {
-                width: 80%;
+                width: 75%;
             }
         }
         .our-services__item-wrap {
@@ -188,7 +192,7 @@
             &:nth-child(2n) {
                 .item-image-wrap {
                     display: flex;
-                    margin: 0em -5em 0em 5em;
+                    margin: 0em -5em 0em 5em !important;
                     position: relative;
                     width: 100%;
                     -ms-flex-wrap: wrap;
