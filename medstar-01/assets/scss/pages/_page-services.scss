@@ -8,8 +8,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
-    &.service-banner_fixed {
-        background-attachment: fixed;
+    @media(min-width: 980px) {
+        &.service-banner_fixed {
+          background-attachment: fixed;
+        }
     }
 }
 

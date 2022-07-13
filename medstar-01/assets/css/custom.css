@@ -162,3 +162,50 @@ body .accordion-button:not(.collapsed)::after {
         min-height: 35VH;
     }
 }
+@media (min-width: 1200px) {
+    .service-banner-image .service-our_award img {
+        max-width: 165px;
+    }
+}
+
+@media (min-width: 768px){
+    /* reset bug css */
+    .our_services .our-services__item:nth-child(2n) .our-services__item-wrap .item-image-wrap,
+    .our_services .our-services__item:nth-child(2n) .item-text-wrap,
+    .our_services .our-services__item:nth-child(2n+1) .item-text-wrap{
+        margin: 0;
+    }
+}
+
+@media (max-width: 1499px) and (min-width: 992px){
+    .our_services .our-services__item:nth-child(2n) .our-services__item-wrap .item-image-wrap img{
+        width: 100%;
+    }
+}
+
+@media (min-width: 1400px){
+    .our_services .our-services__item .item-image-wrap img{
+        width: 100%;
+    }
+}
+
+/* begin new css */
+@media (min-width: 768px){
+    .our_services .our-services__item-wrap{
+        justify-content: space-between;
+        align-items: center;
+    }
+    .our_services .our-services__item .item-image{
+        flex: 0 0 40%;
+        max-width: 40%;
+    }
+
+    .our_services .our-services__item .item-text{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .our_services .our-services__item .item-image-wrap img{
+        width: 100%;
+    }
+}
