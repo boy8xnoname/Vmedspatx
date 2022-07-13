@@ -12634,7 +12634,6 @@ a.skip-link.screen-reader-text {
     align-content: flex-start;
   }
   .our_services .our-services__item:nth-child(2n) .item-text-wrap {
-    display: flex;
     padding: 4em 4em 4em 5em;
     width: 100%;
   }
