@@ -177,12 +177,12 @@ body .accordion-button:not(.collapsed)::after {
 }
 
 
-/* @media (max-width: 480px){
+@media (max-width: 480px){
     .header-jarallax {
         max-height: 583px;
         min-height: 583px;
     }
-} */
+}
 
 @media (min-width: 1200px) {
     .service-banner-image .service-our_award img {
