@@ -8329,41 +8329,6 @@ section.our_location .map-pins .map-pin-item.map-pin-item-3 {
   font-size: 16px;
 }
 
-.header-jarallax {
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  margin: 0% 0% 0% 0%;
-  min-height: 70vh;
-  padding: 0px 0px 0px 0px;
-  position: relative;
-  width: 100%;
-}
-
-.header-jarallax:before {
-  background-color: rgba(0, 0, 0, 0.5);
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-}
-
-.header-jarallax .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.header-jarallax .entry-title {
-  color: #ffffff;
-  margin: 14% 0% 0% 0%;
-  text-transform: uppercase;
-  z-index: 9;
-}
-
 .page-contact-wrap .entry-title {
   margin: 14% 0% 5% 0%;
   padding: 0px 0px 0px 0px;
@@ -8621,6 +8586,41 @@ body.single .entry-content {
 
 .content-bottom-form {
   padding: 30px 0;
+}
+
+.header-jarallax {
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  margin: 0% 0% 0% 0%;
+  min-height: 70vh;
+  padding: 0px 0px 0px 0px;
+  position: relative;
+  width: 100%;
+}
+
+.header-jarallax:before {
+  background-color: rgba(0, 0, 0, 0.5);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.header-jarallax .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-jarallax .entry-title {
+  color: #ffffff;
+  margin: 14% 0% 0% 0%;
+  text-transform: uppercase;
+  z-index: 9;
 }
 
 .site-main {
@@ -10614,6 +10614,9 @@ a.skip-link.screen-reader-text {
     padding-right: 3%;
     width: 70%;
   }
+  .header-jarallax {
+    min-height: 90vh;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991.99px) {
@@ -11742,14 +11745,14 @@ a.skip-link.screen-reader-text {
   .thankyou-content .thankyou-content-wrap {
     font-size: 22px;
   }
-  .header-jarallax .entry-title {
-    margin: 14% 0% 0% 0%;
-  }
   .page-contact-wrap.page-contact-style-2 .entry-header {
     padding-top: 150px;
   }
   .page-contact-wrap.page-contact-style-2 .entry-header .entry-title {
     margin: 0;
+  }
+  .header-jarallax .entry-title {
+    margin: 14% 0% 0% 0%;
   }
   section {
     padding: 3% 0% 1% 0%;
