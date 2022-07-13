@@ -92,7 +92,7 @@
                     <?php }  ?>
                 </div>
                 <div class="col col-12 col-xs-12 col-sm-6 col-lg-5 col-xl-4 text-left">
-                    <?php  if(has_nav_menu( 'footer-menu' )){
+                    <?php  /*if(has_nav_menu( 'footer-menu' )){
                         echo '<h3 class="widget-title">QUICK LINKS</h3>';
                         wp_nav_menu(
                             array(
@@ -102,7 +102,7 @@
                                 'menu_class'=>'nav navbar-nav footer-vertical-menu'
                             )
                         );
-                    }
+                    }*/
                     ?>							
                 </div>
             </div>
