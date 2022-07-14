@@ -43,7 +43,7 @@ if (!wp_is_mobile()) {
 	</div><!-- .entry-content -->
 
 	<?php
-		$our_location_title = wp_strip_all_tags(get_field('our_location_title'));
+		$our_location_title = strip_tags(get_field('our_location_title'), '<br><span><img>');
 		$our_locations_list = get_field('our_locations_list');
 		$our_location_map = have_rows('our_location_map');
 		if(!empty($our_locations_list) || !empty($our_location_map)):
@@ -59,7 +59,7 @@ if (!wp_is_mobile()) {
 					if( $our_locations_list ) {
 						echo '<ul class="location-list">';
 						foreach( $our_locations_list as $our_locations_item ) {
-							$our_location_title = wp_strip_all_tags($our_locations_item['our_location_title']);
+							$our_location_title = strip_tags($our_locations_item['our_location_title'], '<br><span><img>');
 							$our_location_phone_number = $our_locations_item['our_location_phone_number'];
 							$our_location_address = $our_locations_item['our_location_address'];
 							$our_location_address_map_url = $our_locations_item['our_location_address_map_url'];

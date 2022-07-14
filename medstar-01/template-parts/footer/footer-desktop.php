@@ -7,7 +7,7 @@
                 $locationsList = get_theme_mod('location_repeater');
                 echo '<div class="content-list">';
                 foreach( $locationsList as $locationItem ) : 
-                    $location_title = wp_strip_all_tags($locationItem['location_title']);
+                    $location_title = strip_tags($locationItem['location_title'], '<br><span><img>');
                     $location_phone_number = $locationItem['location_phone_number'];
                     $location_address = $locationItem['location_address'];
                     $location_google_map_url = $locationItem['location_google_map_url'];

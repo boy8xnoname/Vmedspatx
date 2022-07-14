@@ -1,6 +1,6 @@
 <?php if( have_rows('about_us_content_bottom') ): ?>
     <?php while( have_rows('about_us_content_bottom') ): the_row(); 
-        $about_us_bottom_heading = wp_strip_all_tags(get_sub_field('content_heading'));
+        $about_us_bottom_heading = strip_tags(get_sub_field('content_heading'), '<br><span><img>');
         $about_us_bottom_content = get_sub_field('content_description');
         if (!empty($about_us_bottom_content) || !empty($about_us_bottom_content)) {
             ?>

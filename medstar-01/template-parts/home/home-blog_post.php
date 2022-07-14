@@ -1,5 +1,5 @@
 <?php
-	$blogSectionTitle = wp_strip_all_tags(get_field('blog_post_section_title'));
+	$blogSectionTitle = strip_tags(get_field('blog_post_section_title'), '<br><span><img>');
 	$blogPostItems = get_field('select_blog_posts');
 	if( $blogPostItems ): 
 ?>

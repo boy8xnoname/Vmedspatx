@@ -12,7 +12,7 @@
 		$contactImageContent = $contactImageContent['url'];
 	}
 
-	$sectionContactTitle = !empty(get_field('contact_us_title')) ? wp_strip_all_tags(get_field('contact_us_title')) : '';
+	$sectionContactTitle = !empty(get_field('contact_us_title')) ? strip_tags(get_field('contact_us_title'), '<br><span><img>') : '';
 	$formContactTitle = !empty(get_field('contact_us_before_form_title')) ? get_field('contact_us_before_form_title') : '';
 	$formContactShortcode = !empty(get_field('contact_form_short_code')) ? get_field('contact_form_short_code') : '';
 	$formContactDescription = !empty(get_field('contact_us_form_description')) ? get_field('contact_us_form_description') : '';

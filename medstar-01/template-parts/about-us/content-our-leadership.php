@@ -1,7 +1,7 @@
 <?php if( have_rows('our_leadership') ): ?>
 <section class="about-us-content about-us-leadership">
     <div class="container">
-        <h2 class="section-title text-center"><?php echo wp_strip_all_tags(get_field('our_leadership_title')); ?></h2>
+        <h2 class="section-title text-center"><?php echo strip_tags(get_field('our_leadership_title'), '<br><span><img>'); ?></h2>
         <div class="leadership-list">
         <?php while( have_rows('our_leadership') ): the_row(); 
             $member_image = get_sub_field('member_image');

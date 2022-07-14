@@ -5,7 +5,7 @@
 		$sectionContactBackground = $contactImageBackground['url'];
 	}
 	$contact_form_logo_image = get_field('contact_form_logo_image');
-	$formContactTitle = !empty(get_field('contact_us_before_form_title')) ? wp_strip_all_tags(get_field('contact_us_before_form_title')) : 'Send us a message';
+	$formContactTitle = !empty(get_field('contact_us_before_form_title')) ? strip_tags(get_field('contact_us_before_form_title'), '<br><span><img>') : 'Send us a message';
 	$formContactShortcode = !empty(get_field('contact_form_short_code')) ? get_field('contact_form_short_code') : '';
 	$formContactDescription = !empty(get_field('contact_us_form_description')) ? get_field('contact_us_form_description') : 'By submitting this form you agree to be contacted via phone/text/email.*';
 	$contentDescriptionBottomForm = get_field('content_description_bottom_form');

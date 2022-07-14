@@ -37,7 +37,7 @@
                 echo '<div class="content-list">';
                 echo '<h3 class="widget-title">CONTACT INFORMATION</h3>';
                 foreach( $locationsList as $locationItem ) : 
-                    $location_title = wp_strip_all_tags($locationItem['location_title']);
+                    $location_title = strip_tags($locationItem['location_title'], '<br><span><img>');
                     $location_phone_number = $locationItem['location_phone_number'];
                     $location_address = $locationItem['location_address'];
                     $location_google_map_url = $locationItem['location_google_map_url'];

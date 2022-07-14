@@ -20,9 +20,9 @@ if(!$detect->isTablet() ){
 }
 
 $service_banner_top_image = get_field('service_banner_top_image');
-$service_banner_title = wp_strip_all_tags(get_field('service_banner_title'));
+$service_banner_title = strip_tags(get_field('service_banner_title'), '<br><span><img>');
 $service_banner_description = get_field('service_banner_description');
-$service_button_title = wp_strip_all_tags(get_field('service_button_title'));
+$service_button_title = strip_tags(get_field('service_button_title'), '<br><span><img>');
 $service_button_link = get_field('service_button_link');
 if(!empty($services_banner_image) || !empty($service_banner_video_mp4) || !empty($service_banner_video_url)):
 
