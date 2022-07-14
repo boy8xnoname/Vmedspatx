@@ -188,6 +188,9 @@ body .accordion-button:not(.collapsed)::after {
     .service-banner-image .service-our_award img {
         max-width: 165px;
     }
+    .our_services .our-services__item:nth-child(2n+1) .item-text {
+        margin-right: -5em;
+    }
 }
 
 @media (min-width: 768px) {
