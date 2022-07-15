@@ -214,64 +214,73 @@ function medstar01_scripts() {
 	// Style color by change in customize
 	$customColorStyle = "";	
 	if( get_theme_mod('use_custom_color')) {
+
 		$customColor = get_theme_mod('color_setting_hex');
 		$customSecondColor = get_theme_mod('second_color_setting_hex');
+        $header_bg_color = get_theme_mod('header_bg_color');
+        $rgba_header_bg_color = hex2rgba($header_bg_color, 0.66);
+        $rgba_header_bg_color_fixed = hex2rgba($header_bg_color, 0.88);
+        $sub_footer_bg_color = get_theme_mod('sub_footer_bg_color');
+        $footer_bg_color = get_theme_mod('footer_bg_color');
+        $body_link_color = get_theme_mod('body_link_color');
+        $button_text_color = get_theme_mod('button_text_color');
+        $button_text_color_hover = get_theme_mod('button_text_color_hover');
+
 		$rgbaCustomColor = hex2rgba($customColor, 0.6);
-		$customColorStyle .= "
-			.site a,
-			.main-navigation #primary-menu > li:hover > a,
-			.main-navigation #primary-menu > li:hover .fa,
-			.main-navigation #primary-menu > li.menu-item-has-children .menu-collapsed,
-			ul.social-list a,
-			#mobile-site-navigation li a,
-			#mobile-site-navigation li.menu-item-has-children .menu-collapsed,
-			.blog-title a,
-			.posted-on a,
-			.location-item a,
-			.section-title,
-			.our_testimonials .block-blockquote::before,
-			.our_testimonials .blockquote__position,
-			.main-navigation #primary-menu > li.current-menu-item > a,			
-			.map-pins a,
-			.site-footer .content-list .contact-item h3, 
-			.site-footer .content-list .contact-item .h3,
-			.site-footer .content-list .contact-item a,
-			.site-footer .time-working,
-			.footer-vertical-menu a,
-			.site-footer .site-info a:hover,
-			.about-us-content .leadership-item h3.leadership-name, 
-			.about-us-content .leadership-item .leadership-name.h3,
-			.about-us-content .leadership-item h4.leadership-position, 
-			.about-us-content .leadership-item .leadership-position.h4,
-			.page-contact-wrap .contact-information-item .item-box-icon,
-			.accordion-button:not(.collapsed),
-			p a {
-				color: $customColor !important;
-			}
-		";
 
 		$customColorStyle .= "
-			#mobile-site-navigation li.menu-item-has-children.active > a,
-			.main-navigation #primary-menu > li > .sub-menu li:focus, 
-			.main-navigation #primary-menu > li > .sub-menu li:focus-within, 
-			.main-navigation #primary-menu > li > .sub-menu li:hover,
-			.btn.btn-view-more,
-			.btn.btn-book-treatments ,
-			.map-pin-item .marker .pin,
-			.site-footer #toTopBtn,
-			.home-banner .card-content .card-action a,
-			.gform_wrapper .gform_footer input[type='submit'],
-			.site-footer .first-col-widget::before,
-			.site-footer .third-col-widget::before {
-				background-color: $customColor !important;
-			}
-		";	
+        .site a,
+        .main-navigation #primary-menu > li:hover > a,
+        .main-navigation #primary-menu > li:hover .fa,
+        .main-navigation #primary-menu > li.menu-item-has-children .menu-collapsed,
+        ul.social-list a,
+        #mobile-site-navigation li a,
+        #mobile-site-navigation li.menu-item-has-children .menu-collapsed,
+        .blog-title a,
+        .posted-on a,
+        .location-item a,
+        .section-title,
+        .our_testimonials .block-blockquote::before,
+        .our_testimonials .blockquote__position,
+        .main-navigation #primary-menu > li.current-menu-item > a,			
+        .map-pins a,
+        .site-footer .content-list .contact-item h3, 
+        .site-footer .content-list .contact-item .h3,
+        .site-footer .content-list .contact-item a,
+        .site-footer .time-working,
+        .footer-vertical-menu a,
+        .site-footer .site-info a:hover,
+        .about-us-content .leadership-item h3.leadership-name, 
+        .about-us-content .leadership-item .leadership-name.h3,
+        .about-us-content .leadership-item h4.leadership-position, 
+        .about-us-content .leadership-item .leadership-position.h4,
+        .page-contact-wrap .contact-information-item .item-box-icon,
+        .accordion-button:not(.collapsed),
+        p a {
+            color: $customColor !important;
+        }";
+
+		$customColorStyle .= "
+        #mobile-site-navigation li.menu-item-has-children.active > a,
+        .main-navigation #primary-menu > li > .sub-menu li:focus, 
+        .main-navigation #primary-menu > li > .sub-menu li:focus-within, 
+        .main-navigation #primary-menu > li > .sub-menu li:hover,
+        .btn.btn-view-more,
+        .btn.btn-book-treatments ,
+        .map-pin-item .marker .pin,
+        .site-footer #toTopBtn,
+        .home-banner .card-content .card-action a,
+        .gform_wrapper .gform_footer input[type='submit'],
+        .site-footer .first-col-widget::before,
+        .site-footer .third-col-widget::before {
+            background-color: $customColor !important;
+        }";
 		
 		$customColorStyle .= "
 		.map-pin-item .marker .pin-effect {
 			background-color: $rgbaCustomColor !important;
-		}
-		";
+		}";
+
 		$customColorStyle .= "
 		.about-us-content.about-us-content-top .container,
 		.about-us-content.about-us-leadership .leadership-item,
@@ -281,29 +290,75 @@ function medstar01_scripts() {
 			border-color: $customColor !important;
 		}";
 
-
+		$customColorStyle .= "
+        .btn.btn-book-treatments:hover,
+        .btn.btn-view-more:hover,
+        .home-banner .card-content .card-action a:hover,
+        .our_services .our-services__item .item-link a:hover,
+        .gform_wrapper .gform_footer input.gform_button:hover, 
+        .home-banner .card-content .card-action a:hover,
+        .gform_wrapper .gform_footer input[type='submit']:hover {
+            background-color: $customSecondColor !important;
+        }";
 
 		$customColorStyle .= "
-			.btn.btn-book-treatments:hover,
-			.btn.btn-view-more:hover,
-			.home-banner .card-content .card-action a:hover,
-			.our_services .our-services__item .item-link a:hover,
-			.gform_wrapper .gform_footer input.gform_button:hover, 
-			.home-banner .card-content .card-action a:hover,
-			.gform_wrapper .gform_footer input[type='submit']:hover {
-				background-color: $customSecondColor !important;
-			}
-		";	
+        .home-section.about_us,
+        .our_services .our-services__item:nth-child(2n) .item-text-wrap,
+        .our_services .our-services__item:nth-child(2n+1) .item-text-wrap {
+            border-color: $customColor !important;
+        }";
 
-		$customColorStyle .= "
-			.home-section.about_us,
-			.our_services .our-services__item:nth-child(2n) .item-text-wrap,
-			.our_services .our-services__item:nth-child(2n+1) .item-text-wrap {
-				border-color: $customColor !important;
-			}
-		";
-
-		
+        if($header_bg_color) {
+            /* ===== Header Background Color ===== */
+            $customColorStyle .= "
+            body .site-header { background-color: $rgba_header_bg_color !important; }
+            body .site-header.fixed { background-color: $rgba_header_bg_color_fixed !important; }
+            ";
+        }
+        if($sub_footer_bg_color) {
+            /* ===== Footer Background Color ===== */
+            $customColorStyle .= "
+            body footer#colophon { background-color: $sub_footer_bg_color !important; }
+            ";
+        }
+        if($footer_bg_color) {
+            /* ===== Footer Background Color ===== */
+            $customColorStyle .= "
+            body .site-footer .site-info { background-color: $footer_bg_color !important; }
+            ";
+        }
+        if($button_text_color) {
+            /* ===== Button Links Color ===== */
+            $customColorStyle .= "
+            .btn.btn-book-treatments,
+            .btn.btn-view-more,
+            .home-banner .card-content .card-action a,
+            .our_services .our-services__item .item-link a,
+            .gform_wrapper .gform_footer input.gform_button, 
+            .home-banner .card-content .card-action a,
+            .gform_wrapper .gform_footer input[type='submit'] {
+                color: $button_text_color !important;
+            }";
+        }
+        if($button_text_color_hover) {
+            /* ===== Button Links Color ===== */
+            $customColorStyle .= "
+            .btn.btn-book-treatments:hover,
+            .btn.btn-view-more:hover,
+            .home-banner .card-content .card-action a:hover,
+            .our_services .our-services__item .item-link a:hover,
+            .gform_wrapper .gform_footer input.gform_button:hover, 
+            .home-banner .card-content .card-action a:hover,
+            .gform_wrapper .gform_footer input[type='submit']:hover {
+                color: $button_text_color_hover !important;
+            }";
+        }
+        if($body_link_color) {
+            /* ===== Body Links Color ===== */
+            $customColorStyle .= "
+            .entry-content a { color: $body_link_color !important; }
+            ";
+        }
 	}
 
 	wp_add_inline_style( 'custom-style', $customColorStyle );
@@ -314,9 +369,7 @@ add_action( 'wp_enqueue_scripts', 'medstar01_scripts' );
 
 function medstar01_admin_script_panel() {
     $version = wp_get_theme()->get('Version');
-    
 	wp_enqueue_script( 'googleapis',  '//maps.googleapis.com/maps/api/js?key=AIzaSyBsuplYWJsF-qc5nD7w2iGNlxOTEVn2K3A', array(), _S_VERSION, true );
-
 }
 add_action( 'admin_enqueue_scripts', 'medstar01_admin_script_panel' );
 
@@ -385,23 +438,17 @@ require_once get_theme_file_path( '/inc/plugins.php' );
 add_filter('acf/settings/save_json', 'my_acf_json_save_point');
 
 function my_acf_json_save_point( $path ) {
-
     // update path
     $path = get_stylesheet_directory() . '/acf';
-
     // return
     return $path;
-
 }
 add_filter('acf/settings/load_json', 'my_acf_json_load_point');
 function my_acf_json_load_point( $paths ) {
-
     // remove original path (optional)
     unset($paths[0]);
-
     // append path
     $paths[] = get_stylesheet_directory() . '/acf';
-
     // return
     return $paths;
 }

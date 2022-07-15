@@ -42,7 +42,7 @@ Kirki::add_section(
 	'title_tagline', 
 	array(
 		'priority'       => 5,
-		'title'          => __( 'Medstar01 Site Identity (Logo, Favicon, Tags...)' ),
+		'title'          => __( 'Site Identity (Logo, Favicon, Tags...)' ),
 		'icon'           => 'dashicons-media-code',
 		'description'    => '',
 		'panel'          => 'medstar01_theme_options',
@@ -53,7 +53,7 @@ Kirki::add_section(
 	'medstar01_colors', 
 	array(
 		'priority'       => 5,
-		'title'          => __( 'Setup site Color' ),
+		'title'          => __( 'Setup Site Colors' ),
 		'icon'           => 'dashicons-color-picker',
 		'description'    => '',
 		'panel'          => 'medstar01_theme_options',
@@ -64,13 +64,12 @@ Kirki::add_section(
 	'typography', 
 	array(
 		'priority'       => 5,
-		'title'          => __( 'Setup site Typography' ),
+		'title'          => __( 'Setup Site Typography' ),
 		'icon'           => 'dashicons-editor-textcolor',
 		'description'    => '',
 		'panel'          => 'medstar01_theme_options',
 	) 
 );
-
 
 // medstar01 Header Setting
 Kirki::add_section(
@@ -79,7 +78,7 @@ Kirki::add_section(
 		'priority'       => 10,
 		'capability'     => 'edit_theme_options',
 		'theme_supports' => '',
-		'title'          => esc_html__( 'Medstar01 Header Setting', 'medstar01' ),
+		'title'          => esc_html__( 'Header Settings', 'medstar01' ),
 		'icon' => 'dashicons-schedule',
 		'description'    => '',
 		'panel'          => 'medstar01_theme_options',
@@ -93,13 +92,12 @@ Kirki::add_section(
 		'priority'       => 15,
 		'capability'     => 'edit_theme_options',
 		'theme_supports' => '',
-		'title'          => esc_html__( 'Medstar01 Footer Setting', 'medstar01' ),
+		'title'          => esc_html__( 'Footer Settings', 'medstar01' ),
 		'description'    => '',
 		'icon' => 'dashicons-schedule',
 		'panel'          => 'medstar01_theme_options',
 	)
 );
-
 
 // medstar01 Events Setting
 Kirki::add_section(
@@ -108,7 +106,7 @@ Kirki::add_section(
 		'priority'       => 16,
 		'capability'     => 'edit_theme_options',
 		'theme_supports' => '',
-		'title'          => esc_html__( 'Medstar01 Blog Settings', 'medstar01' ),
+		'title'          => esc_html__( 'Blog Settings', 'medstar01' ),
 		'description'    => '',
 		'icon'           => 'dashicons-rest-api',
 		'panel'          => 'medstar01_theme_options',
@@ -122,14 +120,13 @@ Kirki::add_section(
 		'priority'       => 20,
 		'capability'     => 'edit_theme_options',
 		'theme_supports' => '',
-		'title'          => esc_html__( 'Medstar01 Social Links Configs', 'medstar01' ),
+		'title'          => esc_html__( 'Social Link Configs', 'medstar01' ),
 		'description'    => '',
 		'icon'           => 'dashicons-twitter',
 		'panel'          => 'medstar01_theme_options',
 		
 	)
 );
-
 
 require_once get_theme_file_path( '/inc/customizer/sections/customizer-identity-configs.php' );
 require_once get_theme_file_path( '/inc/customizer/sections/customizer-header-configs.php' );
