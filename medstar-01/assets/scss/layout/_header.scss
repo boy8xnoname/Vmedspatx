@@ -100,9 +100,6 @@
                 margin: 0;
             }
         }
-        .mobile-main-navigation {
-            display: none !important;
-        }
         ul.social-list li {
             margin-right: 10px;
             margin-left: 10px;
@@ -121,9 +118,6 @@
         &__right {
             order: 3;
         }
-        #mobile-site-navigation {
-            display: none !important
-        }
     }
     // X-Large devices (large desktops, 1200px and up)
     @media (min-width: 1200px) {
@@ -131,6 +125,12 @@
             display: flex;
             align-items: center;
             justify-content: center;
+        }
+        .mobile-main-navigation {
+            display: none !important;
+        }
+        #mobile-site-navigation {
+            display: none !important
         }
     }
     // XX-Large devices (larger desktops, 1400px and up)

@@ -11444,9 +11444,6 @@ a.skip-link.screen-reader-text {
   .site-header .site-branding p {
     margin: 0;
   }
-  .site-header .mobile-main-navigation {
-    display: none !important;
-  }
   .site-header ul.social-list li {
     margin-right: 10px;
     margin-left: 10px;
@@ -11464,9 +11461,6 @@ a.skip-link.screen-reader-text {
   }
   .site-header__right {
     order: 3;
-  }
-  .site-header #mobile-site-navigation {
-    display: none !important;
   }
   .site-footer {
     padding-top: 50px;
@@ -12584,6 +12578,12 @@ a.skip-link.screen-reader-text {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .site-header .mobile-main-navigation {
+    display: none !important;
+  }
+  .site-header #mobile-site-navigation {
+    display: none !important;
   }
   .site-footer .footer-top-content {
     padding-top: 0;
