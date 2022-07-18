@@ -6,6 +6,7 @@
 	}
 	$contact_form_logo_image = get_field('contact_form_logo_image');
 	$formContactTitle = !empty(get_field('contact_us_before_form_title')) ? strip_tags(get_field('contact_us_before_form_title'), '<br><span><img>') : 'Send us a message';
+    $formContactSubTitle = !empty(get_field('contact_us_before_form_sub_title')) ? strip_tags(get_field('contact_us_before_form_sub_title'), '<br><span><img>') : 'Send us a message';
 	$formContactShortcode = !empty(get_field('contact_form_short_code')) ? get_field('contact_form_short_code') : '';
 	$formContactDescription = !empty(get_field('contact_us_form_description')) ? get_field('contact_us_form_description') : 'By submitting this form you agree to be contacted via phone/text/email.*';
 	$contentDescriptionBottomForm = get_field('content_description_bottom_form');
@@ -27,6 +28,9 @@
 					<h2 class="contact-form-title text-center">
 						<?php echo apply_filters('the_content', $formContactTitle); ?>
 					</h2>
+                    <h3 class="contact-form-sub-title text-center">
+                        <?php echo apply_filters('the_content', $formContactSubTitle); ?>
+                    </h3>
 					<?php echo do_shortcode($formContactShortcode); ?>
 					<div class="contact-us-description text-center">
 						<small><?php echo esc_attr( $formContactDescription, 'medstar01'); ?></small>

@@ -85,7 +85,6 @@ $mobileServiceBannerImage = !empty( get_field('mobile_service_banner_image')) ? 
 				
 				<?php 
 						$contactSidebarImageBackground = get_field('contact_sidebar_image_background');
-
 						if(!empty($contactSidebarImageBackground)) {
 							$contactSidebarImageBackground = $contactSidebarImageBackground['url'];
 						}
@@ -100,8 +99,13 @@ $mobileServiceBannerImage = !empty( get_field('mobile_service_banner_image')) ? 
 						$formContactTitle = get_field('sidebar_contact_us_before_form_title');
 					} else {
 						$formContactTitle = !empty(get_field('contact_us_before_form_title')) ? get_field('contact_us_before_form_title') : 'Send us a message';
-
 					}
+                    // Get contact form sub-title
+                    if(!empty(get_field('sidebar_contact_us_before_form_sub_title'))) {
+                        $formContactSubTitle = get_field('sidebar_contact_us_before_form_sub_title');
+                    } else {
+                        $formContactSubTitle = !empty(get_field('contact_us_before_form_sub_title')) ? get_field('contact_us_before_form_sub_title') : 'Send us a message';
+                    }
 					// Get contact form shortcode
 					if(!empty(get_field('sidebar_contact_form_short_code'))) {
 						$formContactShortcode = get_field('sidebar_contact_form_short_code');
@@ -127,6 +131,9 @@ $mobileServiceBannerImage = !empty( get_field('mobile_service_banner_image')) ? 
 								<h2 class="contact-form-title text-center">
 									<?php echo apply_filters('the_content', $formContactTitle); ?>
 								</h2>
+                                <h3 class="contact-form-sub-title text-center">
+                                    <?php echo apply_filters('the_content', $formContactSubTitle); ?>
+                                </h3>
 								<?php echo do_shortcode($formContactShortcode); ?>
 								<div class="contact-us-description text-center">
 									<small><?php echo esc_attr( $formContactDescription, 'medstar01'); ?></small>
