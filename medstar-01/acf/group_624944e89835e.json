@@ -1,10 +1,10 @@
 {
     "key": "group_624944e89835e",
-    "title": "Services Thank you Content Setup",
+    "title": "Services Thank You Content Setup",
     "fields": [
         {
             "key": "field_624959c2c1e53",
-            "label": "Services banner",
+            "label": "Services Banner",
             "name": "",
             "type": "tab",
             "instructions": "",
@@ -20,7 +20,7 @@
         },
         {
             "key": "field_624959d4c1e54",
-            "label": "Service banner image",
+            "label": "Service Banner Image",
             "name": "service_banner_image",
             "type": "image",
             "instructions": "",
@@ -44,7 +44,7 @@
         },
         {
             "key": "field_624959efc1e55",
-            "label": "Service banner title",
+            "label": "Service Banner Title",
             "name": "service_banner_title",
             "type": "text",
             "instructions": "",
@@ -63,7 +63,7 @@
         },
         {
             "key": "field_624959fbc1e56",
-            "label": "Service banner description",
+            "label": "Service Banner Description",
             "name": "service_banner_description",
             "type": "wysiwyg",
             "instructions": "",
@@ -82,7 +82,7 @@
         },
         {
             "key": "field_62495a2fc1e57",
-            "label": "Service button title",
+            "label": "Service Button Title",
             "name": "service_button_title",
             "type": "text",
             "instructions": "",
@@ -101,7 +101,7 @@
         },
         {
             "key": "field_62495a3cc1e58",
-            "label": "Service button link",
+            "label": "Service Button Link",
             "name": "service_button_link",
             "type": "url",
             "instructions": "",
@@ -117,7 +117,7 @@
         },
         {
             "key": "field_62495b51b6a72",
-            "label": "Our award",
+            "label": "Our Award",
             "name": "our_award",
             "type": "repeater",
             "instructions": "",
@@ -162,7 +162,7 @@
         },
         {
             "key": "field_62495f454b272",
-            "label": "Treaments Featured in content",
+            "label": "Treaments Featured In Content",
             "name": "",
             "type": "tab",
             "instructions": "",
@@ -178,7 +178,7 @@
         },
         {
             "key": "field_62495fe532e4b",
-            "label": "Treaments Featured in title",
+            "label": "Treaments Featured In Title",
             "name": "treaments_featured_in_title",
             "type": "text",
             "instructions": "",
@@ -197,7 +197,7 @@
         },
         {
             "key": "field_62495f584b273",
-            "label": "Treaments Featured in content",
+            "label": "Treaments Featured In Content",
             "name": "treaments_featured_in_items",
             "type": "repeater",
             "instructions": "",
@@ -240,7 +240,7 @@
                 },
                 {
                     "key": "field_62496066768e8",
-                    "label": "Treaments Featured link",
+                    "label": "Treaments Featured Link",
                     "name": "treaments_featured_link",
                     "type": "text",
                     "instructions": "",
@@ -278,5 +278,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1654010830
+    "modified": 1658161327
 }

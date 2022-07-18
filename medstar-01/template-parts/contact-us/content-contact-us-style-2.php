@@ -12,6 +12,7 @@
 		$contactImageContent = $contactImageContent['url'];
 	}
 	$sectionContactTitle = !empty(get_field('contact_us_title')) ? strip_tags(get_field('contact_us_title'), '<br><span><img>') : '';
+    $sectionContactSubTitle = !empty(get_field('contact_us_sub_title')) ? strip_tags(get_field('contact_us_sub_title'), '<br><span><img>') : '';
 	$formContactTitle = !empty(get_field('contact_us_before_form_title')) ? get_field('contact_us_before_form_title') : '';
 	$formContactShortcode = !empty(get_field('contact_form_short_code')) ? get_field('contact_form_short_code') : '';
 	$formContactDescription = !empty(get_field('contact_us_form_description')) ? get_field('contact_us_form_description') : 'By submitting this form you agree to be contacted via phone/text/email.*';
@@ -32,10 +33,15 @@
 							<?php echo esc_attr( $sectionContactTitle, 'medstar01' ) ?>
 						</h2>
 					<?php }?>
+                    <?php  if(!empty($sectionContactSubTitle)) { ?>
+                        <h3 class="section-sub-title text-center">
+                            <?php echo esc_attr( $sectionContactSubTitle, 'medstar01' ) ?>
+                        </h3>
+                    <?php }?>
 					<?php  if(!empty($formContactTitle)) { ?>
-						<h2 class="contact-form-title text-center">
+						<h4 class="contact-form-description text-center">
 							<?php echo esc_attr( $formContactTitle, 'medstar01' ); ?>
-						</h2>
+						</h4>
 					<?php }?>
 					<?php echo do_shortcode($formContactShortcode); ?>
 					<?php  if(!empty($formContactDescription)) { ?>

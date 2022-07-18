@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_6248edd5c5b14",
-            "label": "Why choose us content",
+            "label": "Why Choose Us Content",
             "name": "",
             "type": "tab",
             "instructions": "",
@@ -211,7 +211,7 @@
         },
         {
             "key": "field_6248fb3b9e0af",
-            "label": "About Us content bottom",
+            "label": "About Us Content Bottom",
             "name": "about_us_content_bottom",
             "type": "repeater",
             "instructions": "",
@@ -230,7 +230,7 @@
             "sub_fields": [
                 {
                     "key": "field_6248fb4d9e0b0",
-                    "label": "Content heading",
+                    "label": "Content Heading",
                     "name": "content_heading",
                     "type": "text",
                     "instructions": "",
@@ -249,7 +249,7 @@
                 },
                 {
                     "key": "field_6248fb6797d37",
-                    "label": "Content description",
+                    "label": "Content Description",
                     "name": "content_description",
                     "type": "wysiwyg",
                     "instructions": "",
@@ -312,7 +312,7 @@
         },
         {
             "key": "field_6291ca137d733",
-            "label": "Contact section background image",
+            "label": "Contact Section Background Image",
             "name": "contact_section_image_background",
             "type": "image",
             "instructions": "",
@@ -358,7 +358,7 @@
         },
         {
             "key": "field_629644e7008ec",
-            "label": "Contact section image",
+            "label": "Contact Section Image",
             "name": "contact_section_image",
             "type": "image",
             "instructions": "",
@@ -390,8 +390,27 @@
         },
         {
             "key": "field_6248fcf1b9ccc",
-            "label": "Contact Us Form title",
+            "label": "Contact Us Form Title",
             "name": "contact_us_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_62d57658ab2a7",
+            "label": "Contact Us Form Sub-title",
+            "name": "contact_us_sub_title",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -485,5 +504,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1654099059
+    "modified": 1658156916
 }

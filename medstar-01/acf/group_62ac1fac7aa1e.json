@@ -95,7 +95,7 @@
         },
         {
             "key": "field_62ac20f44736a",
-            "label": "Contact us Map",
+            "label": "Contact Us Map",
             "name": "",
             "type": "tab",
             "instructions": "",
@@ -111,7 +111,7 @@
         },
         {
             "key": "field_62ac210b3cde0",
-            "label": "Google Map content setup",
+            "label": "Google Map Content Setup",
             "name": "google_map_content_setup",
             "type": "google_map",
             "instructions": "",
@@ -145,7 +145,7 @@
         },
         {
             "key": "field_62ac1fac7d2a8",
-            "label": "Contact section background image",
+            "label": "Contact Section Background Image",
             "name": "contact_section_image_background",
             "type": "image",
             "instructions": "",
@@ -153,21 +153,21 @@
             "conditional_logic": [
                 [
                     {
-                        "field": "field_62ac1fac7d2a1",
+                        "field": "field_62ac2028aee02",
                         "operator": "==",
                         "value": "contact_us_style_1"
                     }
                 ],
                 [
                     {
-                        "field": "field_62ac1fac7d2a1",
+                        "field": "field_62ac2028aee02",
                         "operator": "==",
                         "value": "contact_us_style_2"
                     }
                 ],
                 [
                     {
-                        "field": "field_62ac1fac7d2a1",
+                        "field": "field_62ac2028aee02",
                         "operator": "==",
                         "value": "contact_us_style_3"
                     }
@@ -191,7 +191,7 @@
         },
         {
             "key": "field_62ac1fac7d2b1",
-            "label": "Contact section image",
+            "label": "Contact Section Image",
             "name": "contact_section_image",
             "type": "image",
             "instructions": "",
@@ -199,7 +199,7 @@
             "conditional_logic": [
                 [
                     {
-                        "field": "field_62ac1fac7d2a1",
+                        "field": "field_62ac2028aee02",
                         "operator": "==",
                         "value": "contact_us_style_3"
                     }
@@ -222,9 +222,28 @@
             "mime_types": ""
         },
         {
-            "key": "field_62ac1fac7d2d3",
+            "key": "field_62d577ff73479",
             "label": "Contact Form Title",
             "name": "contact_us_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_62ac1fac7d2d3",
+            "label": "Contact Form Sub-title",
+            "name": "contact_us_sub_title",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -280,7 +299,7 @@
         },
         {
             "key": "field_62ac1fac7d321",
-            "label": "Contact us form description",
+            "label": "Contact Us Form Description",
             "name": "contact_us_form_description",
             "type": "textarea",
             "instructions": "",
@@ -353,5 +372,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1655461701
+    "modified": 1658157069
 }

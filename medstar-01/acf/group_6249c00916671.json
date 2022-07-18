@@ -377,45 +377,6 @@
             "mime_types": ""
         },
         {
-            "key": "field_62c23ecc974c8",
-            "label": "Mobile - Hero Section Background Image Tablet",
-            "name": "tablet_service_banner_image",
-            "type": "image",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_627a8bedd15bf",
-                        "operator": "==",
-                        "value": "image"
-                    }
-                ],
-                [
-                    {
-                        "field": "field_627a8bedd15bf",
-                        "operator": "==",
-                        "value": "image_fixed"
-                    }
-                ]
-            ],
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array",
-            "preview_size": "medium",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": ""
-        },
-        {
             "key": "field_627a8c5b38ade",
             "label": "Hero Section - Content",
             "name": "",
@@ -776,6 +737,25 @@
             "maxlength": ""
         },
         {
+            "key": "field_62d5880097a1f",
+            "label": "Contact Form Sub-title",
+            "name": "sidebar_contact_us_before_form_sub_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_6253ebeb53794",
             "label": "Contact Form Short Code",
             "name": "sidebar_contact_form_short_code",
@@ -814,7 +794,7 @@
             "maxlength": ""
         },
         {
-            "key": "field_62bbe29da58ea",
+            "key": "field_62cef996b5cdd",
             "label": "FAQ Section",
             "name": "",
             "type": "tab",
@@ -830,7 +810,7 @@
             "endpoint": 0
         },
         {
-            "key": "field_62bbe2ffdcab7",
+            "key": "field_62cef9c0b5cde",
             "label": "FAQ Heading",
             "name": "faq_heading",
             "type": "text",
@@ -849,7 +829,7 @@
             "maxlength": ""
         },
         {
-            "key": "field_62bbe2b59f288",
+            "key": "field_62cef9d2b5cdf",
             "label": "FAQ Items",
             "name": "faq_items",
             "type": "repeater",
@@ -868,7 +848,7 @@
             "button_label": "",
             "sub_fields": [
                 {
-                    "key": "field_62bbe2cc9f289",
+                    "key": "field_62cef9deb5ce0",
                     "label": "Title",
                     "name": "title",
                     "type": "text",
@@ -887,7 +867,7 @@
                     "maxlength": ""
                 },
                 {
-                    "key": "field_62bbe2d29f28a",
+                    "key": "field_62cef9e3b5ce1",
                     "label": "Content",
                     "name": "content",
                     "type": "wysiwyg",
@@ -975,6 +955,25 @@
             "key": "field_6249cd648d60a",
             "label": "Contact Form Title",
             "name": "contact_us_before_form_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_62d5881897a20",
+            "label": "Contact Form Sub-title",
+            "name": "contact_us_before_form_sub_title",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -1082,5 +1081,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1656897250
+    "modified": 1658161193
 }
