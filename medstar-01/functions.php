@@ -336,7 +336,8 @@ function medstar01_scripts() {
             .our_services .our-services__item .item-link a,
             .gform_wrapper .gform_footer input.gform_button, 
             .home-banner .card-content .card-action a,
-            .gform_wrapper .gform_footer input[type='submit'] {
+            .gform_wrapper .gform_footer input[type='submit'],
+             button a {
                 color: $button_text_color !important;
             }";
         }
@@ -349,7 +350,8 @@ function medstar01_scripts() {
             .our_services .our-services__item .item-link a:hover,
             .gform_wrapper .gform_footer input.gform_button:hover, 
             .home-banner .card-content .card-action a:hover,
-            .gform_wrapper .gform_footer input[type='submit']:hover {
+            .gform_wrapper .gform_footer input[type='submit']:hover,
+             button:hover a {
                 color: $button_text_color_hover !important;
             }";
         }
