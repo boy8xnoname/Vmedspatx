@@ -190,7 +190,7 @@ body .accordion-button:not(.collapsed)::after {
         max-width: 165px;
     }
     .our_services .our-services__item:nth-child(2n+1) .item-text {
-        margin-right: -5em;
+        margin: 0;
     }
 }
 
@@ -199,7 +199,7 @@ body .accordion-button:not(.collapsed)::after {
     .our_services .our-services__item:nth-child(2n) .our-services__item-wrap .item-image-wrap,
     .our_services .our-services__item:nth-child(2n) .item-text-wrap,
     .our_services .our-services__item:nth-child(2n+1) .item-text-wrap {
-        margin: 0;
+        margin: 0 !important;
     }
 }
 
@@ -222,17 +222,25 @@ body .accordion-button:not(.collapsed)::after {
     .our_services .our-services__item-wrap {
         justify-content: space-between;
         align-items: center;
+        gap: 4%;
     }
     .our_services .our-services__item .item-image {
-        flex: 0 0 40%;
-        max-width: 40%;
+        flex: 0 0 48% !important;
+        max-width: 48%;
     }
     .our_services .our-services__item .item-text {
-        flex: 0 0 50%;
-        max-width: 50%;
+        flex: 0 0 48% !important;
+        max-width: 48%;
     }
     .our_services .our-services__item .item-image-wrap img {
         width: 100%;
+    }
+}
+
+@media (min-width: 1200px){
+    .our_services .our-services__item .item-header h2, 
+    .our_services .our-services__item .item-header .h2 {
+        font-size: 50px;
     }
 }
 
