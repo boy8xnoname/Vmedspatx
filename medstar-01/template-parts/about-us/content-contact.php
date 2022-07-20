@@ -112,6 +112,21 @@
 				</div>
 			<?php } ?>
 		</div>
+
+		<div class="wp-clearfix" style="height: 30px;"></div>
+
+        <div class="row ">
+            <div class="col col-12 col-md-1"></div>
+            <div class="col col-12 col-md-10 col-xl-12 text-center">
+                 <?php
+                    $footerDescription = get_theme_mod('footer_description_text');
+                    if(!empty( $footerDescription)) {
+                        echo nl2br(get_theme_mod('footer_description_text'));
+                    }
+                ?>
+            </div>
+            <div class="col col-12 col-md-1"></div>
+        </div>
 	
 	</div>
 </section>

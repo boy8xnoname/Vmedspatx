@@ -141,8 +141,8 @@ Kirki::add_field(
 	[
 		'type'        => 'editor',
 		'settings'    => 'footer_description_text',
-		'label'       => esc_html__( 'Footer description', 'medstar01' ),
-		'description' => esc_html__( 'Add footer description text here.', 'medstar01' ),
+		'label'       => esc_html__( 'Footer disclaimer text', 'medstar01' ),
+		'description' => esc_html__( 'Add footer disclaimer text here.', 'medstar01' ),
 		'section'     => 'section_footer_config',
 		'priority' => 10,
 		'default'     => '',
