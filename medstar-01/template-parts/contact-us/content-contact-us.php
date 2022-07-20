@@ -118,7 +118,7 @@
 
         <div class="row ">
             <div class="col col-12 col-md-1"></div>
-            <div class="col col-12 col-md-10 col-xl-12 text-center">
+            <div class="col col-12 col-md-10 col-xl-12 text-center footer-disclaimer-text">
                  <?php
                     $footerDescription = get_theme_mod('footer_description_text');
                     if(!empty( $footerDescription)) {
