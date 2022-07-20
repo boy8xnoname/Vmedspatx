@@ -98,13 +98,13 @@ $mobileServiceBannerImage = !empty( get_field('mobile_service_banner_image')) ? 
 					if(!empty(get_field('sidebar_contact_us_before_form_title'))) {
 						$formContactTitle = get_field('sidebar_contact_us_before_form_title');
 					} else {
-						$formContactTitle = !empty(get_field('contact_us_before_form_title')) ? get_field('contact_us_before_form_title') : 'Send us a message';
+						$formContactTitle = !empty(get_field('contact_us_before_form_title')) ? get_field('contact_us_before_form_title') : '';
 					}
                     // Get contact form sub-title
                     if(!empty(get_field('sidebar_contact_us_before_form_sub_title'))) {
                         $formContactSubTitle = get_field('sidebar_contact_us_before_form_sub_title');
                     } else {
-                        $formContactSubTitle = !empty(get_field('contact_us_before_form_sub_title')) ? get_field('contact_us_before_form_sub_title') : 'Send us a message';
+                        $formContactSubTitle = !empty(get_field('contact_us_before_form_sub_title')) ? get_field('contact_us_before_form_sub_title') : '';
                     }
 					// Get contact form shortcode
 					if(!empty(get_field('sidebar_contact_form_short_code'))) {

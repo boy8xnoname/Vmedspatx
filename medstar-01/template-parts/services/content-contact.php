@@ -5,8 +5,8 @@
 		$sectionContactBackground = $contactImageBackground['url'];
 	}
 	$contact_form_logo_image = get_field('contact_form_logo_image');
-	$formContactTitle = !empty(get_field('contact_us_before_form_title')) ? strip_tags(get_field('contact_us_before_form_title'), '<br><span><img>') : 'Send us a message';
-    $formContactSubTitle = !empty(get_field('contact_us_before_form_sub_title')) ? strip_tags(get_field('contact_us_before_form_sub_title'), '<br><span><img>') : 'Send us a message';
+	$formContactTitle = !empty(get_field('contact_us_before_form_title')) ? strip_tags(get_field('contact_us_before_form_title'), '<br><span><img>') : '';
+    $formContactSubTitle = !empty(get_field('contact_us_before_form_sub_title')) ? strip_tags(get_field('contact_us_before_form_sub_title'), '<br><span><img>') : '';
 	$formContactShortcode = !empty(get_field('contact_form_short_code')) ? get_field('contact_form_short_code') : '';
 	$formContactDescription = !empty(get_field('contact_us_form_description')) ? get_field('contact_us_form_description') : 'By submitting this form you agree to be contacted via phone/text/email.*';
 	$contentDescriptionBottomForm = get_field('content_description_bottom_form');
