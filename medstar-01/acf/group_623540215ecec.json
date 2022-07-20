@@ -266,7 +266,7 @@
         },
         {
             "key": "field_6253f6db21458",
-            "label": "Service Icon Before Title",
+            "label": "Service icon before title",
             "name": "service_icon_before_title",
             "type": "image",
             "instructions": "Leave this field if use default icon for this.",
@@ -389,7 +389,7 @@
         },
         {
             "key": "field_62361cc9eb208",
-            "label": "Explore Our Treatments",
+            "label": "Explore our Treatments",
             "name": "",
             "type": "tab",
             "instructions": "",
@@ -405,7 +405,7 @@
         },
         {
             "key": "field_62361cd2eb209",
-            "label": "Explore Our Treatments Background Image",
+            "label": "Explore our Treatments Background Image",
             "name": "explore_our_treatments_background_image",
             "type": "image",
             "instructions": "",
@@ -429,7 +429,7 @@
         },
         {
             "key": "field_62361ce8eb20a",
-            "label": "Explore Our Treatments Title",
+            "label": "Explore our Treatments Title",
             "name": "explore_our_treatments_heading",
             "type": "text",
             "instructions": "",
@@ -448,7 +448,7 @@
         },
         {
             "key": "field_62361cf1eb20b",
-            "label": "Explore Our Treatments Description",
+            "label": "Explore our Treatments Description",
             "name": "explore_our_treatments_descriptions",
             "type": "wysiwyg",
             "instructions": "",
@@ -467,7 +467,7 @@
         },
         {
             "key": "field_62910a6c77ed6",
-            "label": "Explore Our Treatments Button link",
+            "label": "Explore our Treatments Button link",
             "name": "explore_our_treatments_button_link",
             "type": "text",
             "instructions": "Paste '#section-contact_us' in the field to make the page scroll down to bottom contact form on click",
@@ -502,7 +502,7 @@
         },
         {
             "key": "field_62376f2fac804",
-            "label": "About Us Title",
+            "label": "About Us title",
             "name": "about_us_title",
             "type": "text",
             "instructions": "",
@@ -621,7 +621,7 @@
         },
         {
             "key": "field_62376f79ac809",
-            "label": "About Us - Learn More Button Link",
+            "label": "About Us - Learn More button Link",
             "name": "about_us_learn_more_link",
             "type": "url",
             "instructions": "",
@@ -653,7 +653,7 @@
         },
         {
             "key": "field_62660a979dde0",
-            "label": "Testimonials Styles",
+            "label": "Testimonials styles",
             "name": "testimonials_style",
             "type": "select",
             "instructions": "<strong>Testimonial Style 1<\/strong>: Use this style for non-background image <br\/>\r\n<strong>Testimonial Style 2<\/strong>: Use this style to add background image",
@@ -678,7 +678,7 @@
         },
         {
             "key": "field_62663b04829e4",
-            "label": "Testimonals Background Image",
+            "label": "Testimonals background image",
             "name": "testimonal_background_image",
             "type": "image",
             "instructions": "",
@@ -769,7 +769,7 @@
         },
         {
             "key": "field_62376ff484964",
-            "label": "In The Press",
+            "label": "In the press",
             "name": "",
             "type": "tab",
             "instructions": "",
@@ -785,7 +785,7 @@
         },
         {
             "key": "field_62376ffe84965",
-            "label": "In The Press Logos",
+            "label": "In the press logos",
             "name": "in_the_press_logos",
             "type": "repeater",
             "instructions": "",
@@ -846,7 +846,7 @@
         },
         {
             "key": "field_6237705c9c787",
-            "label": "Book Your Appointment",
+            "label": "Book your appointment",
             "name": "",
             "type": "tab",
             "instructions": "",
@@ -862,7 +862,7 @@
         },
         {
             "key": "field_623c41ade51fe",
-            "label": "Book Your Appointment Image",
+            "label": "Book your appointment image",
             "name": "book_appointment_image",
             "type": "image",
             "instructions": "",
@@ -885,8 +885,32 @@
             "mime_types": ""
         },
         {
+            "key": "field_62c067973ba34",
+            "label": "Book your appointment mobile image",
+            "name": "book_appointment_image_mobile",
+            "type": "image",
+            "instructions": "This image show on mobile only. Leave this field if you don't need different image for mobile",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
             "key": "field_6237706e9c788",
-            "label": "Book Your Next Appointment Title",
+            "label": "Book your next appointment title",
             "name": "book_your_next_appointment_title",
             "type": "text",
             "instructions": "",
@@ -905,7 +929,7 @@
         },
         {
             "key": "field_6239e594e3e05",
-            "label": "Book Appointment Button Title",
+            "label": "Book appointment button title",
             "name": "book_appointment_button_title",
             "type": "text",
             "instructions": "",
@@ -924,7 +948,7 @@
         },
         {
             "key": "field_6237708e9c789",
-            "label": "Book Appointment Button Link",
+            "label": "Book appointment button link",
             "name": "book_appointment_button_link",
             "type": "text",
             "instructions": "Paste '#section-contact_us' without quotes in the below field to make the page scroll down to bottom contact form on click",
@@ -959,7 +983,7 @@
         },
         {
             "key": "field_623af10ef1bbc",
-            "label": "Blog Post Section Title",
+            "label": "Blog Post section title",
             "name": "blog_post_section_title",
             "type": "text",
             "instructions": "",
@@ -1360,7 +1384,7 @@
         },
         {
             "key": "field_6256e6c096271",
-            "label": "Contact Section Image Background",
+            "label": "Contact section image background",
             "name": "contact_section_image_background",
             "type": "image",
             "instructions": "",
@@ -1406,7 +1430,7 @@
         },
         {
             "key": "field_6266699c89562",
-            "label": "Contact Section Image",
+            "label": "Contact section image",
             "name": "contact_section_image",
             "type": "image",
             "instructions": "",
@@ -1440,25 +1464,6 @@
             "key": "field_62377274e4e53",
             "label": "Contact Form Title",
             "name": "contact_us_title",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_62d58250cbbfd",
-            "label": "Contact Form Sub-title",
-            "name": "contact_us_sub_title",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -1530,6 +1535,25 @@
             "maxlength": "",
             "rows": "",
             "new_lines": ""
+        },
+        {
+            "key": "field_62d797ce40674",
+            "label": "Bottom Disclaimer Text",
+            "name": "bottom_disclaimer_text",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
         }
     ],
     "location": [
@@ -1552,5 +1576,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1658159719
+    "modified": 1658296291
 }

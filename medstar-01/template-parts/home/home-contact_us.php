@@ -120,10 +120,10 @@ $formContactDescription = !empty(get_field('contact_us_form_description')) ? get
                 <div class="col col-12 col-md-1"></div>
                 <div class="col col-12 col-md-10 col-xl-12 text-center">
                     <?php
-                    $footerDescription = get_theme_mod('footer_description_text');
-                    if(!empty( $footerDescription)) {
-                        echo nl2br(get_theme_mod('footer_description_text'));
-                    }
+                        $footerDescription = get_field('bottom_disclaimer_text');
+                        if(!empty( $footerDescription)) {
+                            echo apply_filters('the_content', $footerDescription);
+                        }
                     ?>
                 </div>
                 <div class="col col-12 col-md-1"></div>

@@ -139,19 +139,6 @@ Kirki::add_field(
 Kirki::add_field( 
 	'medstar01',
 	[
-		'type'        => 'editor',
-		'settings'    => 'footer_description_text',
-		'label'       => esc_html__( 'Footer description', 'medstar01' ),
-		'description' => esc_html__( 'Add footer description text here.', 'medstar01' ),
-		'section'     => 'section_footer_config',
-		'priority' => 10,
-		'default'     => '',
-	] 
-);
-
-Kirki::add_field( 
-	'medstar01',
-	[
 		'type'        => 'switch',
 		'settings'    => 'show_copyright_content',
 		'label'       => esc_html__( 'Show/Hide Copyright text in footer', 'medstar01' ),
