@@ -234,3 +234,12 @@ body .accordion-button:not(.collapsed)::after {
         width: 100%;
     }
 }
+
+/* force footer font size & weight */
+.site-footer .footer-copyright-menu a,
+.site-footer .footer-copyright,
+.site-footer .footer-copyright p,
+.site-footer .footer-copyright a {
+    font-size: 14px !important;
+    font-weight: normal;
+}
