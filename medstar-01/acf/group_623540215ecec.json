@@ -1535,25 +1535,6 @@
             "maxlength": "",
             "rows": "",
             "new_lines": ""
-        },
-        {
-            "key": "field_62d797ce40674",
-            "label": "Bottom Disclaimer Text",
-            "name": "bottom_disclaimer_text",
-            "type": "wysiwyg",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
-            "delay": 0
         }
     ],
     "location": [
@@ -1576,5 +1557,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1658296291
+    "modified": 1658301622
 }
