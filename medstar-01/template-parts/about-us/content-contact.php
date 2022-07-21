@@ -116,8 +116,8 @@
 		<div class="wp-clearfix" style="height: 30px;"></div>
 
         <div class="row ">
-            <div class="col col-12 col-md-1 col-xl-2"></div>
-            <div class="col col-12 col-md-10 col-xl-8 text-center footer-disclaimer-text">
+            <div class="col col-12 col-md-1 col-xl-1"></div>
+            <div class="col col-12 col-md-10 col-xl-10 text-center footer-disclaimer-text">
                  <?php
                     $footerDescription = get_theme_mod('footer_description_text');
                     if(!empty( $footerDescription)) {
@@ -125,7 +125,7 @@
                     }
                 ?>
             </div>
-            <div class="col col-12 col-md-1 col-xl-2"></div>
+            <div class="col col-12 col-md-1 col-xl-1"></div>
         </div>
 	
 	</div>
