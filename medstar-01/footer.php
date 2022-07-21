@@ -64,6 +64,54 @@
 </div><!-- #page -->
 <!-- Start / Tracking Code Should Go Here -->
 <!-- End / Tracking Code Should Go Here -->
-<?php wp_footer(); ?>
+<?php
+    wp_footer();
+    $float_phone_number = get_theme_mod('floating_phone_number');
+
+    $floating_phone_bg_color = get_theme_mod('floating_phone_bg_color');
+    $floating_phone_color = get_theme_mod('floating_phone_color');
+
+    $floating_phone_bg_color_hover = get_theme_mod('floating_phone_bg_color_hover');
+    $floating_phone_color_hover = get_theme_mod('floating_phone_hover_color');
+
+    if(!empty($float_phone_number)){
+        ?>
+        <a href="tel:<?php echo clean_phone_link($float_phone_number); ?>" class="medstar-floating-btn">
+            <i aria-hidden="true" class="fa fa-phone"></i><?php echo $float_phone_number; ?>
+        </a>
+        <style>
+            @media (max-width: 768px) {
+                .site-footer .site-info {
+                    padding-bottom: 45px !important;
+                }
+                <?php if(!empty($floating_phone_bg_color)){ ?>
+                body .medstar-floating-btn {
+                    background-color: <?php echo $floating_phone_bg_color; ?> !important;
+                }
+                <?php } ?>
+                <?php if(!empty($floating_phone_color)){ ?>
+                body .medstar-floating-btn,
+                body .medstar-floating-btn i {
+                    color: <?php echo $floating_phone_color; ?> !important;
+                }
+                <?php } ?>
+
+                <?php if(!empty($floating_phone_bg_color_hover)){ ?>
+                    body .medstar-floating-btn:hover {
+                        background-color: <?php echo $floating_phone_bg_color_hover; ?> !important;
+                    }
+                <?php } ?>
+                <?php if(!empty($floating_phone_color_hover)){ ?>
+                    body .medstar-floating-btn:hover,
+                    body .medstar-floating-btn:hover i {
+                        color: <?php echo $floating_phone_color_hover; ?> !important;
+                    }
+                <?php } ?>
+            }
+        </style>
+        <?php
+    }
+?>
+
 </body>
 </html>

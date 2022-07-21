@@ -7180,7 +7180,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   border-radius: 50%;
   display: none;
   position: fixed;
-  bottom: 45px;
+  bottom: 13px;
   right: 20px;
   z-index: 98;
   padding: 10px 14px;

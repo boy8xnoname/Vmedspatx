@@ -241,7 +241,7 @@ body .accordion-button:not(.collapsed)::after {
 }
 
 @media (min-width: 1200px){
-    .our_services .our-services__item .item-header h2, 
+    .our_services .our-s0ervices__item .item-header h2,
     .our_services .our-services__item .item-header .h2 {
         font-size: 50px;
     }
