@@ -255,3 +255,38 @@ body .accordion-button:not(.collapsed)::after {
     font-size: 14px !important;
     font-weight: normal;
 }
+
+.medstar-floating-btn {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .medstar-floating-btn i {
+        color: white !important;
+        padding: 10px 10px 10px 0px;
+        position: relative;
+        top: 2px;
+        left: 6px;
+    }
+    .medstar-floating-btn:hover {
+        color:white !important;
+        text-decoration: none;
+    }
+    .medstar-floating-btn {
+        display: block;
+        position: fixed;
+        color: #fff !important;
+        font-weight: 500 !important;
+        text-decoration: none !important;
+        z-index: 2147483647;
+        width: 167px;
+        height: 38px;
+        box-shadow: 0 3px 6px rgb(0 0 0 / 30%);
+        transform: scale(1);
+        bottom: 15px;
+        left: 20px;
+        background: #04a5e6;
+        text-align: center;
+        border-radius: 50px !important;
+    }
+}

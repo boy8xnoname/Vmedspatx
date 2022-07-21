@@ -128,6 +128,21 @@ Kirki::add_section(
 	)
 );
 
+// medstar01 Floating Phone Button
+Kirki::add_section(
+	'section_floating_phone_button',
+	array(
+		'priority'       => 25,
+		'capability'     => 'edit_theme_options',
+		'theme_supports' => '',
+		'title'          => esc_html__( 'Floating Phone Button Configs', 'medstar01' ),
+		'description'    => '',
+		'icon'           => 'dashicons-phone',
+		'panel'          => 'medstar01_theme_options',
+		
+	)
+);
+
 require_once get_theme_file_path( '/inc/customizer/sections/customizer-identity-configs.php' );
 require_once get_theme_file_path( '/inc/customizer/sections/customizer-header-configs.php' );
 require_once get_theme_file_path( '/inc/customizer/sections/customizer-footer-configs.php' );
@@ -135,3 +150,4 @@ require_once get_theme_file_path( '/inc/customizer/sections/customizer-social-li
 require_once get_theme_file_path( '/inc/customizer/sections/customizer-color-configs.php' );
 require_once get_theme_file_path( '/inc/customizer/sections/customizer-typography-configs.php' );
 require_once get_theme_file_path( '/inc/customizer/sections/customizer-blog-settings.php' );
+require_once get_theme_file_path( '/inc/customizer/sections/customizer-floating-mobile-phone-button.php' );

@@ -464,3 +464,17 @@ function clean_phone_link($phone){
 	return '+1' . str_replace(['(', '-', ')', ' '], '', $phone);
 }
 
+/* ========= Print Floating Phome Number On Mobile ========== */
+add_action('wp_footer', 'medstar01_print_wp_footer', 999);
+function medstar01_print_wp_footer(){
+    $mods = get_theme_mods();
+    $float_phone_number = get_theme_mod('floating_phone_number');
+    var_dump($float_phone_number);
+    //if($floating_phone_number){
+    ?>
+    <a href="tel:<?php echo clean_phone_link($floating_phone_number); ?>" class="medstar-floating-btn">
+        <i aria-hidden="true" class="fa fa-phone"></i><?php echo $floating_phone_number; ?>
+    </a>
+    <?php
+    //}
+}
