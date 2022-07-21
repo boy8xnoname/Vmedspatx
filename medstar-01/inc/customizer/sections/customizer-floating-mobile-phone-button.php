@@ -27,7 +27,7 @@ Kirki::add_field( 'medstar01', [
 Kirki::add_field( 'medstar01', [
     'type'     => 'color',
     'settings' => 'floating_phone_bg_color_hover',
-    'label'    => __( 'Background Color Hover', 'medstar01' ),
+    'label'    => __( 'Background Hover Color ', 'medstar01' ),
     'section'  => 'section_floating_phone_button',
     'default'  => '#',
     'priority' => 15,
@@ -36,7 +36,7 @@ Kirki::add_field( 'medstar01', [
 Kirki::add_field( 'medstar01', [
 	'type'     => 'color',
 	'settings' => 'floating_phone_color',
-	'label'    => __( 'Number Color', 'medstar01' ),
+	'label'    => __( 'Button Label Color', 'medstar01' ),
 	'section'  => 'section_floating_phone_button',
 	'default'  => '#',
 	'priority' => 20,
@@ -45,7 +45,7 @@ Kirki::add_field( 'medstar01', [
 Kirki::add_field( 'medstar01', [
     'type'     => 'color',
     'settings' => 'floating_phone_hover_color',
-    'label'    => __( 'Number Color Hover', 'medstar01' ),
+    'label'    => __( 'Button Label Hover Color', 'medstar01' ),
     'section'  => 'section_floating_phone_button',
     'default'  => '#',
     'priority' => 20,
