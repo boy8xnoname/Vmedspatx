@@ -55,7 +55,7 @@
 			<?php } ?>
 			<?php if($contactusStyle == 'contact_us_style_2') { ?>
 				<!-- Style Contact Us Version 2 -->
-				<div class="d-none d-lg-block col col-md-1 col col-lg-3">
+				<div class="d-none d-sm-block d-lg-block col col-md-1 col col-lg-3">
 				</div>
 				<div class="col col-12 col-md-10 col-lg-6 form-contact-us" <?php if(!empty($sectionContactBackground)) { ?> style ="background-image: url(<?php echo $sectionContactBackground;?>)" <?php } ?>>
 					<?php  if(!empty($formContactShortcode)) { ?>
@@ -82,7 +82,7 @@
 						<?php }?>
 					<?php }?>
 				</div>
-				<div class="d-none d-lg-block  col col-md-1 col-lg-3">
+				<div class="d-none d-sm-block d-lg-block col col-md-1 col-lg-3">
 				</div>
 			<?php } ?>
 			<?php if($contactusStyle == 'contact_us_style_3') { ?>
@@ -116,8 +116,8 @@
 		<div class="wp-clearfix" style="height: 30px;"></div>
 
         <div class="row ">
-            <div class="col col-12 col-md-1"></div>
-            <div class="col col-12 col-md-10 col-xl-12 text-center footer-disclaimer-text">
+            <div class="col col-12 col-md-1 col-xl-2"></div>
+            <div class="col col-12 col-md-10 col-xl-8 text-center footer-disclaimer-text">
                  <?php
                     $footerDescription = get_theme_mod('footer_description_text');
                     if(!empty( $footerDescription)) {
@@ -125,7 +125,7 @@
                     }
                 ?>
             </div>
-            <div class="col col-12 col-md-1"></div>
+            <div class="col col-12 col-md-1 col-xl-2"></div>
         </div>
 	
 	</div>

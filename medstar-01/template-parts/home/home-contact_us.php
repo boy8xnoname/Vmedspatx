@@ -48,7 +48,7 @@ $formContactDescription = !empty(get_field('contact_us_form_description')) ? get
                             </div>
                         <?php }?>
                     </div>
-                    <div class="d-none d-lg-block  col col-md-1 col-lg-3">
+                    <div class="d-none d-lg-block col col-md-1 col-lg-3">
                     </div>
                 <?php } ?>
                 <?php if($contactusStyle == 'contact_us_style_2') { ?>
@@ -78,7 +78,7 @@ $formContactDescription = !empty(get_field('contact_us_form_description')) ? get
                             </div>
                         <?php }?>
                     </div>
-                    <div class="d-none d-md-block  col col-md-1 col-lg-2">
+                    <div class="d-none d-md-block col col-md-1 col-lg-2">
                     </div>
                 <?php } ?>
                 <?php if($contactusStyle == 'contact_us_style_3') { ?>
@@ -117,8 +117,8 @@ $formContactDescription = !empty(get_field('contact_us_form_description')) ? get
             <div class="wp-clearfix" style="height: 30px;"></div>
 
             <div class="row ">
-                <div class="col col-12 col-md-1"></div>
-                <div class="col col-12 col-md-10 col-xl-12 text-center footer-disclaimer-text">
+                <div class="col col-12 col-md-1 col-xl-2"></div>
+                <div class="col col-12 col-md-10 col-xl-8 text-center footer-disclaimer-text">
                      <?php
                         $footerDescription = get_theme_mod('footer_description_text');
                         if(!empty( $footerDescription)) {
@@ -126,7 +126,7 @@ $formContactDescription = !empty(get_field('contact_us_form_description')) ? get
                         }
                     ?>
                 </div>
-                <div class="col col-12 col-md-1"></div>
+                <div class="col col-12 col-md-1 col-xl-2"></div>
             </div>
 
         </div>
