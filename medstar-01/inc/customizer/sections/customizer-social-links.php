@@ -41,3 +41,21 @@ Kirki::add_field( 'medstar01', [
 	'default'  => '#',
 	'priority' => 20,
 ] );
+
+Kirki::add_field( 'medstar01', [
+	'type'     => 'link',
+	'settings' => 'linkedin',
+	'label'    => __( 'LinkedIn Link', 'medstar01' ),
+	'section'  => 'section_social_links',
+	'default'  => '#',
+	'priority' => 20,
+] );
+
+Kirki::add_field( 'medstar01', [
+	'type'     => 'link',
+	'settings' => 'yelp',
+	'label'    => __( 'Yelp Link', 'medstar01' ),
+	'section'  => 'section_social_links',
+	'default'  => '#',
+	'priority' => 20,
+] );

@@ -56,7 +56,9 @@ $isHeaderFullyVisible = get_theme_mod('is_header_fully_visible');
 							'facebook',
 							'instagram',
 							'twitter',
-							'youtube'
+							'youtube',
+							'linkedin',
+							'yelp'
 						);
 						foreach ($social_args as $value) {
 							if (!empty(Kirki::get_option($value))) {
