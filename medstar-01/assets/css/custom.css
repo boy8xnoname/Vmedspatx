@@ -219,9 +219,6 @@ body .accordion-button:not(.collapsed)::after {
 /* begin new css */
 
 @media (min-width: 768px) {
-    .contact-us-description {
-        font-size: 60%;
-    }
     .our_services .our-services__item-wrap {
         justify-content: space-between;
         align-items: center;
