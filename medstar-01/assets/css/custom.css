@@ -15,6 +15,12 @@
     line-height: 1.2em;
 }
 
+.service-banner-description p {
+    line-height: 1.3em;
+    margin-top: 16px;
+    font-size: 1.75rem;
+}
+
 .page-template-page-services-thankyou .service-banner-image .service-banner-title {
     margin-bottom: 20px;
     font-size: 50px;
