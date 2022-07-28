@@ -49,7 +49,7 @@ $isHeaderFullyVisible = get_theme_mod('is_header_fully_visible');
 					?>
 					</div><!-- .site-branding -->
 				</div>
-				<div class="site-header__right col col-7 col-sm-6 col-lg-4 col-xl-3">
+				<div class="site-header__right col col-7 col-sm-6 col-lg-4 col-xl-3 px-xs-0">
 					<ul class='social-list navbar-nav menu menu-horizontal text-right'>
 						<?php 
 						$social_args = array(

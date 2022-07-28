@@ -189,6 +189,10 @@ body .accordion-button:not(.collapsed)::after {
         max-height: 583px;
         min-height: 583px;
     }
+    .px-xs-0 {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
 }
 
 @media (min-width: 1200px) {
