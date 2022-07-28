@@ -67,10 +67,10 @@ $mobileServiceBannerImage = !empty( get_field('mobile_service_banner_image', $pa
                 !empty($mobileServiceBannerImage)
             ) {
                 echo '<div class="d-block d-lg-none">';
-                get_template_part('template-parts/services/content-banner-mobile');
+                    get_template_part('template-parts/services/content-banner-mobile');
                 echo '</div>';
                 echo '<div class="d-none d-lg-block">';
-                get_template_part('template-parts/services/content-banner-desktop');
+                    get_template_part('template-parts/services/content-banner-desktop');
                 echo '</div>';
 
             } else {
