@@ -20,7 +20,7 @@ if(!$detect->isTablet() ){
     // Image for mobile banner will here
     $services_banner_image = get_field('mobile_service_banner_image', $id);
 } else {
-    if(empty(get_field('tablet_service_banner_image'))) {
+    if(empty(get_field('tablet_service_banner_image', $id))) {
         $services_banner_image = get_field('mobile_service_banner_image', $id);
     } else {
         $services_banner_image = get_field('tablet_service_banner_image', $id);
