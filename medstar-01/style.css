@@ -13756,6 +13756,7 @@ a.skip-link.screen-reader-text {
   }
   .service-banner-image .service-banner-title {
     font-size: 30px;
+    text-align: center;
   }
   .service-banner-image .service-banner-title p {
     font-size: 30px !important;
