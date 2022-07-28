@@ -1,17 +1,27 @@
-<?php 
-// get service page banner image
-$select_banner_videoimage_banner =  get_field('select_banner_videoimage_banner');
-$service_banner_video_mp4 = get_field('service_banner_video_mp4');
-$service_banner_video_webm =  get_field('service_banner_video_webm');
-$service_banner_video_ogv =  get_field('service_banner_video_ogv');
-$service_banner_video_url = get_field('service_banner_video_url');
-$services_banner_image = get_field('service_banner_image');
+<?php
 
-$service_banner_top_image = get_field('service_banner_top_image');
+global $post;
+$parents = get_post_ancestors( $post->ID );
+if ( ! empty( $parents ) ) {
+    $id = array_pop( $parents );
+} else {
+    $id = $post->ID;
+}
+
+// get service page banner image
+$select_banner_videoimage_banner =  get_field('select_banner_videoimage_banner', $id);
+$service_banner_video_mp4 = get_field('service_banner_video_mp4', $id);
+$service_banner_video_webm =  get_field('service_banner_video_webm', $id);
+$service_banner_video_ogv =  get_field('service_banner_video_ogv', $id);
+$service_banner_video_url = get_field('service_banner_video_url', $id);
+$services_banner_image = get_field('service_banner_image', $id);
+
+$service_banner_top_image = get_field('service_banner_top_image', $id);
 $service_banner_title = strip_tags(get_field('service_banner_title'), '<br><span><img>');
 $service_banner_description = get_field('service_banner_description');
 $service_button_title = strip_tags(get_field('service_button_title'), '<br><span><img>');
 $service_button_link = get_field('service_button_link');
+
 if(!empty($services_banner_image) || !empty($service_banner_video_mp4) || !empty($service_banner_video_url)):
 
 if(($select_banner_videoimage_banner['value'] == 'self_hosted_video') && !empty($service_banner_video_mp4)  ) {

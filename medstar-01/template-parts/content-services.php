@@ -63,9 +63,10 @@ $mobileServiceBannerImage = !empty( get_field('mobile_service_banner_image')) ? 
 					get_template_part('template-parts/services/content-banner-desktop');
 				echo '</div>';
 			
-		} else {
-			get_template_part('template-parts/services/content-banner-desktop'); 
-		} ?> 
+            } else {
+                get_template_part('template-parts/services/content-banner-desktop');
+            }
+    ?>
 
 	<?php } else { ?> 
 		<header class="entry-header header-jarallax" style="background-image: url('<?php echo esc_url($featured_img_url);?>');">
@@ -75,7 +76,6 @@ $mobileServiceBannerImage = !empty( get_field('mobile_service_banner_image')) ? 
 		</header><!-- .entry-header -->
 		
 	<?php } ?>
-
 
     <?php get_template_part( 'template-parts/services/content-treaments_featured' ); ?>
 
