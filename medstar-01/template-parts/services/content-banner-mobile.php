@@ -2,9 +2,9 @@
 $detect = new Mobile_Detect;
 
 global $post;
-$parents = get_post_ancestors( $post->ID );
-if ( ! empty( $parents ) ) {
-    $id = array_pop( $parents );
+
+if ( get_field('parent_service_page', $post->ID ) ) {
+    $id = get_field('parent_service_page', $post->ID );
 } else {
     $id = $post->ID;
 }

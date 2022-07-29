@@ -9,9 +9,8 @@
 
 global $post;
 
-$parents = get_post_ancestors( $post->ID );
-if ( ! empty( $parents ) ) {
-    $parent = array_pop( $parents );
+if ( get_field('parent_service_page', $post->ID ) ) {
+    $parent = get_field('parent_service_page', $post->ID );
 } else {
     $parent = $post->ID;
 }

@@ -3,6 +3,28 @@
     "title": "Services Thank You Content Setup",
     "fields": [
         {
+            "key": "field_62e3e714bd4df",
+            "label": "Select Parent Page(Services)",
+            "name": "parent_service_page",
+            "type": "post_object",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "page"
+            ],
+            "taxonomy": "",
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "id",
+            "ui": 1
+        },
+        {
             "key": "field_624959c2c1e53",
             "label": "Services Banner",
             "name": "",
@@ -278,5 +300,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1658161327
+    "modified": 1659103067
 }
