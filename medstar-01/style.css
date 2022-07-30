@@ -8495,6 +8495,7 @@ body.single .entry-content {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
+  position: relative;
 }
 
 .service-banner-image {
