@@ -308,3 +308,8 @@ body .accordion-button:not(.collapsed)::after {
     height: 100%;
     width: 100%;
 }
+
+/* Footer Disclaimer Bottom Text */
+.footer-disclaimer-text {
+    padding: 0 50px;
+}
