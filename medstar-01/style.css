@@ -8509,6 +8509,7 @@ body.single .entry-content {
 
 .service-banner-image .row {
   width: 100%;
+  margin: 0;
 }
 
 .service-banner-image .services-banner-texts {
@@ -8604,7 +8605,7 @@ body.single .entry-content {
 }
 
 .header-jarallax:before {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.19);
   content: "";
   position: absolute;
   top: 0;
