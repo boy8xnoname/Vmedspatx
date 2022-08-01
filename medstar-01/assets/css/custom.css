@@ -313,3 +313,6 @@ body .accordion-button:not(.collapsed)::after {
 .footer-disclaimer-text {
     padding: 0 50px;
 }
+.footer-disclaimer-text p {
+    font-size: 14px;
+}
