@@ -61,7 +61,7 @@ Kirki::add_field( 'medstar01', array(
 			'default'     => '',
 		),
 		'location_address' => array(
-			'type'        => 'text',
+			'type'        => 'textarea',
 			'label'       => esc_attr__( 'Location Address', 'medstar01' ),
 			'description' => esc_attr__( 'Lorem Ipsum has been the industry', 'medstar01' ),
 			'default'     => '',

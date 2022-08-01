@@ -189,6 +189,10 @@ body .accordion-button:not(.collapsed)::after {
         max-height: 583px;
         min-height: 583px;
     }
+    .px-xs-0 {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -292,4 +296,20 @@ body .accordion-button:not(.collapsed)::after {
         text-align: center;
         border-radius: 50px !important;
     }
+}
+
+/* Black Overlay For Header Banner */
+.service-banner.service-banner_fixed:before {
+    background-color: rgba(0, 0, 0, 0.5);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/* Footer Disclaimer Bottom Text */
+.footer-disclaimer-text {
+    padding: 0 50px;
 }

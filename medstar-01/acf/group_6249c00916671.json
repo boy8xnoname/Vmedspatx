@@ -377,6 +377,45 @@
             "mime_types": ""
         },
         {
+            "key": "field_62e29d00e8e86",
+            "label": "Tablet - Hero Section Background Image",
+            "name": "tablet_service_banner_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_627a8bedd15bf",
+                        "operator": "==",
+                        "value": "image"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_627a8bedd15bf",
+                        "operator": "==",
+                        "value": "image_fixed"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
             "key": "field_627a8c5b38ade",
             "label": "Hero Section - Content",
             "name": "",
@@ -1081,5 +1120,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1658161193
+    "modified": 1659018547
 }
