@@ -88,7 +88,7 @@ if (!wp_is_mobile()) {
 				<?php } ?> 
 				<div class="contact-information-item">
 					<div class="item-box-icon">
-                        <a href="https://maps.google.com/?q=<?php echo $contact_us_location_address;?>">
+                        <a target="_blank" href="https://maps.google.com/?q=<?php echo $contact_us_location_address;?>">
                             <i class="fa fa-map-marker" aria-hidden="true"></i>
                         </a>
                     </div>
