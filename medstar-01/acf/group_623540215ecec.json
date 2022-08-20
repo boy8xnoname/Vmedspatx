@@ -477,8 +477,8 @@
         },
         {
             "key": "field_6301194d7b315",
-            "label": "Explore our Treatments Background Image Tablet Mobile",
-            "name": "explore_our_treatments_background_image_tablet_mobile",
+            "label": "Explore our Treatments Background Image Mobile",
+            "name": "explore_our_treatments_background_image_mobile",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -1648,5 +1648,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1661016413
+    "modified": 1661016757
 }
