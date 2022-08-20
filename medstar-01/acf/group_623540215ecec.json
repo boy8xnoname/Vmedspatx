@@ -441,7 +441,55 @@
                 "id": ""
             },
             "return_format": "array",
-            "preview_size": "medium",
+            "preview_size": "full",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_6301189e7b314",
+            "label": "Explore our Treatments Background Image Tablet",
+            "name": "explore_our_treatments_background_image_tablet",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "full",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_6301194d7b315",
+            "label": "Explore our Treatments Background Image Tablet Mobile",
+            "name": "explore_our_treatments_background_image_tablet_mobile",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "full",
             "library": "all",
             "min_width": "",
             "min_height": "",
@@ -1600,5 +1648,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1660070183
+    "modified": 1661016413
 }
