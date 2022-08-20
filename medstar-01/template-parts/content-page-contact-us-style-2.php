@@ -40,6 +40,7 @@ if (!wp_is_mobile()) {
 		$contact_us_phone_number = get_field('contact_us_phone_number');
 		$contact_us_fax_number = get_field('contact_us_fax_number');
 		$contact_us_location_address = get_field('contact_us_location_address');
+    	$contact_us_location_link = get_field('contact_us_location_link');
 		$contact_us_email_address = get_field('contact_us_email_address');
 		if(!empty($contact_us_phone_number) || !empty($contact_us_fax_number) || !empty($contact_us_location_address) || !empty($contact_us_email_address)) {
 	?>
@@ -88,7 +89,7 @@ if (!wp_is_mobile()) {
 				<?php } ?> 
 				<div class="contact-information-item">
 					<div class="item-box-icon">
-                        <a target="_blank" href="https://maps.google.com/?q=<?php echo $contact_us_location_address;?>">
+                        <a target="_blank" href="<?php echo $contact_us_location_link; ?>">
                             <i class="fa fa-map-marker" aria-hidden="true"></i>
                         </a>
                     </div>
