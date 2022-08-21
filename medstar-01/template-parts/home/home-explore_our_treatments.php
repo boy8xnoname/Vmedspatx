@@ -2,9 +2,9 @@
 	if(wp_is_mobile()){
 		$detect = new Mobile_Detect;
         if(!$detect->isTablet() ){
-            $explore_our_treatments_img_url = get_field('explore_our_treatments_background_image_mobile');
+            $explore_our_treatments_img_url = get_field('explore_our_treatments_background_image_mobile') ? get_field('explore_our_treatments_background_image_mobile') : get_field('explore_our_treatments_background_image');
 		} else {
-            $explore_our_treatments_img_url = get_field('explore_our_treatments_background_image_tablet');
+            $explore_our_treatments_img_url = get_field('explore_our_treatments_background_image_tablet') ? get_field('explore_our_treatments_background_image_tablet') : get_field('explore_our_treatments_background_image');
 		}
 	} else {
         $explore_our_treatments_img_url = get_field('explore_our_treatments_background_image');
