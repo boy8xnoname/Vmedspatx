@@ -1,5 +1,7 @@
 .gform_required_legend {display: none;}
-
+.home-ty-banner-texts.services-banner-texts {
+    align-items: center !important;
+}
 @media (min-width: 1200px) {
     .contact_us.service-contact-sidebar .contact-form-title {
         font-size: 54px;
