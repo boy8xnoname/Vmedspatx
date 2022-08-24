@@ -1,6 +1,14 @@
 .gform_required_legend {display: none;}
 .home-ty-banner-texts.services-banner-texts {
     align-items: center !important;
+    text-align: center !important;
+    justify-content: center !important;
+}
+.page-template-page-home-thankyou .service-banner-image.container {
+    display: flex;
+}
+.home-ty-banner-texts.services-banner-texts .service-banner-description {
+    text-align: center !important;
 }
 @media (min-width: 1200px) {
     .contact_us.service-contact-sidebar .contact-form-title {
