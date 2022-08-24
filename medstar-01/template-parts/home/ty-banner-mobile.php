@@ -52,8 +52,7 @@ if(($select_banner_videoimage_banner['value'] == 'self_hosted_video') && !empty(
 ?>
     <div class="service-banner-image container">
         <div class="row">
-            <div class="col col-12 col-md-4"></div>
-            <div class="services-banner-texts col col-12 col-md-8 d-flex flex-column justify-content-md-end align-items-md-end">
+            <div class="home-ty-banner-texts services-banner-texts col col-12 col-md-12 d-flex flex-column justify-content-md-end align-items-md-end">
                 <?php if (!empty($service_banner_top_image)) {
                     echo '<div class="services-banner-top-logo">';
                     echo '<img src="'.$service_banner_top_image['url'].'" alt="'.$service_banner_title.'"/>';
