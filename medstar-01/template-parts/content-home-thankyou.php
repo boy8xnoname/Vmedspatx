@@ -9,11 +9,7 @@
 
 global $post;
 
-if ( get_field('home_page_parent', $post->ID ) ) {
-    $parent = get_field('home_page_parent', $post->ID );
-} else {
-    $parent = $post->ID;
-}
+$parent = $post->ID;
 
 $featured_img_url = '';
 $detect = new Mobile_Detect;

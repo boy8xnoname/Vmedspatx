@@ -28,8 +28,6 @@ $service_banner_description = get_field('service_banner_description');
 $service_button_title = strip_tags(get_field('service_button_title'), '<br><span><img>');
 $service_button_link = get_field('service_button_link');
 
-var_dump($services_banner_image);
-
 if(!empty($services_banner_image) || !empty($service_banner_video_mp4) || !empty($service_banner_video_url)):
 
 if(($select_banner_videoimage_banner['value'] == 'self_hosted_video') && !empty($service_banner_video_mp4)  ) {

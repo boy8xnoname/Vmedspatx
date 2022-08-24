@@ -49,6 +49,54 @@
             "mime_types": ""
         },
         {
+            "key": "field_63066188d9b11",
+            "label": "Mobile Service Banner Image",
+            "name": "mobile_service_banner_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_63066193d9b12",
+            "label": "Tablet Service Banner Image",
+            "name": "tablet_service_banner_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
             "key": "field_63065c029c87d",
             "label": "Service Banner Title",
             "name": "service_banner_title",
@@ -185,5 +233,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1661361322
+    "modified": 1661362591
 }
