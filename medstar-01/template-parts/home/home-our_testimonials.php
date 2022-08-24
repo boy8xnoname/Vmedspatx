@@ -1,7 +1,14 @@
-<?php 
-$testimonialStyle = get_field('testimonials_style');
-$testimonialImageBackground = get_field('testimonal_background_image');
-if( have_rows('testimonials_content') ): 
+<?php
+global $post;
+if ( get_field('home_page_parent', $post->ID ) ) {
+    $parent = get_field('home_page_parent', $post->ID );
+} else {
+    $parent = $post->ID;
+}
+
+$testimonialStyle = get_field('testimonials_style', $parent);
+$testimonialImageBackground = get_field('testimonal_background_image', $parent);
+if( have_rows('testimonials_content', $parent) ): 
     $sectionStyle = '';
     if($testimonialStyle == 'testimonials_style_2' && !empty($testimonialImageBackground)) {
         $sectionStyle = 'style="background-image: url(' . $testimonialImageBackground['url'] . ')"';
@@ -11,7 +18,7 @@ if( have_rows('testimonials_content') ):
     <div class="container">
         <h2 class="section-title text-center"><?php echo esc_attr('Testimonials');?></h2>
         <div class="row  testimonials-reveal slideInRight  delay-2s" >
-            <?php while( have_rows('testimonials_content') ): the_row(); ?>
+            <?php while( have_rows('testimonials_content', $parent) ): the_row(); ?>
                 <div class="testimonials-item col col-12 col-lg-3"  data-aos="fade-up" data-aos-delay="200">
                     <blockquote class="block-blockquote">
                         <?php if($testimonialStyle == 'testimonials_style_2') {?> 

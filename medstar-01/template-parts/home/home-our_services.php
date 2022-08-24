@@ -1,11 +1,17 @@
 <section class="home-section our_services">
 		<div class="container">
-		<?php 
-		$service_icon_before_title = get_field('service_icon_before_title');
-		if( have_rows('setup_our_services_item') ):
+		<?php
+		global $post;
+		if ( get_field('home_page_parent', $post->ID ) ) {
+		    $parent = get_field('home_page_parent', $post->ID );
+		} else {
+		    $parent = $post->ID;
+		}
+		$service_icon_before_title = get_field('service_icon_before_title', $parent);
+		if( have_rows('setup_our_services_item', $parent) ):
 			$ourServicesCount = 0;
 			echo '<div class="our_services__list">';
-			while( have_rows('setup_our_services_item') ) : the_row();
+			while( have_rows('setup_our_services_item', $parent) ) : the_row();
 				$ourServicesCount++;
 				echo '<div class="our-services__item item-'.$ourServicesCount.'">';
 				// Get parent value.
@@ -27,9 +33,7 @@
 										<?php if(!empty($service_icon_before_title)) { ?>
 											<img src="<?php echo $service_icon_before_title['url'];?>" alt="<?php echo $services_item_heading;?>">
 										<?php } else { ?>
-<!--											<img src="--><?php //echo get_template_directory_uri() . '/assets/images/medstar01-icon.png';?><!--" alt="--><?php //echo $services_item_heading;?><!--">-->
 										<?php } ?>
-
 									</span>
 									<h2 class="item-heading">
 										<?php echo $services_item_heading;?>

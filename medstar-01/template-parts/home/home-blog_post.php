@@ -1,6 +1,12 @@
 <?php
-	$blogSectionTitle = strip_tags(get_field('blog_post_section_title'), '<br><span><img>');
-	$blogPostItems = get_field('select_blog_posts');
+    global $post;
+    if ( get_field('home_page_parent', $post->ID ) ) {
+        $parent = get_field('home_page_parent', $post->ID );
+    } else {
+        $parent = $post->ID;
+    }
+	$blogSectionTitle = strip_tags(get_field('blog_post_section_title', $parent), '<br><span><img>');
+	$blogPostItems = get_field('select_blog_posts', $parent);
 	if( $blogPostItems ): 
 ?>
 	<section class="home-section blog_post">

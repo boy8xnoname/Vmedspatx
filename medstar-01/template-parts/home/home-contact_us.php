@@ -1,21 +1,27 @@
 <?php
-$contactusStyle = get_field('contact_us_style');
-$contactImageBackground = get_field('contact_section_image_background');
-$contactImageContent = get_field('contact_section_image');
+    global $post;
+    if ( get_field('home_page_parent', $post->ID ) ) {
+        $parent = get_field('home_page_parent', $post->ID );
+    } else {
+        $parent = $post->ID;
+    }
+    $contactusStyle = get_field('contact_us_style', $parent);
+    $contactImageBackground = get_field('contact_section_image_background', $parent);
+    $contactImageContent = get_field('contact_section_image', $parent);
 
-if(!empty($contactImageBackground)) {
-    $sectionContactBackground = $contactImageBackground['url'];
-}
+    if(!empty($contactImageBackground)) {
+        $sectionContactBackground = $contactImageBackground['url'];
+    }
 
-if(!empty($contactImageContent)) {
-    $contactImageContent = $contactImageContent['url'];
-}
+    if(!empty($contactImageContent)) {
+        $contactImageContent = $contactImageContent['url'];
+    }
 
-$sectionContactTitle = !empty(get_field('contact_us_title')) ? strip_tags(get_field('contact_us_title'), '<br><span><img>') : '';
-$sectionContactSubTitle = !empty(get_field('contact_us_sub_title')) ? strip_tags(get_field('contact_us_sub_title'), '<br><span><img>') : '';
-$formContactTitle = !empty(get_field('contact_us_before_form_title')) ? strip_tags(get_field('contact_us_before_form_title'), '<br><span><img>') : '';
-$formContactShortcode = !empty(get_field('contact_form_short_code')) ? get_field('contact_form_short_code') : '';
-$formContactDescription = !empty(get_field('contact_us_form_description')) ? get_field('contact_us_form_description') : 'By submitting this form you agree to be contacted via phone/text/email.*';
+    $sectionContactTitle = !empty(get_field('contact_us_title', $parent)) ? strip_tags(get_field('contact_us_title', $parent), '<br><span><img>') : '';
+    $sectionContactSubTitle = !empty(get_field('contact_us_sub_title', $parent)) ? strip_tags(get_field('contact_us_sub_title', $parent), '<br><span><img>') : '';
+    $formContactTitle = !empty(get_field('contact_us_before_form_title', $parent)) ? strip_tags(get_field('contact_us_before_form_title', $parent), '<br><span><img>') : '';
+    $formContactShortcode = !empty(get_field('contact_form_short_code', $parent)) ? get_field('contact_form_short_code', $parent) : '';
+    $formContactDescription = !empty(get_field('contact_us_form_description', $parent)) ? get_field('contact_us_form_description', $parent) : 'By submitting this form you agree to be contacted via phone/text/email.*';
 ?>
 <?php if(!empty($formContactShortcode)) : ?>
     <section id="section-contact_us" class="home-section contact_us <?php echo $contactusStyle;?>" <?php if($contactusStyle == 'contact_us_style_1') { ?> style ="background-image: url(<?php echo $sectionContactBackground;?>)" <?php } ?>>

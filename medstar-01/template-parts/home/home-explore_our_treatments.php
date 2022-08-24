@@ -1,17 +1,23 @@
 <?php
+    global $post;
+    if ( get_field('home_page_parent', $post->ID ) ) {
+        $parent = get_field('home_page_parent', $post->ID );
+    } else {
+        $parent = $post->ID;
+    }
 	if(wp_is_mobile()){
 		$detect = new Mobile_Detect;
         if(!$detect->isTablet() ){
-            $explore_our_treatments_img_url = get_field('explore_our_treatments_background_image_mobile') ? get_field('explore_our_treatments_background_image_mobile') : get_field('explore_our_treatments_background_image');
+            $explore_our_treatments_img_url = get_field('explore_our_treatments_background_image_mobile', $parent) ? get_field('explore_our_treatments_background_image_mobile', $parent) : get_field('explore_our_treatments_background_image', $parent);
 		} else {
-            $explore_our_treatments_img_url = get_field('explore_our_treatments_background_image_tablet') ? get_field('explore_our_treatments_background_image_tablet') : get_field('explore_our_treatments_background_image');
+            $explore_our_treatments_img_url = get_field('explore_our_treatments_background_image_tablet', $parent) ? get_field('explore_our_treatments_background_image_tablet', $parent) : get_field('explore_our_treatments_background_image', $parent);
 		}
 	} else {
-        $explore_our_treatments_img_url = get_field('explore_our_treatments_background_image');
+        $explore_our_treatments_img_url = get_field('explore_our_treatments_background_image', $parent);
     }
-    $explore_our_treatments_heading  =  strip_tags(get_field('explore_our_treatments_heading'));
-    $explore_our_treatments_descriptions  =  get_field('explore_our_treatments_descriptions');
-    $explore_our_treatments_button_link  =  get_field('explore_our_treatments_button_link');
+    $explore_our_treatments_heading  =  strip_tags(get_field('explore_our_treatments_heading', $parent));
+    $explore_our_treatments_descriptions  =  get_field('explore_our_treatments_descriptions', $parent);
+    $explore_our_treatments_button_link  =  get_field('explore_our_treatments_button_link', $parent);
 
     if(!empty($explore_our_treatments_heading) || !empty($explore_our_treatments_descriptions)) :
 ?>

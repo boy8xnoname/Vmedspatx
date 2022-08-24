@@ -1,8 +1,13 @@
-
 <?php
-    $our_location_title = strip_tags(get_field('our_location_title'), '<br><span><img>');
-    $our_locations_list = get_field('our_locations_list');
-    $our_location_map = have_rows('our_location_map');
+	global $post;
+	if ( get_field('home_page_parent', $post->ID ) ) {
+	    $parent = get_field('home_page_parent', $post->ID );
+	} else {
+	    $parent = $post->ID;
+	}
+    $our_location_title = strip_tags(get_field('our_location_title', $parent), '<br><span><img>');
+    $our_locations_list = get_field('our_locations_list', $parent);
+    $our_location_map = have_rows('our_location_map', $parent);
     if(!empty($our_locations_list) || !empty($our_location_map)):
 ?>
 
@@ -54,7 +59,7 @@
 			 <?php
 				if( $our_location_map ) {
 					echo '<div class="map-pins">';
-					while( have_rows('our_location_map') ): the_row(); 
+					while( have_rows('our_location_map', $parent) ): the_row(); 
 					$our_location_map_image =  get_sub_field('our_location_map_image');
 					$our_location_map_pins =  get_sub_field('our_location_map_pins');
                     if ($our_location_map_image) {

@@ -1,8 +1,14 @@
 <?php
-    $add_instagram_feed_title = strip_tags(get_field('add_instagram_feed_title'), '<br><span><img>');
-    $instagram_feed_url = get_field('instagram_feed_url');
-    $instagram_account_name = get_field('instagram_account_name');
-    $instagram_feed_shortcode = get_field('instagram_feed_shortcode');
+    global $post;
+    if ( get_field('home_page_parent', $post->ID ) ) {
+        $parent = get_field('home_page_parent', $post->ID );
+    } else {
+        $parent = $post->ID;
+    }
+    $add_instagram_feed_title = strip_tags(get_field('add_instagram_feed_title', $parent), '<br><span><img>');
+    $instagram_feed_url = get_field('instagram_feed_url', $parent);
+    $instagram_account_name = get_field('instagram_account_name', $parent);
+    $instagram_feed_shortcode = get_field('instagram_feed_shortcode', $parent);
     if (!empty($instagram_feed_url)) {
         $instagram_feed_url_start = '<a href="' . $instagram_feed_url . '" target="_blank">';
         $instagram_feed_url_end   = '</a>';

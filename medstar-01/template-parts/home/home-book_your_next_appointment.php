@@ -1,17 +1,25 @@
 <?php
-if (!wp_is_mobile()) {
-    $book_appointment_image = !empty(get_field('book_appointment_image')) ?  get_field('book_appointment_image') : '';
-} else {
-    if(!empty(get_field('book_appointment_image_mobile'))) {
-        $book_appointment_image = get_field('book_appointment_image_mobile');
+    global $post;
+    if ( get_field('home_page_parent', $post->ID ) ) {
+        $parent = get_field('home_page_parent', $post->ID );
     } else {
-        $book_appointment_image = get_field('book_appointment_image');
+        $parent = $post->ID;
     }
-}
-    $book_your_next_appointment_title = strip_tags(get_field('book_your_next_appointment_title'), '<br><span><img>');
-    $book_your_next_appointment_description = get_field('book_your_next_appointment_description');
-    $book_appointment_button_title = !empty(get_field('book_appointment_button_title')) ? strip_tags(get_field('book_appointment_button_title'), '<br><span><img>') : 'CONTACT US';
-    $book_appointment_button_link = !empty(get_field('book_appointment_button_link') ) ? get_field('book_appointment_button_link') : '';
+
+    if (!wp_is_mobile()) {
+        $book_appointment_image = !empty(get_field('book_appointment_image', $parent)) ?  get_field('book_appointment_image', $parent) : '';
+    } else {
+        if(!empty(get_field('book_appointment_image_mobile', $parent))) {
+            $book_appointment_image = get_field('book_appointment_image_mobile', $parent);
+        } else {
+            $book_appointment_image = get_field('book_appointment_image', $parent);
+        }
+    }
+    $book_your_next_appointment_title = strip_tags(get_field('book_your_next_appointment_title', $parent), '<br><span><img>');
+    $book_your_next_appointment_description = get_field('book_your_next_appointment_description', $parent);
+    $book_appointment_button_title = !empty(get_field('book_appointment_button_title', $parent)) ? strip_tags(get_field('book_appointment_button_title', $parent), '<br><span><img>') : 'CONTACT US';
+    $book_appointment_button_link = !empty(get_field('book_appointment_button_link', $parent) ) ? get_field('book_appointment_button_link', $parent) : '';
+
     if(!empty($book_your_next_appointment_title) || !empty($book_appointment_button_link)):
 ?>
 <section class="home-section book_your_next_appointment">
