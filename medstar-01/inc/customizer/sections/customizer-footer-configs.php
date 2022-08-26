@@ -69,7 +69,7 @@ Kirki::add_field( 'medstar01', array(
 		'location_google_map_url' => array(
 			'type'        => 'text',
 			'label'       => esc_attr__( 'Location Address URL', 'medstar01' ),
-			'description' => esc_attr__( 'Link should be include https://', 'medstar01' ),
+			'description' => esc_attr__( 'Link should include https://', 'medstar01' ),
 			'default'     => '',
 		),
 	
