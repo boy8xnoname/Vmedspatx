@@ -52,7 +52,7 @@
                             </li>
                             <li>
                                 <?php if(!empty($location_google_map_url)) {?> 
-                                    <a target="_blank"> href="<?php echo esc_attr($location_google_map_url);?>">
+                                    <a target="_blank" href="<?php echo esc_attr($location_google_map_url);?>">
                                 <?php } ?>
                                     <?php echo nl2br($location_address);?>
                                 <?php if(!empty($location_google_map_url)) {?> 
