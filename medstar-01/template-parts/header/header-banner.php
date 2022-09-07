@@ -53,7 +53,7 @@ if(have_rows('setup_banner_items')):
                             <div class="card-action">
                             <?php  if (!empty($banner_link)) {
                                 echo $banner_link_start;
-                                echo esc_attr('READ MORE','medstar01');
+                                echo apply_filters('medstar_read_more_text', esc_attr('Read more'));
                                 echo $banner_link_end;
                             }?> 
                             </div>
@@ -71,7 +71,7 @@ if(have_rows('setup_banner_items')):
                             <div class="card-action">
                             <?php  if (!empty($banner_link)) {
                                 echo $banner_link_start;
-                                echo esc_attr('READ MORE','medstar01');
+                                echo apply_filters('medstar_read_more_text', esc_attr('Read more'));
                                 echo $banner_link_end;
                             }?> 
                             </div>
