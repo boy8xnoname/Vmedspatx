@@ -31,7 +31,7 @@
 								</div>
 								<div class="item-action">
 									<a class="btn btn-blog-read-more" href="<?php the_permalink(); ?>">
-										<?php echo apply_filters('medstar_read_more_text', esc_attr('Read more')); ?>
+										<?php echo esc_attr('Read more'); ?>
 									</a>
 								</div>					
 							</div>
