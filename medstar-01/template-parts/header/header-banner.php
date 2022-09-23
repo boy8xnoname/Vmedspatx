@@ -71,7 +71,7 @@ if(have_rows('setup_banner_items')):
                             <div class="card-action">
                             <?php  if (!empty($banner_link)) {
                                 echo $banner_link_start;
-                                echo apply_filters('medstar_read_more_text', esc_attr('READ MORE'));
+                                echo apply_filters('medstar_home_read_more_text', esc_attr('BOOK NOW'));
                                 echo $banner_link_end;
                             }?> 
                             </div>
