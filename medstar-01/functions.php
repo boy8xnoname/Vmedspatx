@@ -272,7 +272,8 @@ function medstar01_scripts() {
         .home-banner .card-content .card-action a,
         .gform_wrapper .gform_footer input[type='submit'],
         .site-footer .first-col-widget::before,
-        .site-footer .third-col-widget::before {
+        .site-footer .third-col-widget::before,
+         .service-banner-image .banner-button a {
             background-color: $customColor !important;
         }";
 		
@@ -286,7 +287,8 @@ function medstar01_scripts() {
 		.about-us-content.about-us-leadership .leadership-item,
 		.about-us-content.about-us-leadership .container,
 		section.our_location .location-list .location-item,
-		.page-contact-wrap .contact-information-item .item-box-icon {
+		.page-contact-wrap .contact-information-item .item-box-icon,
+		 .service-banner-image .banner-button a {
 			border-color: $customColor !important;
 		}";
 
@@ -337,7 +339,8 @@ function medstar01_scripts() {
             .gform_wrapper .gform_footer input.gform_button, 
             .home-banner .card-content .card-action a,
             .gform_wrapper .gform_footer input[type='submit'],
-             button a {
+             button a,
+              .service-banner-image .banner-button a {
                 color: $button_text_color !important;
             }";
         }
