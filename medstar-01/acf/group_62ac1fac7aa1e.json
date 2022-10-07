@@ -215,15 +215,7 @@
             "type": "image",
             "instructions": "",
             "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_62ac2028aee02",
-                        "operator": "==",
-                        "value": "contact_us_style_3"
-                    }
-                ]
-            ],
+            "conditional_logic": 0,
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -391,5 +383,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1665120701
+    "modified": 1665120836
 }
