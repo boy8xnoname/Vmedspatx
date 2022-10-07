@@ -169,52 +169,6 @@
             "type": "image",
             "instructions": "",
             "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_62ac2028aee02",
-                        "operator": "==",
-                        "value": "contact_us_style_1"
-                    }
-                ],
-                [
-                    {
-                        "field": "field_62ac2028aee02",
-                        "operator": "==",
-                        "value": "contact_us_style_2"
-                    }
-                ],
-                [
-                    {
-                        "field": "field_62ac2028aee02",
-                        "operator": "==",
-                        "value": "contact_us_style_3"
-                    }
-                ]
-            ],
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array",
-            "preview_size": "medium",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": ""
-        },
-        {
-            "key": "field_62ac1fac7d2b1",
-            "label": "Contact Section Image",
-            "name": "contact_section_image",
-            "type": "image",
-            "instructions": "",
-            "required": 0,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
@@ -383,5 +337,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1665120836
+    "modified": 1665121321
 }
