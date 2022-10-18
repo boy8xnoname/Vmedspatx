@@ -225,7 +225,7 @@
                 "id": ""
             },
             "collapsed": "",
-            "min": 1,
+            "min": 0,
             "max": 0,
             "layout": "table",
             "button_label": "Add new Treaments Featured Item",
@@ -1648,5 +1648,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1661016757
+    "modified": 1666076270
 }
