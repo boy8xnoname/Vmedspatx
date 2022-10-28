@@ -321,6 +321,18 @@ body .accordion-button:not(.collapsed)::after {
     width: 100%;
 }
 
+/* ADA */
+.site-info .row {
+    position: relative;
+}
+
+div#acwp-toolbar-btn-wrap {
+    border: none;
+    top: 0;
+    position: absolute;
+    left: 0;
+}
+
 /* Footer Disclaimer Bottom Text */
 .footer-disclaimer-text {
     padding: 0 50px;
