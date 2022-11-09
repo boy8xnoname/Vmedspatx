@@ -10,7 +10,7 @@
 	}
 
 	if(!empty($contactImageContent)) {	
-		$contactImageContent = $contactImageContent['url'];
+		$contactImageContent = isset($contactImageContent['url']) ? $contactImageContent['url'] : '';
 	}
 
     $sectionContactTitle = !empty(get_field('contact_us_title')) ? strip_tags(get_field('contact_us_title'), '<br><span><img>') : '';

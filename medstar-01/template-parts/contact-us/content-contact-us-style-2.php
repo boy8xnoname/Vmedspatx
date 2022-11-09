@@ -8,9 +8,6 @@
 		$sectionContactBackground = '';
 	}
 
-	if(!empty($contactImageContent)) {	
-		$contactImageContent = $contactImageContent['url'];
-	}
 	$sectionContactTitle = !empty(get_field('contact_us_title')) ? strip_tags(get_field('contact_us_title'), '<br><span><img>') : '';
     $sectionContactSubTitle = !empty(get_field('contact_us_sub_title')) ? strip_tags(get_field('contact_us_sub_title'), '<br><span><img>') : '';
 	$formContactTitle = !empty(get_field('contact_us_before_form_title')) ? get_field('contact_us_before_form_title') : '';

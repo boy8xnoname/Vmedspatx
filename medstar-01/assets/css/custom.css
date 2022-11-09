@@ -321,11 +321,16 @@ body .accordion-button:not(.collapsed)::after {
     width: 100%;
 }
 
-div#acwp-toolbar-btn-wrap {
+/* ADA */
+.site-info .row {
     position: relative;
+}
+
+div#acwp-toolbar-btn-wrap {
     border: none;
-    top: 0 !important;
-    left: 0 !important;
+    top: 0;
+    position: absolute;
+    left: 0;
 }
 
 /* Footer Disclaimer Bottom Text */

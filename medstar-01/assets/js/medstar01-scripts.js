@@ -6,7 +6,11 @@ var medstar01 = {};
         medstar01.medstar01HeaderScript()
         medstar01.contentScripts()
         medstar01.addAnimationToPageLoad()
-        medstar01.contactUsGoogleMap()
+        medstar01.contactUsGoogleMap();
+        /* ADA */
+        setTimeout(function () {
+            $('#acwp-toolbar-btn-wrap').insertBefore($('.footer-copyright'));
+        }, 500);
     }
 
     medstar01.medstar01DetectOsDevice = function() {
