@@ -328,9 +328,9 @@ body .accordion-button:not(.collapsed)::after {
 
 div#acwp-toolbar-btn-wrap {
     border: none;
-    top: 0;
+    top: 0 !important;
     position: absolute;
-    left: 0;
+    left: 0 !important;
 }
 
 /* Footer Disclaimer Bottom Text */
