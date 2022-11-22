@@ -1,10 +1,19 @@
-<?php if( have_rows('treaments_featured_in_items') ): ?>
+<?php
+	global $post;
+
+	if ( get_field('parent_service_page', $post->ID ) ) {
+		$parent = get_field('parent_service_page', $post->ID );
+	} else {
+		$parent = $post->ID;
+	}
+	if( have_rows('treaments_featured_in_items', $parent) ):
+?>
 <section class="home-section treaments_featured">
 	<div class="container">
 	<?php
         echo '<h3 class="section-title text-center">'.esc_attr('TREATMENTS FEATURED IN').'</h3>';
         echo '<div class="treaments_featured_slider swiper-container"><div class="swiper-wrapper">';
-        while( have_rows('treaments_featured_in_items') ) : the_row();
+        while( have_rows('treaments_featured_in_items', $parent) ) : the_row();
 
             // Get parent value.
             $treaments_featured_item_image = get_sub_field('treaments_featured_logo');
