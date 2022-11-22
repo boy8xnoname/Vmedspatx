@@ -10,7 +10,7 @@
 ?>
 <section class="faq-section">
     <div class="container">
-        <h2 class="faq-title text-center h1"><?php echo strip_tags(get_field('faq_heading')); ?></h2>
+        <h2 class="faq-title text-center h1"><?php echo strip_tags(get_field('faq_heading', $parent)); ?></h2>
         <div class="accordion" id="faq_items">
             <?php 
                 while ( have_rows('faq_items', $parent) ) : the_row();

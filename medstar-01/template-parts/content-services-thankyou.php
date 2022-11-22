@@ -93,4 +93,6 @@ $mobileServiceBannerImage = !empty( get_field('mobile_service_banner_image', $pa
 		</div>
 	</div><!-- .entry-content -->
 
+	<?php get_template_part( 'template-parts/services/content-faq' ); ?>
+
 </article><!-- #post-<?php the_ID(); ?> -->
