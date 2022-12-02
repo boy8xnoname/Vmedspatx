@@ -333,6 +333,12 @@ div#acwp-toolbar-btn-wrap {
     left: 0 !important;
 }
 
+@media (max-width: 600px){
+    section#section-contact_us .contact_form {
+        margin-bottom: 25px;
+    }
+}
+
 /* Footer Disclaimer Bottom Text */
 .footer-disclaimer-text {
     padding: 0 50px;
