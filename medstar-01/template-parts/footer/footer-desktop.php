@@ -30,17 +30,14 @@
                                 <?php } ?>
                             </li>
                         </ul>
-                        
                     </div>
-                
                 <?php
                 endforeach;
                 echo '</div>';
             } else { ?>
                 <h3><?php echo esc_attr('Please access to "Customize > medstar01 Theme Options >medstar01 Footer Setting" for setup content');?></h3>
             <?php } ?>
-       
-        </div>
+        </div><!-- ENd / first-col-widget -->
         <!-- Footer logo and partner logo content in footer -->
         <div class="widgets second-col-widget col col-sm-4 col-md-4 col-xl-2 text-center">
             <?php
@@ -86,7 +83,7 @@
                     endforeach;
                 } ?>
             </div>
-        </div>
+        </div><!-- End / second-col-widget -->
         <div class="widgets third-col-widget col col-sm-4 col-md-4 col-xl-5">
             <div class="row">
                 <div class="col col-sm-12 col-lg-12 col-xl-12 text-end">
@@ -98,6 +95,6 @@
                     ?>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
+        </div><!-- End / third-col-widget -->
+    </div><!-- End / Row -->
+</div><!-- End / Footer Desktop -->
