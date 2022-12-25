@@ -18,6 +18,45 @@ $isHeaderFullyVisible = get_theme_mod('is_header_fully_visible');
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<!-- Start / Tracking Code Should Go Here -->
+	<?php
+		global $post;
+
+		if ( get_field('parent_service_page', $post->ID ) ) {
+			$parent = get_field('parent_service_page', $post->ID );
+		} else {
+			$parent = $post->ID;
+		}
+
+		$faqs = get_field('faq_items', $parent);
+
+		if( $faqs ) :
+			$rowCount = count( $faqs );
+		else:
+			$rowCount = 0;
+		endif;
+		$i = 1;
+
+		if( have_rows('faq_items', $parent) ):
+	?>
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "FAQPage",
+				"mainEntity": [
+					<?php while ( have_rows('faq_items', $parent) ) : the_row(); ?>
+					{
+						"@type": "Question",
+						"name": "<?php the_sub_field('title'); ?>",
+						"acceptedAnswer": {
+							"@type": "Answer",
+							"text": "<?php echo strip_tags(get_sub_field('content')); ?>"
+						}
+					}<?php echo ($i < $rowCount) ? ',' : ''; ?>
+					<?php $i++; endwhile; ?>
+				]
+			}
+		</script>
+	<?php endif; ?>
 	<!-- End / Tracking Code Should Go Here -->
 	<?php wp_head(); ?>
 </head>
