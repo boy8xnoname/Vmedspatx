@@ -32,8 +32,8 @@
                 "id": ""
             },
             "choices": {
-                "style1": "Banner Style 1",
-                "style2": "Banner Style 2",
+                "style1": "Slider Style 1 - Use this style to make all the content align center",
+                "style2": "Slider Style 2 - Use this style to make all the content align right",
                 "style3": "Single Background image - Non parallax effect",
                 "style4": "Single Background image - Parallax effect"
             },
@@ -1803,5 +1803,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1673509909
+    "modified": 1673512286
 }
