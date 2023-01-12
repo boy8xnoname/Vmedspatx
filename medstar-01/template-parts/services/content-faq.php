@@ -6,6 +6,7 @@
 	} else {
 		$parent = $post->ID;
 	}
+    $open_items = get_field('faq_open', $post->ID);
 	if( have_rows('faq_items', $parent) ):
 ?>
 <section class="faq-section">
@@ -22,7 +23,7 @@
                         <?php the_sub_field('title'); ?>
                     </button>
                 </h2>
-                <div id="<?php echo $id; ?>" class="accordion-collapse collapse" aria-labelledby="heading_<?php echo $id; ?>" data-bs-parent="#faq_items">
+                <div id="<?php echo $id; ?>" class="accordion-collapse collapse <?php echo $open_items ? 'show' : ''; ?>" aria-labelledby="heading_<?php echo $id; ?>" data-bs-parent="#faq_items">
                     <div class="accordion-body">
                         <?php the_sub_field('content'); ?>
                     </div>

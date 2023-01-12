@@ -868,6 +868,25 @@
             "maxlength": ""
         },
         {
+            "key": "field_63bfe71098c83",
+            "label": "FAQ Open",
+            "name": "faq_open",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
             "key": "field_62cef9d2b5cdf",
             "label": "FAQ Items",
             "name": "faq_items",
@@ -1120,5 +1139,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1659018547
+    "modified": 1673520936
 }
