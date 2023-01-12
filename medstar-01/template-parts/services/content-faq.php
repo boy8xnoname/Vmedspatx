@@ -19,7 +19,7 @@
             ?>
             <div class="accordion-item">
                 <h2 class="accordion-header" id="heading_<?php echo $id; ?>">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#<?php echo $id; ?>" aria-expanded="true" aria-controls="collapseOne">
+                    <button class="accordion-button <?php echo $open_items ? '' : 'collapsed'; ?>" type="button" data-bs-toggle="collapse" data-bs-target="#<?php echo $id; ?>" aria-expanded="true" aria-controls="collapseOne">
                         <?php the_sub_field('title'); ?>
                     </button>
                 </h2>
