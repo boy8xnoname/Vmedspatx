@@ -12,7 +12,7 @@
 <section class="faq-section">
     <div class="container">
         <h2 class="faq-title text-center h1"><?php echo strip_tags(get_field('faq_heading', $parent)); ?></h2>
-        <div class="accordion" id="faq_items">
+        <div class="accordion">
             <?php 
                 while ( have_rows('faq_items', $parent) ) : the_row();
                     $id = sanitize_title(get_sub_field('title'));
@@ -23,7 +23,7 @@
                         <?php the_sub_field('title'); ?>
                     </button>
                 </h2>
-                <div id="<?php echo $id; ?>" class="accordion-collapse collapse <?php echo $open_items ? 'show' : ''; ?>" aria-labelledby="heading_<?php echo $id; ?>" data-bs-parent="#faq_items">
+                <div id="<?php echo $id; ?>" class="accordion-collapse collapse <?php echo $open_items ? 'show' : ''; ?>" aria-labelledby="heading_<?php echo $id; ?>">
                     <div class="accordion-body">
                         <?php the_sub_field('content'); ?>
                     </div>
