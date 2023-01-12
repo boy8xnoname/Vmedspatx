@@ -8,7 +8,7 @@ var medstar01 = {};
         medstar01.addAnimationToPageLoad()
         medstar01.contactUsGoogleMap();
         /* ADA */
-        setTimeout(function () {
+        setTimeout(function() {
             $('#acwp-toolbar-btn-wrap').insertBefore($('.footer-copyright'));
         }, 500);
     }
@@ -78,7 +78,8 @@ var medstar01 = {};
         $('.header-jarallax').jarallax({
             speed: 0.2,
             imgPosition: '50% 0',
-            // imgSize: 'auto',
+
+            imgSize: 'cover',
             disableParallax: /iPad|iPhone|iPod|Android/,
             disableVideo: /iPad|iPhone|iPod|Android/
         });
