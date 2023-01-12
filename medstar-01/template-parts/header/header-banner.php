@@ -42,7 +42,7 @@ if($hero_banner_style == 'style4') {
             <?php if(!empty($banner_image)) {?> 
                 <div class="home-banner slide-<?php echo $hero_banner_style;?>">
                     <div class="single-image-banner slide-<?php echo $hero_banner_style;?>">
-                        <div class="card-image header-jarallax" style="background-image: url('<?php echo esc_url($banner_image['url']);?>')">
+                        <div class="card-image <?php if($hero_banner_style == 'style4') echo 'header-jarallax';?>" style="background-image: url('<?php echo esc_url($banner_image['url']);?>')">
                             <img class="d-hide d-none" src="<?php echo esc_url($banner_image['url']);?>" alt="Image Slider">
                         </div>
                         <div class="card-content">
@@ -64,7 +64,7 @@ if($hero_banner_style == 'style4') {
     if(have_rows('setup_banner_items')):
 ?>
     <div class="home-banner slide-<?php echo $hero_banner_style;?>">
-        <div class="<?php if($hero_banner_style != 'style3') echo 'home-banner-slider';?> swiper-container swiper-scale-effect">
+        <div class=" swiper-container swiper-scale-effect">
             <div class="swiper-wrapper">
             <?php
             while( have_rows('setup_banner_items') ) : the_row();

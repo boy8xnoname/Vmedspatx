@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_62354038fa729",
-            "label": "Hero Section Slider",
+            "label": "Hero Section",
             "name": "",
             "type": "tab",
             "instructions": "",
@@ -23,7 +23,7 @@
             "label": "Select Hero Banner Style",
             "name": "hero_banner_style",
             "type": "select",
-            "instructions": "<strong>Banner Style 1<\/strong>: Use this style to make all the content in hero section align center<br\/>\r\n<strong>Banner Style 2<\/strong>: Use this style to make all the content in hero section align right <br\/>\r\n<strong>Banner Style 3<\/strong>: Use this style for a Single hero background image<br\/>\r\n<strong>Banner Style 4<\/strong>: Use this style for a Single hero background image fixed position",
+            "instructions": "<strong>Banner Style 1<\/strong>: Use this style to make all the content align center<br\/>\r\n<strong>Banner Style 2<\/strong>: Use this style to make all the content align right <br\/>\r\n<strong>Single Background image<\/strong>: Non parallax effect<br\/>\r\n<strong>Single Background Image<\/strong>: Use this style for Parallax effect",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -34,8 +34,8 @@
             "choices": {
                 "style1": "Banner Style 1",
                 "style2": "Banner Style 2",
-                "style3": "Banner Style 3",
-                "style4": "Banner Style 4"
+                "style3": "Single Background image - Non parallax effect",
+                "style4": "Single Background image - Parallax effect"
             },
             "default_value": "style1",
             "allow_null": 0,
@@ -58,6 +58,11 @@
                         "field": "field_6264332115381",
                         "operator": "!=",
                         "value": "style4"
+                    },
+                    {
+                        "field": "field_6264332115381",
+                        "operator": "!=",
+                        "value": "style3"
                     }
                 ]
             ],
@@ -197,6 +202,13 @@
                         "field": "field_6264332115381",
                         "operator": "==",
                         "value": "style4"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_6264332115381",
+                        "operator": "==",
+                        "value": "style3"
                     }
                 ]
             ],
@@ -1791,5 +1803,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1673454462
+    "modified": 1673509909
 }
