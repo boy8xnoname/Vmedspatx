@@ -21,6 +21,7 @@ $service_banner_title = strip_tags(get_field('service_banner_title'), '<br><span
 $service_banner_description = get_field('service_banner_description');
 $service_button_title = strip_tags(get_field('service_button_title'), '<br><span><img>');
 $service_button_link = get_field('service_button_link');
+$service_button_link_new_tab = get_field('service_button_open_in_new_tab') ? 'target="_blank"' : "";
 
 if(!empty($services_banner_image) || !empty($service_banner_video_mp4) || !empty($service_banner_video_url)):
 
@@ -58,7 +59,7 @@ if(($select_banner_videoimage_banner['value'] == 'self_hosted_video') && !empty(
                     echo '<div class="service-banner-description">'.$service_banner_description.'</div>';
                 } ?>
                  <?php if(!empty($service_button_title) && (!empty($service_button_link)) ) { 
-                    echo '<div class="banner-button"><a class="service-banner-link" href="'.$service_button_link.'">'.$service_button_title.'</a></div>';
+                    echo '<div class="banner-button"><a '.$service_button_link_new_tab.' class="service-banner-link" href="'.$service_button_link.'">'.$service_button_title.'</a></div>';
                 } ?>
                 <?php if( have_rows('our_award') ): ?>
                     <div class="d-flex service-our_award">

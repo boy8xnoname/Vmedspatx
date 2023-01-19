@@ -6,7 +6,6 @@
             "key": "field_6249c00928bd0",
             "label": "Hero Section (Desktop) - Image\/Video Settings",
             "name": "",
-            "aria-label": "",
             "type": "tab",
             "instructions": "",
             "required": 0,
@@ -16,6 +15,7 @@
                 "class": "",
                 "id": ""
             },
+            "aria-label": "",
             "placement": "left",
             "endpoint": 0
         },
@@ -23,7 +23,6 @@
             "key": "field_624c7d89c081c",
             "label": "Hero Section Background Video\/Image",
             "name": "select_banner_videoimage_banner",
-            "aria-label": "",
             "type": "select",
             "instructions": "",
             "required": 0,
@@ -33,6 +32,7 @@
                 "class": "",
                 "id": ""
             },
+            "aria-label": "",
             "choices": {
                 "image": "Image",
                 "image_fixed": "Image Fixed",
@@ -51,7 +51,6 @@
             "key": "field_624c7e06ea3b1",
             "label": "Service Banner Video MP4",
             "name": "service_banner_video_mp4",
-            "aria-label": "",
             "type": "file",
             "instructions": "",
             "required": 0,
@@ -69,6 +68,7 @@
                 "class": "",
                 "id": ""
             },
+            "aria-label": "",
             "return_format": "array",
             "library": "all",
             "min_size": "",
@@ -79,7 +79,6 @@
             "key": "field_624daad822f24",
             "label": "Service Banner Video Webm",
             "name": "service_banner_video_webm",
-            "aria-label": "",
             "type": "file",
             "instructions": "",
             "required": 0,
@@ -97,6 +96,7 @@
                 "class": "",
                 "id": ""
             },
+            "aria-label": "",
             "return_format": "array",
             "library": "all",
             "min_size": "",
@@ -107,7 +107,6 @@
             "key": "field_624daad722f23",
             "label": "Service Banner Video Ogv",
             "name": "service_banner_video_ogv",
-            "aria-label": "",
             "type": "file",
             "instructions": "",
             "required": 0,
@@ -125,6 +124,7 @@
                 "class": "",
                 "id": ""
             },
+            "aria-label": "",
             "return_format": "array",
             "library": "all",
             "min_size": "",
@@ -135,7 +135,6 @@
             "key": "field_624d9b3d31c3e",
             "label": "Hero Section Background Video URL",
             "name": "service_banner_video_url",
-            "aria-label": "",
             "type": "url",
             "instructions": "Please include https:\/\/ to URL.",
             "required": 0,
@@ -153,6 +152,7 @@
                 "class": "",
                 "id": ""
             },
+            "aria-label": "",
             "default_value": "",
             "placeholder": ""
         },
@@ -160,7 +160,6 @@
             "key": "field_6249c0092b4a3",
             "label": "Hero Section Background Image",
             "name": "service_banner_image",
-            "aria-label": "",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -185,6 +184,7 @@
                 "class": "",
                 "id": ""
             },
+            "aria-label": "",
             "return_format": "array",
             "preview_size": "medium",
             "library": "all",
@@ -200,7 +200,6 @@
             "key": "field_627a8ba11c160",
             "label": "Hero Section (Mobile) - Image\/Video Settings",
             "name": "",
-            "aria-label": "",
             "type": "tab",
             "instructions": "",
             "required": 0,
@@ -210,6 +209,7 @@
                 "class": "",
                 "id": ""
             },
+            "aria-label": "",
             "placement": "left",
             "endpoint": 0
         },
@@ -217,7 +217,6 @@
             "key": "field_627a8bedd15bf",
             "label": "Mobile - Hero Section Background Video\/Image",
             "name": "mobile_select_banner_videoimage_banner",
-            "aria-label": "",
             "type": "select",
             "instructions": "",
             "required": 0,
@@ -227,6 +226,7 @@
                 "class": "",
                 "id": ""
             },
+            "aria-label": "",
             "choices": {
                 "image": "Image",
                 "image_fixed": "Image Fixed",
@@ -245,7 +245,6 @@
             "key": "field_627a929d69ed9",
             "label": "Mobile - Service Banner Video MP4",
             "name": "mobile_service_banner_video_mp4",
-            "aria-label": "",
             "type": "file",
             "instructions": "",
             "required": 0,
@@ -263,6 +262,7 @@
                 "class": "",
                 "id": ""
             },
+            "aria-label": "",
             "return_format": "array",
             "library": "all",
             "min_size": "",
@@ -273,7 +273,6 @@
             "key": "field_627a92c18827a",
             "label": "Mobile - Service Banner Video Webm",
             "name": "mobile_service_banner_video_webm",
-            "aria-label": "",
             "type": "file",
             "instructions": "",
             "required": 0,
@@ -291,6 +290,7 @@
                 "class": "",
                 "id": ""
             },
+            "aria-label": "",
             "return_format": "array",
             "library": "all",
             "min_size": "",
@@ -301,7 +301,6 @@
             "key": "field_627a92e75bc61",
             "label": "Mobile - Service Banner Video Ogv",
             "name": "mobile_service_banner_video_ogv",
-            "aria-label": "",
             "type": "file",
             "instructions": "",
             "required": 0,
@@ -319,6 +318,7 @@
                 "class": "",
                 "id": ""
             },
+            "aria-label": "",
             "return_format": "array",
             "library": "all",
             "min_size": "",
@@ -329,7 +329,6 @@
             "key": "field_627a930a784ae",
             "label": "Mobile - Hero Section Background Video URL",
             "name": "mobile_service_banner_video_url",
-            "aria-label": "",
             "type": "url",
             "instructions": "Please include https:\/\/ to URL.",
             "required": 0,
@@ -347,6 +346,7 @@
                 "class": "",
                 "id": ""
             },
+            "aria-label": "",
             "default_value": "",
             "placeholder": ""
         },
@@ -354,7 +354,6 @@
             "key": "field_627a961f3b2ca",
             "label": "Mobile - Hero Section Background Image",
             "name": "mobile_service_banner_image",
-            "aria-label": "",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -379,6 +378,7 @@
                 "class": "",
                 "id": ""
             },
+            "aria-label": "",
             "return_format": "array",
             "preview_size": "medium",
             "library": "all",
@@ -394,7 +394,6 @@
             "key": "field_62e29d00e8e86",
             "label": "Tablet - Hero Section Background Image",
             "name": "tablet_service_banner_image",
-            "aria-label": "",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -419,6 +418,7 @@
                 "class": "",
                 "id": ""
             },
+            "aria-label": "",
             "return_format": "array",
             "preview_size": "medium",
             "library": "all",
@@ -434,7 +434,6 @@
             "key": "field_627a8c5b38ade",
             "label": "Hero Section - Content",
             "name": "",
-            "aria-label": "",
             "type": "tab",
             "instructions": "",
             "required": 0,
@@ -444,6 +443,7 @@
                 "class": "",
                 "id": ""
             },
+            "aria-label": "",
             "placement": "left",
             "endpoint": 0
         },
@@ -451,7 +451,6 @@
             "key": "field_6259b2479550c",
             "label": "Hero Section Top Logo Image",
             "name": "service_banner_top_image",
-            "aria-label": "",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -461,6 +460,7 @@
                 "class": "",
                 "id": ""
             },
+            "aria-label": "",
             "return_format": "array",
             "preview_size": "medium",
             "library": "all",
@@ -476,7 +476,6 @@
             "key": "field_6249c0092d488",
             "label": "Hero Section Title",
             "name": "service_banner_title",
-            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -486,6 +485,7 @@
                 "class": "",
                 "id": ""
             },
+            "aria-label": "",
             "default_value": "",
             "placeholder": "",
             "prepend": "",
@@ -496,7 +496,6 @@
             "key": "field_6249c0092fb30",
             "label": "Hero Section Description Text",
             "name": "service_banner_description",
-            "aria-label": "",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -506,6 +505,7 @@
                 "class": "",
                 "id": ""
             },
+            "aria-label": "",
             "default_value": "",
             "tabs": "all",
             "toolbar": "full",
@@ -516,7 +516,6 @@
             "key": "field_6249c00932a33",
             "label": "Button Label",
             "name": "service_button_title",
-            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -526,6 +525,7 @@
                 "class": "",
                 "id": ""
             },
+            "aria-label": "",
             "default_value": "",
             "placeholder": "",
             "prepend": "",
@@ -533,10 +533,28 @@
             "maxlength": ""
         },
         {
+            "key": "field_63c92d6b9017a",
+            "label": "Button URL Open In New Tab",
+            "name": "service_button_open_in_new_tab",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
             "key": "field_6249c00934ad1",
             "label": "Button URL",
             "name": "service_button_link",
-            "aria-label": "",
             "type": "text",
             "instructions": "Paste '#service-contact-sidebar' without quotes in the below field to make the page scroll down to bottom contact form on click",
             "required": 0,
@@ -546,6 +564,7 @@
                 "class": "",
                 "id": ""
             },
+            "aria-label": "",
             "default_value": "",
             "placeholder": "",
             "prepend": "",
@@ -556,7 +575,6 @@
             "key": "field_6249c009373a4",
             "label": "Our awards",
             "name": "our_award",
-            "aria-label": "",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -566,6 +584,7 @@
                 "class": "",
                 "id": ""
             },
+            "aria-label": "",
             "collapsed": "",
             "min": 0,
             "max": 3,
@@ -577,7 +596,6 @@
                     "key": "field_6249c009637bf",
                     "label": "Award image",
                     "name": "award_image",
-                    "aria-label": "",
                     "type": "image",
                     "instructions": "",
                     "required": 0,
@@ -587,6 +605,7 @@
                         "class": "",
                         "id": ""
                     },
+                    "aria-label": "",
                     "return_format": "array",
                     "preview_size": "medium",
                     "library": "all",
@@ -605,7 +624,6 @@
             "key": "field_6249c00939442",
             "label": "Treaments Featured in Content",
             "name": "",
-            "aria-label": "",
             "type": "tab",
             "instructions": "",
             "required": 0,
@@ -615,6 +633,7 @@
                 "class": "",
                 "id": ""
             },
+            "aria-label": "",
             "placement": "top",
             "endpoint": 0
         },
@@ -622,7 +641,6 @@
             "key": "field_6249c0093b380",
             "label": "Treaments Featured in Title",
             "name": "treaments_featured_in_title",
-            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -632,6 +650,7 @@
                 "class": "",
                 "id": ""
             },
+            "aria-label": "",
             "default_value": "",
             "placeholder": "",
             "prepend": "",
@@ -642,7 +661,6 @@
             "key": "field_6249c0093d3fc",
             "label": "Treaments Featured in Content",
             "name": "treaments_featured_in_items",
-            "aria-label": "",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -652,6 +670,7 @@
                 "class": "",
                 "id": ""
             },
+            "aria-label": "",
             "collapsed": "",
             "min": 0,
             "max": 0,
@@ -663,7 +682,6 @@
                     "key": "field_6249c0097dd68",
                     "label": "Treaments Featured Logo",
                     "name": "treaments_featured_logo",
-                    "aria-label": "",
                     "type": "image",
                     "instructions": "",
                     "required": 0,
@@ -673,6 +691,7 @@
                         "class": "",
                         "id": ""
                     },
+                    "aria-label": "",
                     "return_format": "array",
                     "preview_size": "medium",
                     "library": "all",
@@ -689,7 +708,6 @@
                     "key": "field_6249c00980c09",
                     "label": "Treatments Featured link",
                     "name": "treaments_featured_link",
-                    "aria-label": "",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -699,6 +717,7 @@
                         "class": "",
                         "id": ""
                     },
+                    "aria-label": "",
                     "default_value": "",
                     "placeholder": "",
                     "prepend": "",
@@ -712,7 +731,6 @@
             "key": "field_6253eb859e1d8",
             "label": "Sidebar Contact Form",
             "name": "",
-            "aria-label": "",
             "type": "tab",
             "instructions": "",
             "required": 0,
@@ -722,6 +740,7 @@
                 "class": "",
                 "id": ""
             },
+            "aria-label": "",
             "placement": "top",
             "endpoint": 0
         },
@@ -729,7 +748,6 @@
             "key": "field_6253ec27a86f3",
             "label": "Contact form mesage",
             "name": "",
-            "aria-label": "",
             "type": "message",
             "instructions": "",
             "required": 0,
@@ -739,6 +757,7 @@
                 "class": "",
                 "id": ""
             },
+            "aria-label": "",
             "message": "When admin haven't config informations of contact form sidebar this content will get contact form bottom.",
             "new_lines": "wpautop",
             "esc_html": 0
@@ -747,7 +766,6 @@
             "key": "field_6291df9c6926e",
             "label": "Contact sidebar background image",
             "name": "contact_sidebar_image_background",
-            "aria-label": "",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -757,6 +775,7 @@
                 "class": "",
                 "id": ""
             },
+            "aria-label": "",
             "return_format": "array",
             "preview_size": "medium",
             "library": "all",
@@ -772,7 +791,6 @@
             "key": "field_6253eb9c9e1d9",
             "label": "Contact form Graphics",
             "name": "sidebar_contact_form_logo_image",
-            "aria-label": "",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -782,6 +800,7 @@
                 "class": "",
                 "id": ""
             },
+            "aria-label": "",
             "return_format": "array",
             "preview_size": "medium",
             "library": "all",
@@ -797,7 +816,6 @@
             "key": "field_6253ebd553793",
             "label": "Contact Form Title",
             "name": "sidebar_contact_us_before_form_title",
-            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -807,6 +825,7 @@
                 "class": "",
                 "id": ""
             },
+            "aria-label": "",
             "default_value": "",
             "placeholder": "",
             "prepend": "",
@@ -817,7 +836,6 @@
             "key": "field_62d5880097a1f",
             "label": "Contact Form Sub-title",
             "name": "sidebar_contact_us_before_form_sub_title",
-            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -827,6 +845,7 @@
                 "class": "",
                 "id": ""
             },
+            "aria-label": "",
             "default_value": "",
             "placeholder": "",
             "prepend": "",
@@ -837,7 +856,6 @@
             "key": "field_6253ebeb53794",
             "label": "Contact Form Short Code",
             "name": "sidebar_contact_form_short_code",
-            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -847,6 +865,7 @@
                 "class": "",
                 "id": ""
             },
+            "aria-label": "",
             "default_value": "",
             "placeholder": "",
             "prepend": "",
@@ -857,7 +876,6 @@
             "key": "field_6253ebfe53795",
             "label": "Contact Form Disclaimer Text",
             "name": "sidebar_contact_us_form_description",
-            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -867,6 +885,7 @@
                 "class": "",
                 "id": ""
             },
+            "aria-label": "",
             "default_value": "",
             "placeholder": "",
             "prepend": "",
@@ -877,7 +896,6 @@
             "key": "field_62cef996b5cdd",
             "label": "FAQ Section",
             "name": "",
-            "aria-label": "",
             "type": "tab",
             "instructions": "",
             "required": 0,
@@ -887,6 +905,7 @@
                 "class": "",
                 "id": ""
             },
+            "aria-label": "",
             "placement": "top",
             "endpoint": 0
         },
@@ -894,7 +913,6 @@
             "key": "field_62cef9c0b5cde",
             "label": "FAQ Heading",
             "name": "faq_heading",
-            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -904,6 +922,7 @@
                 "class": "",
                 "id": ""
             },
+            "aria-label": "",
             "default_value": "",
             "placeholder": "",
             "prepend": "",
@@ -914,7 +933,6 @@
             "key": "field_63bfe71098c83",
             "label": "FAQ Open Default",
             "name": "faq_open",
-            "aria-label": "",
             "type": "true_false",
             "instructions": "",
             "required": 0,
@@ -924,6 +942,7 @@
                 "class": "",
                 "id": ""
             },
+            "aria-label": "",
             "message": "",
             "default_value": 0,
             "ui_on_text": "",
@@ -934,7 +953,6 @@
             "key": "field_62cef9d2b5cdf",
             "label": "FAQ Items",
             "name": "faq_items",
-            "aria-label": "",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -944,6 +962,7 @@
                 "class": "",
                 "id": ""
             },
+            "aria-label": "",
             "collapsed": "",
             "min": 0,
             "max": 0,
@@ -955,7 +974,6 @@
                     "key": "field_62cef9deb5ce0",
                     "label": "Title",
                     "name": "title",
-                    "aria-label": "",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -965,6 +983,7 @@
                         "class": "",
                         "id": ""
                     },
+                    "aria-label": "",
                     "default_value": "",
                     "placeholder": "",
                     "prepend": "",
@@ -976,7 +995,6 @@
                     "key": "field_62cef9e3b5ce1",
                     "label": "Content",
                     "name": "content",
-                    "aria-label": "",
                     "type": "wysiwyg",
                     "instructions": "",
                     "required": 0,
@@ -986,6 +1004,7 @@
                         "class": "",
                         "id": ""
                     },
+                    "aria-label": "",
                     "default_value": "",
                     "tabs": "all",
                     "toolbar": "full",
@@ -999,7 +1018,6 @@
             "key": "field_6249cd118d608",
             "label": "Contact Form - Bottom",
             "name": "",
-            "aria-label": "",
             "type": "tab",
             "instructions": "",
             "required": 0,
@@ -1009,6 +1027,7 @@
                 "class": "",
                 "id": ""
             },
+            "aria-label": "",
             "placement": "top",
             "endpoint": 0
         },
@@ -1016,7 +1035,6 @@
             "key": "field_6291dec171785",
             "label": "Contact section background image",
             "name": "contact_section_image_background",
-            "aria-label": "",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -1026,6 +1044,7 @@
                 "class": "",
                 "id": ""
             },
+            "aria-label": "",
             "return_format": "array",
             "preview_size": "medium",
             "library": "all",
@@ -1041,7 +1060,6 @@
             "key": "field_6249d4fbb603d",
             "label": "Contact form Graphics",
             "name": "contact_form_logo_image",
-            "aria-label": "",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -1051,6 +1069,7 @@
                 "class": "",
                 "id": ""
             },
+            "aria-label": "",
             "return_format": "array",
             "preview_size": "medium",
             "library": "all",
@@ -1066,7 +1085,6 @@
             "key": "field_6249cd648d60a",
             "label": "Contact Form Title",
             "name": "contact_us_before_form_title",
-            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -1076,6 +1094,7 @@
                 "class": "",
                 "id": ""
             },
+            "aria-label": "",
             "default_value": "",
             "placeholder": "",
             "prepend": "",
@@ -1086,7 +1105,6 @@
             "key": "field_62d5881897a20",
             "label": "Contact Form Sub-title",
             "name": "contact_us_before_form_sub_title",
-            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -1096,6 +1114,7 @@
                 "class": "",
                 "id": ""
             },
+            "aria-label": "",
             "default_value": "",
             "placeholder": "",
             "prepend": "",
@@ -1106,7 +1125,6 @@
             "key": "field_6249cd758d60b",
             "label": "Contact Form Short Code",
             "name": "contact_form_short_code",
-            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -1116,6 +1134,7 @@
                 "class": "",
                 "id": ""
             },
+            "aria-label": "",
             "default_value": "",
             "placeholder": "",
             "prepend": "",
@@ -1126,7 +1145,6 @@
             "key": "field_6249cd7f8d60c",
             "label": "Contact Form Disclaimer Text",
             "name": "contact_us_form_description",
-            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -1136,6 +1154,7 @@
                 "class": "",
                 "id": ""
             },
+            "aria-label": "",
             "default_value": "",
             "placeholder": "",
             "prepend": "",
@@ -1146,7 +1165,6 @@
             "key": "field_6253fdb45a5c1",
             "label": "Disclaimer Text",
             "name": "",
-            "aria-label": "",
             "type": "tab",
             "instructions": "",
             "required": 0,
@@ -1156,6 +1174,7 @@
                 "class": "",
                 "id": ""
             },
+            "aria-label": "",
             "placement": "top",
             "endpoint": 0
         },
@@ -1163,7 +1182,6 @@
             "key": "field_62519b5dc6895",
             "label": "Content description bottom form",
             "name": "content_description_bottom_form",
-            "aria-label": "",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -1173,6 +1191,7 @@
                 "class": "",
                 "id": ""
             },
+            "aria-label": "",
             "default_value": "",
             "tabs": "all",
             "toolbar": "full",
@@ -1198,5 +1217,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1673535550
+    "modified": 1674128852
 }
