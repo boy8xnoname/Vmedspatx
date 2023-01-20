@@ -19,6 +19,7 @@
 				$services_item_heading = strip_tags(get_sub_field('services_item_heading'));
 				$services_item_description = get_sub_field('services_item_description');
 				$services_item_learn_more_link = get_sub_field('services_item_learn_more_link');
+                $service_page_url_open_new_tab = get_sub_field('service_page_url_open_new_tab') ? 'target="_blank"' : '';
 				?>
 					<div class="our-services__item-wrap">
 						<div class="item-image"  data-aos="fade-right" data-aos-delay="200">
@@ -46,7 +47,7 @@
 								<?php } ?>
 								<?php if(!empty($services_item_learn_more_link)) {?> 
 									<div class="item-link">
-										<a class="btn btn-view-more btn-service" href="<?php echo $services_item_learn_more_link;?>" title="<?php echo $services_item_heading;?>">
+										<a <?php echo $service_page_url_open_new_tab; ?> class="btn btn-view-more btn-service" href="<?php echo $services_item_learn_more_link;?>" title="<?php echo $services_item_heading;?>">
 											<?php echo esc_attr('LEARN MORE');?>
 										</a>
 									</div>

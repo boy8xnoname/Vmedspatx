@@ -563,6 +563,25 @@
                     },
                     "default_value": "",
                     "placeholder": ""
+                },
+                {
+                    "key": "field_63c9ef760a832",
+                    "label": "Service Page URL Open New Tab",
+                    "name": "service_page_url_open_new_tab",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "ui": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
                 }
             ]
         },
@@ -1803,5 +1822,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1673512286
+    "modified": 1674178448
 }
