@@ -566,7 +566,7 @@
                 },
                 {
                     "key": "field_63c9ef760a832",
-                    "label": "Service Page URL Open New Tab",
+                    "label": "Service Page URL - Open in a new tab",
                     "name": "service_page_url_open_new_tab",
                     "type": "true_false",
                     "instructions": "",
@@ -1822,5 +1822,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1674178448
+    "modified": 1674192243
 }
