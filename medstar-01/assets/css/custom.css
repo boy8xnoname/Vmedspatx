@@ -321,6 +321,12 @@ body .accordion-button:not(.collapsed)::after {
     width: 100%;
 }
 
+.entry-header-privacy {
+    text-align: center;
+    margin-top: 71px;
+    padding-top: 50px;
+}
+
 /* ADA */
 .site-info .row {
     position: relative;
