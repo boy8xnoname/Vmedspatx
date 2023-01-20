@@ -327,6 +327,10 @@ body .accordion-button:not(.collapsed)::after {
     padding-top: 50px;
 }
 
+.page-template-page-privacy .entry-content {
+    padding-bottom: 50px;
+}
+
 /* ADA */
 .site-info .row {
     position: relative;
