@@ -331,6 +331,10 @@ body .accordion-button:not(.collapsed)::after {
     padding-bottom: 50px;
 }
 
+.page-template-page-contact-thank-you-style-2 section#section-contact_us {
+    padding-bottom: 150px;
+}
+
 /* ADA */
 .site-info .row {
     position: relative;
