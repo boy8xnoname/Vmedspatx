@@ -1,6 +1,15 @@
-<?php 
-	$contactImageBackground = !empty(get_field('contact_section_image_background')) ? get_field('contact_section_image_background') : '';
-	$contactImageContent = !empty(get_field('contact_section_image')) ? get_field('contact_section_image') : '';
+<?php
+
+    global $post;
+
+    if ( get_field('parent_contact_page', $post->ID ) ) {
+        $parent = get_field('parent_contact_page', $post->ID );
+    } else {
+        $parent = $post->ID;
+    }
+
+	$contactImageBackground = !empty(get_field('contact_section_image_background', $parent)) ? get_field('contact_section_image_background', $parent) : '';
+	$contactImageContent = !empty(get_field('contact_section_image', $parent)) ? get_field('contact_section_image', $parent) : '';
 
 	if(!empty($contactImageBackground)) {
 		$sectionContactBackground = $contactImageBackground['url'];
@@ -8,20 +17,20 @@
 		$sectionContactBackground = '';
 	}
 
-	$sectionContactTitle = !empty(get_field('contact_us_title')) ? strip_tags(get_field('contact_us_title'), '<br><span><img>') : '';
-    $sectionContactSubTitle = !empty(get_field('contact_us_sub_title')) ? strip_tags(get_field('contact_us_sub_title'), '<br><span><img>') : '';
-	$formContactTitle = !empty(get_field('contact_us_before_form_title')) ? get_field('contact_us_before_form_title') : '';
-	$formContactShortcode = !empty(get_field('contact_form_short_code')) ? get_field('contact_form_short_code') : '';
-	$formContactDescription = !empty(get_field('contact_us_form_description')) ? get_field('contact_us_form_description') : 'By submitting this form you agree to be contacted via phone/text/email.*';
+	$sectionContactTitle = !empty(get_field('contact_us_title', $parent)) ? strip_tags(get_field('contact_us_title', $parent), '<br><span><img>') : '';
+    $sectionContactSubTitle = !empty(get_field('contact_us_sub_title', $parent)) ? strip_tags(get_field('contact_us_sub_title', $parent), '<br><span><img>') : '';
+	$formContactTitle = !empty(get_field('contact_us_before_form_title', $parent)) ? get_field('contact_us_before_form_title', $parent) : '';
+	$formContactShortcode = !empty(get_field('contact_form_short_code', $parent)) ? get_field('contact_form_short_code', $parent) : '';
+	$formContactDescription = !empty(get_field('contact_us_form_description', $parent)) ? get_field('contact_us_form_description', $parent) : 'By submitting this form you agree to be contacted via phone/text/email.*';
 
-	$location_google_map = !empty(get_field('google_map_content_setup')) ? get_field('google_map_content_setup') : '';
+	$location_google_map = !empty(get_field('google_map_content_setup', $parent)) ? get_field('google_map_content_setup', $parent) : '';
 ?>
 <?php if(!empty($formContactShortcode)) : ?>
 
 <section id="section-contact_us" class="contact_us_and_map ">
 	<div class="container">
 		<div class="row">
-		
+            <?php if(!get_field('parent_contact_page', $post->ID )): ?>
 			<div class="contact_form col col-12 col-md-6 form-contact-us" <?php if(!empty($sectionContactBackground)) { ?> style ="background-image: url(<?php echo $sectionContactBackground;?>)" <?php } ?>>
 				<div class="contact_form_wrapper">
 				<?php  if(!empty($formContactShortcode)) { ?>
@@ -49,7 +58,8 @@
 				<?php }?>
 				</div>
 			</div>
-			<div class="contact_map col col-md-1 col-md-6">
+			<?php endif; ?>
+            <div class="contact_map col col-md-1 <?php echo get_field('parent_contact_page', $post->ID ) ? 'col-md-12' : 'col-md-6'; ?>">
 				<?php 
 				if( $location_google_map ): ?>
 					<div class="acf-map" data-zoom="16">

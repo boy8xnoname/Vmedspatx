@@ -6,6 +6,15 @@
  *
  * @package medstar01
  */
+
+global $post;
+
+if ( get_field('parent_contact_page', $post->ID ) ) {
+	$parent = get_field('parent_contact_page', $post->ID );
+} else {
+	$parent = $post->ID;
+}
+
 $featured_img_url = '';
 $detect = new Mobile_Detect;
 if (!wp_is_mobile()) {
@@ -36,12 +45,28 @@ if (!wp_is_mobile()) {
 		</div>
 	</header><!-- .entry-header -->
 
+    <?php if(get_field('parent_contact_page', $post->ID )): ?>
+    <div class="entry-content thankyou-content">
+        <div class="container">
+            <div class="row">
+                <div class="d-none d-lg-block  col col-lg-2">
+                </div>
+                <div class="thankyou-content-wrap col col-12 col-lg-8">
+					<?php the_content();?>
+                </div>
+                <div class="d-none d-lg-block  col col-lg-2">
+                </div>
+            </div>
+        </div>
+    </div><!-- .entry-content -->
+    <?php endif; ?>
+
 	<?php 
-		$contact_us_phone_number = get_field('contact_us_phone_number');
-		$contact_us_fax_number = get_field('contact_us_fax_number');
-		$contact_us_location_address = get_field('contact_us_location_address');
-    	$contact_us_location_link = get_field('contact_us_location_link');
-		$contact_us_email_address = get_field('contact_us_email_address');
+		$contact_us_phone_number = get_field('contact_us_phone_number', $parent);
+		$contact_us_fax_number = get_field('contact_us_fax_number', $parent);
+		$contact_us_location_address = get_field('contact_us_location_address', $parent);
+    	$contact_us_location_link = get_field('contact_us_location_link', $parent);
+		$contact_us_email_address = get_field('contact_us_email_address', $parent);
 		if(!empty($contact_us_phone_number) || !empty($contact_us_fax_number) || !empty($contact_us_location_address) || !empty($contact_us_email_address)) {
 	?>
 	<div class="contact-us-information">
@@ -125,9 +150,6 @@ if (!wp_is_mobile()) {
 		</div>
 	</div>
 	<?php } ?>
-
-
-	
 	
     <?php get_template_part( 'template-parts/contact-us/content-contact-us-style-2' ); ?>
 
