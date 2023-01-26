@@ -39,7 +39,7 @@ if (!wp_is_mobile()) {
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header" style="background-image: url('<?php echo esc_url($featured_img_url);?>');">
+	<header class="entry-header header-jarallax" style="background-image: url('<?php echo esc_url($featured_img_url);?>');">
 		<div class="container">
 			<?php the_title( '<h1 class="entry-title text-center">', '</h1>' ); ?>
 		</div>
