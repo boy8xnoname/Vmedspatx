@@ -335,6 +335,10 @@ body .accordion-button:not(.collapsed)::after {
     padding-bottom: 150px;
 }
 
+.page-contact-wrap.page-contact-style-2 .entry-header.header-jarallax .entry-title {
+    color: #fff;
+}
+
 /* ADA */
 .site-info .row {
     position: relative;
