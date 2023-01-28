@@ -6,6 +6,7 @@
 	}
 	$contact_form_logo_image = get_field('contact_form_logo_image');
 	$formContactTitle = !empty(get_field('contact_us_before_form_title')) ? strip_tags(get_field('contact_us_before_form_title'), '<br><span><img>') : '';
+    $formContactOffer = !empty(get_field('contact_us_offer_text')) ? strip_tags(get_field('contact_us_offer_text'), '<br><span><img>') : '';
     $formContactSubTitle = !empty(get_field('contact_us_before_form_sub_title')) ? strip_tags(get_field('contact_us_before_form_sub_title'), '<br><span><img>') : '';
 	$formContactShortcode = !empty(get_field('contact_form_short_code')) ? get_field('contact_form_short_code') : '';
 	$formContactDescription = !empty(get_field('contact_us_form_description')) ? get_field('contact_us_form_description') : 'By submitting this form you agree to be contacted via phone/text/email.*';
@@ -28,6 +29,9 @@
 					<h2 class="contact-form-title text-center">
 						<?php echo apply_filters('the_content', $formContactTitle); ?>
 					</h2>
+                    <h4 class="contact-form-offer text-center">
+						<?php echo apply_filters('the_content', $formContactOffer); ?>
+                    </h4>
                     <h3 class="contact-form-sub-title text-center">
                         <?php echo apply_filters('the_content', $formContactSubTitle); ?>
                     </h3>

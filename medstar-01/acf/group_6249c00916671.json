@@ -833,6 +833,25 @@
             "maxlength": ""
         },
         {
+            "key": "field_63d4eaf813c7c",
+            "label": "Contact Form Offer Text",
+            "name": "sidebar_contact_us_form_offer_text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_62d5880097a1f",
             "label": "Contact Form Sub-title",
             "name": "sidebar_contact_us_before_form_sub_title",
@@ -1102,6 +1121,25 @@
             "maxlength": ""
         },
         {
+            "key": "field_63d4eb2113c7d",
+            "label": "Contact Form Offer Text",
+            "name": "contact_us_offer_text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_62d5881897a20",
             "label": "Contact Form Sub-title",
             "name": "contact_us_before_form_sub_title",
@@ -1217,5 +1255,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1674128852
+    "modified": 1674898231
 }

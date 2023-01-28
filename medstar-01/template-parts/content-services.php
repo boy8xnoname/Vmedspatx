@@ -100,6 +100,12 @@ $mobileServiceBannerImage = !empty( get_field('mobile_service_banner_image')) ? 
 					} else {
 						$formContactTitle = !empty(get_field('contact_us_before_form_title')) ? get_field('contact_us_before_form_title') : '';
 					}
+                    // Get contact form offer
+                    if(!empty(get_field('sidebar_contact_us_form_offer_text'))) {
+                        $formContactOffer = get_field('sidebar_contact_us_form_offer_text');
+                    } else {
+                        $formContactOffer = !empty(get_field('contact_us_offer_text')) ? get_field('contact_us_offer_text') : '';
+                    }
                     // Get contact form sub-title
                     if(!empty(get_field('sidebar_contact_us_before_form_sub_title'))) {
                         $formContactSubTitle = get_field('sidebar_contact_us_before_form_sub_title');
@@ -131,6 +137,9 @@ $mobileServiceBannerImage = !empty( get_field('mobile_service_banner_image')) ? 
 								<h2 class="contact-form-title text-center">
 									<?php echo apply_filters('the_content', $formContactTitle); ?>
 								</h2>
+                                <h4 class="contact-form-offer text-center">
+									<?php echo apply_filters('the_content', $formContactOffer); ?>
+                                </h4>
                                 <h3 class="contact-form-sub-title text-center">
                                     <?php echo apply_filters('the_content', $formContactSubTitle); ?>
                                 </h3>
