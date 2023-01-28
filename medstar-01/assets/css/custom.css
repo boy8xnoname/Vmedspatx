@@ -340,9 +340,23 @@ body .accordion-button:not(.collapsed)::after {
     color: #fff;
 }
 
-h4.contact-form-offer {
+.contact-form-sub-title p {
+    line-height: 1.2;
+    font-size: 1.75rem;
+}
+.contact-form-offer p {
     font-size: 60px;
     font-weight: bold;
+    line-height: 1;
+}
+@media (max-width: 600px){
+    .contact-form-offer p {
+        font-size: 38px;
+        line-height: 1.2;
+    }
+    .contact-form-sub-title p {
+        font-size: 1.25rem;
+    }
 }
 
 /* ADA */

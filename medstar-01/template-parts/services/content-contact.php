@@ -26,15 +26,15 @@
 						<img src="<?php echo esc_url($contact_form_logo_image['url']);?>" alt="<?php echo esc_attr( $formContactTitle, 'medstar01' ); ?>"/>
 						</div>
 					<?php } ?>
-					<h2 class="contact-form-title text-center">
+					<div class="contact-form-title text-center">
 						<?php echo apply_filters('the_content', $formContactTitle); ?>
-					</h2>
-                    <h4 class="contact-form-offer text-center">
+					</div>
+                    <div class="contact-form-offer text-center">
 						<?php echo apply_filters('the_content', $formContactOffer); ?>
-                    </h4>
-                    <h3 class="contact-form-sub-title text-center">
+                    </div>
+                    <div class="contact-form-sub-title text-center">
                         <?php echo apply_filters('the_content', $formContactSubTitle); ?>
-                    </h3>
+                    </div>
 					<?php echo do_shortcode($formContactShortcode); ?>
 					<div class="contact-us-description text-center">
 						<small><?php echo esc_attr( $formContactDescription, 'medstar01'); ?></small>
