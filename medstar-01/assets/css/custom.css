@@ -339,6 +339,11 @@ body .accordion-button:not(.collapsed)::after {
     color: #fff;
 }
 
+h4.contact-form-offer {
+    font-size: 60px;
+    font-weight: bold;
+}
+
 /* ADA */
 .site-info .row {
     position: relative;
