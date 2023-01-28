@@ -149,6 +149,7 @@ body .accordion-button:not(.collapsed)::after {
     }
     .contact_us .contact-form-title p {
         line-height: 1.2em !important;
+        font-size: 32px !important;
     }
 }
 
