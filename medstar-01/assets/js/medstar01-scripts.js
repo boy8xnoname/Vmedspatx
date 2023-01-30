@@ -298,7 +298,8 @@ var medstar01 = {};
             // Create marker instance.
             var marker = new google.maps.Marker({
                 position: latLng,
-                map: map
+                map: map,
+                title: 'This is the title'
             });
 
             // Append to reference for later use.
@@ -313,9 +314,10 @@ var medstar01 = {};
                 });
 
                 // Show info window when marker is clicked.
-                google.maps.event.addListener(marker, 'click', function() {
-                    infowindow.open(map, marker);
-                });
+                // google.maps.event.addListener(marker, 'click', function() {
+                //     infowindow.open(map, marker);
+                // });
+                infowindow.open(map, marker);
             }
         }
 

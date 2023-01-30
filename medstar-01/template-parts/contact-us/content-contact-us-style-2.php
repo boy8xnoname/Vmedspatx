@@ -60,14 +60,49 @@
 			</div>
 			<?php endif; ?>
             <div class="contact_map col col-md-1 <?php echo get_field('parent_contact_page', $post->ID ) ? 'col-md-12' : 'col-md-6'; ?>">
-				<?php 
+				<?php
 				if( $location_google_map ): ?>
 					<div class="acf-map" data-zoom="16">
-						<div class="marker" data-lat="<?php echo __($location_google_map['lat']); ?>" data-lng="<?php echo __($location_google_map['lng']); ?>"></div>
+						<div class="marker" data-lat="<?php echo __($location_google_map['lat']); ?>" data-lng="<?php echo __($location_google_map['lng']); ?>">
+							<?php
+                                if(get_theme_mod('location_repeater') != ''){
+                                    $locationsList = get_theme_mod('location_repeater');
+                                    echo '<div class="content-list">';
+                                    foreach( $locationsList as $locationItem ) :
+                                        $location_title = strip_tags($locationItem['location_title'], '<br><span><img>');
+                                        $location_phone_number = $locationItem['location_phone_number'];
+                                        $location_address = $locationItem['location_address'];
+                                        $location_google_map_url = $locationItem['location_google_map_url'];
+                                        ?>
+                                        <div class="contact-item">
+                                            <h3><?php echo esc_attr($location_title);?></h3>
+                                            <ul style="list-style: none;padding: 0;margin: 0;">
+                                                <li>
+                                                    <a href="tel:<?php echo esc_attr(clean_phone_link($location_phone_number));?>">
+                                                        <span class=""><?php echo esc_attr($location_phone_number);?></span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <?php if(!empty($location_google_map_url)) {?>
+                                                    <a target="_blank" href="<?php echo esc_attr($location_google_map_url);?>">
+                                                        <?php } ?>
+                                                        <?php echo nl2br($location_address);?>
+                                                        <?php if(!empty($location_google_map_url)) {?>
+                                                    </a>
+                                                <?php } ?>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    <?php
+                                    endforeach;
+                                    echo '</div>';
+                                }
+                            ?>
+                        </div>
 					</div>
 				<?php endif; ?>
 			</div>
-			
+
 		</div>
 	
 	</div>
