@@ -63,7 +63,7 @@ if($hero_banner_style == 'style4') {
 }  else {
     if(have_rows('setup_banner_items')):
 ?>
-    <div class="home-banner slide-<?php echo $hero_banner_style;?>">
+    <div class="home-banner home-banner-slider slide-<?php echo $hero_banner_style;?>">
         <div class=" swiper-container swiper-scale-effect">
             <div class="swiper-wrapper">
             <?php
