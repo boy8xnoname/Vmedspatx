@@ -422,6 +422,11 @@ require get_template_directory() . '/inc/template-functions.php';
 
 
 /**
+ * Functions which enhance the theme by hooking into WordPress.
+ */
+require get_template_directory() . '/inc/optimize.php';
+
+/**
  * Customizer additions.
  */
 if ( class_exists( 'Kirki' ) ) {
