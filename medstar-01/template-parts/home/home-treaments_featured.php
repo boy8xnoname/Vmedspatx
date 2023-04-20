@@ -25,7 +25,7 @@
             ?>
             <div class="swiper-slide">
                 <?php if (!empty($treaments_featured_item_link)) {echo  $link_start;} ?>
-                    <img class="" src="<?php echo esc_url($treaments_featured_item_image['url']);?>" alt="Image Slider">
+                    <img width="auto" height="auto" class="" src="<?php echo esc_url($treaments_featured_item_image['url']);?>" alt="Image Slider">
                 <?php if (!empty($treaments_featured_item_link)) {echo  $link_end;} ?>
             </div>
             <?php
