@@ -169,6 +169,7 @@ function medstar01_scripts() {
 	if( is_page_template('page-contact.php') || is_page_template('page-contact-style-2.php') || is_page_template('page-contact-thankyou.php') || is_page_template('page-contact-thank-you-style-2.php') ) {
 		wp_enqueue_script('googleapis', '//maps.googleapis.com/maps/api/js?key=AIzaSyBsuplYWJsF-qc5nD7w2iGNlxOTEVn2K3A', array(), _S_VERSION, true);
 	}
+
 	wp_enqueue_script( 'swiper', get_template_directory_uri() . '/assets/js/swiper.min.js', array('jquery'), _S_VERSION, true );
 	wp_enqueue_script( 'aos-animate', get_template_directory_uri() . '/assets/js/aos.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'jarallax', get_template_directory_uri() . '/assets/js/jarallax.min.js', array(), _S_VERSION, true );
