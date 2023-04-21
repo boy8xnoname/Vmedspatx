@@ -64,7 +64,9 @@ $isHeaderFullyVisible = get_theme_mod('is_header_fully_visible');
 <body <?php body_class(); ?>>
 <!-- Start / Tracking Code Should Go Here -->
 <!-- End / Tracking Code Should Go Here -->
+
 <link rel='stylesheet' id='common-lib-css' href='<?php echo get_template_directory_uri(); ?>/assets/css/common-lib.min.css' media='all' />
+<link rel='stylesheet' id='medstar-custom-css' href='<?php echo get_template_directory_uri(); ?>/assets/css/custom.min.css' media='all' />
 
 <?php wp_body_open(); ?>
 <div id="page" class="site">
