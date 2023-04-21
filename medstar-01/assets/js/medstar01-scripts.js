@@ -197,10 +197,10 @@ var medstar01 = {};
         });
 
         // 
-        $('.popup-youtube').magnificPopup({
+        /*$('.popup-youtube').magnificPopup({
             type: 'iframe',
             mainClass: 'mfp-fade youtube-popup',
-        });
+        });*/
 
         $('.blog-post-item-wrap').matchHeight({
             byRow: true,

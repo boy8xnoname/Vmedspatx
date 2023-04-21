@@ -161,29 +161,21 @@ function hex2rgba( $color, $opacity = false ) {
  * Enqueue scripts and styles.
  */
 function medstar01_scripts() {
-	// wp_enqueue_script( 'fontawesome', 'https://kit.fontawesome.com/54ed714a8b.js', array(), 'latest', false );
-	// wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/assets/css/all.fontawesome.css', array(), _S_VERSION);
-	// wp_enqueue_style( 'aos-animate', get_template_directory_uri() . '/assets/css/aos.css', array(), _S_VERSION);
-	// wp_enqueue_style( 'elementor-icons', get_template_directory_uri() . '/assets/css/elementor-icons.css', array(), _S_VERSION);
-	// wp_enqueue_style( 'style-jarallax', get_template_directory_uri() . '/assets/css/jarallax.css', array(), _S_VERSION);
-	// wp_enqueue_style( 'style-swiper', get_template_directory_uri() . '/assets/css/swiper.min.css', array(), _S_VERSION);
-	// wp_enqueue_style( 'style-magnific-popup', get_template_directory_uri() . '/assets/css/magnific-popup.css', array(), _S_VERSION);
 	wp_enqueue_style( 'common-lib', get_template_directory_uri() . '/assets/css/common-lib.min.css', array(), _S_VERSION);
 	wp_enqueue_style( 'medstar01-style', get_stylesheet_uri(), array(), _S_VERSION );
-    wp_enqueue_style('medstar-custom', get_template_directory_uri() . '/assets/css/custom.css', array('medstar01-style'), _S_VERSION);
+    wp_enqueue_style('medstar-custom', get_template_directory_uri() . '/assets/css/custom.min.css', array('medstar01-style'), _S_VERSION);
 	wp_style_add_data( 'medstar01-style', 'rtl', 'replace' );
 
-
-	wp_enqueue_script( 'jquery');
-	wp_enqueue_script( 'googleapis', '//maps.googleapis.com/maps/api/js?key=AIzaSyBsuplYWJsF-qc5nD7w2iGNlxOTEVn2K3A', array(), _S_VERSION, true );
-	wp_enqueue_script( 'swiper', get_template_directory_uri() . '/assets/js/swiper.min.js', array(), _S_VERSION, true );
+	if( is_page_template('page-contact.php') || is_page_template('page-contact-style-2.php') || is_page_template('page-contact-thankyou.php') || is_page_template('page-contact-thank-you-style-2.php') ) {
+		wp_enqueue_script('googleapis', '//maps.googleapis.com/maps/api/js?key=AIzaSyBsuplYWJsF-qc5nD7w2iGNlxOTEVn2K3A', array(), _S_VERSION, true);
+	}
+	wp_enqueue_script( 'swiper', get_template_directory_uri() . '/assets/js/swiper.min.js', array('jquery'), _S_VERSION, true );
 	wp_enqueue_script( 'aos-animate', get_template_directory_uri() . '/assets/js/aos.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'jarallax', get_template_directory_uri() . '/assets/js/jarallax.min.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'jarallax-video', get_template_directory_uri() . '/assets/js/jarallax-video.min.js', array(), _S_VERSION, true );
-	wp_enqueue_script( 'swiper', get_template_directory_uri() . '/assets/js/swiper.min.js', array(), _S_VERSION, true );
     wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.js', array('jquery'), _S_VERSION, true );
 	wp_enqueue_script( 'matchHeight', get_template_directory_uri() . '/assets/js/jquery.matchHeight-min.js', array(), _S_VERSION, true );
-	wp_enqueue_script( 'magnific-popup', get_template_directory_uri() . '/assets/js/jquery.magnific-popup.min.js', array(), _S_VERSION, true );
+	//wp_enqueue_script( 'magnific-popup', get_template_directory_uri() . '/assets/js/jquery.magnific-popup.min.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'medstar01-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'medstar01-scripts', get_template_directory_uri() . '/assets/js/medstar01-scripts.js', array(), _S_VERSION, true );
 
