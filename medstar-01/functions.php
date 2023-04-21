@@ -163,7 +163,7 @@ function hex2rgba( $color, $opacity = false ) {
 function medstar01_scripts() {
 	//wp_enqueue_style( 'common-lib', get_template_directory_uri() . '/assets/css/common-lib.min.css', array(), _S_VERSION);
 	wp_enqueue_style( 'medstar01-style', get_stylesheet_uri(), array(), _S_VERSION );
-    wp_enqueue_style('medstar-custom', get_template_directory_uri() . '/assets/css/custom.min.css', array('medstar01-style'), _S_VERSION);
+    //wp_enqueue_style('medstar-custom', get_template_directory_uri() . '/assets/css/custom.min.css', array('medstar01-style'), _S_VERSION);
 	wp_style_add_data( 'medstar01-style', 'rtl', 'replace' );
 
 	if( is_page_template('page-contact.php') || is_page_template('page-contact-style-2.php') || is_page_template('page-contact-thankyou.php') || is_page_template('page-contact-thank-you-style-2.php') ) {
