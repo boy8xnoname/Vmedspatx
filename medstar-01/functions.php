@@ -170,7 +170,7 @@ function medstar01_scripts() {
 	// wp_enqueue_style( 'style-magnific-popup', get_template_directory_uri() . '/assets/css/magnific-popup.css', array(), _S_VERSION);
 	wp_enqueue_style( 'common-lib', get_template_directory_uri() . '/assets/css/common-lib.min.css', array(), _S_VERSION);
 	wp_enqueue_style( 'medstar01-style', get_stylesheet_uri(), array(), _S_VERSION );
-    wp_enqueue_style('medstar-custom', get_template_directory_uri() . '//assets/css/custom.css', array('medstar01-style'), _S_VERSION);
+    wp_enqueue_style('medstar-custom', get_template_directory_uri() . '/assets/css/custom.css', array('medstar01-style'), _S_VERSION);
 	wp_style_add_data( 'medstar01-style', 'rtl', 'replace' );
 
 
@@ -192,10 +192,10 @@ function medstar01_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 
-	wp_enqueue_style(
+	/*wp_enqueue_style(
         'custom-style',
         get_template_directory_uri() . '/assets/css/custom_script.css'
-    );
+    );*/
 
 	$user = wp_get_current_user();
 	$allowed_roles = array('editor', 'administrator', 'author');
