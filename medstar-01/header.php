@@ -65,9 +65,12 @@ $isHeaderFullyVisible = get_theme_mod('is_header_fully_visible');
 <!-- Start / Tracking Code Should Go Here -->
 <!-- End / Tracking Code Should Go Here -->
 
-<!--<link rel='preload' as='style' id='acwp-main-css-css' href='<?php /*echo home_url(); */?>/wp-content/plugins/accessible-poetry/assets/css/main.css' media='all' onload="this.onload=null;this.rel='stylesheet'" />-->
-<link rel='preload' as='style' id='common-lib-css' href='<?php echo get_template_directory_uri(); ?>/assets/css/common-lib.min.css' media='all' onload="this.onload=null;this.rel='stylesheet'" />
-<link rel='preload' as='style' id='medstar-custom-css' href='<?php echo get_template_directory_uri(); ?>/assets/css/custom.min.css' media='all' onload="this.onload=null;this.rel='stylesheet'" />
+	<!--<link rel='preload' as='style' id='acwp-main-css-css' href='<?php /*echo home_url(); */?>/wp-content/plugins/accessible-poetry/assets/css/main.css' media='all' onload="this.onload=null;this.rel='stylesheet'" />-->
+	<link rel='preload' as='style' id='common-lib-css' href='<?php echo get_template_directory_uri(); ?>/assets/css/common-lib.min.css' media='all' onload="this.onload=null;this.rel='stylesheet'" />
+	<link rel='preload' as='style' id='medstar-custom-css' href='<?php echo get_template_directory_uri(); ?>/assets/css/custom.min.css' media='all' onload="this.onload=null;this.rel='stylesheet'" />
+	<link rel='preload' as='style' id="gravity_forms_theme_reset-css" href="<?php echo home_url(); ?>/wp-content/plugins/gravityforms/assets/css/dist/gravity-forms-theme-reset.min.css" media="all" onload="this.onload=null;this.rel='stylesheet'" />
+	<link rel='preload' as='style' id="gravity_forms_theme_foundation-css" href="<?php echo home_url(); ?>/wp-content/plugins/gravityforms/assets/css/dist/gravity-forms-theme-foundation.min.css" media="all" onload="this.onload=null;this.rel='stylesheet'" />
+	<link rel='preload' as='style' id="gform_basic-css" href="<?php echo home_url(); ?>/wp-content/plugins/gravityforms/assets/css/dist/basic.min.css" media="all" onload="this.onload=null;this.rel='stylesheet'" />
 
 <?php wp_body_open(); ?>
 <div id="page" class="site">
