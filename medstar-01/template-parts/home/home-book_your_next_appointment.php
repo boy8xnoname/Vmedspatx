@@ -23,7 +23,7 @@
     if(!empty($book_your_next_appointment_title) || !empty($book_appointment_button_link)):
 ?>
 <section class="home-section book_your_next_appointment">
-    <div class="container">
+<!--    <div class="container">-->
         <?php if($book_appointment_image != '') { ?>
             <div class="row book_your_next_appointment-wrap" style="background-image: url('<?php echo esc_url($book_appointment_image['url']);?>');">
         <?php } else {?> 
@@ -46,6 +46,6 @@
             </div>
           
         </div>
-    </div>
+<!--    </div>-->
 </section>
 <?php endif; ?>
