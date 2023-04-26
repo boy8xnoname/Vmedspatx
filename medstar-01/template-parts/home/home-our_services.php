@@ -24,7 +24,7 @@
 					<div class="our-services__item-wrap">
 						<div class="item-image"  data-aos="fade-right" data-aos-delay="200">
 							<div class="item-image-wrap">
-								<img class="" src="<?php echo esc_url($services_item_image['url']);?>" alt="<?php echo $services_item_heading;?>">
+								<img width="100%" height="auto" src="<?php echo esc_url($services_item_image['url']);?>" alt="<?php echo $services_item_heading;?>">
 							</div>
 						</div>
 						<div class="item-text"  data-aos="fade-left" data-aos-delay="200">
