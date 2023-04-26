@@ -26,7 +26,7 @@ add_action( 'wp_default_scripts', 'remove_jquery_migrate' );
 add_filter( 'script_loader_tag', function ( $tag, $handle ) {
 	if(is_admin()) return $tag;
 
-	if ( strpos( $tag, 'jquery' ) || strpos( $tag, '/wp-includes/js/dist/' ) ) return $tag;
+	if ( strpos( $tag, 'jquery' ) || strpos( $tag, 'defer="defer"' ) || strpos( $tag, '/wp-includes/js/dist/' ) ) return $tag;
 
 	return str_replace( ' src', ' defer="defer" src', $tag );
 }, 10, 2 );
