@@ -200,12 +200,12 @@ function medstar01_scripts() {
 			html{ margin-top: 32px !important; }
 			.site-header { top: 32px !important; }
 		";
-		wp_add_inline_style( 'custom-style', $adminLoggedInStyle );
+		wp_add_inline_style( 'medstar01-style', $adminLoggedInStyle );
 	}
 
 
 	// Style color by change in customize
-	$customColorStyle = "";	
+	$customColorStyle = "";
 	if( get_theme_mod('use_custom_color')) {
 
 		$customColor = get_theme_mod('color_setting_hex');
@@ -234,7 +234,6 @@ function medstar01_scripts() {
         .location-item a,
         .section-title,
         .our_testimonials .block-blockquote::before,
-        .our_testimonials .blockquote__position,
         .main-navigation #primary-menu > li.current-menu-item > a,			
         .map-pins a,
         .site-footer .content-list .contact-item h3, 
@@ -266,7 +265,8 @@ function medstar01_scripts() {
         .gform_wrapper .gform_footer input[type='submit'],
         .site-footer .first-col-widget::before,
         .site-footer .third-col-widget::before,
-         .service-banner-image .banner-button a {
+        .service-banner-image .banner-button a,
+        .testimonials_style_3 .testimonials-item blockquote {
             background-color: $customColor !important;
         }";
 		
@@ -359,7 +359,7 @@ function medstar01_scripts() {
         }
 	}
 
-	wp_add_inline_style( 'custom-style', $customColorStyle );
+	wp_add_inline_style( 'medstar01-style', $customColorStyle );
 
 }
 add_action( 'wp_enqueue_scripts', 'medstar01_scripts' );

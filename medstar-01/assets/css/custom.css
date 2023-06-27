@@ -168,6 +168,21 @@ body .accordion-button:not(.collapsed)::after {
     max-width: 1500px !important;
 }
 
+.testimonials_style_3 .testimonials-item blockquote {
+    padding: 30px;
+    text-align: left;
+}
+.testimonials_style_3 .testimonials-item blockquote::before {
+    display: none;
+}
+.testimonials_style_3 .testimonials-item .blockquote__position {
+    color: #000;
+    margin-top: 10px;
+}
+.testimonials_style_3 .testimonials-item .blockquote__content {
+    color: #fff;
+}
+
 @media (max-width: 480px) {
     .service-banner.service-banner_fixed {
         background-attachment: inherit;
