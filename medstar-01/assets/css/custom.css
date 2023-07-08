@@ -180,7 +180,7 @@ body .accordion-button:not(.collapsed)::after {
     margin-top: 10px;
 }
 .testimonials_style_3 .testimonials-item .blockquote__content,
-.testimonials_style_3 .testimonials-item testimonials-item-star-rating {
+.testimonials_style_3 .testimonials-item .testimonials-item-star-rating {
     color: #fff;
 }
 
