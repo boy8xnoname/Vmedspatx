@@ -265,13 +265,13 @@ function medstar01_scripts() {
         .gform_wrapper .gform_footer input[type='submit'],
         .site-footer .first-col-widget::before,
         .site-footer .third-col-widget::before,
-        .service-banner-image .banner-button a,
-        .testimonials_style_3 .testimonials-item blockquote {
+        .service-banner-image .banner-button a {
             background-color: $customColor !important;
         }";
 		
 		$customColorStyle .= "
-		.map-pin-item .marker .pin-effect {
+		.map-pin-item .marker .pin-effect,
+        .testimonials_style_3 .testimonials-item blockquote {
 			background-color: $rgbaCustomColor !important;
 		}";
 

@@ -176,10 +176,11 @@ body .accordion-button:not(.collapsed)::after {
     display: none;
 }
 .testimonials_style_3 .testimonials-item .blockquote__position {
-    color: #000;
+    color: #fff;
     margin-top: 10px;
 }
-.testimonials_style_3 .testimonials-item .blockquote__content {
+.testimonials_style_3 .testimonials-item .blockquote__content,
+.testimonials_style_3 .testimonials-item testimonials-item-star-rating {
     color: #fff;
 }
 
