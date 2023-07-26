@@ -176,11 +176,10 @@ body .accordion-button:not(.collapsed)::after {
     display: none;
 }
 .testimonials_style_3 .testimonials-item .blockquote__position {
-    color: #fff;
+    color: #000;
     margin-top: 10px;
 }
-.testimonials_style_3 .testimonials-item .blockquote__content,
-.testimonials_style_3 .testimonials-item .testimonials-item-star-rating {
+.testimonials_style_3 .testimonials-item .blockquote__content {
     color: #fff;
 }
 
@@ -397,6 +396,23 @@ div#acwp-toolbar-btn-wrap {
 @media (max-width: 600px){
     section#section-contact_us .contact_form {
         margin-bottom: 25px;
+    }
+}
+
+@media (min-width: 1200px){
+    .single-image-banner.slide-style3 .card-image {
+        min-height: 90vh;
+    }
+}
+@media (max-width: 768px){
+    .single-image-banner.slide-style3 .card-image {
+        min-height: 50vh;
+    }
+}
+@media (max-width: 480px){
+    .single-image-banner.slide-style3 .card-image {
+        max-height: 583px;
+        min-height: 583px;
     }
 }
 
