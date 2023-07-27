@@ -279,7 +279,7 @@ body .accordion-button:not(.collapsed)::after {
 }
 
 @media (min-width: 1200px){
-    .our_services .our-s0ervices__item .item-header h2,
+    .our_services .our-services__item .item-header h2,
     .our_services .our-services__item .item-header .h2 {
         font-size: 50px;
     }
@@ -391,6 +391,19 @@ div#acwp-toolbar-btn-wrap {
     top: 0 !important;
     position: absolute;
     left: 0 !important;
+}
+
+/* Home WMD */
+.home-wmd {
+    padding: 4% 0;
+}
+.wmd-col {
+    padding: 30px;
+    border: 1px solid #459dd6;
+}
+.home-wmd img {
+    max-width: 150px;
+    margin-bottom: 15px;
 }
 
 @media (max-width: 600px){

@@ -281,7 +281,8 @@ function medstar01_scripts() {
 		.about-us-content.about-us-leadership .container,
 		section.our_location .location-list .location-item,
 		.page-contact-wrap .contact-information-item .item-box-icon,
-		 .service-banner-image .banner-button a {
+		.service-banner-image .banner-button a,
+		.wmd-col {
 			border-color: $customColor !important;
 		}";
 

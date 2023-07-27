@@ -28,6 +28,8 @@
 
 	<?php  get_template_part( 'template-parts/home/home-about_us' ); ?>
 
+	<?php get_template_part( 'template-parts/home/home-wmd' ); ?>
+
 	<?php get_template_part( 'template-parts/home/home-our_testimonials' ); ?>
 
 	<?php // get_template_part( 'template-parts/home/home-about_us' ); ?>
