@@ -28,7 +28,7 @@ if (empty($featured_img_url )) {
 	</header><!-- .entry-header -->
 	<div class="entry-content">
 		<div class="container">
-			<div class="d-flex flex-column flex-md-row">
+			<div class="d-flex flex-column flex-md-row gap-5">
 				<?php 
 					// Get contact form image logo
 					if(!empty(get_theme_mod('sidebar_contact_form_logo_image'))) {
