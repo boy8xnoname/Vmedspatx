@@ -57,7 +57,7 @@ if (empty($featured_img_url )) {
 								</h2>
 								<?php echo do_shortcode($formContactShortcode); ?>
 								<div class="contact-us-description text-center">
-									<small><?php echo strip_tags($formContactDescription); ?></small>
+									<small><?php echo str_replace(['<p>', '</p>'],'', $formContactDescription); ?></small>
 								</div>
 							<?php }?>
 						</div>
