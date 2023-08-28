@@ -77,7 +77,7 @@ get_header();
                         </h2>
 						<?php echo do_shortcode($formContactShortcode); ?>
                         <div class="contact-us-description text-center">
-                            <small><?php echo apply_filters('the_content', $formContactDescription); ?></small>
+                            <small><?php echo $formContactDescription; ?></small>
                         </div>
 					<?php }?>
                 </div>
