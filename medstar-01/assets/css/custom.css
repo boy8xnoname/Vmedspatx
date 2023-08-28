@@ -382,7 +382,8 @@ body .accordion-button:not(.collapsed)::after {
 }
 
 /* blog */
-.blog-container {
+.blog-container,
+body.single-post .entry-content {
     margin-top: 150px;
 }
 h3.entry-title {
