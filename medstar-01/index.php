@@ -47,7 +47,40 @@ get_header();
 		</main><!-- #main -->
 			</div>
 			<div class="col-md-4">
-				<?php get_sidebar(); ?><!-- #sidebar -->
+				<?php
+				// Get contact form image logo
+				if(!empty(get_theme_mod('sidebar_contact_form_logo_image'))) {
+					$contact_form_logo_image = get_theme_mod('sidebar_contact_form_logo_image');
+				}
+				// Get contact form title
+				if(!empty(get_theme_mod('sidebar_contact_us_before_form_title'))) {
+					$formContactTitle = get_theme_mod('sidebar_contact_us_before_form_title');
+				}
+				// Get contact form shortcode
+				if(!empty(get_theme_mod('sidebar_contact_form_short_code'))) {
+					$formContactShortcode = get_theme_mod('sidebar_contact_form_short_code');
+				}
+				// Get contact form description
+				if(!empty(get_theme_mod('sidebar_contact_us_form_description'))) {
+					$formContactDescription = get_theme_mod('sidebar_contact_us_form_description');
+				}
+				?>
+                <div class="form-contact-us">
+					<?php  if(!empty($formContactShortcode)) { ?>
+						<?php if(!empty($contact_form_logo_image)) { ?>
+                            <div class="text-center">
+                                <img src="<?php echo esc_url($contact_form_logo_image);?>" alt="<?php echo esc_attr( $formContactTitle, 'medstar01' ); ?>"/>
+                            </div>
+						<?php } ?>
+                        <h2 class="contact-form-title text-center">
+							<?php echo esc_attr( $formContactTitle, 'medstar01' ); ?>
+                        </h2>
+						<?php echo do_shortcode($formContactShortcode); ?>
+                        <div class="contact-us-description text-center">
+                            <small><?php echo apply_filters('the_content', $formContactDescription); ?></small>
+                        </div>
+					<?php }?>
+                </div>
 			</div>
 		</div>
 	</div>

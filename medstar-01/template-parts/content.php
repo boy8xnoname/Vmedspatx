@@ -13,19 +13,6 @@ if (empty($featured_img_url )) {
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-	<header class="entry-header header-jarallax" style="background-image: url('<?php echo esc_url($featured_img_url);?>');">
-		<div class="container">
-			<?php
-			if ( is_singular() ) :
-				the_title( '<h1 class="entry-title">', '</h1>' );
-			else :
-				the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-			endif;
-
-		?>
-		</div>
-	</header><!-- .entry-header -->
 	<div class="entry-content">
 		<div class="container">
 			<div class="d-flex flex-column flex-md-row gap-5">
@@ -54,8 +41,7 @@ if (empty($featured_img_url )) {
 						the_content();
 					?>
 				</div>
-				
-				
+
 				<?php if(!empty($formContactShortcode)) : ?>
 					<div class="single-blog-sidebar">
 						<div class="form-contact-us">
@@ -81,10 +67,4 @@ if (empty($featured_img_url )) {
 			</div>
 		</div><!-- .entry-content -->
 	</div>
-	
-	<footer class="entry-footer">
-		<div class="container">
-			<?php // medstar01_entry_footer(); ?>
-		</div>
-	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
