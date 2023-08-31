@@ -73,6 +73,25 @@ Kirki::add_field(
 );
 
 Kirki::add_field(
+	'medstar01',
+	[
+		'type'        => 'color',
+		'settings'    => 'submenu_mobile_bg_color',
+		'label'       => __( 'Submenu Mobile Background Color', 'kirki' ),
+		'description' => esc_html__( 'Set the custom background color for submenu item when hover.', 'kirki' ),
+		'section'     => 'medstar01_colors',
+		'default'     => '#0008DC',
+		'active_callback'  => [
+			[
+				'setting'  => 'use_custom_color',
+				'operator' => '==',
+				'value'    => true,
+			]
+		]
+	]
+);
+
+Kirki::add_field(
     'medstar01',
     [
         'type'        => 'color',
