@@ -37,6 +37,7 @@ if (empty($featured_img_url )) {
 				
 				<div class="single-blog-main <?php if(!empty($formContactShortcode)) echo 'with-sidebar' ?>">
 					<?php medstar01_post_thumbnail(); ?>
+					<h1 class="entry-title mt-1"><?php the_title(); ?></h1>
 					<?php
 						the_content();
 					?>

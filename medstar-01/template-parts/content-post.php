@@ -12,7 +12,9 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<?php the_post_thumbnail('large'); ?>
+				<div class="featured-image">
+					<?php the_post_thumbnail('full'); ?>
+				</div>
 				<div class="post-categories my-2"><?php the_category(); ?></div>
 				<h3 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 				<div class="excerpt">

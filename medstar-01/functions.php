@@ -471,3 +471,10 @@ function wps_deregister_styles() {
 function clean_phone_link($phone){
 	return '+1' . str_replace(['(', '-', ')', ' '], '', $phone);
 }
+
+add_filter('the_category', function ($theList) {
+	return preg_replace('#<a.*?>([^<]*)</a>#i', '$1', $theList);
+});
+
+function my_excerpt_length($length){ return 30; }
+add_filter('excerpt_length', 'my_excerpt_length');
