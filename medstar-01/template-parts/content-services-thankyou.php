@@ -37,6 +37,10 @@ $serviceBannerVideoOgv = !empty( get_field('service_banner_video_ogv', $parent))
 $serviceBannerVideoUrl = !empty( get_field('service_banner_video_url', $parent)) ?  get_field('service_banner_video_url', $parent) : '';
 $serviceBannerImage = !empty( get_field('service_banner_image', $parent)) ?  get_field('service_banner_image', $parent) : '';
 
+if(!empty( get_field('service_banner_image', $post->ID))){
+	$serviceBannerImage = get_field('service_banner_image', $post->ID);
+}
+
 // Get service banner fields data for Mobile
 $mobileServiceBannerVideoMp4 = !empty( get_field('mobile_service_banner_video_mp4', $parent)) ?  get_field('mobile_service_banner_video_mp4', $parent) : '';
 $mobileServiceBannerVideoWebm = !empty( get_field('mobile_service_banner_video_webm', $parent)) ?  get_field('mobile_service_banner_video_webm', $parent) : '';
