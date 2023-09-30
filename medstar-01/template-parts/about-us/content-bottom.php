@@ -1,5 +1,12 @@
-<?php if( have_rows('about_us_content_bottom') ): ?>
-    <?php while( have_rows('about_us_content_bottom') ): the_row(); 
+<?php
+global $post;
+if ( get_field('parent_about_page', $post->ID ) ) {
+	$parent = get_field('parent_about_page', $post->ID );
+} else {
+	$parent = $post->ID;
+}
+if( have_rows('about_us_content_bottom', $parent) ): ?>
+    <?php while( have_rows('about_us_content_bottom', $parent) ): the_row();
         $about_us_bottom_heading = strip_tags(get_sub_field('content_heading'), '<br><span><img>');
         $about_us_bottom_content = get_sub_field('content_description');
         if (!empty($about_us_bottom_content) || !empty($about_us_bottom_content)) {

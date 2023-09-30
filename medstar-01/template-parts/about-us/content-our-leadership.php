@@ -1,9 +1,16 @@
-<?php if( have_rows('our_leadership') ): ?>
+<?php
+global $post;
+if ( get_field('parent_about_page', $post->ID ) ) {
+	$parent = get_field('parent_about_page', $post->ID );
+} else {
+	$parent = $post->ID;
+}
+if( have_rows('our_leadership', $parent) ): ?>
 <section class="about-us-content about-us-leadership">
     <div class="container">
         <h2 class="section-title text-center"><?php echo strip_tags(get_field('our_leadership_title'), '<br><span><img>'); ?></h2>
         <div class="leadership-list">
-        <?php while( have_rows('our_leadership') ): the_row(); 
+        <?php while( have_rows('our_leadership', $parent) ): the_row();
             $member_image = get_sub_field('member_image');
             $right_column = empty($member_image) ? 12 : 9;
             ?>
