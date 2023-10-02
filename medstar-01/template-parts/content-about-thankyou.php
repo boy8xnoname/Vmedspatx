@@ -63,7 +63,7 @@ if (empty($featured_img_url )) {
 
     <?php get_template_part( 'template-parts/about-us/content-top' ); ?>
     <?php get_template_part( 'template-parts/about-us/content-our-leadership' ); ?>
-    <?php get_template_part( 'template-parts/about-us/content-bottom' ); ?>
+    <?php //get_template_part( 'template-parts/about-us/content-bottom' ); ?>
     <?php //get_template_part( 'template-parts/about-us/content-contact' ); ?>
 
 </article><!-- #post-<?php the_ID(); ?> -->
