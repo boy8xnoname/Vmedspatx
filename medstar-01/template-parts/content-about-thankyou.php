@@ -46,7 +46,11 @@ if (empty($featured_img_url )) {
 
 	<header class="entry-header header-jarallax" style="background-image: url('<?php echo esc_url($featured_img_url);?>');">
 		<div class="container">
+            <?php if(get_field('banner_title')): ?>
+                <h1 class="entry-title"><?php the_field('banner_title'); ?></h1>
+            <?php else: ?>
 			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+            <?php endif; ?>
 		</div>
 	</header><!-- .entry-header -->
 
