@@ -219,6 +219,7 @@ function medstar01_scripts() {
         $body_link_color = get_theme_mod('body_link_color');
         $button_text_color = get_theme_mod('button_text_color');
         $button_text_color_hover = get_theme_mod('button_text_color_hover');
+		$mobile_nav_button_color = get_theme_mod('mobile_nav_button_color');
 
 		$rgbaCustomColor = hex2rgba($customColor, 0.6);
 
@@ -358,6 +359,13 @@ function medstar01_scripts() {
                 color: $button_text_color_hover !important;
             }";
         }
+		if($mobile_nav_button_color) {
+			/* ===== Button Links Color ===== */
+			$customColorStyle .= "
+            .header-menu-toggle span {
+                background-color: $mobile_nav_button_color !important;
+            }";
+		}
         if($body_link_color) {
             /* ===== Body Links Color ===== */
             $customColorStyle .= "
