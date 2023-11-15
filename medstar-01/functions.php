@@ -211,6 +211,7 @@ function medstar01_scripts() {
 		$customColor = get_theme_mod('color_setting_hex');
 		$customSecondColor = get_theme_mod('second_color_setting_hex');
         $header_bg_color = get_theme_mod('header_bg_color');
+		$submenu_mobile_bg_color = get_theme_mod('submenu_mobile_bg_color');
         $rgba_header_bg_color = hex2rgba($header_bg_color, 0.66);
         $rgba_header_bg_color_fixed = hex2rgba($header_bg_color, 0.88);
         $sub_footer_bg_color = get_theme_mod('sub_footer_bg_color');
@@ -218,6 +219,7 @@ function medstar01_scripts() {
         $body_link_color = get_theme_mod('body_link_color');
         $button_text_color = get_theme_mod('button_text_color');
         $button_text_color_hover = get_theme_mod('button_text_color_hover');
+		$mobile_nav_button_color = get_theme_mod('mobile_nav_button_color');
 
 		$rgbaCustomColor = hex2rgba($customColor, 0.6);
 
@@ -268,6 +270,11 @@ function medstar01_scripts() {
         .service-banner-image .banner-button a {
             background-color: $customColor !important;
         }";
+
+		$customColorStyle .= "
+		#mobile-site-navigation .sub-menu li {
+			background-color: $submenu_mobile_bg_color !important;
+		}";
 		
 		$customColorStyle .= "
 		.map-pin-item .marker .pin-effect,
@@ -352,6 +359,13 @@ function medstar01_scripts() {
                 color: $button_text_color_hover !important;
             }";
         }
+		if($mobile_nav_button_color) {
+			/* ===== Button Links Color ===== */
+			$customColorStyle .= "
+            .header-menu-toggle span {
+                background-color: $mobile_nav_button_color !important;
+            }";
+		}
         if($body_link_color) {
             /* ===== Body Links Color ===== */
             $customColorStyle .= "

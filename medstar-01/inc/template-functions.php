@@ -79,7 +79,7 @@ function custom_postimage_meta_box_func($post){
     $meta_keys = array('second_featured_image','third_featured_image');
 
     foreach($meta_keys as $meta_key){
-        $image_meta_val=get_post_meta( $post->ID, $meta_key, true);
+        $image_meta_val = get_post_meta( $post->ID, $meta_key, true);
     ?>
         <div class="custom_postimage_wrapper" id="<?php echo $meta_key; ?>_wrapper" style="margin:20px 0;">
 			<?php if($meta_key == 'second_featured_image') {
@@ -88,7 +88,7 @@ function custom_postimage_meta_box_func($post){
 			<?php if($meta_key == 'third_featured_image') {
 				echo '<h3 class="image-label" style="font-size: 14px;">Tablet Featured Image</h3>';
 			} ?>
-            <img src="<?php echo ($image_meta_val!=''?wp_get_attachment_image_src( $image_meta_val)[0]:''); ?>" style="width:100%;display: <?php echo ($image_meta_val!=''?'block':'none'); ?>" alt="">
+            <img src="<?php echo (!empty($image_meta_val) !='' ? wp_get_attachment_image_src($image_meta_val)[0] : ''); ?>" style="width:100%;display: <?php echo ($image_meta_val!=''?'block':'none'); ?>" alt="">
             <a class="addimage button" onclick="custom_postimage_add_image('<?php echo $meta_key; ?>');"><?php _e('Add image','medstar01'); ?></a><br>
             <a class="removeimage" style="color:#a00;cursor:pointer;display: <?php echo ($image_meta_val!=''?'block':'none'); ?>" onclick="custom_postimage_remove_image('<?php echo $meta_key; ?>');"><?php _e('Remove image','medstar01'); ?></a>
             <input type="hidden" name="<?php echo $meta_key; ?>" id="<?php echo $meta_key; ?>" value="<?php echo $image_meta_val; ?>" />

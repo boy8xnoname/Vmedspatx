@@ -16,6 +16,10 @@ $service_banner_video_ogv =  get_field('service_banner_video_ogv', $id);
 $service_banner_video_url = get_field('service_banner_video_url', $id);
 $services_banner_image = get_field('service_banner_image', $id);
 
+if(!empty( get_field('service_banner_image', $post->ID))){
+	$services_banner_image = get_field('service_banner_image', $post->ID);
+}
+
 $service_banner_top_image = get_field('service_banner_top_image', $id);
 $service_banner_title = strip_tags(get_field('service_banner_title'), '<br><span><img>');
 $service_banner_description = get_field('service_banner_description');
