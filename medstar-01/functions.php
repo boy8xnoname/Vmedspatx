@@ -183,7 +183,7 @@ function medstar01_scripts() {
 	if(is_page_template( 'page-Campaign_Page.php' )):
 		//wp_enqueue_style( 'custom-style', get_stylesheet_directory_uri() . '/custom_css/custom-frontend-lite.min.css', '' );
 		wp_enqueue_style( 'google-font', 'https://fonts.googleapis.com/css?family=Raleway%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPoppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CLato%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&display=auto', '' );
-		wp_enqueue_script( 'countdown-timer-script', get_stylesheet_directory_uri() . '/custom_js/countdown.js', array( 'jquery' ), '1.0.0', true );
+		wp_enqueue_script( 'countdown-timer-script', get_template_directory_uri() . '/assets/js/countdown.js', array( 'jquery' ), '1.0.0', true );
 	endif;
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
